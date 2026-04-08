@@ -139,12 +139,12 @@ document.addEventListener('DOMContentLoaded', function() {
 function change_img(site) {
 	var image = document.getElementById('home_img');
 	if (site == 'wechat') {
-		image.src = '/img/wechat.jpg'
+		image.src = 'img/wechat.jpg'
 	}	else if (site == 'qq') {
-		image.src = '/img/qq.jpg'
+		image.src = 'img/qq.jpg'
 	}	else if (site == 'outlook') {
-		image.src = '/img/outlook.png'
+		image.src = 'img/outlook.png'
 	}	else if (site == 'home') {
-		image.src = '/img/texas_blank.png'
+		image.src = 'img/texas_blank.png'
 	}
 }
