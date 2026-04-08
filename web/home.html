@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/home.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" rel="stylesheet"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <script src="js/definition.js"></script>
+    <title>个人学习分享</title>
+</head>
+<body>
+    <header>
+      <div class="btnMenu"><i></i><i></i><i></i></div>
+      <nav>
+        <div class="botonera">
+            <ul>
+              <li><a href="home.html">首页</a></li>
+              <li><a href="general_course.html">通识课程</a></li>
+              <li><a href="required.html">专业必修</a></li>
+              <li><a href="selective.html">专业选修</a></li>
+              <li><a href="others.html">其他课程</a></li>
+              <li><a href="mixed.html">二三四课堂</a></li>
+              <li><a href="abroad.html">留学篇</a></li>
+              <li><a href="protocols.html">实验流程</a></li>
+              <li><a href="instructions.html">使用说明</a></li>
+            </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="group">
+        <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><g><path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path></g></svg>
+        <input type="Search" class="input" placeholder="搜索内容">
+        <span class="search-tip">搜索功能为文本匹配，存在该内容则自动跳转，建议输入单个短关键词</span>
+    </div>
+
+    <button class="theme-switcher" id="themeToggle" >🌙 夜间模式</button>
+
+    <section class="home">
+    <div class="home-content">
+        <h3>你好呀</h3>
+        <h3></h3>
+        <h3><span class="multiple-text"></span></h3>
+        <div class="social-media">
+          <a href="#" style="--i: 7" onclick="change_img('wechat')"><i class="bi bi-wechat"></i></a>
+          <a href="#" style="--i: 8" onclick="change_img('qq')"><i class="bi bi-tencent-qq"></i></a>
+          <a href="#" style="--i: 9" onclick="change_img('outlook')"><i class="bi bi-envelope-open"></i></a>
+          <a href="#" style="--i: 10" onclick="change_img('home')"><i class="bi bi-house-door-fill"></i></a>
+        </div>
+      </div>
+      <div class="home_img">
+        <img id='home_img' src="img/texas_blank.png" alt="这是德克萨斯，她很帅"/>
+      </div>
+    </section>
+
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+      <script>
+        var typed = new Typed(".multiple-text", {
+        strings: ['欢迎来我的网站', '来了就把这当家', '有任何问题欢迎联系'],
+        typeSpeed: 100,
+        backSpeed: 100,
+        backDelay: 1000,
+        loop: true
+        });
+      </script>
+
+      <div class="ICP" >
+        <a href="https://beian.miit.gov.cn">
+            ICP备案号：赣ICP备2024050667号-1
+        </a>
+      </div>
+</body>
+</html>
