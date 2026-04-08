@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/general_course.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <script src="js/definition.js"></script>
+    <script src="js/function.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>个人学习分享</title>
+</head>
+<body>
+    <header>
+      <div class="btnMenu"><i></i><i></i><i></i></div>
+      <nav>
+        <div class="botonera">
+            <ul>
+              <li><a href="home.html">首页</a></li>
+              <li><a href="general_course.html">通识课程</a></li>
+              <li><a href="required.html">专业必修</a></li>
+              <li><a href="selective.html">专业选修</a></li>
+              <li><a href="others.html">其他课程</a></li>
+              <li><a href="mixed.html">二三四课堂</a></li>
+              <li><a href="abroad.html">留学篇</a></li>
+              <li><a href="protocols.html">实验流程</a></li>
+              <li><a href="instructions.html">使用说明</a></li>
+            </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="group">
+        <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><g><path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path></g></svg>
+        <input type="Search" class="input" placeholder="搜索内容">
+        <span class="search-tip">搜索功能为文本匹配，存在该内容则自动跳转，建议输入单个短关键词</span>
+    </div>
+
+    <button class="theme-switcher" id="themeToggle" >🌙 夜间模式</button> 
+
+    <div class="subnav-bar">
+      <ul>
+        <li><a class="menu-btn active" data-tab="tab0">概述</a></li>
+        <li><a class="menu-btn" data-tab="tab1">思政类</a></li>
+        <li><a class="menu-btn" data-tab="tab2">军体类</a></li>
+        <li><a class="menu-btn" data-tab="tab3">美育类</a></li>
+        <li><a class="menu-btn" data-tab="tab4">劳育类</a></li>
+        <li><a class="menu-btn" data-tab="tab5">外语类</a></li>
+        <li><a class="menu-btn" data-tab="tab6">计算机类</a></li>
+        <li><a class="menu-btn" data-tab="tab7">自然科学</a></li>
+        <li><a class="menu-btn" data-tab="tab8">创新创业</a></li>
+        <li><a class="menu-btn" data-tab="tab9">通识选修</a></li>
+      </ul>
+    </div>
+
+    <div class="general-content active" id="tab0">
+        <h2>概述</h2>
+        <hr>
+        <p>通识课是内容比较广泛的课程，一般是基础课或兴趣课，通常所有学生都能选，21级药学专业的培养方案对于通识课学分要求如下。</p>
+        <div class="general-list">
+          <ul>
+            <li>思政类 16.5+2
+              <p>必修 15+2</p>
+              <p>选修 1.5</p>
+            </li>
+            <li>军体类 8+2.5
+              <p>必修 8+2.5</p>
+            </li>
+            <li>劳育类 +1</li>
+            <li>美育类 +1</li>
+          </ul>     
+        </div>
+        <div class="general-list">
+          <ul>
+            <li>外语类 6+1
+              <p>必修 +1</p>
+              <p>选修 6</p>
+            </li>
+            <li>计算机类 5
+              <p>必修 2</p>
+              <p>选修 3</p>
+            </li>
+            <li>自然科学 17.5
+              <p>必修 17.5</p>
+            </li>
+            <li>创新创业 1.5
+              <p>选修 1.5</p>
+            </li>
+          </ul>
+        </div>
+        <div class="general-list">
+          <ul>
+            <li>通识选修 10.5</li>
+          </ul>
+        </div>
+        <p>通识的毕业要求总共是 <b>65+7.5</b> 学分。这里小项中的 +1、+1.5 等带 “+” 的是认定学分，简单来说就是一些具有特殊性质的课，例如外语中“英语水平测试”是单独报名参加考试或者申请免试的通过性课程，“形势与政策II”是需要参加特定次数讲座的课程。其他学分，考核等有关学习或其他校内的基本概念和黑话，可以多多使用<a href="https://zjuers.com/welcome/" target="_blank" id="welcome" rel="noopener noreferrer">本科新生指引</a>了解，这是之前的学长们做的新生指南，虽然我刚来的时候还不知道有这个，但是感觉非常详细，应该会很值得参考。另外，通过<a href="https://zjuers.com/" target="_blank" id="zjuers" rel="noopener noreferrer">zjuers.com</a>网站可以访问大部分学习中需要用到的网址。</p>
+        <p><b>大部分通识选修课程并不难，考核方式多为出勤+期末，期末又以论文为主。</b>所以无需太大压力，可以多尝试自己感兴趣的课程。</p>
+        <p><b>合理且好运的选课策略，理论上可以在前两年就完成通识里选修部分的要求，其他必修的只需要对着培养方案文件里的建议修读学年对着选就可以。</b>尽管如此，我认为通识课程，尤其是通识选修部分，是大学课程里最有意思的部分。浙大有非常多好玩、有意义的通识课，如果能重新读，我想我会选更多这部分的课。</p>
+        <p>大部分必修课都可以直接在<a href="https://cc98.org" target="_blank" id="welcome" rel="noopener noreferrer">CC98</a>相信前人经验，面向内容学习。</p>
+    </div>
+
+    <div class="general-content" id="tab1">
+        <h2>思政类</h2>
+        <hr>
+        <p>思政课，无需多言，这些课并非毫无亮点，只是很多考核方式比较主观，课程内容又相对枯燥，基本上对课程的印象完全取决于对授课教师的感受。</p>
+        <div class="expand-menu">
+          <div class="expand-menu-header">形势与政策 I<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-body">
+            <p>首先，这个课非常不合理的一点是，要上两节半的课，课表上却只是两节，而且占用宝贵的周日休息时间。内容基本就是听一些时政讲座，有的老师还要要求坐最后三排的同学坐到前几排。就我的感受而言，是非常典型的，集万千缺点于一身的<b>水课</b>。课程本身无聊到不怎么需要挑老师，怎么讲都是催眠。</p>
+            <span class="grades-title">考核方式</span>
+              <ul class="grades">
+                <li>平时思考题</li>
+                <li>寒假小作文</li>
+                <li>期末闭卷考</li>
+              </ul>
+            <p>这个课要上一年，但只有1学分，说实话我都不知道从何骂起。总之没什么特别需要花时间的。
+              寒假小作文就写一些比较官方的命题作文，我当时的是“数字经济对我国经济社会发展的意义”。
+              考试在考前看一遍老师会发的简易PPT以及时事，材料形式大致如下：</p>
+            <span class="grades-title">课程材料</span>
+            <a href="situation and policy I/2021-2022形策课简版PPT/简版PPT.pdf" download class="download-link"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" style="vertical-align:-4px; margin-right:8px; color:#7d7ca5;" fill="currentColor" viewBox="0 0 16 16"><path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4a2 2 0 0 0-.586-1.414l-2-2A2 2 0 0 0 10 .002V0H4zm0 1h5v2a1 1 0 0 0 1 1h2v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zm6 3.5V2.707L12.293 4.5H10z"/></svg>简版PPT</a>
+            <a href="situation and policy I/2021-2022形策课简版PPT/时事.rar" download class="download-link"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" style="vertical-align:-4px; margin-right:8px; color:#7d7ca5;" fill="currentColor" viewBox="0 0 16 16"><path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4a2 2 0 0 0-.586-1.414l-2-2A2 2 0 0 0 10 .002V0H4zm0 1h5v2a1 1 0 0 0 1 1h2v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zm6 3.5V2.707L12.293 4.5H10z"/></svg>时事材料</a>
+          </div>
+        </div>
+
+        <div class="expand-menu">
+          <div class="expand-menu-header">思想道德与法治<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-body">
+            <p>这门课和形势与政策兴许有些难分伯仲，有的老师给分随缘，或者给小组长权力过大，导致成为面向关系给分的课程。当然，评分标准和课程内容逐年更新的情况下，很难基于我的经历对课程做出更多评价。但对我而言实在是不好的回忆，建议直接左转进入<a href="https://zju-turing.github.io/TuringCourses/political/morality_law" target="_blank" id="welcome" rel="noopener noreferrer">图灵班网页</a>以及<a href="https://cc98.org" target="_blank" id="welcome" rel="noopener noreferrer">CC98</a>面向评分学习。</p>
+            <span class="grades-title">考核方式</span>
+              <ul class="grades">
+                <li>课堂出勤</li>
+                <li>研究性学习&nbsp;&nbsp;&nbsp;&nbsp;最后会需要小组交一个论文，以及小组展示</li>
+                <li>志愿活动</li>
+                <li>读书报告</li>
+                <li>期末考试&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;似乎23级后改为开卷？</li>
+              </ul>
+            <span class="grades-title">课程材料</span>
+            <a href="思修/思想道德与法治.pdf" download class="download-link"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" style="vertical-align:-4px; margin-right:8px; color:#7d7ca5;" fill="currentColor" viewBox="0 0 16 16"><path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4a2 2 0 0 0-.586-1.414l-2-2A2 2 0 0 0 10 .002V0H4zm0 1h5v2a1 1 0 0 0 1 1h2v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zm6 3.5V2.707L12.293 4.5H10z"/></svg>教材</a>
+          </div>
+        </div>
+
+        <div class="expand-menu">
+          <div class="expand-menu-header">中国近现代史纲要<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-body">
+            <p>我上的是<b>甘均先</b>老师的中国近现代史纲要（H），我个人认为是最有趣但最与课程内容无关的史纲老师。首先，他大部分时间不会在课上讲史纲书本上的内容。他的主要讲授内容，以及作业内容都围绕着他的奇思妙想，包括但不限于以下主题：</p>
+            <ul class="paralist">
+              <li>万物聚散</li>
+              <li>时空暴涨</li>
+              <li>秒视人生</li>
+              <li>历史体验</li>
+            </ul>
+            <span class="grades-title">考核方式</span>
+              <ul class="grades">
+                <li>体验报告&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;甘均先老师的特色内容</li>
+                <li>平时论文&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;比较普遍的形式，在主题内自由创作</li>
+                <li>期末考试&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;开卷</li>
+              </ul>
+            <p>他的课经常会点人回答问题，大部分同样是抽象的问题，有人认为这是他的哲学思考，也有人认为他是典型的民科，这就比较仁者见仁智者见智了。如果觉得这种课比较放松有意思大可来选，老师对人绝对是和蔼；要是更想贴近课本学习，还是建议选其他老师。</p>
+            <span class="grades-title">课程材料</span>
+            <a href="史纲/中国近现代史纲要.pdf" download class="download-link"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" style="vertical-align:-4px; margin-right:8px; color:#7d7ca5;" fill="currentColor" viewBox="0 0 16 16"><path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4a2 2 0 0 0-.586-1.414l-2-2A2 2 0 0 0 10 .002V0H4zm0 1h5v2a1 1 0 0 0 1 1h2v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zm6 3.5V2.707L12.293 4.5H10z"/></svg>教材</a>
+            <a href="史纲/体验报告.docx" download class="download-link"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" style="vertical-align:-4px; margin-right:8px; color:#7d7ca5;" fill="currentColor" viewBox="0 0 16 16"><path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4a2 2 0 0 0-.586-1.414l-2-2A2 2 0 0 0 10 .002V0H4zm0 1h5v2a1 1 0 0 0 1 1h2v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zm6 3.5V2.707L12.293 4.5H10z"/></svg>体验报告</a>
+          </div>
+          </div>
+          
+          <div class="expand-menu">
+          <div class="expand-menu-header">马克思主义基本原理<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-body">
+            <p>我认为学习马原最重要的是把这门课当成一门哲学课而不是思政课，也许很多人是第一次真正阅读哲学著作，好在马克思主义相关的书籍并没有像众多其他主义一样形而上，因此不算难懂。但这门课的考核方式还是比较思政。我上的是<b>潘于旭</b>老师的班，老师人很好，但好像已经不教了。鉴于当时期末由于疫情是在家完成的，所以参考价值有限。</p>
+            <span class="grades-title">考核方式</span>
+              <ul class="grades">
+                <li>课堂出勤</li>
+                <li>小组展示</li>
+                <li>读书报告</li>
+                <li>课程论文</li>
+                <li>期末考试</li>
+              </ul>
+            <span class="grades-title">课程材料</span>
+            <a href="马克思/2022-23教学要求.docx" download class="download-link"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" style="vertical-align:-4px; margin-right:8px; color:#7d7ca5;" fill="currentColor" viewBox="0 0 16 16"><path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4a2 2 0 0 0-.586-1.414l-2-2A2 2 0 0 0 10 .002V0H4zm0 1h5v2a1 1 0 0 0 1 1h2v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zm6 3.5V2.707L12.293 4.5H10z"/></svg>教学要求</a>
+            <a href="马克思/2022-2023小组展示主题(完整版）.docx" download class="download-link"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" style="vertical-align:-4px; margin-right:8px; color:#7d7ca5;" fill="currentColor" viewBox="0 0 16 16"><path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4a2 2 0 0 0-.586-1.414l-2-2A2 2 0 0 0 10 .002V0H4zm0 1h5v2a1 1 0 0 0 1 1h2v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zm6 3.5V2.707L12.293 4.5H10z"/></svg>小组展示主题</a>
+            <a href="马克思/马克思主义基本原理.pdf" download class="download-link"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" style="vertical-align:-4px; margin-right:8px; color:#7d7ca5;" fill="currentColor" viewBox="0 0 16 16"><path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4a2 2 0 0 0-.586-1.414l-2-2A2 2 0 0 0 10 .002V0H4zm0 1h5v2a1 1 0 0 0 1 1h2v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zm6 3.5V2.707L12.293 4.5H10z"/></svg>教材</a>
+          </div>
+          </div>
+
+          <div class="expand-menu">
+          <div class="expand-menu-header">毛泽东思想和中国特色社会主义理论体系概论<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-body">
+            <p>我上的是<b>赵永帅</b>老师的毛概，是比较年轻的老师，讲课水平不错，人也很好。我个人觉得毛概是思政里比较有意思的一门课，内容也很丰富，考核方式基本就是思政类课程的通式。总结为相当经典的一门课，学有所获。</p>
+            <span class="grades-title">考核方式</span>
+              <ul class="grades">
+                <li>课堂出勤</li>
+                <li>小组展示</li>
+                <li>调研报告</li>
+                <li>期末考试</li>
+              </ul>
+              <span class="grades-title">课程材料</span>
+                <a href="毛概/毛泽东思想和中国特色社会主义理论体系概论.pdf" download class="download-link"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" style="vertical-align:-4px; margin-right:8px; color:#7d7ca5;" fill="currentColor" viewBox="0 0 16 16"><path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4a2 2 0 0 0-.586-1.414l-2-2A2 2 0 0 0 10 .002V0H4zm0 1h5v2a1 1 0 0 0 1 1h2v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zm6 3.5V2.707L12.293 4.5H10z"/></svg>教材</a>
+          </div>
+          </div>
+
+          <div class="expand-menu">
+          <div class="expand-menu-header">习近平新时代中国特色社会主义思想概论<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-body">
+            <p>我上的是<b>熊卫平</b>老师的习概，</p>
+            <span class="grades-title">考核方式</span>
+              <ul class="grades">
+                <li>课堂出勤</li>
+                <li>小组展示</li>
+                <li>调研报告</li>
+                <li>期末考试</li>
+              </ul>
+              <span class="grades-title">课程材料</span>
+                <a href="习思想/习近平新时代中国特色社会主义思想概论.pdf" download class="download-link"><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" style="vertical-align:-4px; margin-right:8px; color:#7d7ca5;" fill="currentColor" viewBox="0 0 16 16"><path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V4a2 2 0 0 0-.586-1.414l-2-2A2 2 0 0 0 10 .002V0H4zm0 1h5v2a1 1 0 0 0 1 1h2v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zm6 3.5V2.707L12.293 4.5H10z"/></svg>教材</a>
+          </div>
+          </div>
+
+          <div class="expand-menu">
+          <div class="expand-menu-header">形势与政策II<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-body">
+    
+          </div>
+          </div>
+    </div>
+
+    <div class="general-content" id="tab2">
+        <h2>军体类</h2>
+        <hr>
+        <p>这里是军体课内容……</p>
+    </div>
+    
+    <div class="general-content" id="tab3">
+        <h2>劳育类</h2>
+        <hr>
+        <p>这里是劳育课内容……</p>
+    </div>
+
+    <div class="ICP" >
+        <a href="https://beian.miit.gov.cn">
+            ICP备案号：赣ICP备2024050667号-1
+        </a>
+    </div>
+
+</label>
+</body>
+</html>
