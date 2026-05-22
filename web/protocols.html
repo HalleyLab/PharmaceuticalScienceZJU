@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/general_course.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <script src="js/definition.js"></script>
+    <script src="js/function.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>实验流程</title>
+</head>
+<body>
+    <header>
+      <div class="btnMenu"><i></i><i></i><i></i></div>
+      <nav>
+        <div class="botonera">
+            <ul>
+              <li><a href="home.html">首页</a></li>
+              <li class="nav-group">
+                <a class="nav-group-title" href="general_course.html">浙江大学</a>
+                <ul class="nav-submenu">
+                  <li><a href="general_course.html">通识课程</a></li>
+                  <li><a href="required.html">专业必修</a></li>
+                  <li><a href="selective.html">专业选修</a></li>
+                  <li><a href="others.html">其他课程</a></li>
+                  <li><a href="mixed.html">二三四课堂</a></li>
+                </ul>
+              </li>
+              <li class="nav-group">
+                <a class="nav-group-title" href="apply.html">留学篇</a>
+                <ul class="nav-submenu">
+                  <li><a href="apply.html">申请</a></li>
+                  <li><a href="jhubmb.html">JHU BMB</a></li>
+                </ul>
+              </li>
+              <li><a href="protocols.html">实验流程</a></li>
+              <li><a href="instructions.html">使用说明</a></li>
+            </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="group">
+        <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><g><path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path></g></svg>
+        <input type="Search" class="input" placeholder="搜索内容">
+        <span class="search-tip">搜索功能为文本匹配，存在该内容则自动跳转，建议输入单个短关键词</span>
+    </div>
+
+    <button class="theme-switcher" id="themeToggle">🌙 夜间模式</button>
+
+    <div class="subnav-bar">
+      <ul>
+        <li><a class="menu-btn active" data-tab="tab0">概述</a></li>
+        <li><a class="menu-btn" data-tab="tab1">实验安全</a></li>
+        <li><a class="menu-btn" data-tab="tab2">基础操作</a></li>
+        <li><a class="menu-btn" data-tab="tab3">分子实验</a></li>
+        <li><a class="menu-btn" data-tab="tab4">细胞实验</a></li>
+        <li><a class="menu-btn" data-tab="tab5">动物实验</a></li>
+        <li><a class="menu-btn" data-tab="tab6">仪器分析</a></li>
+        <li><a class="menu-btn" data-tab="tab7">数据记录</a></li>
+      </ul>
+    </div>
+
+    <div class="general-content active" id="tab0">
+        <h2>实验流程</h2>
+        <hr>
+        <p>这里整理实验前准备、实验中操作、实验后记录与复盘的基本流程。页面结构先按常见实验场景分组，后续可以继续把每一类实验的具体步骤、注意事项、模板和材料下载补充进来。</p>
+
+        <div class="expand-menu">
+          <div class="expand-menu-header">使用方式<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-body">
+            <p>左侧选择实验类别，右侧书签选择该类别下的具体流程。每个流程建议按照“目的、材料、步骤、注意事项、结果记录”的顺序填写，方便实验前快速浏览，也方便实验后检查遗漏。</p>
+            <span class="grades-title">推荐结构</span>
+            <ul class="grades">
+              <li>实验目的：说明这个流程要解决什么问题</li>
+              <li>准备材料：列出试剂、耗材、仪器和软件</li>
+              <li>操作步骤：按时间顺序写清关键动作</li>
+              <li>注意事项：标出容易出错或有安全风险的环节</li>
+              <li>记录模板：保留结果、参数和异常情况</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="expand-menu">
+          <div class="expand-menu-header">实验前检查<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-body">
+            <p>实验开始前应确认实验方案、材料状态、仪器预约、个人防护和废弃物处理方式。对需要连续操作的实验，最好提前写出时间表，避免中途等待或错过关键时间点。</p>
+          </div>
+        </div>
+    </div>
+
+    <div class="general-content" id="tab1">
+        <h2>实验安全</h2>
+        <hr>
+        <p>安全流程用于记录进入实验室前后的基本要求，以及不同风险材料的处理规范。</p>
+
+        <div class="expand-menu">
+          <div class="expand-menu-header">个人防护<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-body">
+            <p>进入实验区域前确认实验服、手套、护目镜等防护用品是否符合当前实验要求。涉及挥发性、有腐蚀性或潜在感染性的材料时，应在对应等级的通风或生物安全条件下操作。</p>
+            <span class="grades-title">检查清单</span>
+            <ul class="grades">
+              <li>实验服扣好，长发束起</li>
+              <li>根据试剂风险选择合适手套</li>
+              <li>禁止在实验区饮食、触摸面部或使用私人用品</li>
+              <li>离开实验区前脱手套并洗手</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="expand-menu">
+          <div class="expand-menu-header">废弃物处理<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-body">
+            <p>废弃物按化学废液、生物污染物、锐器、普通固废等分类处理。不要把未知废液直接倒入水池，含有毒性、腐蚀性或有机溶剂的废液需要进入指定废液桶。</p>
+          </div>
+        </div>
+    </div>
+
+    <div class="general-content" id="tab2">
+        <h2>基础操作</h2>
+        <hr>
+        <p>基础操作包括称量、配液、移液、离心、灭菌和样品保存等，是大多数实验流程的共同部分。</p>
+
+        <div class="expand-menu">
+          <div class="expand-menu-header">配液与标记<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-body">
+            <p>配液前先确认浓度、体积、溶剂和保存条件。标签至少应包含名称、浓度、日期、配制人和特殊风险说明。</p>
+            <span class="grades-title">关键点</span>
+            <ul class="grades">
+              <li>先算清母液浓度和稀释倍数</li>
+              <li>易降解试剂避光或低温保存</li>
+              <li>现配现用的试剂不要长期留存</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="expand-menu">
+          <div class="expand-menu-header">移液操作<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-body">
+            <p>选择量程合适的移液器，吸液和放液保持稳定，避免产生气泡。不同试剂之间应更换枪头，防止交叉污染。</p>
+          </div>
+        </div>
+    </div>
+
+    <div class="general-content" id="tab3">
+        <h2>分子实验</h2>
+        <hr>
+        <p>分子实验主要记录核酸、蛋白和相关检测流程。</p>
+
+        <div class="expand-menu">
+          <div class="expand-menu-header">PCR 流程<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-body">
+            <p>PCR 前需要确认模板、引物、酶、缓冲液和循环程序。加样过程尽量在冰上完成，阴性对照和阳性对照应同时设置。</p>
+            <span class="grades-title">流程</span>
+            <ul class="grades">
+              <li>解冻并短暂离心试剂</li>
+              <li>按体系加入模板、引物和反应 mix</li>
+              <li>设置循环程序并记录退火温度</li>
+              <li>产物用于电泳或后续纯化</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="expand-menu">
+          <div class="expand-menu-header">琼脂糖凝胶电泳<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-body">
+            <p>根据片段大小选择合适胶浓度，电泳时注意方向和电压。成像后记录条带大小、亮度和异常拖尾情况。</p>
+          </div>
+        </div>
+    </div>
+
+    <div class="general-content" id="tab4">
+        <h2>细胞实验</h2>
+        <hr>
+        <p>细胞实验强调无菌操作、细胞状态观察和传代记录。</p>
+
+        <div class="expand-menu">
+          <div class="expand-menu-header">细胞复苏<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-body">
+            <p>复苏时应快速融化冻存管，并尽快转入预热培养基中。首次换液后观察贴壁、污染和细胞形态。</p>
+          </div>
+        </div>
+
+        <div class="expand-menu">
+          <div class="expand-menu-header">细胞传代<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-body">
+            <p>传代前确认细胞密度和状态，消化时间不宜过长。传代后记录比例、瓶号、培养基批次和观察结果。</p>
+            <span class="grades-title">记录内容</span>
+            <ul class="grades">
+              <li>细胞名称与代次</li>
+              <li>传代比例和接种密度</li>
+              <li>培养基、血清和抗生素信息</li>
+              <li>污染、漂浮细胞或形态异常</li>
+            </ul>
+          </div>
+        </div>
+    </div>
+
+    <div class="general-content" id="tab5">
+        <h2>动物实验</h2>
+        <hr>
+        <p>动物实验需要符合伦理审批和平台规范。这里先保留流程框架，具体内容应根据实验室和平台要求补充。</p>
+
+        <div class="expand-menu">
+          <div class="expand-menu-header">实验前准备<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-body">
+            <p>确认伦理编号、动物来源、分组方案、给药剂量和观察指标。任何涉及动物痛苦或终点判断的流程都应提前明确。</p>
+          </div>
+        </div>
+
+        <div class="expand-menu">
+          <div class="expand-menu-header">记录与终点<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-body">
+            <p>记录体重、行为、给药时间、样本采集和异常情况。达到 humane endpoint 时应按批准方案处理。</p>
+          </div>
+        </div>
+    </div>
+
+    <div class="general-content" id="tab6">
+        <h2>仪器分析</h2>
+        <hr>
+        <p>仪器分析流程用于整理预约、开机、校准、进样、数据导出和关机记录。</p>
+
+        <div class="expand-menu">
+          <div class="expand-menu-header">HPLC / LC-MS<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-body">
+            <p>上机前确认流动相、柱子、方法文件和样品瓶位置。运行结束后导出原始数据和处理结果，并按照平台要求清洗系统。</p>
+            <span class="grades-title">记录内容</span>
+            <ul class="grades">
+              <li>仪器编号和方法文件</li>
+              <li>流动相、柱温、流速和梯度</li>
+              <li>样品编号、进样量和批次顺序</li>
+              <li>异常峰、压力波动和维护情况</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="expand-menu">
+          <div class="expand-menu-header">显微成像<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-body">
+            <p>拍摄前设置倍率、曝光、通道和保存路径。不同样品之间尽量保持一致参数，便于后续比较。</p>
+          </div>
+        </div>
+    </div>
+
+    <div class="general-content" id="tab7">
+        <h2>数据记录</h2>
+        <hr>
+        <p>数据记录用于保证实验可追溯。原始数据、处理过程和结论应分开保存，不要只留下最终图表。</p>
+
+        <div class="expand-menu">
+          <div class="expand-menu-header">实验记录本<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-body">
+            <p>记录日期、实验人、目的、材料批号、步骤调整、结果和异常情况。临时改动要写清原因，避免复现实验时信息断裂。</p>
+          </div>
+        </div>
+
+        <div class="expand-menu">
+          <div class="expand-menu-header">文件命名<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-body">
+            <p>建议文件名包含日期、项目、样本、实验类型和版本号。原始数据不要覆盖，处理后的数据另存为新文件。</p>
+            <span class="grades-title">示例</span>
+            <ul class="grades">
+              <li>2026-05-22_projectA_sample01_HPLC_raw</li>
+              <li>2026-05-22_projectA_sample01_HPLC_processed_v1</li>
+              <li>2026-05-22_projectA_figure1_analysis_v2</li>
+            </ul>
+          </div>
+        </div>
+    </div>
+</body>
+</html>

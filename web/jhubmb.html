@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/general_course.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <script src="js/definition.js"></script>
+    <script src="js/function.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>JHU BMB</title>
+</head>
+<body>
+    <header>
+      <div class="btnMenu"><i></i><i></i><i></i></div>
+      <nav>
+        <div class="botonera">
+            <ul>
+              <li><a href="home.html">首页</a></li>
+              <li class="nav-group">
+                <a class="nav-group-title" href="general_course.html">浙江大学</a>
+                <ul class="nav-submenu">
+                  <li><a href="general_course.html">通识课程</a></li>
+                  <li><a href="required.html">专业必修</a></li>
+                  <li><a href="selective.html">专业选修</a></li>
+                  <li><a href="others.html">其他课程</a></li>
+                  <li><a href="mixed.html">二三四课堂</a></li>
+                </ul>
+              </li>
+              <li class="nav-group">
+                <a class="nav-group-title" href="apply.html">留学篇</a>
+                <ul class="nav-submenu">
+                  <li><a href="apply.html">申请</a></li>
+                  <li><a href="jhubmb.html">JHU BMB</a></li>
+                </ul>
+              </li>
+              <li><a href="protocols.html">实验流程</a></li>
+              <li><a href="instructions.html">使用说明</a></li>
+            </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="group">
+        <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><g><path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path></g></svg>
+        <input type="Search" class="input" placeholder="搜索内容">
+        <span class="search-tip">搜索功能为文本匹配，存在该内容则自动跳转，建议输入单个短关键词</span>
+    </div>
+
+    <button class="theme-switcher" id="themeToggle">🌙 夜间模式</button>
+
+    <div class="subnav-bar">
+      <ul>
+        <li><a class="menu-btn active" data-tab="tab0">概述</a></li>
+        <li><a class="menu-btn" data-tab="tab1">项目介绍</a></li>
+        <li><a class="menu-btn" data-tab="tab2">课程安排</a></li>
+        <li><a class="menu-btn" data-tab="tab3">科研轮转</a></li>
+        <li><a class="menu-btn" data-tab="tab4">生活信息</a></li>
+        <li><a class="menu-btn" data-tab="tab5">申请建议</a></li>
+      </ul>
+    </div>
+
+    <div class="general-content active" id="tab0">
+        <h2>JHU BMB</h2>
+        <hr>
+        <p>这里用于整理 Johns Hopkins University Biochemistry and Molecular Biology 相关信息，包括项目结构、课程、科研轮转、生活和申请建议。当前先搭出页面框架，方便后续填充具体经历。</p>
+
+        <div class="expand-menu">
+          <div class="expand-menu-header">页面说明<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-body">
+            <p>本页可以作为 JHU BMB 的信息索引，把官网信息、个人体验、课程评价和申请建议拆开整理。涉及官方政策和课程要求时，最终应以学校最新页面为准。</p>
+          </div>
+        </div>
+
+        <div class="expand-menu">
+          <div class="expand-menu-header">信息来源<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-body">
+            <p>后续可以补充官网链接、项目手册、课程列表、实验室主页和在读学生经验。建议把“官方要求”和“个人感受”分开写，避免混在一起。</p>
+          </div>
+        </div>
+    </div>
+
+    <div class="general-content" id="tab1">
+        <h2>项目介绍</h2>
+        <hr>
+        <p>项目介绍部分用于整理院系结构、项目目标、培养方向和常见研究领域。</p>
+
+        <div class="expand-menu">
+          <div class="expand-menu-header">基本信息<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-body">
+            <p>可在这里记录项目所在学院、学位类型、培养年限、研究方向、核心要求和毕业路径。后续可以加入官网链接和项目手册下载。</p>
+          </div>
+        </div>
+
+        <div class="expand-menu">
+          <div class="expand-menu-header">适合人群<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-body">
+            <p>适合对生物化学、分子生物学、细胞机制、疾病机制或相关交叉方向有兴趣，并希望继续做科研训练的学生。</p>
+          </div>
+        </div>
+    </div>
+
+    <div class="general-content" id="tab2">
+        <h2>课程安排</h2>
+        <hr>
+        <p>课程安排部分用于整理核心课、选修课、seminar 和考试要求。</p>
+
+        <div class="expand-menu">
+          <div class="expand-menu-header">核心课程<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-body">
+            <p>这里可以记录课程名称、学期、考核方式、作业压力和推荐预习内容。课程评价最好和具体年份、授课老师一起记录。</p>
+          </div>
+        </div>
+
+        <div class="expand-menu">
+          <div class="expand-menu-header">学习建议<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-body">
+            <p>如果课程节奏较快，建议提前复习生化、分子生物学、统计和基础编程。阅读论文和 presentation 也可能是常规训练的一部分。</p>
+          </div>
+        </div>
+    </div>
+
+    <div class="general-content" id="tab3">
+        <h2>科研轮转</h2>
+        <hr>
+        <p>科研轮转部分用于记录找实验室、联系 PI、比较方向和做决定的过程。</p>
+
+        <div class="expand-menu">
+          <div class="expand-menu-header">选择实验室<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-body">
+            <p>选择实验室时可以看研究方向、训练方式、组会节奏、毕业去向、PI 沟通风格和组内氛围。轮转前最好先读几篇组内近期论文。</p>
+          </div>
+        </div>
+
+        <div class="expand-menu">
+          <div class="expand-menu-header">轮转记录<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-body">
+            <p>建议记录每次轮转的项目目标、技术路线、学到的技能、遇到的问题和对组内氛围的感受，方便最终比较。</p>
+          </div>
+        </div>
+    </div>
+
+    <div class="general-content" id="tab4">
+        <h2>生活信息</h2>
+        <hr>
+        <p>生活信息部分用于整理住宿、交通、保险、饮食、安全和校园资源。</p>
+
+        <div class="expand-menu">
+          <div class="expand-menu-header">行前准备<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-body">
+            <p>可记录 I-20、签证、疫苗、住宿、银行卡、手机卡、保险和课程注册等事项。跨国搬家最怕遗漏小而关键的材料，建议单独做清单。</p>
+          </div>
+        </div>
+
+        <div class="expand-menu">
+          <div class="expand-menu-header">到校之后<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-body">
+            <p>到校后需要熟悉校园系统、实验室安全培训、课程注册、交通路线和生活服务。后续可以补充具体地点和链接。</p>
+          </div>
+        </div>
+    </div>
+
+    <div class="general-content" id="tab5">
+        <h2>申请建议</h2>
+        <hr>
+        <p>申请建议部分用于整理针对 JHU BMB 的材料准备和匹配度判断。</p>
+
+        <div class="expand-menu">
+          <div class="expand-menu-header">背景准备<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-body">
+            <p>可以重点展示生物化学、分子生物学、细胞生物学、科研训练和数据分析能力。科研叙事需要突出问题意识和独立推进项目的能力。</p>
+          </div>
+        </div>
+
+        <div class="expand-menu">
+          <div class="expand-menu-header">文书方向<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-body">
+            <p>文书可以围绕研究兴趣、过往训练、未来想解决的问题和项目匹配度展开。具体导师和研究方向要谨慎引用，确保和项目实际资源相符。</p>
+          </div>
+        </div>
+    </div>
+</body>
+</html>

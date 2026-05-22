@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/general_course.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <script src="js/definition.js"></script>
+    <script src="js/function.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>留学申请</title>
+</head>
+<body>
+    <header>
+      <div class="btnMenu"><i></i><i></i><i></i></div>
+      <nav>
+        <div class="botonera">
+            <ul>
+              <li><a href="home.html">首页</a></li>
+              <li class="nav-group">
+                <a class="nav-group-title" href="general_course.html">浙江大学</a>
+                <ul class="nav-submenu">
+                  <li><a href="general_course.html">通识课程</a></li>
+                  <li><a href="required.html">专业必修</a></li>
+                  <li><a href="selective.html">专业选修</a></li>
+                  <li><a href="others.html">其他课程</a></li>
+                  <li><a href="mixed.html">二三四课堂</a></li>
+                </ul>
+              </li>
+              <li class="nav-group">
+                <a class="nav-group-title" href="apply.html">留学篇</a>
+                <ul class="nav-submenu">
+                  <li><a href="apply.html">申请</a></li>
+                  <li><a href="jhubmb.html">JHU BMB</a></li>
+                </ul>
+              </li>
+              <li><a href="protocols.html">实验流程</a></li>
+              <li><a href="instructions.html">使用说明</a></li>
+            </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="group">
+        <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><g><path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path></g></svg>
+        <input type="Search" class="input" placeholder="搜索内容">
+        <span class="search-tip">搜索功能为文本匹配，存在该内容则自动跳转，建议输入单个短关键词</span>
+    </div>
+
+    <button class="theme-switcher" id="themeToggle">🌙 夜间模式</button>
+
+    <div class="subnav-bar">
+      <ul>
+        <li><a class="menu-btn active" data-tab="tab0">概述</a></li>
+        <li><a class="menu-btn" data-tab="tab1">时间线</a></li>
+        <li><a class="menu-btn" data-tab="tab2">材料准备</a></li>
+        <li><a class="menu-btn" data-tab="tab3">选校定位</a></li>
+        <li><a class="menu-btn" data-tab="tab4">文书推荐</a></li>
+        <li><a class="menu-btn" data-tab="tab5">面试签证</a></li>
+      </ul>
+    </div>
+
+    <div class="general-content active" id="tab0">
+        <h2>申请</h2>
+        <hr>
+        <p>这里先搭建留学申请部分的整体框架，用来整理项目选择、材料准备、文书推荐、面试签证等流程。具体经历和材料可以之后继续补充。</p>
+
+        <div class="expand-menu">
+          <div class="expand-menu-header">整体思路<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-body">
+            <p>申请流程可以理解为“定位、准备、提交、沟通、决定”几个阶段。越早明确目标项目、课程匹配度和科研经历叙事，后续材料会越容易统一。</p>
+            <span class="grades-title">核心问题</span>
+            <ul class="grades">
+              <li>想申请硕士、博士，还是暑研/交流项目</li>
+              <li>目标方向和已有课程、科研经历是否匹配</li>
+              <li>语言成绩、GPA、推荐人和文书准备是否充足</li>
+              <li>项目费用、地理位置、毕业去向是否符合预期</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="expand-menu">
+          <div class="expand-menu-header">常用材料<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-body">
+            <p>常见材料包括 CV、PS/SOP、成绩单、语言成绩、推荐信、护照信息、资金证明以及项目要求的额外 writing sample 或 research statement。</p>
+          </div>
+        </div>
+    </div>
+
+    <div class="general-content" id="tab1">
+        <h2>时间线</h2>
+        <hr>
+        <p>时间线用于拆解不同阶段的准备重点，避免临近 ddl 时材料互相挤压。</p>
+
+        <div class="expand-menu">
+          <div class="expand-menu-header">申请前一年<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-body">
+            <p>建议提前确认申请方向、语言考试安排和推荐人。若需要科研经历或暑研，可以在这一阶段主动联系老师或寻找项目机会。</p>
+          </div>
+        </div>
+
+        <div class="expand-menu">
+          <div class="expand-menu-header">申请季<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-body">
+            <p>申请季重点是定稿文书、提交网申、跟进推荐信和检查材料状态。每个项目的 ddl、成绩寄送和推荐信要求最好单独记录。</p>
+          </div>
+        </div>
+    </div>
+
+    <div class="general-content" id="tab2">
+        <h2>材料准备</h2>
+        <hr>
+        <p>材料准备页用于记录各类申请材料的写法、版本和注意事项。</p>
+
+        <div class="expand-menu">
+          <div class="expand-menu-header">CV<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-body">
+            <p>CV 应尽量清晰呈现教育背景、科研经历、项目经历、技能和奖项。科研经历要突出问题、方法和结果，不只是列任务。</p>
+          </div>
+        </div>
+
+        <div class="expand-menu">
+          <div class="expand-menu-header">SOP / PS<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-body">
+            <p>文书需要回答为什么申请这个方向、为什么适合这个项目、未来计划是什么。最好避免空泛表达，用具体课程、项目、技能和经历支撑叙事。</p>
+          </div>
+        </div>
+    </div>
+
+    <div class="general-content" id="tab3">
+        <h2>选校定位</h2>
+        <hr>
+        <p>选校定位用于整理目标项目、导师方向、课程设置、录取偏好和费用信息。</p>
+
+        <div class="expand-menu">
+          <div class="expand-menu-header">项目表格<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-body">
+            <p>建议记录项目名称、学位类型、方向匹配度、ddl、申请费、语言要求、推荐信数量、是否需要面试以及结果状态。</p>
+          </div>
+        </div>
+
+        <div class="expand-menu">
+          <div class="expand-menu-header">匹配度判断<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-body">
+            <p>匹配度不仅看排名，也要看课程结构、实验室方向、毕业去向、所在城市和经济压力。对研究型项目，导师方向和组内资源尤其重要。</p>
+          </div>
+        </div>
+    </div>
+
+    <div class="general-content" id="tab4">
+        <h2>文书推荐</h2>
+        <hr>
+        <p>文书和推荐信需要共同支撑同一个申请形象。</p>
+
+        <div class="expand-menu">
+          <div class="expand-menu-header">推荐人沟通<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-body">
+            <p>联系推荐人时应说明申请项目、截止时间和希望强调的经历。可以附上 CV、成绩单、项目列表和文书草稿，方便推荐人了解整体方向。</p>
+          </div>
+        </div>
+
+        <div class="expand-menu">
+          <div class="expand-menu-header">文书版本管理<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-body">
+            <p>不同项目的文书可以共用主线，但需要针对课程、实验室或项目特色做定制。建议保留版本号和修改日期，避免提交错版本。</p>
+          </div>
+        </div>
+    </div>
+
+    <div class="general-content" id="tab5">
+        <h2>面试签证</h2>
+        <hr>
+        <p>面试和签证部分用于整理录取后或面试前的准备事项。</p>
+
+        <div class="expand-menu">
+          <div class="expand-menu-header">面试准备<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-body">
+            <p>面试前要熟悉自己的科研经历、项目动机和未来计划。常见问题包括自我介绍、为什么选择该项目、最重要的科研经历、遇到过的困难等。</p>
+          </div>
+        </div>
+
+        <div class="expand-menu">
+          <div class="expand-menu-header">签证与行前<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-body">
+            <p>签证材料、体检、住宿、保险、疫苗、银行卡和课程注册都需要提前安排。不同学校和国家要求差异较大，最终以官方通知为准。</p>
+          </div>
+        </div>
+    </div>
+</body>
+</html>
