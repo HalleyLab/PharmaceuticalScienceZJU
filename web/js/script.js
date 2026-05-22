@@ -1,2 +1,0 @@
-
-//Centrar vertical
