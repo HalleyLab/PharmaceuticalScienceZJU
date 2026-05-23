@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/required.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <script src="js/definition.js"></script>
+    <script src="js/function.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>个人分享</title>
+</head>
+<body>
+    <header>
+      <div class="btnMenu"><i></i><i></i><i></i></div>
+      <nav>
+        <div class="botonera">
+            <ul>
+              <li><a href="home.html">首页</a></li>
+              <li class="nav-group">
+                <a class="nav-group-title" href="general_course.html">浙江大学</a>
+                <ul class="nav-submenu">
+                  <li><a href="general_course.html">通识课程</a></li>
+                  <li><a href="required.html">专业必修</a></li>
+                  <li><a href="selective.html">专业选修</a></li>
+                  <li><a href="others.html">其他课程</a></li>
+                  <li><a href="mixed.html">二三四课堂</a></li>
+                </ul>
+              </li>
+              <li class="nav-group">
+                <a class="nav-group-title" href="apply.html">留学篇</a>
+                <ul class="nav-submenu">
+                  <li><a href="apply.html">申请</a></li>
+                  <li><a href="jhubmb.html">JHU BMB</a></li>
+                </ul>
+              </li>
+              <li><a href="protocols.html">实验流程</a></li>
+              <li><a href="instructions.html">使用说明</a></li>
+            </ul>
+        </div>
+      </nav>
+    </header>
+
+    <div class="group">
+        <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><g><path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path></g></svg>
+        <input type="Search" class="input" placeholder="搜索内容">
+        <span class="search-tip">搜索功能为文本匹配，存在该内容则自动跳转，建议输入单个短关键词</span>
+    </div>
+
+    <button class="theme-switcher" id="themeToggle">🌙 夜间模式</button>
+
+    <div class="subnav-bar">
+      <ul>
+        <li><a class="menu-btn active" data-tab="tab0">专业必修</a></li>
+      </ul>
+    </div>
+
+    <div class="general-content active" id="tab0">
+        <h2>专业必修</h2>
+        <hr>
+        <p>这一页按照培养方案把“专业基础课程”和“专业必修课程”合并整理。专业基础课程共 16 学分，专业必修课程共 52 学分，是药学专业主线学习的核心部分。</p>
+
+        <div class="expand-menu">
+          <div class="expand-menu-header">专业基础课程<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-body">
+            <p>专业基础课程共 16 学分，以下课程均为必修。</p>
+            <table class="course-table">
+              <thead><tr><th>课程号</th><th>课程名称</th><th>学分</th><th>周学时</th><th>建议学年学期</th></tr></thead>
+              <tbody>
+                <tr><td>771B0030</td><td>分析化学（乙）</td><td>2.0</td><td>2.0-0.0</td><td>一(冬)</td></tr>
+                <tr><td>061B0380</td><td>大学化学实验（O）</td><td>1.5</td><td>0.0-3.0</td><td>一(春夏)</td></tr>
+                <tr><td>061B9010</td><td>有机化学</td><td>4.0</td><td>4.0-0.0</td><td>一(春夏)</td></tr>
+                <tr><td>061B0390</td><td>大学化学实验（P）</td><td>1.5</td><td>0.0-3.0</td><td>二(秋冬)</td></tr>
+                <tr><td>061B9030</td><td>物理化学</td><td>4.0</td><td>4.0-0.0</td><td>二(秋冬)</td></tr>
+                <tr><td>071B0082</td><td>细胞生物学及实验（乙）*</td><td>3.0</td><td>2.0-2.0</td><td>二(春夏)</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <div class="expand-menu">
+          <div class="expand-menu-header">专业必修课程<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-body">
+            <p>专业必修课程共 52 学分，以下课程均为必修。</p>
+            <table class="course-table">
+              <thead><tr><th>课程号</th><th>课程名称</th><th>学分</th><th>周学时</th><th>建议学年学期</th></tr></thead>
+              <tbody>
+                <tr><td>18120981</td><td>生理学**</td><td>3.0</td><td>2.5-1.0</td><td>二(秋冬)</td></tr>
+                <tr><td>18187020</td><td>人体解剖与组织学**</td><td>3.5</td><td>3.0-1.0</td><td>二(秋冬)</td></tr>
+                <tr><td>18120720</td><td>医学微生物与免疫学**</td><td>3.0</td><td>2.5-1.0</td><td>二(春夏)</td></tr>
+                <tr><td>191B0011</td><td>生物化学与分子生物学*</td><td>3.5</td><td>3.5-0.0</td><td>二(春夏)</td></tr>
+                <tr><td>19120452</td><td>天然药物化学**</td><td>2.0</td><td>2.0-0.0</td><td>二(夏)</td></tr>
+                <tr><td>19190460</td><td>药物波谱解析**</td><td>2.0</td><td>2.0-0.0</td><td>二(夏)</td></tr>
+                <tr><td>19190720</td><td>天然药物化学实验**</td><td>1.0</td><td>0.0-2.0</td><td>二(夏)</td></tr>
+                <tr><td>191B0020</td><td>生物化学与分子生物学实验*</td><td>1.5</td><td>0.0-3.0</td><td>二(夏)</td></tr>
+                <tr><td>19120710</td><td>医药统计学**</td><td>2.0</td><td>2.0-0.0</td><td>三(秋)</td></tr>
+                <tr><td>19120171</td><td>药物化学*</td><td>3.0</td><td>3.0-0.0</td><td>三(秋冬)</td></tr>
+                <tr><td>19120631</td><td>药理学*</td><td>3.0</td><td>3.0-0.0</td><td>三(秋冬)</td></tr>
+                <tr><td>19120721</td><td>药理学实验*</td><td>2.0</td><td>0.0-4.0</td><td>三(秋冬)</td></tr>
+                <tr><td>19120731</td><td>药物化学实验*</td><td>2.0</td><td>0.0-4.0</td><td>三(秋冬)</td></tr>
+                <tr><td>19120830</td><td>药物仪器分析**</td><td>2.0</td><td>2.0-0.0</td><td>三(秋冬)</td></tr>
+                <tr><td>19120840</td><td>药物仪器分析实验**</td><td>1.5</td><td>0.0-3.0</td><td>三(秋冬)</td></tr>
+                <tr><td>19120920</td><td>药物研发前沿**</td><td>1.5</td><td>1.5-0.0</td><td>三(春)</td></tr>
+                <tr><td>19120101</td><td>药剂学*</td><td>3.0</td><td>3.0-0.0</td><td>三(春夏)</td></tr>
+                <tr><td>19120472</td><td>药物分析学*</td><td>3.0</td><td>3.0-0.0</td><td>三(春夏)</td></tr>
+                <tr><td>19120761</td><td>药剂学实验*</td><td>2.0</td><td>0.0-4.0</td><td>三(春夏)</td></tr>
+                <tr><td>19120850</td><td>药物分析学实验*</td><td>2.0</td><td>0.0-4.0</td><td>三(春夏)</td></tr>
+                <tr><td>19120064</td><td>生物药剂学与药物动力学*</td><td>2.5</td><td>2.5-0.0</td><td>四(秋)</td></tr>
+                <tr><td>19120140</td><td>药事管理*</td><td>2.0</td><td>2.0-0.0</td><td>四(秋)</td></tr>
+                <tr><td>19120880</td><td>生物药剂学与药物动力学实验*</td><td>1.0</td><td>0.0-2.0</td><td>四(秋)</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+    </div>
+</body>
+</html>

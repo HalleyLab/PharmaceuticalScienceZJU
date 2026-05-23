@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/others.css"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.132/dist/typed.umd.js"></script>
+    <script src="js/definition.js"></script>
+    <script src="js/function.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <title>个人分享</title>
+</head>
+<body>
+    <header><div class="btnMenu"><i></i><i></i><i></i></div><nav><div class="botonera"><ul>
+      <li><a href="home.html">首页</a></li>
+      <li class="nav-group"><a class="nav-group-title" href="general_course.html">浙江大学</a><ul class="nav-submenu">
+        <li><a href="general_course.html">通识课程</a></li><li><a href="required.html">专业必修</a></li><li><a href="selective.html">专业选修</a></li><li><a href="others.html">其他课程</a></li><li><a href="mixed.html">二三四课堂</a></li>
+      </ul></li>
+      <li class="nav-group"><a class="nav-group-title" href="apply.html">留学篇</a><ul class="nav-submenu"><li><a href="apply.html">申请</a></li><li><a href="jhubmb.html">JHU BMB</a></li></ul></li>
+      <li><a href="protocols.html">实验流程</a></li><li><a href="instructions.html">使用说明</a></li>
+    </ul></div></nav></header>
+
+    <div class="group"><svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><g><path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path></g></svg><input type="Search" class="input" placeholder="搜索内容"><span class="search-tip">搜索功能为文本匹配，存在该内容则自动跳转，建议输入单个短关键词</span></div>
+    <button class="theme-switcher" id="themeToggle">🌙 夜间模式</button>
+
+    <div class="subnav-bar"><ul><li><a class="menu-btn active" data-tab="tab0">其他课程</a></li></ul></div>
+    <div class="general-content active" id="tab0">
+      <h2>其他课程</h2><hr>
+      <p>这一页整理培养方案中不属于通识、专业必修和专业方向的部分，包括实践教学、毕业论文、个性修读、跨专业模块、国际化模块以及辅修培养方案。</p>
+
+      <div class="expand-menu"><div class="expand-menu-header">实践教学环节<span class="expand-arrow">▼</span></div><div class="expand-menu-body">
+        <p>实践教学环节共 8 学分。</p>
+        <table class="course-table"><thead><tr><th>课程号</th><th>课程名称</th><th>学分</th><th>周学时</th><th>建议学年学期</th></tr></thead><tbody>
+          <tr><td>19189020</td><td>药物科学研究实训</td><td>2.0</td><td>0.0-4.0</td><td>一(春夏)</td></tr>
+          <tr><td>19188020</td><td>药学社会实践</td><td>1.0</td><td>+2</td><td>二(短)</td></tr>
+          <tr><td>19188030</td><td>药学实习</td><td>2.0</td><td>+4</td><td>三(短)</td></tr>
+          <tr><td>19120860</td><td>药物研发综合实验</td><td>3.0</td><td>0.0-6.0</td><td>三(春夏)</td></tr>
+        </tbody></table>
+      </div></div>
+
+      <div class="expand-menu"><div class="expand-menu-header">毕业论文（设计）<span class="expand-arrow">▼</span></div><div class="expand-menu-body">
+        <p>毕业论文（设计）共 8 学分。</p>
+        <table class="course-table"><thead><tr><th>课程号</th><th>课程名称</th><th>学分</th><th>周学时</th><th>建议学年学期</th></tr></thead><tbody>
+          <tr><td>19189010</td><td>毕业论文</td><td>8.0</td><td>+16</td><td>四(春夏)</td></tr>
+        </tbody></table>
+      </div></div>
+
+      <div class="expand-menu"><div class="expand-menu-header">个性修读课程<span class="expand-arrow">▼</span></div><div class="expand-menu-body">
+        <p>个性修读课程共 6 学分，是学校为学生设置的自主发展学分。学生可利用该部分学分自主选择感兴趣的本科课程、研究生课程或经认定的境内外交流课程；通识选修课程认定不得多于 2 学分。</p>
+      </div></div>
+
+      <div class="expand-menu"><div class="expand-menu-header">跨专业模块<span class="expand-arrow">▼</span></div><div class="expand-menu-body">
+        <p>跨专业模块为 +3 学分，鼓励跨学科、跨专业交叉修读。辅修课程、外专业课程或经认定的跨学院（系）过程性教学环节可认定为该模块学分，并可根据修读情况计入辅修、个性修读或第二课堂。培养方案建议修读医学、生物学等专业微辅修课程。</p>
+      </div></div>
+
+      <div class="expand-menu"><div class="expand-menu-header">国际化模块<span class="expand-arrow">▼</span></div><div class="expand-menu-body">
+        <p>国际化模块为 +3 学分。可认定的环节包括境外高校 2+2、3+1 等联合培养项目，境外交流学习并获得学分的课程，境外 2 个月以上实习实践、毕业设计（论文）、科学研究等交流项目，以及学校认定的其他高水平国际化课程。</p>
+      </div></div>
+
+      <div class="expand-menu"><div class="expand-menu-header">辅修培养方案<span class="expand-arrow">▼</span></div><div class="expand-menu-body">
+        <p>辅修部分包括微辅修、辅修专业和辅修学位。微辅修为 14 学分；辅修专业为 28 学分，在标注“*”的课程中选择修读，其中微辅修课程为必修；辅修学位为 71 学分，在修读标注“*”和“**”课程的基础上，修读实践教学环节课程和毕业论文（设计）。</p>
+      </div></div>
+    </div>
+</body>
+</html>

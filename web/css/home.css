@@ -844,3 +844,82 @@ nav ul li.nav-group .nav-submenu a {
         transform: rotate(360deg);
     }
 }
+
+/* Keep fixed controls pinned above page content. */
+header {
+    top: 0;
+    left: 0;
+    z-index: 1200;
+}
+
+header .btnMenu {
+    z-index: 1202;
+}
+
+nav {
+    top: 0;
+    left: 0;
+    z-index: 1190;
+}
+
+nav.botonera {
+    top: 0 !important;
+}
+
+.group,
+.theme-switcher {
+    z-index: 1100;
+}
+
+/* Final navigation click and monochrome color guard. */
+header {
+    z-index: 2100 !important;
+    pointer-events: none;
+}
+
+header .btnMenu,
+header .btnMenu.open,
+header .btnMenu * {
+    z-index: 2101 !important;
+    pointer-events: auto;
+    cursor: pointer !important;
+}
+
+nav {
+    z-index: 2000 !important;
+    pointer-events: auto;
+}
+
+nav ul li a,
+nav ul li.nav-group .nav-submenu a,
+nav ul li a:hover,
+nav ul li a:focus,
+nav a:hover,
+nav a.act,
+nav ul li.nav-group .nav-submenu a:hover,
+nav ul li.nav-group .nav-submenu a:focus {
+    color: #222222 !important;
+}
+
+header .btnMenu i,
+header .btnMenu:hover i,
+header .btnMenu.open:hover i {
+    background: #222222 !important;
+}
+
+.dark-theme nav ul li a,
+.dark-theme nav ul li.nav-group .nav-submenu a,
+.dark-theme nav ul li a:hover,
+.dark-theme nav ul li a:focus,
+.dark-theme nav a:hover,
+.dark-theme nav a.act,
+.dark-theme nav ul li.nav-group .nav-submenu a:hover,
+.dark-theme nav ul li.nav-group .nav-submenu a:focus {
+    color: #f2f2f2 !important;
+}
+
+.dark-theme header .btnMenu i,
+.dark-theme header .btnMenu:hover i,
+.dark-theme header .btnMenu.open:hover i {
+    background: #f2f2f2 !important;
+}

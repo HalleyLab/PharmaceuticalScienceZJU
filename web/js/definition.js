@@ -267,12 +267,13 @@
         })
         .map(normalizeTrackPath)
         .filter(Boolean);
+      const uniqueTracks = dedupeTracks(tracks);
 
-      if (!tracks.length) {
+      if (!uniqueTracks.length) {
         return;
       }
 
-      playlist = tracks;
+      playlist = uniqueTracks;
       restoreSavedTrack();
       audio.src = playlist[currentIndex];
       renderPlaylist();
@@ -296,6 +297,42 @@
       track = track.replace(/^songs\//i, '');
 
       return /\.(mp3|m4a|ogg|wav|mp4|flac)$/i.test(track) ? 'songs/' + track : '';
+    }
+
+    function dedupeTracks(tracks) {
+      const priority = {
+        mp3: 6,
+        m4a: 5,
+        ogg: 4,
+        wav: 3,
+        mp4: 2,
+        flac: 1
+      };
+      const byName = new Map();
+
+      tracks.forEach(function(track) {
+        const key = getTrackKey(track);
+        const ext = getTrackExtension(track);
+        const existing = byName.get(key);
+        if (!existing || (priority[ext] || 0) > (priority[getTrackExtension(existing)] || 0)) {
+          byName.set(key, track);
+        }
+      });
+
+      return Array.from(byName.values());
+    }
+
+    function getTrackKey(track) {
+      return track
+        .replace(/^songs\//i, '')
+        .replace(/\.(mp3|m4a|ogg|wav|mp4|flac)$/i, '')
+        .replace(/[_\-\s,，]+/g, '')
+        .toLowerCase();
+    }
+
+    function getTrackExtension(track) {
+      const match = track.match(/\.([a-z0-9]+)$/i);
+      return match ? match[1].toLowerCase() : '';
     }
 
     function setVolume(value) {
@@ -474,6 +511,7 @@
     updateLegal();
     $(window).on('resize', updateLegal);
   }
+
   $(document).ready(init);
 
   $(function () {
@@ -512,7 +550,6 @@
         }
       });
     });
-
     $('.menu-btn').on('click', function() {
         $('.menu-btn').removeClass('active');
         $(this).addClass('active');
