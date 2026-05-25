@@ -1220,6 +1220,8 @@ nav ul li.nav-group .nav-submenu a:focus {
 .general-content .bookmark-index-5 .expand-menu-header { top: 348px !important; }
 .general-content .bookmark-index-6 .expand-menu-header { top: 402px !important; }
 .general-content .bookmark-index-7 .expand-menu-header { top: 456px !important; }
+.general-content .bookmark-index-8 .expand-menu-header { top: 510px !important; }
+.general-content .bookmark-index-9 .expand-menu-header { top: 564px !important; }
 
 .general-content .expand-menu:nth-of-type(1) .expand-menu-header { top: 132px; }
 .general-content .expand-menu:nth-of-type(2) .expand-menu-header { top: 186px; }
@@ -2014,4 +2016,48 @@ nav ul li.nav-group .nav-submenu:focus-within a {
 nav ul li.nav-group .nav-submenu:hover a:hover,
 nav ul li.nav-group .nav-submenu:focus-within a:focus {
     opacity: 1;
+}
+
+.year-overview-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
+    margin: 28px 0 6px;
+}
+
+.year-overview-grid section {
+    border: 1px solid rgba(35, 35, 45, 0.09);
+    border-radius: 8px;
+    padding: 18px 18px 16px;
+    background: rgba(255, 255, 255, 0.36);
+}
+
+.year-overview-grid h3 {
+    margin: 0 0 10px;
+    font-size: 19px;
+    font-weight: 800;
+    color: var(--text-color);
+}
+
+.year-overview-grid p {
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.65;
+}
+
+.dark-theme .year-overview-grid section {
+    border-color: rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.035);
+}
+
+@media (max-width: 980px) {
+    .year-overview-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 620px) {
+    .year-overview-grid {
+        grid-template-columns: 1fr;
+    }
 }
