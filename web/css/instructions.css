@@ -1133,3 +1133,13 @@ nav ul li.nav-group .nav-submenu a {
     }
 }
 
+nav ul li.nav-group .nav-submenu:hover a,
+nav ul li.nav-group .nav-submenu:focus-within a {
+    opacity: 0.38;
+}
+
+nav ul li.nav-group .nav-submenu:hover a:hover,
+nav ul li.nav-group .nav-submenu:focus-within a:focus {
+    opacity: 1;
+}
+

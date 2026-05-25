@@ -2005,3 +2005,13 @@ header .btnMenu.open:hover i {
 .dark-theme .course-table td {
     border-bottom-color: rgba(255, 255, 255, 0.08);
 }
+
+nav ul li.nav-group .nav-submenu:hover a,
+nav ul li.nav-group .nav-submenu:focus-within a {
+    opacity: 0.38;
+}
+
+nav ul li.nav-group .nav-submenu:hover a:hover,
+nav ul li.nav-group .nav-submenu:focus-within a:focus {
+    opacity: 1;
+}

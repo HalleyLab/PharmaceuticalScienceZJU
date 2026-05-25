@@ -1964,3 +1964,13 @@ header .btnMenu.open:hover i {
 .dark-theme header .btnMenu.open:hover i {
     background: #f2f2f2 !important;
 }
+
+nav ul li.nav-group .nav-submenu:hover a,
+nav ul li.nav-group .nav-submenu:focus-within a {
+    opacity: 0.38;
+}
+
+nav ul li.nav-group .nav-submenu:hover a:hover,
+nav ul li.nav-group .nav-submenu:focus-within a:focus {
+    opacity: 1;
+}
