@@ -36,6 +36,7 @@
                 </ul>
               </li>
               <li><a href="protocols.html">实验流程</a></li>
+              <li><a href="photos.html">相册</a></li>
               <li><a href="instructions.html">使用说明</a></li>
             </ul>
         </div>
@@ -53,220 +54,1433 @@
     <div class="subnav-bar">
       <ul>
         <li><a class="menu-btn active" data-tab="tab0">概述</a></li>
-        <li><a class="menu-btn" data-tab="tab1">实验安全</a></li>
-        <li><a class="menu-btn" data-tab="tab2">基础操作</a></li>
-        <li><a class="menu-btn" data-tab="tab3">分子实验</a></li>
-        <li><a class="menu-btn" data-tab="tab4">细胞实验</a></li>
-        <li><a class="menu-btn" data-tab="tab5">动物实验</a></li>
-        <li><a class="menu-btn" data-tab="tab6">仪器分析</a></li>
-        <li><a class="menu-btn" data-tab="tab7">数据记录</a></li>
+        <li><a class="menu-btn" data-tab="tab1">管理规定</a></li>
+        <li><a class="menu-btn" data-tab="tab2">实验设计</a></li>
+        <li><a class="menu-btn" data-tab="tab3">仪器操作</a></li>
+        <li><a class="menu-btn" data-tab="tab4">实验方法</a></li>
       </ul>
     </div>
 
     <div class="general-content active" id="tab0">
-        <h2>实验流程</h2>
+        <h2>概述</h2>
         <hr>
-        <p>这里整理实验前准备、实验中操作、实验后记录与复盘的基本流程。页面结构先按常见实验场景分组，后续可以继续把每一类实验的具体步骤、注意事项、模板和材料下载补充进来。</p>
-
-        <div class="expand-menu">
-          <div class="expand-menu-header">使用方式<span class="expand-arrow">▼</span></div>
-          <div class="expand-menu-body">
-            <p>左侧选择实验类别，右侧书签选择该类别下的具体流程。每个流程建议按照“目的、材料、步骤、注意事项、结果记录”的顺序填写，方便实验前快速浏览，也方便实验后检查遗漏。</p>
-            <span class="grades-title">推荐结构</span>
-            <ul class="grades">
-              <li>实验目的：说明这个流程要解决什么问题</li>
-              <li>准备材料：列出试剂、耗材、仪器和软件</li>
-              <li>操作步骤：按时间顺序写清关键动作</li>
-              <li>注意事项：标出容易出错或有安全风险的环节</li>
-              <li>记录模板：保留结果、参数和异常情况</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="expand-menu">
-          <div class="expand-menu-header">实验前检查<span class="expand-arrow">▼</span></div>
-          <div class="expand-menu-body">
-            <p>实验开始前应确认实验方案、材料状态、仪器预约、个人防护和废弃物处理方式。对需要连续操作的实验，最好提前写出时间表，避免中途等待或错过关键时间点。</p>
-          </div>
+        <p>本页根据 <b>实验操作备忘录.docx</b> 重新整理。原文档的一级标题被整理为左侧分类，二级标题被整理为右侧书签，三级和四级标题保留为书页内的小节。</p>
+        <p>页面保留实验室管理、动物设施、仪器操作、组织/分子/细胞/电生理实验以及试剂配制等结构。涉及实验室准入、伦理审批、危化品和动物设施的内容仍应以当前平台和课题组规定为准。</p>
+        <div class="protocol-overview-grid">
+          <section><h3>管理规定</h3><p>5 个流程书签：实验室基本使用规范、动物实验申请及实验室使用流程、高压蒸汽灭菌与洗消间使用、实验动物与屏障设施等。</p></section>
+          <section><h3>实验设计</h3><p>1 个流程书签：分子相关实验设计，包含 qPCR、同源重组、突变、shRNA 和测序引物设计。</p></section>
+          <section><h3>仪器操作</h3><p>9 个流程书签：共聚焦、荧光倒置显微镜、CO2 培养箱、流式细胞仪、切片机、酶标仪等。</p></section>
+          <section><h3>实验方法</h3><p>10 个流程书签：小鼠解剖、立体定位、免疫组化、载体构建、分析测试、电生理、试剂配制和细胞培养。</p></section>
         </div>
     </div>
 
     <div class="general-content" id="tab1">
-        <h2>实验安全</h2>
+        <h2>实验室使用及管理规定</h2>
         <hr>
-        <p>安全流程用于记录进入实验室前后的基本要求，以及不同风险材料的处理规范。</p>
+        <p class="protocol-text">这一部分整理实验室日常使用、试剂耗材、质粒、抗体、动物实验申请和屏障设施相关规范。</p>
 
         <div class="expand-menu">
-          <div class="expand-menu-header">个人防护<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-header">实验室基本使用规范<span class="expand-arrow">▼</span></div>
           <div class="expand-menu-body">
-            <p>进入实验区域前确认实验服、手套、护目镜等防护用品是否符合当前实验要求。涉及挥发性、有腐蚀性或潜在感染性的材料时，应在对应等级的通风或生物安全条件下操作。</p>
-            <span class="grades-title">检查清单</span>
-            <ul class="grades">
-              <li>实验服扣好，长发束起</li>
-              <li>根据试剂风险选择合适手套</li>
-              <li>禁止在实验区饮食、触摸面部或使用私人用品</li>
-              <li>离开实验区前脱手套并洗手</li>
-            </ul>
+            <h3 class="protocol-subtitle" id="试剂耗材管理与物品存放">试剂耗材管理与物品存放</h3>
+<p class="protocol-text">【以下信息可能不符合实验室实际情况】</p>
+<h4 class="protocol-minititle">化学品管理</h4>
+<p class="protocol-text">实验室试剂分为以下三种级别：</p>
+<ul class="protocol-list"><li>普通试剂</li><li>一般放置于称量处，部分实验专用的试剂放在公共实验台附近。</li><li>上层柜危化品</li><li>放在专用柜子上层，有二维码的需要扫码登记。</li><li>下层柜危化品</li><li>放在专用柜子下层，需要扫码登记，需要专人开锁；使用盐酸、硫酸和氢氧化钠固体需要登记纸质表格。</li></ul>
+<h4 class="protocol-minititle">试剂回收处理</h4>
+<ul class="protocol-list"><li>抗体可以重复利用，WB的抗体建议重复利用。</li><li>无明显危害性的试剂可直接倒入水池，有较大危害性的倒入废液桶。</li><li>配制的电泳胶需要扔入生活垃圾桶。</li><li>枪头放入锐器盒回收，可与碎玻璃放在一起。</li><li>挥发性弱毒试剂，如PFA等，使用时需要开启风扇（如灌流）；挥发性强毒试剂或刺激性试剂，需要在通风橱中操作。</li><li>灌流后血液等不能直接倒入灌流台旁侧水池。</li></ul>
+<h3 class="protocol-subtitle" id="基本仪器使用注意事项">基本仪器使用注意事项</h3>
+<h4 class="protocol-minititle">4℃层析柜</h4>
+<p class="protocol-text">上层：临时存放个人试剂；中层：公用试剂；下层：公用仪器（涡旋、摇床）</p>
+<h4 class="protocol-minititle">超速离心机</h4>
+<h3 class="protocol-subtitle" id="质粒使用与管理">质粒使用与管理</h3>
+<h4 class="protocol-minititle">质粒存放</h4>
+<p class="protocol-text">质粒统一存放于走廊-20℃冰箱中，该冰箱用作质粒长期保存，使用时需要登记，取出一些质粒后自行扩增。</p>
+<h4 class="protocol-minititle">质粒信息</h4>
+<p class="protocol-text">2019年后新到的质粒具有质粒图谱，统一存放于6618房工作站中。质粒的基本信息可见在线质粒信息表格。</p>
+<h3 class="protocol-subtitle" id="抗体使用与管理">抗体使用与管理</h3>
+<h4 class="protocol-minititle">抗体存放</h4>
+<p class="protocol-text">抗体存放于公用冰箱中，多数抗体存放于4℃冰箱；新到未溶解的冻干粉以及部分其他抗体存放于-20℃冰箱。</p>
+<h4 class="protocol-minititle">抗体启用</h4>
+<p class="protocol-text">溶解新抗体冻干粉及第一次使用液体装新抗体时，若该抗体保存于4℃，应分瓶后存放于-20℃（无需添加甘油），需要取用时拿出一管并置于4℃保存；若该抗体保存于-20℃且凝固，需要进行分装，以避免反复冻融，需要取用时拿出一管并置于-20℃保存。</p>
+<p class="protocol-text">抗体应分装于1.5ml管中，每管分装30ul，分装后取出一管使用，取出的抗体仅自己使用，并在抗体管上注明冻存次数（仅-20℃保存的抗体）。</p>
+<p class="protocol-text">对于冻干粉抗体，使用时首先进行离心以使挂壁的粉末全部离下，然后加入管壁标明的对应量的PBS溶液*，随后涡旋震荡，再次离心。冻干粉抗体若存放于-20℃，则也需要分装。</p>
+<p class="protocol-note">*必须使用经过滤的PBS溶液</p>
+<p class="protocol-note">*若该抗体溶解后存放于-20℃，则应当使用50%甘油-PBS溶液进行溶解</p>
+<p class="protocol-text">当抗体不易溶解时，可将封口使用封口膜包裹后进行超声。</p>
+<h4 class="protocol-minititle">抗体使用</h4>
+<p class="protocol-text">组内抗体按照在线表格进行管理，抗体取用时需对照抗体货号和抗体基本免疫信息，并按照表格中提供的抗体所在位置进行取用。找到对应盒子后快速关闭冰箱，避免冰箱门长时间开启。</p>
+<p class="protocol-text">使用公用的抗体时，无论为4℃还是-20℃下保存，取用一管后需要在在线表格中登记。</p>
+<p class="protocol-text">-20℃保存的抗体务必在冰面上融化，抗体使用时严格避免交叉污染。</p>
+<p class="protocol-text">抗体按照抗体表上的稀释比例进行稀释，使用加入Donkey serum的blocking buffer进行稀释（详见各流程），或使用专用的抗体封闭液进行稀释。封闭液和抗体全程注意冰浴。</p>
+<p class="protocol-text">抗体取用后立刻放回原处，若为冻存抗体，需在冻存标记处加一。</p>
+<p class="protocol-text">抗体应节省使用。</p>
+<p class="protocol-text">当抗体即将用尽时需向抗体管理员报告，并在需要时领取备用抗体。</p>
+<h4 class="protocol-minititle">抗体管理</h4>
+<p class="protocol-text">抗体按照编号进行管理与检索，在抗体大表上标注了目前所有抗体的性质（一抗/二抗、goat/rat…、偶联荧光颜色、厂家、保存温度与位置等）。</p>
+<p class="protocol-text">抗体的溶解、分装以及领用已分装的冻存抗体均需要向抗体管理员申请。</p>
           </div>
         </div>
-
         <div class="expand-menu">
-          <div class="expand-menu-header">废弃物处理<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-header">动物实验申请及实验室使用流程<span class="expand-arrow">▼</span></div>
           <div class="expand-menu-body">
-            <p>废弃物按化学废液、生物污染物、锐器、普通固废等分类处理。不要把未知废液直接倒入水池，含有毒性、腐蚀性或有机溶剂的废液需要进入指定废液桶。</p>
+            <h3 class="protocol-subtitle" id="基础知识">基础知识</h3>
+<p class="protocol-text">【以下信息可能不符合实验室实际情况】实验动物要求遗传背景明确、来源清晰，根据洁净度可分为4个级别：基础动物、清洁动物、SPF（无特定病原体）动物、无菌动物。级别的划分参照国家标准对病原体进行检测。</p>
+<p class="protocol-text">动物培养实验室分为普通环境、屏障环境、隔离环境，不同环境可用于培养的不同级别动物不同，详见下表：</p>
+<div class="protocol-table-wrap"><table class="protocol-table">
+<thead><tr><th>实验室环境</th><th>动物等级</th></tr></thead>
+<tbody>
+<tr><td>普通环境</td><td>基础动物</td></tr>
+<tr><td>屏障环境</td><td>清洁动物、SPF动物</td></tr>
+<tr><td>隔离环境</td><td>SPF动物、无菌动物</td></tr>
+</tbody>
+</table></div>
+<p class="protocol-text">各提供方实验动物由地方实验动物监督机构抽样检测，一般执行国家标准，参考地方标准。</p>
+<p class="protocol-text">对于不同实验室环境和动物等级，各培养条件、环境因素、遗传背景均参照标准进行。所内实验室同样参照标准进行。</p>
+<p class="protocol-text">目前实验室可以提供屏障环境A、B两区，可培养小鼠、大鼠、豚鼠、兔，可委托企业进行灵长类的培养和实验。</p>
+<p class="protocol-text">据规定，实验动物提供方和购买使用方均需要提供资质，只有使用从具有许可证的部门获得的实验动物进行实验才能被认可。</p>
+<p class="protocol-text">实验动物来所后先进入检疫区，抽样30%检测无病原体后10天即可转入实验区培养。</p>
+<h3 class="protocol-subtitle" id="实验审批流程">实验审批流程</h3>
+<p class="protocol-text">【以下信息可能不符合实验室实际情况】严格按照规定进行操作和申请有助于推断实验失败的原因。</p>
+<h4 class="protocol-minititle">动物实验原则</h4>
+<p class="protocol-text">注意实验动物实验前的设计，尤其注意品系和个数的选择，提前办理各项手续，遵循3R原则（减少：减少动物使用量；优化：优化实验方案，避免无效实验，最大化利用动物；替代：使用低等级、低等动物替代，使用非动物实验替代）。以及实验过程中确保动物的五大自由（生理、环境、卫生、行为、心理）。3R原则和动物自由（需体现在方案中）是伦理审核的主要内容。</p>
+<h4 class="protocol-minititle">实验动物的引入、购买</h4>
+<p class="protocol-text">引入的动物必须提供病原检测报告和质量合格证（常用品系由提供方提供；其他实验室赠送、非常用品系需要自行办理），并提前1周（适用于通过实验室订购，自行订购时需要提前一个月）填写《实验动物代养申请表》，由院实验室安排接受时间，提前空出位置培养。</p>
+<p class="protocol-text">实验动物一旦离开H栋实验动物房便严禁再次进入。</p>
+<p class="protocol-text">院内会对30%的动物进行检疫，检疫过程将杀死动物，因此需要引入时需要提前预留过量动物。特殊品系动物杂交过程产生的不可进行实验的杂合子可单独分开用于检疫。</p>
+<h4 class="protocol-minititle">实验前</h4>
+<p class="protocol-text">实验方案设计好后需要在内网下载中心填报《动物实验申请表》和《伦理审查表》，申请表需要有逻辑、标清序号，实验全过程不用太详细，但需注意：</p>
+<ul class="protocol-list"><li>动物实验设计关键部分（麻醉、繁殖、身体固定、处死）的具体操作以及动物用于何种实验，实验方案如何；</li><li>化学药品的使用和使用量；</li><li>动物尸体残药量；</li><li>实验过程中防护措施和病原微生物防护措施。</li></ul>
+<p class="protocol-text">其他实验步骤可以略写。</p>
+<p class="protocol-text">当实验申请比较完善时，推荐使用线上审核，可以缩短审核时间；当实验申请不完善时，推荐线下审核，以便于审核不通过时的修改。</p>
+<p class="protocol-text">申请表着重体现3R原则和动物自由。</p>
+<p class="protocol-text">《变更申请表》在实验不变、所用品系或数量改变时进行申请。</p>
+<p class="protocol-text">各表均需交给动物实验中心秘书处进行多轮审核，半数同意时通过，当有人提出异议时必须予以解答。</p>
+<p class="protocol-text">当实验特殊时或者品系特殊时，《动物实验申请表》和《伦理审查表》需要提前1个月提交。</p>
+<p class="protocol-text">实验动物仅能从高等级洁净区域向低等级转移，需要提交《实验动物转移申请表》，离开H栋的动物实验操作需要提交《动物实验设施外实验操作申请表》。</p>
+<p class="protocol-text">仅能在8:30-17:00进入动物房，最多可延长至7:00-19:00。需要提前申请并安排好时间。</p>
+<h4 class="protocol-minititle">实验后</h4>
+<p class="protocol-text">实验结束后需要提供动物实验证明和动物质量证明，两者均由动物提供方提供，原来可以在网上在线申请，现在申请很麻烦，需保留动物提供方的证明文件。证明文件在评奖和发文章时必需。</p>
+<p class="protocol-text">实验后记录所无害化处理+安乐死的动物总量与原先使用的动物量是否一致，避免实验动物逃逸情况。</p>
+<p class="protocol-text">无害化处理动物尸体即将尸体、组织器官等放入黄色垃圾袋并投放在H栋指定位置。</p>
+<p class="protocol-text">动物安乐死在H栋进行，将动物放入培养箱中，通气阀连接CO2钢瓶，确定一级压力表有合适压力情况下打开二级阀门，二级压力表示数小于2小格，直至动物死亡。死亡动物放入黄色垃圾袋中。</p>
+<p class="protocol-text">所有玻璃等易划伤皮肤的用具和碎片放入黄色安全桶中。</p>
+<h3 class="protocol-subtitle" id="实验室使用流程">实验室使用流程</h3>
+<p class="protocol-text">【以下信息可能不符合实验室实际情况】</p>
+<h4 class="protocol-minititle">基本情况</h4>
+<p class="protocol-text">H栋为动物实验室，提供最高SPF级动物和屏障环境（P2级）。</p>
+<p class="protocol-text">2楼分为A、B两区，两区条件完全相同但相互之间完全隔离。同一时间人员仅能在A、B其中一区开通门禁权限，避免两区交叉污染。2楼各实验室主要培养多种品系的动物并进行一些基础实验。</p>
+<p class="protocol-text">3楼为功能实验室，可进行切片、染色、行为学、CT、B超等。</p>
+<p class="protocol-text">目前实验室环境P2级可进行三、四类病原体的实验，可进行部分灭活一、二级病原体的实验。</p>
+<h4 class="protocol-minititle">进入</h4>
+<p class="protocol-text">穿好鞋套后，通过门禁进入参观走廊，可进入A、B两区的的换衣间，换上区域内粉色拖鞋，按照标识依次穿好PE手套、口罩、连体衣（拖鞋套入衣物中）、乳胶手套，检查后进入过渡间，风淋后进入洁净区。</p>
+<p class="protocol-text">各房间之间存在压差，流向为洁净区经过试验间到达污物走廊，注意不能长时间开门。压差大致在15-30之间。</p>
+<h4 class="protocol-minititle">操作</h4>
+<p class="protocol-text">进入实验间后非必要不得再进入洁净区，酒精等可电话通知管理处运入。</p>
+<p class="protocol-text">培养箱国产的和进口的互不通用，培养箱插入架子上，以侧边红色标志不突出为锁定标志。后侧两根管道为进出口阀门。注意实验室风机是否运行，不运行时需要及时通知。</p>
+<p class="protocol-text">饲料和饮水由专人负责，注意离开实验室前检查饲料和饮水是否足够。</p>
+<p class="protocol-text">注意写清标牌，必要时可另附纸条。取出做实验的小鼠难以区分时通过打耳标、断指手段进行区分。</p>
+<p class="protocol-text">分笼等操作务必写清单子，实验室按照培养箱个数收费。每一培养箱小鼠培养量不得多于5只。实验过程中也需记录清楚避免混淆。</p>
+<p class="protocol-text">手术用锐器有预先存放。</p>
+<p class="protocol-text">物品传递经参观走廊末端传递间，需要进行紫外消毒等，传递前样品表面需要喷淋酒精。可使用双层传递袋进行传递。</p>
+<h4 class="protocol-minititle">退出</h4>
+<p class="protocol-text">离开实验区进入污物走廊后不得再进入。在脱下连体衣后换上蓝色拖鞋，进入换衣间换鞋。</p>
+          </div>
+        </div>
+        <div class="expand-menu">
+          <div class="expand-menu-header">高压蒸汽灭菌与洗消间使用<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-body">
+            <p class="protocol-text">【以下信息可能不符合实验室实际情况】</p>
+<p class="protocol-text">按照研究院规定，实验室不可进行自行灭菌，必须在洗消间进行统一灭菌。</p>
+<h3 class="protocol-subtitle" id="灭菌流程">灭菌流程</h3>
+<p class="protocol-text">使用可耐高温的容器进行灭菌，如玻璃试剂瓶、枪头盒、锥形瓶等；</p>
+<p class="protocol-text">提前清点灭菌物品性质和数量，尤其注意枪头盒的大小；</p>
+<p class="protocol-text">枪头盒需要使用牛皮纸包裹，试剂瓶需要加封条和注明名称；</p>
+<p class="protocol-text">所有用品注明组别，避免混淆；</p>
+<p class="protocol-text">具有开门权限的情况下，将样品转移至A栋1楼东侧洗消间，放在“未灭菌”架子上，在对应组的记录本上记明消毒数量等信息；</p>
+<p class="protocol-note">*所有灭菌物品需在当天下午2:30分之前送到，并尽量在当天取回；</p>
+<p class="protocol-text">取回时再次在记录本上记录。</p>
+          </div>
+        </div>
+        <div class="expand-menu">
+          <div class="expand-menu-header">实验动物与屏障设施<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-body">
+            <h3 class="protocol-subtitle" id="实验动物分类">实验动物分类</h3>
+<p class="protocol-text">动物分为野生动物、观赏动物和实验动物；</p>
+<p class="protocol-text">按遗传学分类为：近交系、封闭群、杂交群、突变系。其中C57BL/6、BALB/c属于近交系；</p>
+<p class="protocol-text">命名规则如下：</p>
+<p class="protocol-text">实验室代号：Smoc为南方模式动物；J为Jackson实验室</p>
+<h3 class="protocol-subtitle" id="小鼠生理参数">小鼠生理参数</h3>
+<p class="protocol-text">如下：</p>
+<p class="protocol-text">实验动物的标准化：遗传质量、微生物环境和寄生虫的标准化。</p>
+<p class="protocol-text">实验动物饲养密度：</p>
+<h3 class="protocol-subtitle" id="动物福利伦理">动物福利伦理</h3>
+<p class="protocol-text">需要注意，提交伦理审查需要在申请研究项目、进行动物实验前。</p>
+<h3 class="protocol-subtitle" id="动物设施出现问题">动物设施出现问题</h3>
+<p class="protocol-text">已经拿进动物设施的物品也需要定期更换和重新灭菌。</p>
+<p class="protocol-text">哨兵鼠所在笼位的垫料来自本屏障中各个笼位，以检测寄生虫等。</p>
+<p class="protocol-text">笼盒内禁止放入任何垃圾，需要分类放入利器盒或医疗垃圾桶。</p>
+<p class="protocol-text">动物房准备了磨牙棒、做窝纸和小鼠玩具，需要登记使用。</p>
+<p class="protocol-text">小鼠需要在净化后才能进入新动物房：</p>
+<p class="protocol-text">当前非动物中心饲养小鼠情况：</p>
+<h3 class="protocol-subtitle" id="动物设施准入规定与伦理审核">动物设施准入规定与伦理审核</h3>
+<ul class="protocol-list"><li>门禁授权：</li></ul>
+<h3 class="protocol-subtitle" id="动物设施使用规范">动物设施使用规范</h3>
+<h3 class="protocol-subtitle" id="应急预案">应急预案</h3>
+          </div>
+        </div>
+        <div class="expand-menu">
+          <div class="expand-menu-header">委托实验<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-body">
+            <h3 class="protocol-subtitle" id="合成">合成</h3>
+<h4 class="protocol-minititle">引物合成</h4>
+<h3 class="protocol-subtitle" id="样品测试">样品测试</h3>
+<h4 class="protocol-minititle">DNA测序</h4>
+<p class="protocol-text">委托生工®进行分析</p>
+<ul class="protocol-list"><li>打开Sangon biotech官网后登陆账号，选择测序订单。</li><li>选择“预约取样”</li><li>可看到如下界面，先选择样品数量，再依次填写信息。</li><li>其中，引物类型若选择自带，需要在测序包装袋内分装足够多的引物；若选择合成，则进入以下界面，需要依次添加并选中所需的引物：</li><li>“要求”一栏中，“单向”表示使用单一引物测序；“双向”表示使用两条引物测序，一般来说，对于目的片段直接使用PCR引物测序即可，对于测试目的片段是否两端酶切/延长等，建议设计中游的引物进行测序；“测通”表示给定两条引物，使用这两条引物将这条片段全部测出，适用于从两头往中间测。下表列出了选择方案：</li></ul>
+<div class="protocol-table-wrap"><table class="protocol-table">
+<thead><tr><th>片段长度</th><th>选择方案</th></tr></thead>
+<tbody>
+<tr><td>&lt;700bp</td><td>单向</td></tr>
+<tr><td>&gt;700bp, &lt;1500bp</td><td>双向</td></tr>
+<tr><td>&gt;1500bp</td><td>测通</td></tr>
+</tbody>
+</table></div>
+<ul class="protocol-list"><li>将样品放入送样袋中，填写好相关信息后预约取样即可。</li><li>以下为用于测序的样品要求：</li></ul>
           </div>
         </div>
     </div>
 
     <div class="general-content" id="tab2">
-        <h2>基础操作</h2>
+        <h2>实验设计</h2>
         <hr>
-        <p>基础操作包括称量、配液、移液、离心、灭菌和样品保存等，是大多数实验流程的共同部分。</p>
+        <p class="protocol-text">这一部分集中于分子实验设计，尤其是各类引物设计的目标、场景和注意事项。</p>
 
         <div class="expand-menu">
-          <div class="expand-menu-header">配液与标记<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-header">分子相关实验设计<span class="expand-arrow">▼</span></div>
           <div class="expand-menu-body">
-            <p>配液前先确认浓度、体积、溶剂和保存条件。标签至少应包含名称、浓度、日期、配制人和特殊风险说明。</p>
-            <span class="grades-title">关键点</span>
-            <ul class="grades">
-              <li>先算清母液浓度和稀释倍数</li>
-              <li>易降解试剂避光或低温保存</li>
-              <li>现配现用的试剂不要长期留存</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="expand-menu">
-          <div class="expand-menu-header">移液操作<span class="expand-arrow">▼</span></div>
-          <div class="expand-menu-body">
-            <p>选择量程合适的移液器，吸液和放液保持稳定，避免产生气泡。不同试剂之间应更换枪头，防止交叉污染。</p>
+            <h3 class="protocol-subtitle" id="引物设计">引物设计</h3>
+<h4 class="protocol-minititle">用于qPCR的引物设计</h4>
+<p class="protocol-text">qPCR引物设计要求较高，一般而言一个好的qPCR引物应具有以下特征：</p>
+<ul class="protocol-list"><li>跨内含子设计；当qPCR引物跨内含子时，含有的基因组DNA污染将不会被检测出来，可以降低基因组污染导致的影响。</li><li>引物长度在18-30bp之间，GC%=40%-60%，Tm=55-65℃，上下游引物的Tm不相差4℃以上。</li><li>具有很好的特异性；对待测物种其他的基因没有结合，对人源的污染没有结合。</li></ul>
+<p class="protocol-text">以下为一些其他的要求：</p>
+<ul class="protocol-list"><li>引物3′端末端避免选择A；末端碱基为A时易发生错配，一般选择T较好。</li><li>（若为探针引物，则探针5’端不能为G，因为即使单个G碱基与FAM荧光报告基团相连时，G也可以淬灭FAM基团所发出的荧光信号，从而导致假阴性的出现。）</li><li>避免出现超过三个连续的G或C，3个以上连续的G或C容易在GC富集序列区产生配对。</li><li>避免引物自身形成复杂的二级结构或互相配对。</li></ul>
+<p class="protocol-text">可通过查阅文献或数据库的方式找到其他人设计的已经被验证的引物，或通过NCBI等工具自行设计。</p>
+<ul class="protocol-list"><li>查阅相关数据库</li><li>使用PrimerBank数据库查找经过验证的qPCR引物。</li><li>自行设计</li><li>在NCBI的Primer Blast工具中可以设计或比对现有PCR引物的特异性。</li><li>输入所需要设计引物的基因名称或序列。</li><li>设置引物的参数</li><li>*当Use my own forward/reverse primer非空时，将会使用这两种引物进行模拟的PCR检测所选模板的可能PCR产物；当留空时会进行设计；</li><li>*对于qPCR，产物大小为50-250时结果较可靠，可先使用80-150进行搜索；</li><li>设置跨外显子搜索</li><li>测试引物的特异性</li><li>*选择“Refseq RNA”，此时比对模板为mRNA的逆转录产物；</li><li>*在Exclusion行中，可以对预测的序列以及环境/不可培养样本序列的干扰。Organism是指样本所属物种，将物种名称如：Homo sapiens(或直接human)输入，选择候选栏中对应的物种即可。也可以直接输入物种ID (常用的如：人9606，小鼠10090，大鼠10114)。</li><li>引物的进一步参数验证</li><li>在设计引物时，可将Max Poly-X设置为3，即不能出现超过三个相同碱基。</li><li>对于NCBI返回的引物，依次查找其预测的参数：</li><li>引物的特性有以下几个方面：序列、模板链、长度、起止位置、Tm、GC含量、自我互补能力、产物大小以及引物对应的模板。其中多数特性都或多或少影响了引物的好坏，比如：序列中最好不要出现连续的相同碱基（尤其在3端）；正反向引物的Tm值要接近；以Oligo dT引物进行逆转录时，引物的起止位置要尽量靠后；引物对的自我互补配对打分要尽量低。</li></ul>
+<h4 class="protocol-minititle">用于同源重组或酶切连接的引物设计（重叠延伸PCR）</h4>
+<h4 class="protocol-minititle">用于突变的引物设计</h4>
+<h4 class="protocol-minititle">用于shRNA敲低的引物设计</h4>
+<h4 class="protocol-minititle">用于测序的引物设计</h4>
+<p class="protocol-text">基本要求：约21bp，GC%=40%~60%，Tm=60~65℃。</p>
+<p class="protocol-text">注意：</p>
+<ul class="protocol-list"><li>根据所选取的测序方法确定引物的合适位置，第一代（Sanger）测序中最长测序约700bp（特殊结构等会提前终止），且测序的首尾两侧不准确，合适的测序引物应当设计在距离待测位点50~600bp的位置上，待测位点距离引物越远，可能被测到的概率越小（如特殊结构等提前终止测序）。</li><li>引物应当覆盖所有待测片段。</li></ul>
+<p class="protocol-text">以下为几种合适的引物设计方案：</p>
+<div class="protocol-table-wrap"><table class="protocol-table">
+<thead><tr><th>图示</th><th>介绍</th><th>引物选取</th></tr></thead>
+<tbody>
+<tr><td></td><td>&lt;700bp的片段</td><td>使用单向引物测序</td></tr>
+<tr><td></td><td>&gt;700bp且小于1500bp的片段</td><td>使用两条引物测序，勾选双向测序</td></tr>
+<tr><td></td><td>&gt;1500bp的片段</td><td>设计多条引物测序，保证之间间隔约650bp左右</td></tr>
+<tr><td></td><td>延长PCR，确定是否得到了延长</td><td>使用一对中游引物，其中前向引物在上游，后向引物在下游，注意测序长度</td></tr>
+<tr><td></td><td>测试质粒是否连接成功</td><td>使用一对中游引物，其中前向引物在上游，后向引物在下游，注意测序长度</td></tr>
+</tbody>
+</table></div>
           </div>
         </div>
     </div>
 
     <div class="general-content" id="tab3">
-        <h2>分子实验</h2>
+        <h2>实验仪器操作</h2>
         <hr>
-        <p>分子实验主要记录核酸、蛋白和相关检测流程。</p>
+        <p class="protocol-text">这一部分按仪器分类，整理显微成像、细胞培养箱、流式、切片、分光光度和酶标仪等操作要点。</p>
 
         <div class="expand-menu">
-          <div class="expand-menu-header">PCR 流程<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-header">激光共聚焦显微镜LSM 710 NLO<span class="expand-arrow">▼</span></div>
           <div class="expand-menu-body">
-            <p>PCR 前需要确认模板、引物、酶、缓冲液和循环程序。加样过程尽量在冰上完成，阴性对照和阳性对照应同时设置。</p>
-            <span class="grades-title">流程</span>
-            <ul class="grades">
-              <li>解冻并短暂离心试剂</li>
-              <li>按体系加入模板、引物和反应 mix</li>
-              <li>设置循环程序并记录退火温度</li>
-              <li>产物用于电泳或后续纯化</li>
-            </ul>
+            <p class="protocol-text">【以下信息可能不符合实验室实际情况】</p>
+<h3 class="protocol-subtitle" id="使用规则">使用规则</h3>
+<p class="protocol-text">第一次使用时提前一天通知老师开通权限，前3次使用自己操作，开通权限后若不规范使用显微镜可能被收回权限。</p>
+<p class="protocol-text">预约在网上和群里进行，使用前若取消需提前30min通知老师并在群里说明。</p>
+<p class="protocol-text">显微镜24h开放，使用次数大于3次后可向老师提出申请在非工作时间使用。</p>
+<p class="protocol-text">本节同样适用于LSM 800型显微镜。</p>
+<h3 class="protocol-subtitle" id="开机-关机操作">开机、关机操作</h3>
+<h4 class="protocol-minititle">开机</h4>
+<p class="protocol-note">*汞灯一旦关闭，需要在30min后才能开启！</p>
+<p class="protocol-text">原则上按照编号依次从3编号的开关进行开机，依次打开3~14开关。</p>
+<p class="protocol-text">3、4、5开关位于电脑右侧，3开启后待响声（由镜头组发出）结束再开启4，随后各开关之间需间隔5s以上开启；</p>
+<p class="protocol-text">6、7两开关仅当需要观察活细胞时开启，否则越过，该开关控制CO2和温度，观察样本为固定样时不需要开启，开启6后需要等待15min再开启7；</p>
+<p class="protocol-text">6、7位于显微镜左侧，7位于左侧CO2机右侧管的后侧；</p>
+<p class="protocol-text">8位于电脑显示屏后侧，将操纵杆拉上；</p>
+<p class="protocol-text">9为显微镜开关，位于电脑右侧；开启后显微镜显示屏上进入“microscope档”；</p>
+<p class="protocol-text">10为电脑旁的汞灯开关，开启后调至最亮；</p>
+<p class="protocol-text">11、12位于电脑后侧；12为钥匙，需旋转打开；</p>
+<p class="protocol-text">13位于显示屏后后侧；</p>
+<p class="protocol-text">14即电脑主机箱，开启后进入分析软件“ZEN 2010”。</p>
+<h4 class="protocol-minititle">关机</h4>
+<p class="protocol-note">*当实验结束后1h内有其他人使用，则不用关机，直接刷卡下机。</p>
+<p class="protocol-note">*将汞灯调至最弱后关机。</p>
+<p class="protocol-text">退出软件分析界面，从14到3倒序关闭电源；</p>
+<p class="protocol-text">注意若6、7开启，则关闭7后10min关闭6；</p>
+<p class="protocol-text">注意各开关间隔5s操作。</p>
+<h3 class="protocol-subtitle" id="使用">使用</h3>
+<h4 class="protocol-minititle">软件基本界面与操作</h4>
+<p class="protocol-text">点击“start system”，检查报错情况，若6、7未开则应出现2个报错；</p>
+<p class="protocol-text">待下方进度条加载，进度条可能出现卡住的情况；</p>
+<p class="protocol-text">Ocular界面用于显微镜的光源切换等操作，此时显微镜将使用白光和汞灯激发荧光；</p>
+<p class="protocol-text">Acquisition界面用于拍摄照片等，此时显微将关闭目镜，使用传感器分析并使用激光激发荧光。</p>
+<h4 class="protocol-minititle">在显微镜下找到合适观察对象</h4>
+<ul class="protocol-list"><li>在Ocular界面，点击“shutter on”和“online”，使用白光（BF），白光的亮度在显微镜下端直接调节；</li><li>*此处可选择其他颜色荧光观察，此时仍由汞灯激发；</li><li>将显微镜塑料外壳两侧窗口打开，上侧左右两个把手向外拉，之后将显微镜上侧装置向后仰至限位，倒放标本，注意玻片刚好卡入；</li><li>*注意观察活细胞时需要再次将窗口盖紧以避免破坏CO2和温度环境。</li><li>按下准焦螺旋的按钮或直接调节准焦螺旋（前者需要在显微镜显示屏上选择调至最顶端）至物镜移至最顶端；</li><li>直接在显微镜下观察，寻找合适的细胞观察对象；</li><li>通过控制把手调节玻片位置；</li><li>若在白光（BF）下观察，注意区分杂质（结晶、气泡等）的干扰；建议使用DAPI荧光观察，DAPI常用于定位细胞；</li><li>将物镜升至最高（参照3）后向相反方向缓慢调节物镜以缓慢调节焦距，同时观察；</li><li>使用低倍镜前建议先使用擦镜纸擦拭，以防先前使用者未擦拭干净；</li><li>由于共聚焦显微镜会屏蔽掉焦平面以外的荧光，所以当焦平面（焦距）未调节合适时，荧光强度较弱，此时通过调节Gain值和激光功率均不能将荧光增强；</li><li>镜头的切换</li><li>切换镜头组时点击触摸屏的按钮，注意使用油镜（Oil）和水镜（W）后务必擦拭干净再切换镜头，否则将污染其他镜头；</li><li>油镜（Oil）和水镜（W）需要滴加位于显示屏左侧的溶液，滴加一小滴即可，滴加于物镜正中间；</li><li>建议在低倍镜下观察到细胞后，在高倍非油镜下观察，随后再使用水镜或油镜，以防止切换油镜后找不到细胞的情况；</li><li>63X与63X Oil的区别在于两者虽然放大倍数相同，但后者分辨率更高；</li><li>擦镜时，将擦镜纸分为两半，一半使用无水乙醇喷湿，逆时针擦拭镜头和玻片样本，另一半直接擦拭；</li></ul>
+<h4 class="protocol-minititle">激光激发荧光</h4>
+<ul class="protocol-list"><li>进入软件界面“Acquisition”，点击“Smart setup”进行激发光的设置；</li><li>在弹出页面下每条分别选择染料和处理的颜色，一般情况下选择染料后会自动选择对应的颜色，必要时可选用其他颜色；</li><li>下侧的3个方式指激发方式，分别为：</li><li>Fastest：所有颜色同时激发，但由于激发光会互相干扰，效果不佳，但是此法扫描速度快；</li><li>Best compromise：兼顾速度和干扰情况，若两种激发光干扰高则单独拿出；</li><li>Best signal：每一种激发分别进行，速度慢但效果最好；</li></ul>
+<p class="protocol-text">一般情况下建议使用第iii种；</p>
+<ul class="protocol-list"><li>点击确定后在左侧栏应出现多个光路，即为设置成功；</li><li>对于需要拍摄的每一个染料，依次选中并调节参数。此处参数的调节实际上是预览效果图，根据预览拍摄的照片调节以使各个激发光下照片均合适；</li><li>选中一个染料（之前已添加）后，将会自动出现激发的激光器选项，一般不用修改；</li><li>激光功率百分比，对于容易激发的激光调节2%~10%左右；不容易激发的调节20%~40%左右；</li><li>由于激光器有老化现象，较旧的激光器需要更高的功率才能激发出同等强度的荧光；</li><li>避免在高强度激光下工作过长时间，高强度激光会导致荧光的淬灭，可用于荧光漂白实验，红色波段不易漂白，可使用较高强度的激光；</li><li>建议在调节Gain（即7d）后无法达到预期效果再调节激光功率；</li><li>Pinhole选择1AU，数值越高，分辨率越低，荧光越亮；</li><li>Gain（Master）即接收器电压，效果与曝光时间类似，数值越大，结果越亮，但是噪音也越大，一般设定值&lt;800；</li><li>通过点击页面下方灰度按钮（channel），可以查看曝光情况：蓝色显示曝光过低区域，一般应覆盖整个背景，此时噪声较低；红色显示曝光过高区域，若拍摄细胞显示红色，则应降低Gain值；</li><li>调节Gain值达不到预期效果时，请检查：①激光功率是否过低；②显微镜焦距是否合适（4e）；</li><li>设置Digital offset为0；</li><li>设置Digital gain为0，当无法通过其他调节方式使得噪音降低时，可将此值改为负值（一般在-200左右）；</li><li>调节参数完毕后勾选所有荧光染料，点击左上角预览（Live），随后进行扫描；</li><li>待页面底端进度条走完后表示拍摄完成；</li><li>可以通过显示图像处左侧菜单栏选择图像展示方式，常用的为：</li><li>2D 展示一种荧光下扫描情况；</li><li>Split：将所拍摄荧光同时显示，并显示荧光混合的merge图；</li></ul>
+<h4 class="protocol-minititle">拍摄并保存照片</h4>
+<ul class="protocol-list"><li>选择页面上方的相关选项，进行拍照；</li><li>拍照时注意把多种荧光均进行勾选；</li><li>X*Y表示照片分辨率，大约调节1024*1024左右；</li><li>拍照速度选择5~6；</li><li>Number表示扫描次数，用于优化拍照效果：</li><li>当Method选择Mean时，激光扫描每一个像素点时会多次扫描取平均值；</li><li>当Method选择Sum时，将会进行叠加以增强亮度；</li><li>Bit Depth表示位深，一般选择16bit以达到最大的颜色鲜艳度；</li><li>Direction为扫描方向，一般为单向（—&gt;）；</li><li>选择左上角的Snap进行拍照；</li><li>保存后的文件以.lsm格式放在E盘中，选择自己课题组→自己姓名进行保存；</li><li>储存为.lsm格式的文件可以在其他电脑上使用该公司的其他软件进行编辑，或使用实验室工作站电脑编辑。</li><li>Grop功能用于数码放大照片，如在当前拍摄镜下放大某区域照片，通过Grop操作可以选中该区域并仅对该区域进行扫描；</li><li>选择Grop功能后出现框选，调节框选大小、位置、旋转角度；</li><li>查看左侧当前Grop的数码放大倍数，一般不应大于4倍，否则图像将会很模糊；</li><li>此时再点击Live预览或Snap拍照将会只拍当前选中区域；</li><li>停止使用Grop功能，选择Grop菜单的“reset选项”。</li></ul>
+<h4 class="protocol-minititle">进行多焦平面的拍摄</h4>
+<p class="protocol-note">*本法适用于①确定不了拍照的最佳焦距时；②拍摄神经细胞等具有多层复杂结构的细胞时。</p>
+<ul class="protocol-list"><li>左上角点击Z-Stack模式；</li><li>右下角弹出该模式的设置界面，进行调节；</li><li>设置Last和First点，手动调节焦距至最佳焦距两侧刚好看不到细胞为止，分别点击Last和First设置；</li><li>设置Slices即切片数，切片数越大扫描时间越长，但当使用目的为②时Z向分辨率也越高；</li><li>设置Interval即两层之间间距，该选项与Slices相关联；</li><li>点击左上角的开始实验（Start Experiment）；</li><li>扫描结果可通过拖动底端按钮显示不同层照片；</li><li>同样储存为.lsm格式。</li></ul>
           </div>
         </div>
-
         <div class="expand-menu">
-          <div class="expand-menu-header">琼脂糖凝胶电泳<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-header">荧光倒置显微镜<span class="expand-arrow">▼</span></div>
           <div class="expand-menu-body">
-            <p>根据片段大小选择合适胶浓度，电泳时注意方向和电压。成像后记录条带大小、亮度和异常拖尾情况。</p>
+            <p class="protocol-text">注意：荧光倒置显微镜拍摄的照片具有多层叠加的情况，不能用于免疫组化后的组织切片观察。无CO2时，仅能用于单层生长或近似单层生长的细胞爬片等的观察。</p>
+<p class="protocol-text">注意：此台显微镜因设备自身问题，拍摄画面左右方向有模糊。</p>
+<p class="protocol-text">注意：此显微镜配有观察活细胞的CO2供应装置</p>
+<p class="protocol-text">注意：本显微镜使用全程不戴手套。</p>
+<h3 class="protocol-subtitle" id="开机-关机操作">开机、关机操作</h3>
+<p class="protocol-text">按照编号正序依次开机，先开启汞灯开关（1），再瞬时高压点亮汞灯（2），再按照顺序开启照相机变压器和照相机电源（3、4），最后开启滤光片控制器。</p>
+<p class="protocol-text">关机时逆序关闭，不需要按2按钮，关机前镜头需要降至最低。</p>
+<h3 class="protocol-subtitle" id="使用">使用</h3>
+<ul class="protocol-list"><li>开启电脑，打开MetaMorph软件；</li><li>将样品倒置于显微镜上，若使用油镜（60X），需要先在镜头上滴加香柏油后再放入样本；</li><li>选择观察口为1-目镜（5-相机）；</li><li>在软件上调整通道，同时根据表格调整显微镜上的滤光片至合适位置；</li><li>目镜下观察，建议使用DAPI调整焦距和位置，使用阳性荧光找到被观察细胞；</li><li>*非共聚焦，不同平面细胞会产生虚化，无法排除</li><li>*可使用显微镜背侧的三个遮光片调整荧光强度</li><li>*本显微镜无白光通道，也无法通过亮度旋钮调节光强</li><li>选择观察口为1-目镜（5-相机）；</li><li>在软件上依次选择Acquire-short live以观察实时影响，调整曝光时间&lt;300ms；</li><li>*如DAPI等非目标通道，可通过画面左侧轴调节亮度，但需要看表达量的通道要保持数码调节一致</li><li>使用Acquire可以拍摄照片，但该照片不能直接保存，需要转换为8-bits色深的tiff格式进行保存。</li><li>取下样品，先使用干燥擦镜纸光面擦拭镜头，再使用滴加乙醇的擦镜纸光面擦拭镜头，顺时针擦拭。</li></ul>
+          </div>
+        </div>
+        <div class="expand-menu">
+          <div class="expand-menu-header">恒温CO2细胞培养箱<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-body">
+            <h3 class="protocol-subtitle" id="常规使用方法">常规使用方法</h3>
+<p class="protocol-text">钢瓶气阀开启后，点按Mode由Run进入Set模式，左右键切换Set选项，上下键调节CO2和温度。</p>
+<p class="protocol-text">打开双层玻璃放置样品，打开时间过长后由于CO2和温度控制失灵，将告警。</p>
+<p class="protocol-text">警报响起时点击“Sclience”消音。</p>
+<p class="protocol-text">后两个模式用于仪器校准等，一般不用使用。</p>
+<h3 class="protocol-subtitle" id="高温消毒操作">高温消毒操作</h3>
+<p class="protocol-text">取下培养箱内软管和后部的橡胶塞，取出空气过滤器（注意其上连接的温度传感器探头），将以上物品放置于紫外灯下；</p>
+<p class="protocol-text">取出所有样品，若水盆带水，同样应当取出；</p>
+<p class="protocol-text">长按最右侧按钮至闪烁；</p>
+<p class="protocol-text">点击ok键启动加热。</p>
+<p class="protocol-note">*高温消毒将持续25 h，因舱内温度高于100℃，故舱内不得有液体残留。</p>
+          </div>
+        </div>
+        <div class="expand-menu">
+          <div class="expand-menu-header">流式细胞仪（分析）<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-body">
+            <p class="protocol-text">【以下信息可能不符合实验室实际情况】</p>
+<h3 class="protocol-subtitle" id="样品预处理">样品预处理</h3>
+<ul class="protocol-list"><li>细胞样品需经100μm过滤器过滤，最后稀释到至少3ml样品，并将样品转移至流式分析专用管中；</li><li>各荧光染料-抗体偶联试剂提前加入，并在纸上记录所用的抗体表；</li><li>DAPI仅在上样前加入，加入DAPI后应立刻上样；</li></ul>
+<h3 class="protocol-subtitle" id="上样分析操作">上样分析操作</h3>
+<ul class="protocol-list"><li>流式细胞仪运行速度调至慢速“slow”，模式调至“standby”；</li><li>电脑新建一个“tube”并进行命名；</li><li>向旁侧移动样品托盘，向下拔下样品，将样品迅速插入，移回样品托盘；</li><li>*注意，此时样品会流失一部分以排出管道中的空气</li><li>流式细胞仪模式调至“run”；</li><li>电脑界面选择“start analyse”，观察细胞流速，细胞流速约在3000以下，待速率稳定后若流速过慢，可以将仪器调至中速或高速；</li><li>待结果稳定后，点击“acquire data”，则开始记录数据，当记录设置时间或记录设置细胞量后自动停止；</li><li>待所测得的数据全部测完，在该“experiment”下右键导出，存至D盘Data下对应文件夹。</li><li>*若不小心吸入空气，将产生杂信号，本组实验必须重做，同时需要使用水进行清洗，并按下排气按钮进行排气</li></ul>
+<h3 class="protocol-subtitle" id="关机操作">关机操作</h3>
+<p class="protocol-text">关闭软件，若开启激光则也关闭。仪器使用水进行清洗（即低速模式运行）5min，再关闭。</p>
+<h3 class="protocol-subtitle" id="数据处理">数据处理</h3>
+          </div>
+        </div>
+        <div class="expand-menu">
+          <div class="expand-menu-header">震动切片 Leica VT 1200S<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-body">
+            <h3 class="protocol-subtitle" id="震动切片与冰冻切片的比较">震动切片与冰冻切片的比较</h3>
+<div class="protocol-table-wrap"><table class="protocol-table">
+<thead><tr><th>冰冻切片</th><th>震动切片</th></tr></thead>
+<tbody>
+<tr><td>切片薄，可达15 um以下</td><td>切片厚</td></tr>
+<tr><td>切片速度慢</td><td>切片速度快</td></tr>
+<tr><td>样本需要经过脱水处理</td><td>样品无需经过脱水处理</td></tr>
+<tr><td>样品必须包埋（gelatin）</td><td>样品可以不经过包埋或使用琼脂糖包埋</td></tr>
+<tr><td>切片后的样本可长期置于-20保存</td><td>切片后的样品只能置于4度短期保存</td></tr>
+<tr><td>配合贴片染色，节约抗体</td><td>配合漂染，染色效率高</td></tr>
+<tr><td>需要使用OCT</td><td>不需要使用OCT</td></tr>
+</tbody>
+</table></div>
+<h4 class="protocol-minititle">振动切片机控制面板</h4>
+<h4 class="protocol-minititle">振动切片机使用说明</h4>
+<h4 class="protocol-minititle">鼠脑切片protocol</h4>
+<ul class="protocol-list"><li>将小鼠脑底部用刀片修平整（可以修掉整个小脑确保切片时稳固），以保证振动切片机水平切片时为冠状切片。</li><li>在托盒中央粘贴透明胶带，在胶带中央滴少量一滴502胶水，将鼠脑垂直粘好。</li><li>待胶水干后，将黑色托盒安装至振动切片机。注意托盒四脚的吸铁石都要水平吸附到底座上。</li><li>在托盒内倒入1 X PBS缓冲液，没过鼠脑。</li><li>打开振动切片机电源开关。安装新的吉列刀片，下旋刀片至水平位置。</li><li>设置刀片前后移动的幅度，通过选择step size（1，10，100μm），旋转转钮调整至所需的切片厚度（40μm）。</li><li>按压“RUN/STOP”键进行切片，将脑片按顺序收取，放置于盛有1×PBS的六孔板中（6套），转移至防冻液中，－20℃保存待用，或直接进行下一步实验。</li><li>*为防止样品混乱，可使用96孔板</li><li>切片结束后，按压“DOWN”键，将样品托降至最低处，卸下刀片，清理托盒，切片机有水渍的地方都要擦干，刀片擦拭干净后烘干保存。</li><li>关闭仪器电源并盖上防尘罩，清理实验台。</li></ul>
+<p class="protocol-text">Note：</p>
+<ul class="protocol-list"><li>每套脑片约为24片×厚度40μm×6套，5.76mm。中脑？</li><li>脑片起始和结束位置约如下图所示:</li><li>可在组织前面粘贴一块废弃的脑组织或琼脂快起到支撑作用，以增加脑组织的稳固性。</li><li>切片速度及振幅的选择：</li><li>根据切片的原则，对于越软的组织，就需要越慢的切片速度，越高的振幅和频率，以及越锋利的刀片和冷的组织缓冲液。对于未经过固定的新鲜软组织，切片速度通常不超过0.1mm/s，振幅通常控制在1.0mm/s至1.5mm/s范围内；对于经过固定的组织，切片速度可提高到0.5mm/s, 振幅通常控制0.6mm/s至0.8mm/s范围内。</li><li>对于新鲜的软组织，可以用低熔点(45—55℃) 10%琼脂糖包埋，以利于切片展开。</li><li>当乙二醇的含量为60%时，冰点可降低至-48.3℃，超过这个极限时，冰点反而上升。</li></ul>
+          </div>
+        </div>
+        <div class="expand-menu">
+          <div class="expand-menu-header">冰冻切片Leica CM3050S<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-body">
+            <p class="protocol-text">【适用于脑组织的冰冻切片方案详见单独的文件】</p>
+<h3 class="protocol-subtitle" id="样品预处理">样品预处理</h3>
+<p class="protocol-note">*详见长骨免疫组化</p>
+<p class="protocol-text">软组织样品需要经蔗糖脱水处理，骨样品需要脱钙2天后经蔗糖脱水处理；</p>
+<p class="protocol-text">样品使用20% Sucrose-8% Gelatin -2%(or 0.5%) Polyvinylpyrrolidone溶液包埋；</p>
+<h3 class="protocol-subtitle" id="样品放置">样品放置</h3>
+<ul class="protocol-list"><li>调节冰冻切片机温度（包括环境温度和台面温度），约在-20℃；</li><li>将所有样品放置于低温环境中；</li><li>取出一个样品托，在其上滴加少量专用胶水，取出组织样品块，底面朝上，黏附样品于样品托上，尽量压紧；</li><li>*请勿在切片机内部加入胶水、黏附样品，专用胶水在低温下将迅速凝固</li><li>*注意编号，将样品连同样品架倒放，使样品紧贴切片机低温底座，以使得样品表面硬化</li><li>取出一片Leica819刀片（放置于试剂柜中），打开刀片夹右侧的旋钮，插入刀片，随后夹紧旋钮；</li><li>*注意刀片划伤，加完刀片后及时盖紧玻璃罩</li><li>扳下刀片台左侧杆，左右调节刀片架至合适位置；</li><li>*因多次切片后刀片变钝，可通过左右调节刀片架使用刀片不钝的部位</li><li>调节玻璃至合适位置，玻璃需略突出刀片前段且不能碰到样品，此距离在不调节刀片角度时不用改动；</li><li>若切割较硬或较软的样品时，需要调节刀片角度，一般无需调节；</li><li>将样品置于样品架上，旋紧左侧旋钮，对于骨组织，使骨平行放置；</li></ul>
+<h3 class="protocol-subtitle" id="切片">切片</h3>
+<ul class="protocol-list"><li>在左侧操作面板上通过“▲”“▼”调节切片厚度，选择70~80um左右，以方便迅速找到所切平面；</li><li>通过左侧操作面板的“↑”将样本后退，至肉眼观察与刀片基本平齐之后；</li><li>打开右侧转轮锁定扳手，顺时针旋转，至样本被切第一刀为止；</li><li>*此步转轮每转一圈，样品向刀片移动一个切片厚度，当切到第一刀时，将切片厚度调节为50um；</li><li>根据切片情况调节样品架左右倾斜情况，拉上样本架右侧把手解除限位，左后侧螺杆旋转调节角度，直到再次切片产生正方形样本为止；</li><li>*注意改变角度后需将样品架后退一些重新开始切</li><li>持续切片，直到可见组织的样本被切出，清理之前产生的样本，使用毛笔扫入下侧收集盒中，并用毛笔擦干净刀片和玻璃；</li><li>*注意毛笔需顺着刀片清理，避免毛笔毛刷被刀片割断</li><li>若组织样本不平齐，再次调节样品架左右倾斜角度；</li><li>当产生合适的、明显可见的样本时，开始进行收集，往后每切一刀收集一次；</li><li>将方形的样本使用毛笔翻过来，取一载玻片，在样本表面轻按，使得样本贴敷于载玻片上，注意区分玻片正反片；</li><li>*使用两只手分别持毛笔进行翻转效果更好</li><li>*翻转后若为骨组织样本，将骨组织痕迹横放，且粘在载玻片时骨组织横放并平行</li><li>*注意不能用力、长时间按压，否则样本将粘在冷冻台上作废，也不能稍贴一下而不按压，否则后期样品处理时则易脱落</li><li>*注意第一片粘在载玻片中间，下一片粘在载玻片边缘，方便编号时分清顺序</li><li>各样本编号时遵循如下编号原则，以便于后期处理：</li><li>切片完毕后，取下刀片，取下样本，样本置于常温一段时间后使用镊子撬开，珍贵样品进行保存；</li><li>整理台面，将切下的边角扫入收集盒里，再统一倒入垃圾桶内，恢复使用前配置，锁定把手；</li><li>切片样品放入样品盒中保管，长期保存放入-20℃环境。</li></ul>
+<p class="protocol-text">注意：</p>
+<ul class="protocol-list"><li>必须先在载玻片上写清样品名称后再进行装片，以防止样本方向颠倒的情况发生；</li><li>当切片厚度较薄时，切出的样品形状可能不规则，此时使用国产还是进口的载玻片差距不大，样品较薄时利于黏附在玻片上，所以装片时不需要按压；当切片厚度较厚时，切出的样品形状较为规则，此时建议使用进口载玻片，并且装片时稍用力按压，否则组化时样品容易脱片。</li></ul>
+          </div>
+        </div>
+        <div class="expand-menu">
+          <div class="expand-menu-header">分光光度与酶标法<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-body">
+            <h3 class="protocol-subtitle" id="nanodrop-spectrophotometer">Nanodrop Spectrophotometer</h3>
+<ul class="protocol-list"><li>Open Nanodrop software, choose the corresponding application.</li><li>Lift arm and apply 1ul of ddH2O, close the arm lightly, continue the program, waiting for hardware auto-change.</li><li>Wipe water off with a dry kimwipe, apply 1ul of solution, then make blank measurement.</li><li>*the solution is the buffer your sample dissolved in.</li><li>Wipe the solution and load your samples one by one, after loading each sample, run “measure” program and write down the concentration on the side of EP tube.</li><li>After testing all samples, use 1ul of ddH2O to wash the machine, put a paper of kimwipe between the arm and loading pore.</li></ul>
+<h3 class="protocol-subtitle" id="分光光度计">分光光度计</h3>
+<p class="protocol-text">【以下信息可能不符合实验室实际情况】</p>
+<p class="protocol-text">分光光度计或酶标仪位于公用仪器处，去之前需将样品稀释至500ul，并携带1000ul移液器和枪头、比色皿、卫生纸、实验记录本和笔用于记录数据、EP管架等。</p>
+<ul class="protocol-list"><li>刷卡开机，选择对应的样本类型，设置样品稀释比率；</li><li>对于非特制的比色皿，至少需加入500ul液体，使用&gt;500ul水进行较零，比色皿插到底后点击blank；</li><li>加入&gt;500ul稀释的样品进行测定，比色皿插到底后点击sample；</li><li>*正常情况下应能显示样品的浓度值，若显示“+++++A”表示样品浓度过高，在调节样品浓度前需检查比色皿是否脏污</li><li>比色皿使用去离子水进行清洗，换样品时至少清洗3遍，清洗后需将比色皿倒扣到卫生纸上敲击以使比色皿内残余水分去除。</li></ul>
+          </div>
+        </div>
+        <div class="expand-menu">
+          <div class="expand-menu-header">超速离心机<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-body">
+            <p class="protocol-text">使用时必须有人值守！</p>
+<p class="protocol-text">部分离心管不具有盖子，若要达到洁净效果，需提前将待使用的样品管进行灭菌，将样品在超净台上转移至离心管中，将离心管插入样品管后旋紧螺栓，再拿出超净台。</p>
+<p class="protocol-text">本离心机适用于大质量样品的离心、少量样品的高转速离心和需要温度设置的长时间离心。</p>
+<ul class="protocol-list"><li>将样品转移至合适的离心管中；</li><li>*对于如菌液等大质量样品，预先在公用仪器室选择好离心瓶，经乙醇和水洗涤至完全无味道后，提前在实验室转移好菌液</li><li>*对于小质量物体，使用对应的小质量离心管（实验室应预先买好），拿到公用仪器室</li><li>*配平离心管注意需连同离心管左右组件一同称重，且质量偏差在0.1g以内</li><li>*需要旋紧盖子的离心管，可使用离心机旁侧工具箱中的工具</li><li>将离心管插入转子中；</li><li>*对于悬挂式转子，需记住样品放置位置，并将样品管两只挂钩都挂于转子上，样品管和转子有相应编号需相互对应</li><li>*注意对于悬挂式转子，需将相同质量的转子挂于对侧，并将所有转子均挂上去！</li><li>将转子插入离心机中；</li><li>*对于常规转子离心机，需注意转子与离心机转头的卡扣是否对应插入，不得歪斜插入。最后旋紧转子盖子，先旋紧下侧旋钮，再旋紧上侧旋钮，若上侧旋钮无法旋紧，则转子与转头插入位置不正确</li><li>*对于悬挂式转子，直接插入即可，无需找到对应位置</li><li>*悬挂式转子使用房间后侧的真空离心机，普通转子使用房间前侧的非真空离心机</li><li>盖紧离心机盖子；</li><li>*真空离心机侧滑关闭盖子，非真空离心机直接盖紧盖子，同时确认两锁扣均卡紧</li><li>设置离心温度、转速（rpm）、时间；</li><li>*根据转子编号，在仪器显示屏上进行相应换算，将g值换算为转速后进行离心</li><li>对于真空、悬挂式转子离心机，点击vacuum抽真空，待压力值将至400以下开始旋转；</li><li>开始旋转，直至达到最高转速后人员方可离开；</li><li>离心结束后开启离心机盖子</li><li>*对于真空、悬挂式转子离心机，点击vacuum充气后，直至无气泵声音，方可打开盖子</li><li>*对于非真空离心机，踩踏下侧踏板，即可打开盖子</li><li>取下样品，填写仪器使用情况，将转子取下，刷卡下机，将样品取出，如使用仪器中心的离心管，需清理至无异味后归还。</li></ul>
+          </div>
+        </div>
+        <div class="expand-menu">
+          <div class="expand-menu-header">酶标仪<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-body">
+            <h3 class="protocol-subtitle" id="bca法测蛋白浓度">BCA法测蛋白浓度</h3>
+<h4 class="protocol-minititle">样品处理</h4>
+<ul class="protocol-list"><li>蛋白样品置于冰上，按照顺序依次摆放，蛋白样品中不能含有影响荧光基团的物质，或尿素等影响双缩脲反应的物质。</li><li>将BCA试剂盒中的A液与B液按照1:60的比例混合，所需体积如下：</li><li>*标准品测量一次后可记录标准曲线的线性浓度范围、斜率和截距，以便下次直接使用，校准一次后短时间内不需要重新校准；</li><li>*配制好的反应液放置于4℃，使用前混匀，24h内有效。</li><li>向96孔板中加入蛋白样20ul，每个蛋白样重复三组。</li><li>*一般而言，蛋白样需要稀释10倍后进行BCA反应，方法为：向各孔中加入18ul ddH2O后再加入2ul的蛋白原液</li><li>*务必标清各孔的蛋白样的名称、加样顺序等。</li><li>向各孔中加入200ul的BCA反应液，盖上盖，将其放置于37℃烘箱中加热30min。</li><li>*测试样品时必须保证孵育方式与时间同标准品完全相同；</li><li>*可使用酶标仪的震板功能混匀。</li></ul>
+<h4 class="protocol-minititle">酶标仪检测</h4>
+<ul class="protocol-list"><li>开启酶标仪并送入待测的96孔板。</li><li>选择560滤光片，选择要测试的区域，点击start，测试各孔的吸光度。</li><li>在计算机上列出下表，后续步骤见蛋白制样。</li></ul>
+<div class="protocol-table-wrap"><table class="protocol-table">
+<thead><tr><th></th><th>吸光度</th><th>浓度(ng/ul)</th></tr></thead>
+<tbody>
+<tr><td>Sample 1</td><td>x</td><td>10(Kx+b)</td></tr>
+<tr><td>Sample 2</td><td>y</td><td>10(Ky+b)</td></tr>
+<tr><td>Sample 3</td><td>z</td><td>10(Kz+b)</td></tr>
+</tbody>
+</table></div>
+<ul class="protocol-list"><li>*10为稀释比率。</li></ul>
           </div>
         </div>
     </div>
 
     <div class="general-content" id="tab4">
-        <h2>细胞实验</h2>
+        <h2>实验方法</h2>
         <hr>
-        <p>细胞实验强调无菌操作、细胞状态观察和传代记录。</p>
+        <p class="protocol-text">这一部分是备忘录的主体，覆盖动物、组织、分子、蛋白、RNA、电生理、试剂和细胞培养流程。</p>
 
         <div class="expand-menu">
-          <div class="expand-menu-header">细胞复苏<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-header">小鼠解剖实验<span class="expand-arrow">▼</span></div>
           <div class="expand-menu-body">
-            <p>复苏时应快速融化冻存管，并尽快转入预热培养基中。首次换液后观察贴壁、污染和细胞形态。</p>
+            <h3 class="protocol-subtitle" id="常规操作">常规操作</h3>
+<h4 class="protocol-minititle">用具准备</h4>
+<ul class="protocol-list"><li>常规用品：</li><li>酒精喷壶、卫生纸和厨房用纸、解剖台、解剖剪和镊子、27G针头和21G针头、冰盒+冰、封口袋、记号笔、乳胶手套、鼠耳打孔器。</li><li>免疫组化预处理：</li><li>PFA（4%，需提前在37℃水浴锅中融化，并分装于1.5或2ml管中）</li><li>流式分析预处理：</li><li>移液器（1ml，含枪头）</li><li>取血：</li><li>取血针、EDTA-K采血管</li></ul>
+<h4 class="protocol-minititle">抓握</h4>
+<p class="protocol-text">规范以可以完全控制小鼠活动为准，并能够充分暴露鼠的胸部和腹部。</p>
+<p class="protocol-text">从笼中取出时抓握尾部靠前约1/3处，避免过前或过后导致咬伤。</p>
+<p class="protocol-text">将小鼠从笼上铁隔栏上划过，小鼠会本能抓握铁栏，稍拉伸，待小鼠身体不再蜷缩成球状，此时小鼠基本丧失攻击性，用左手拇指、食指抓握小鼠胸腔部位（注意此时不能仅抓握皮肤，否则不易控制小鼠），然后慢慢向前推移，直至拇指、食指抓握颈部皮肤、中指控制小鼠身体，无名指和小指抓住鼠尾处即可（注意当小鼠身体笔直时鼠尾处无法握持，应使得小鼠身体向手心处弓起以充分暴露胸腹部）。</p>
+<h3 class="protocol-subtitle" id="软组织解剖">软组织解剖</h3>
+<p class="protocol-text">正面朝上：解剖淋巴结、皮肤、心脏、肝脏、胸腺；</p>
+<p class="protocol-text">背面朝上：解剖脾脏、脑、长骨。</p>
+<h4 class="protocol-minititle">心脏解剖</h4>
+<p class="protocol-text">沿胸骨向上剪开，找到心脏并取出，放置于PBS溶液中洗涤后再放入PFA中固定。</p>
+<h4 class="protocol-minititle">肝脏解剖</h4>
+<p class="protocol-text">不需要取整个肝脏，仅需剪开腹膜后剪下一小块，直接放入PFA溶液中即可，注意不要将胆囊等一并取出。</p>
+<h4 class="protocol-minititle">脾脏解剖</h4>
+<p class="protocol-text">于背侧左面剪开皮肤和腹膜，见红色弧形脾脏，游离后剪断两侧脂肪并完全清除脂肪组织后剪半，放入PFA溶液中。</p>
+<h4 class="protocol-minititle">淋巴结</h4>
+<p class="protocol-text">腹股沟淋巴结较容易取，小鼠正面朝上，在皮肤下可见明显三条血管交界处即为腹股沟淋巴结，连同周边脂肪组织一同切下后放入PFA溶液中即可。</p>
+<h4 class="protocol-minititle">脑</h4>
+<p class="protocol-text">小鼠背侧朝上，分离皮肤至颈部，并进一步向上剪开，随后剪断颈部，剪断颈部皮肤组织使头部游离，可见脑部。</p>
+<p class="protocol-text">从颈部向上入剪，沿中线剪开头骨，再沿颈部环侧剪开头骨，使用镊子剥离头骨后可见脑组织，取对应脑组织即可。</p>
+<h3 class="protocol-subtitle" id="灌流后组织解剖">灌流后组织解剖</h3>
+<p class="protocol-text">部分组织为了获取无血液相关成分污染的切片，以在免疫组化时防止血浆相关成分的显色，常用心脏灌流，将血液先用生理盐水或PBS置换，再用4% PFA溶液置换，随后进行解剖。</p>
+<h4 class="protocol-minititle">准备工作</h4>
+<p class="protocol-text">准备5% 水合氯醛溶液用于小鼠麻醉；准备生理盐水和4% PFA固定液；准备带针头塑料管；准备解剖用具、解剖台（灌流专用）、蠕动泵、盛有4% PFA的15ml离心管等。</p>
+<p class="protocol-text">将注射管置于蠕动泵上，放置生理盐水溶液，开启蠕动泵以使管子内充满生理盐水。其中，CCW按钮为注射模式；CW按钮为抽吸模式；中间的按钮为泵体开关；右上角的按钮为加速，蠕动泵厂家：LongerPump。</p>
+<h4 class="protocol-minititle">麻醉、固定与扎针</h4>
+<p class="protocol-text">使用注射器对小鼠腹腔注射5% 水合氯醛以麻醉小鼠。待小鼠呼吸平稳且无剧烈反应时，将小鼠腹侧向上，使用针头固定四肢以暴露胸腹侧。过程中关注小鼠呼吸情况，灌流前需保证小鼠有正常心跳。</p>
+<p class="protocol-text">于胸骨剑突出向上依次打开皮肤和胸膜，并打开膈以观察小鼠肝脏。沿中间剪断肋骨，暴露心脏，可用止血钳固定上端有碍视野的组织</p>
+<p class="protocol-text">在注射管内充满生理盐水且蠕动泵关闭的情况下，自心脏右下处进针（进针前先将针头穿过肋骨以固定针头），针头突破心脏尖端进入心室后有刺穿感，随后在心脏左上侧颜色较深的心脏组织处（即心房上部）使用手术剪剪开小口，见血液涌出即可。</p>
+<p class="protocol-text">注意瓶中液体量是否足够，防止中途注入空气。</p>
+<h4 class="protocol-minititle">生理盐水置换血液</h4>
+<p class="protocol-text">开启蠕动泵，观察泵出液体是否进入心脏，应见开口处血液涌出，心脏仍会保持跳动一段时间。保持针头位置不移动，必要时可用止血钳等固定针头位置。待血液全部被置换为生理盐水时，可见肝脏由暗红色变为白色，流出液体基本澄清，此时关闭蠕动泵。</p>
+<h4 class="protocol-minititle">PFA溶液置换生理盐水</h4>
+<p class="protocol-text">取下生理盐水，换为4% PFA溶液，再次开启蠕动泵。待PFA溶液置换生理盐水过程中，应见小鼠尾部翘起并抽搐，同时小鼠四肢僵硬。观察到此现象后再继续注射一分钟，即可关闭蠕动泵、拔下针头。</p>
+<h4 class="protocol-minititle">取小鼠全脑以进行震动切片</h4>
+<p class="protocol-text">解除固定后翻转小鼠，直接切断小鼠颈部。因PFA固定，颈部应较难切断。手握头部，从背侧向鼻侧剪开毛发。沿中线剪开头骨至后线中点。在前线靠前位置再次入剪并向左右撑开。小鼠头骨应能够碎裂并暴露小鼠大脑。</p>
+<p class="protocol-text">沿根部取下大脑，并将组织放入4% PFA溶液中固定过夜。</p>
+<p class="protocol-text">注：因采用震动切片，故只需PFA固定即可，不需进行蔗糖脱水。据称蔗糖脱水有可能获得更好的实验结果。</p>
+<h3 class="protocol-subtitle" id="腿长骨解剖">腿长骨解剖</h3>
+<p class="protocol-text">取出股骨（Femur）和胫骨（Tibia），并根据需要进行免疫组化或流式分析的预处理。</p>
+<h4 class="protocol-minititle">准备工作</h4>
+<ul class="protocol-list"><li>脊椎脱臼法处死小鼠，在解剖台上铺上厨房用纸，准备4个小针头（21G）和1个大针头（26G）（用于固定等）。</li><li>使用酒精对小鼠身体全面喷淋，尤其对解剖部位着重喷淋。</li><li>将小鼠背面朝上固定于解剖台，注意扎针处相互远离以尽量拉伸小鼠身体，拉伸小鼠身体有助于组织的切断。</li></ul>
+<h4 class="protocol-minititle">股骨解剖</h4>
+<ul class="protocol-list"><li>剥离小鼠背部大腿处皮肤，尤其注意足部皮肤应尽量剥离。</li><li>触摸并寻找肌肉下的股骨和胫骨，注意其与脊柱连接的部位，解剖剪切除骨上端肌肉以暴露骨，并向骨下端探入以去除骨下端肌肉。</li><li>从鼠尾处沿鼠尾左端红色实线入剪，截断红色实线处所有组织，再沿红色虚线从外向里，截断所有组织；进行右腿解剖时沿黄色虚实线操作。</li><li>去除长骨与身体连接部位其他软组织结构，以完全单独取出长骨。</li><li>取出赘留的易去除的肌肉组织和连接的脊柱。</li><li>四面截断股骨表面肌肉，达到充分暴露股骨中段目的。</li><li>剥离股骨与胫骨连接处肌肉，以暴露白色肌腱处，解剖剪在肌腱处切断两骨的连接，肌腱为软组织，切割时阻力不大。</li><li>股骨下端剥离肌肉的末端连接组织，随后其他肌肉便易于由此处剥离，可使用卫生纸辅助剥离肌肉。</li><li>修剪股骨表面残余软组织，股骨上端软组织不必完全去除。</li></ul>
+<h4 class="protocol-minititle">胫骨解剖</h4>
+<ul class="protocol-list"><li>剪除胫骨与足骨连接部位软组织，阻力应较小。</li><li>胫骨下端剥离肌肉的末端连接组织，随后其他肌肉便易于由此处剥离，可使用卫生纸辅助剥离肌肉，注意胫骨旁有一根较细的骨，一般不用保留。</li><li>修剪胫骨表面残余软组织。</li></ul>
+<h4 class="protocol-minititle">免疫组化预处理</h4>
+<p class="protocol-text">一般使用股骨进行免疫组化。</p>
+<ul class="protocol-list"><li>寻找股骨突起的三角部位，在三角形的近端部横切骨组织，应可见内部红色髓质。</li><li>将股骨放入4% PFA的2ml管中（切口向上，保证完全浸润），冰浴临时放置，当天置于冰库中旋转过夜。</li><li>其余操作参见免疫组化步骤。</li></ul>
+<h4 class="protocol-minititle">流式分析预处理</h4>
+<p class="protocol-text">一般使用胫骨进行流式分析。</p>
+<ul class="protocol-list"><li>将两胫骨转移至盛有900μL 4% PFA-PBS的研钵中，从端部碾碎（注意1：压碎时避免骨片段飞离。注意2：首次研碎时，避免过度用力，引起细胞死亡）。</li><li>收集液体，并置于冰上。</li><li>再分两次进一步研磨骨组织，最终在骨组织中应不可见红色髓质结构，分两次转移液体，每次加入900μL 4% PFA-PBS。</li><li>其与操作参见流式分析步骤。</li></ul>
+<h3 class="protocol-subtitle" id="取血">取血</h3>
+<h4 class="protocol-minititle">颚动脉采血</h4>
+<ul class="protocol-list"><li>取采血针，在小鼠眼、鼻连线下端形成等边三角形的位置扎针，此处为颚动脉所在位置，应能自发流出血，旋开EDTA-K采血管，收集血液约0.5ml即可。</li><li>若采血量不足，可在同一位置再次扎针采血。</li></ul>
+<h3 class="protocol-subtitle" id="给药">给药</h3>
+<h4 class="protocol-minititle">腹腔给药</h4>
+<ul class="protocol-list"><li>抓握小鼠，以充分暴露胸腹腔；</li><li>针头斜入小鼠腹腔部位，入针较深，避免皮下注射；</li><li>推液时应感到无阻力；</li></ul>
+<h4 class="protocol-minititle">尾静脉注射</h4>
           </div>
         </div>
-
         <div class="expand-menu">
-          <div class="expand-menu-header">细胞传代<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-header">小动物立体定位台相关实验<span class="expand-arrow">▼</span></div>
           <div class="expand-menu-body">
-            <p>传代前确认细胞密度和状态，消化时间不宜过长。传代后记录比例、瓶号、培养基批次和观察结果。</p>
-            <span class="grades-title">记录内容</span>
-            <ul class="grades">
-              <li>细胞名称与代次</li>
-              <li>传代比例和接种密度</li>
-              <li>培养基、血清和抗生素信息</li>
-              <li>污染、漂浮细胞或形态异常</li>
-            </ul>
+            <h3 class="protocol-subtitle" id="立体定位台简介-使用规范和注意事项">立体定位台简介、使用规范和注意事项</h3>
+<h4 class="protocol-minititle">简介</h4>
+<p class="protocol-text">立体定位台可用于小鼠的四氟烷麻醉、麻醉后小鼠的头部固定以及在特定脑区注射病毒或埋设光纤等。</p>
+<p class="protocol-text">立体定位台包括了三个部分：定位装置、麻醉装置及注射装置。</p>
+<ul class="protocol-list"><li>定位装置：即立体定位台，使用时需固定小鼠门牙以及两侧颅骨凹陷处，调节水平后通过调节XYZ轴的坐标系在特定的脑区进行处理。</li><li>麻醉装置：使用异氟烷进行麻醉，麻醉装置负责调节实验中异氟烷的流量并将其与空气混合。麻醉装置应包含空气泵、麻醉室（chamber）、异氟烷调节阀、空气调节阀、混合调节阀、麻醉面罩和异氟烷处理装置。</li><li>注射装置：用于对特定脑区的处理，装置包括颅骨钻、注射针、夹持器（用于埋管）等。</li></ul>
+<p class="protocol-text">注射装置包括两部分：控制台及注射泵，控制台调节注射泵的注射速度。注射泵注射病毒的量等同于注射泵尖端铁棒排开的体积，铁棒由注射泵内置的马达驱动，由于玻璃电极的内径近似恒定，因此铁棒排开的体积正比于铁棒的位移。如果铁棒出现弯曲会导致铁棒与玻璃电极之间的摩擦力增大，铁棒的实际位移会小于预设的位移导致注射体积减少。</p>
+<h4 class="protocol-minititle">立体定位台的使用</h4>
+<p class="protocol-text">如右图，立体定位台用于固定小鼠头部并定位特定脑区。可调节部分展示于图中。</p>
+<ul class="protocol-list"><li>使用XYZ轴调节旋钮课题调节注射针的位置，并通过右侧的显示器显示具体的数值；</li><li>使用前颅骨上下高度调节旋钮和左右颅骨的夹持器可以固定小鼠头部，实验前需要调节小鼠头部位置以达到左右相平且前后卤点水平。</li><li>倾斜和旋转角度调节用于需要从侧面对脑区进行处理时对针的角度进行调节。</li></ul>
+<p class="protocol-text">为固定小鼠颅骨，需要对小鼠的门齿和左右两侧眼窝后方的凹处进行固定，固定后剪开小鼠头部皮肤，使用沾有墨汁的针头对前后卤点进行定位，再调平左右卤点，随后即可通过XYZ轴旋钮对注射枪进行定位。</p>
+<h4 class="protocol-minititle">注射泵使用注意事项</h4>
+<ul class="protocol-list"><li>注意注射泵的量程。使注射泵的量程保持在一个合理范围，防止注射泵调到最大或者最小的物理范围而锁死。每一把注射泵活动的物理范围均不同，需要使用者自行注意，这里给出一把注射泵的范围以做参考。</li><li>注射泵存在物理限度与软件限度，当软件显示到达100%时注射泵便无法再吸入；同样地，当软件显示到达0%时注射泵便无法注射。此时应该在操作界面中选择configure，在configure界面中选择reset pos，然后选择end stop。点击end stop后可以通过withdraw或者infuse来对软件的显示程度进行调节。</li><li>每一个控制台对应的注射泵编号是固定的，不能擅自移动更改。其对应关系为：一号台对应注射泵1，2；二号台对应注射泵3，4；三号台对应注射泵5，6；四号台对应注射泵7。目前实验室已有七把注射泵，均能正常工作，因此不论何种情况都不准插拔九孔水晶头。</li><li>在对垫片安装时请注意安装顺序，不要反装。以注射泵铁针指向的方向为上，从下而上依次黑色垫片，白色垫片，红色橡胶垫片。其中黑色垫片正反一致，白色垫片为有凹槽侧向上，红色橡胶垫片尖端向上底部可以卡在凹槽上。如果出现漏液的情况，应及时检查垫片的安装顺序是否正确，垫片之间是否紧密接合，并及时反映相关情况。</li><li>矿物油使用后请务必立刻装好保护套，保护矿物油针管。麻醉使用完毕后记得及时关闭，使用注射泵时注意爱护，不要弄弯铁针。</li><li>在与其他人公用同一台控制台时，请注意自己的针的channel不要误动他人的针。</li></ul>
+<h4 class="protocol-minititle">使用规范</h4>
+<p class="protocol-text">新生使用需要进行技术考核，考核负责人为池润丰或负责该新生的师兄师姐，考核通过后请通知滕帅文、池润丰或刘云飞。通过考核的人在进行预约时请填写自己的名字，在通过考核后三个月内在进行立体定位台预约时需要在自己的名字后面用（）标注出相应负责师兄师姐的名字。</p>
+<h4 class="protocol-minititle">异氟烷的更换</h4>
+<p class="protocol-text">异氟烷存放于煮胶用的微波炉桌子下侧，取一瓶后使用专用工具向麻醉仪中加入即可。</p>
+<h3 class="protocol-subtitle" id="微电极控制仪-成都泰盟mp-300-的使用">微电极控制仪（成都泰盟MP-300）的使用</h3>
+<p class="protocol-text">微电极控制仪用于玻璃注射器针头的制备。水平拉制仪是加热片接通恒定电流，产生高温从而融化插入合金片中的毛细玻璃管，再通过施加额外拉力将中间融化的毛细玻璃管向两侧分步拉断成尖端对称的两个玻璃微电极；通过调节拉制参数（热量、拉力、速度、定时/延时），拉制出不同尖端形状的玻璃微电极。</p>
+<p class="protocol-text">注射针可用于电生理实验（向神经元中测量或控制电位等）、向脑区注射病毒等。</p>
+<h4 class="protocol-minititle">相关参数对于针头性质与形状的影响</h4>
+<p class="protocol-text">加热(0-999):根据玻璃电极熔点测试的结果进行设置，设置的参数大于熔点15%将可能损坏铂金片，加热参数值越大微电极越长;</p>
+<p class="protocol-text">速度(0-999):代表两臂拉开电极的速度，通常来说，速度越小，拉制出的玻璃微管越粗短；</p>
+<p class="protocol-text">拉力(0-999):拉力代表施加在玻璃微管两边加持臂给玻璃电极的拉力，值越大微电极越细长:</p>
+<p class="protocol-text">延时（0-999）：拉力延时时间，如拉力为0则此参数无效；</p>
+<p class="protocol-text">气压（50-999）：代表用于冷却铂金片以使融化的电极凝固断裂的气流的气压，值越大电极越粗短；</p>
+<p class="protocol-text">时间（0-999）：代表吹气冷却时间，值越大电极越粗短；</p>
+<div class="protocol-table-wrap"><table class="protocol-table">
+<thead><tr><th>参数</th><th>增大</th><th>减小</th><th>参数范围</th></tr></thead>
+<tbody>
+<tr><td>加热</td><td>尖端直径减小，锥体部分变长</td><td>尖端直径增大，锥体部分变短</td><td>0-999</td></tr>
+<tr><td>速度</td><td>尖端直径减小，锥体部分变长</td><td>尖端直径增大，锥体部分变短</td><td>0-999</td></tr>
+<tr><td>拉力</td><td>尖端直径减小，锥体部分变长</td><td>尖端直径增大，锥体部分变短</td><td>0-999</td></tr>
+<tr><td>气压</td><td>尖端直径增大，锥体部分变短</td><td>尖端直径减小，锥体部分变长</td><td>50-999</td></tr>
+<tr><td>时间</td><td>尖端直径增大，锥体部分变短</td><td>尖端直径减小，锥体部分变长</td><td>0-999</td></tr>
+</tbody>
+</table></div>
+<h4 class="protocol-minititle">玻璃针头的制备</h4>
+<ul class="protocol-list"><li>插上电源线，打开后侧的开关，预热30min，检查加热片、玻璃管及喷气孔的相对位置是否保持正确。</li><li>*一般情况下晚上最后一个操作完毕的应当关闭仪器，早上首次使用时应预热，用后保持仪器全天开启。</li><li>（可选，更换新玻璃管时需要）安装玻璃电极，进行熔点测试。在每次更换新的玻璃电极时，应先进行熔点测试，评估该批次玻璃电极熔点，以确保加热值能够熔化玻璃电极但又不至于烧断铂金片，测试值作为程序的加热值参考（系统设置—熔点测试—点击“启/停”键）；</li><li>根据所需要求创建新的程序或修改已有程序的参数（加热、速度、拉力、延时、气压、时间）：实验室常用参数（两步法）：</li><li>加热：674；速度：700；拉力：450；延时：0；气压：50；时间20；重复：1</li><li>加热：691；速度：850；拉力：999；延时：0；气压：50；时间20；重复：1</li></ul>
+<p class="protocol-note">*原理部分介绍了以上参数对于针头形状的影响；</p>
+<p class="protocol-note">*一般不能修改制得玻璃针头的相关参数；</p>
+<p class="protocol-note">*两步法的第一步可以使得玻璃针头尖端部位较粗，有利于注射操作。</p>
+<ul class="protocol-list"><li>取一根玻璃管，型号为WPI（504949,ID:0.530 mm 25 m,OD:1.14 mm），从左侧车台中间插入并贯穿。</li><li>放松玻璃管，推动车台向右到中台，玻璃管进入后缓慢推动玻璃管贯穿中台。</li><li>*注意此时不能固定也不能手扶玻璃管，防止因角度歪斜导致加热片破损。</li><li>将右侧车台移动至中间，使得玻璃管贯穿。</li><li>手持固定，旋紧两侧车台固定旋钮，此时两侧车台拉伸玻璃管并保持固定。</li><li>关闭塑料罩，选择特定程序并开启，数秒后玻璃熔断并拉伸。</li><li>打开塑料罩，取下两根注射管，用剪刀剪去尖端部分。</li><li>*应留3～5mm左右。针头越长便可对更深的脑区进行注射，但会导致针头过软。</li></ul>
+<h3 class="protocol-subtitle" id="使用立体定位台向特定脑区注射病毒">使用立体定位台向特定脑区注射病毒</h3>
+<p class="protocol-text">准备物品：脑立体定位仪、眼科剪镊、微量注射器（HAMILTON，5μL，平头）、棉签、酒精、待注射病毒（或DAPI、墨汁）、碘伏消毒液、墨水、定位针、PBS溶液等。</p>
+<h4 class="protocol-minititle">准备工作</h4>
+<ul class="protocol-list"><li>使用微电极控制仪通过程序7制作注射病毒用针头，并剪去尖端，平剪即可，详见微电极控制仪的使用。</li><li>使用紫外照射手术室20min左右。实验台面用医用酒精擦干净。准备好实验器材、试剂，准备手术器械，病毒置于冰上。</li><li>*手术器械至少包括手术剪、手术镊各一把，需要提前高压灭菌。</li><li>小鼠用5%水合氯醛（按照小鼠体重按0.75ml/100g比例注射）腹腔注射麻醉。</li><li>*或者是麻醉机（异氟烷）麻醉，将小鼠放入chamber中，开启空气泵开关，模式选择为chamber，出气量调节中部大旋钮为2左右。等待其麻醉，注意小鼠呼吸频率。</li><li>*注意红色按钮控制的是空气泵，在打开空气泵的同时，应当将O2通量调整至最大通亮的一半以下，约0.5，氧气通量一般不需要单独设置。</li></ul>
+<h4 class="protocol-minititle">病毒的吸取与注射器的使用</h4>
+<ul class="protocol-list"><li>取一根程序7制得的玻璃注射针头，打开注油针针头保护套，小心将注油针针头插入到玻璃针管内，并尽量将其移动至针头靠前端。推动注射器注射密封油，同时缓慢拉出注射器针头，以使整个玻璃针头完全充满密封油且无气泡。</li><li>*注意，必须严格保证针头内无气泡，以防止注射时因气体压缩导致的注射量不准确。</li><li>取下微量注射器，旋开顶部旋钮，注意小心垫片掉落。将注射针穿过螺旋钮，再穿过注射头，整个过程应缓慢，防止空气进入以及剐蹭玻璃管内壁。</li><li>*注射头易弯，如注射器略弯，会导致注射体积偏小。</li><li>*注意，在套入玻璃管前，注射针应处于合适位置，避免在吸取病毒时锁死。</li><li>将玻璃套管穿过最上层密封圈，并将套管放回两层密封圈上。小心旋紧旋钮以固定玻璃注射针。再次检查是否有空气进入。将注射针固定在立体固定台上。</li><li>*严格注意垫片顺序，顺序错误可能导致密封不严。</li><li>*不同注射头的操作方法和垫圈数目有差异。</li><li>*不要反方向拔出，会进入空气。</li><li>选择注射针控制器reset position功能，手动快速推出密封油，检查注射针尖端是否产生液滴，已确定针头是否堵塞。确定无误后，使用棉签擦拭针头。</li><li>从冰上取下病毒EP管，小心地将针管插入管中液体内，计算并设置注射针吸入量和吸入速度。注射方向改为吸入，速度设置于100～500nl/min较合适（一般200nl/min），随后开始吸入病毒注射液。</li><li>*若用作练习等，可换用DAPI或墨水。</li><li>待注射液吸入完毕，再次检查是否有空气进入。随后取下注射器倒置放置于台子上。</li></ul>
+<h4 class="protocol-minititle">小鼠手术与病毒注射</h4>
+<p class="protocol-note">*注意全程注意小鼠呼吸频率，随时调节麻醉气流大小。</p>
+<p class="protocol-note">*注意保持小鼠颅骨表面湿润。</p>
+<p class="protocol-note">*注射器控制装置中，direction为调整注射器移动方向（吸入/推出），manual用于手动注射，reset pos用于快速设置注射器位置，start用于按照程序推注。</p>
+<ul class="protocol-list"><li>取chamber内或注射麻醉的小鼠一只，检查呼吸是否正常。将其头部去除毛发。准备红霉素软膏，使用棉签涂抹小鼠双眼，再添加贴纸防止小鼠眼睛长时间照光。</li><li>*当小鼠眼部发白时，表示小鼠已经长时间暴露于光照下，应立即给予小鼠遮光措施。</li><li>将麻醉气供气转移至mask，气量调至0.4，在剪开皮肤前，气量调至0.2。</li><li>小鼠头部固定于脑定位仪上：门齿卡在齿槽上，双侧耳杆插入耳后凹槽处的耳窝内（位置准确插入耳窝时，小鼠眼睛外凸明显），左右侧耳杆读数相同并且确保小鼠头部中线与定位仪前部观测鼻夹中线一致（即把小鼠放于操作台中央）。固定好的标准是即使打开鼻夹，仍然无法晃动小鼠头部。</li><li>*两侧耳杆插入位置正确时将会抵住头骨两侧，能感受到硬质物不可再压缩。两侧耳杆应尽量紧。</li><li>用碘伏进行头部消毒，剪开头顶皮肤，止血钳辅助外撕，使用手术刀或棉球擦去脑膜，暴露颅骨表面（至少暴露颅骨前线与后线）。</li><li>*若需要进行头部皮肤缝合时，不要剪去头部皮肤，而应当向两侧展开。</li><li>充分去除暴露区域的小鼠脑膜后，PBS溶液擦净表面毛发，并使用碘酒擦拭颅骨表面。</li><li>根据注射角度调整前后两个倾斜角。如不需要倾斜，需要调节至0度。</li><li>*当倾斜注射时，需根据倾斜角度计算三角函数，得出斜向探入长度。</li><li>安装夹持器（即普通金属制针头），找到小鼠的前囟点（矢状缝与冠状缝最佳吻合曲线的交点）调零并标记（XYZ轴在此时均归零）。在前囟点前后左右四个方向选择四个较近的点（前后两点Y值的绝对值相同，左右两点X值的绝对值相同），则前后两点、左右两点Z坐标分别相同代表前后、左右是平的（可容忍误差范围在0.2 mm 左右）。</li><li>*另一做法为检查后囟点的位置，Y坐标应当相同，Z轴坐标应当在0.2mm左右。再检查左右两端是否等高，即保持Z轴不变，检查是否等高。</li><li>*注射双侧脑室时，可以直接对两侧注射点进行定位以确定是否等高。</li><li>测量前囟点与人字点的距离（一定程度代表该小鼠脑的大小）与图谱中小鼠的相应距离（4.2mm）相比得出一个比例，根据该比例校正注射脑区坐标。有时需要反复校正。</li><li>根据注射病毒的脑区坐标，定点标记，即使用墨水沾针头尖端，在颅骨上目标脑区对应位置点墨水。</li><li>卸下夹持器，手持颅骨钻在墨水点点位置钻穿颅骨，一旦钻穿有落空感，迅速抬起颅骨钻。最良好情况应不出血。</li><li>修改注射器参数，设置在1～5分钟之内注射完毕。</li><li>安装微量注射器，重新于前囟点调零，根据注射脑区坐标，针头对准注射点，当针头接触颅骨平齐位置时（可见针头接触水面），重置Z轴。缓慢插入针头（一般需要插入的深度比脑区坐标深度稍深0.02mm左右，以便病毒进入整个脑区），回针至目标位置，注射预计体积病毒（体积根据注射核团体积大小及病毒滴度，速度50-100nl/min）。注射结束后，静止5～10min（使病毒完全扩散）。</li><li>*若需要在同一XY轴上注射多个深度的点，则先注射较深的位置，再注射较浅的位置。</li><li>缓慢拔出针头，注射另一侧。全程操作过程中若颅骨表面干燥，应使用碘酒润湿。</li><li>注射完毕后，调整Z轴拔出针头，用针线缝合表面伤口。</li><li>*若病毒注射后等待时间不长，不需要担心感染问题，可不缝合伤口。建议剪开皮肤时减小创面大小。</li><li>全部实验结束后，旋转注射针顶部固定旋钮，将注射针取下，注射枪放回原处。</li><li>将小鼠转移至鼠笼中，整理实验台，关闭空气泵电源和异氟烷供气。</li></ul>
+<h3 class="protocol-subtitle" id="使用立体定位台在特定脑区埋管">使用立体定位台在特定脑区埋管</h3>
           </div>
         </div>
-    </div>
-
-    <div class="general-content" id="tab5">
-        <h2>动物实验</h2>
-        <hr>
-        <p>动物实验需要符合伦理审批和平台规范。这里先保留流程框架，具体内容应根据实验室和平台要求补充。</p>
-
         <div class="expand-menu">
-          <div class="expand-menu-header">实验前准备<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-header">流式细胞分选<span class="expand-arrow">▼</span></div>
           <div class="expand-menu-body">
-            <p>确认伦理编号、动物来源、分组方案、给药剂量和观察指标。任何涉及动物痛苦或终点判断的流程都应提前明确。</p>
+            <h3 class="protocol-subtitle" id="样本处理">样本处理</h3>
+<p class="protocol-note">*严格记录溶液体积，溶液体积用于计算整骨的细胞数量</p>
+<ul class="protocol-list"><li>在混合溶液中，以1：9的比例加入Collagenase Ⅳ（即10X，Stock 1mg粉末溶于250ml PBS）；</li><li>37℃ 水浴锅保温&gt;20分钟，间隔10分钟摇匀一次；</li><li>*此步的目的是使骨髓质细胞彼此分离</li><li>细胞混合物通过100um细胞滤网（Cell strainer；Biosharp, BS-100-XBS）滤入50ml管，再转移到15ml管中；</li><li>离心300g，5min，去上清，重悬至100ul 2%FBS-PBS溶液中；</li><li>加入适量一抗（~10ul）；</li><li>*当使用多种一抗时，可同时加入</li><li>*设计并记录抗体加入情况，抗体从冰箱拿出后立刻放在冰盒内，并按照加入顺序排布，避免混淆</li><li>*因DAPI染色迅速，不可提前加入，请在流式上样前加入</li><li>15ml管在冰上放置30分钟，每10分钟摇匀一次；</li><li>加入1ml 2%FBS-PBS溶液洗脱；</li><li>离心300g 5分钟，去上清；</li><li>将细胞重悬至100ul 2%FBS-PBS溶液，转移至流式管中，编号，置于冰上，进行流式分析。</li></ul>
+<p class="protocol-note">*如需要加入二抗，重复5~9步骤</p>
           </div>
         </div>
-
         <div class="expand-menu">
-          <div class="expand-menu-header">记录与终点<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-header">免疫组化<span class="expand-arrow">▼</span></div>
           <div class="expand-menu-body">
-            <p>记录体重、行为、给药时间、样本采集和异常情况。达到 humane endpoint 时应按批准方案处理。</p>
+            <h3 class="protocol-subtitle" id="适用于骨组织的组化方案">适用于骨组织的组化方案</h3>
+<p class="protocol-text">此处展示femur免疫组化流程，对于其他软组织样品过程类似，存在以下不同：</p>
+<ul class="protocol-list"><li>无需加入EDTA溶液，直接使用蔗糖进行脱水；</li><li>可以使用（也可以不用）含有低浓度PVP（0.5%）的包埋和脱水液；</li><li>切片时使用国产或进口载玻片结果相差不大；</li><li>可以使用较小的Tissue-Tek模具。</li></ul>
+<h4 class="protocol-minititle">样本处理</h4>
+<ul class="protocol-list"><li>在分离并清除干净的股骨（Femur）靠近脊柱端，剪开一个小口或剪掉部分股骨（目的是帮助PFA固定），将其放入含有4% PFA（PBS-PFA）的2ml管中；</li><li>*此步目的是固定</li><li>4 % PFA(PFA-PBS溶液) （Sigma, P6148-500G）在垂直转轮(其林贝尔:QB-128)上,冰库中转动过夜；</li><li>使用PBS溶液进行洗涤，将原PFA倒出后PBS洗涤，残留的PFA洗干净即可；</li><li>加入0.5M EDTA·2Na+（pH8.0），一天后换用新的EDTA，合计在冰库上转动两天，以充分使骨组织软化；</li><li>*注意在样品管上标注EDTA处理次数（标记E），可用针刺或X射线检测骨钙质含量</li><li>*对于软组织样品可省略EDTA处理步骤，直接使用蔗糖脱水</li><li>加入20% Sucrose-2% Polyvinylpyrrolidone(Sigma, P5288)-PBS溶液；</li><li>* PVP，聚乙烯吡咯烷酮，起到提高切片效果、晶体保护的作用，当仅处理非骨组织时不需要加入PVP</li><li>*蔗糖的用处是脱水，脱水不足将导致样品不易包埋，没有完全脱水的样品在该溶液中漂浮，脱水后应能沉底</li></ul>
+<h4 class="protocol-minititle">包埋</h4>
+<ul class="protocol-list"><li>在水浴锅中60度加热20% Sucrose-8% Gelatin *(Sigma, G1890-100g)-2% Polyvinylpyrrolidone包埋溶液，使用前将该溶液放在60℃加热的磁力搅拌器上以极慢速度（100）搅拌；</li><li>*包埋溶液储存于4℃下，需提前拿出在60℃融化</li><li>将骨组织放入Tissue-Tek模具，对于长骨，需要将骨突出端朝上横向放入，以使底面尽量平整（切片一般自底面开始切）；</li><li>*本步作用为包埋，此时样品应柔软</li><li>*凝胶凝固时将会呈现半透明状，待快凝固时调整样品角度，则样品较容易固定</li><li>*注意不要在胶上残留较大的气泡，最终胶能够没住样品并与模具口平齐</li><li>常温等待包埋溶液凝固，随后将多个样品放入自封袋中，将凝固样本放入-20度。长期保存样本放入-80度冰箱保存，等待切片。</li></ul>
+<h4 class="protocol-minititle">切片</h4>
+<p class="protocol-text">详见冰冻切片操作。</p>
+<h4 class="protocol-minititle">抗体处理</h4>
+<ul class="protocol-list"><li>取出组织样本，在玻片盒中等待其恢复至常温；</li><li>用免疫组化笔（Biosharp, BC003）将待处理区域画出，并在区域内加入PBS，处理10分钟；</li><li>*免疫组化笔的作用是在样品周围形成油质的隔离带，防止处理样品的溶液溢出</li><li>*此步的目的是恢复样本的水成分，便于后续处理</li><li>将PBS倒入组化湿盒，加入Triton-PBS溶液（2.5ml 10% TritonX-100稀释于50ml PBS溶液）（TritonX-100, Sigma T8787-100ml），常温处理15分钟；</li><li>*此步的目的是使细胞膜穿孔，便于抗体进入</li><li>将Triton-PBS溶液倒入组化湿盒，加入Blocking buffer，常温阻断0.5小时-1小时（Blocking buffer: 48.5ml PBS +1.5ml 10% Triton X-100 +0.5g BSA）；</li><li>*此步的目的是阻断样品表面非特异结合部位，防止非特异性结合</li><li>*此步处理时间不宜过长</li><li>将Blocking buffer倒入组化湿盒，并用卫生纸完全擦净标本表面的水；</li><li>如果需要，重新用免疫组化笔画出组化区域，将一抗按稀释比溶解于Blocking buffer (+2% Donkey Serum, Abbkine, BMS0140)，</li><li>*一抗根据稀释需要稀释于blocking buffer，其中可加少量血清，如下图：</li><li>即一抗使用3种抗体，如需要处理5个样品，则共配制500ul抗体溶液，抗体稀释比例为1:100，则每种抗体加入5ul进入500ul blocking buffer中</li><li>*注意有些抗体放置于4℃，有些抗体放置于-20℃，实验前后注意保管！</li><li>在冰库中，每样品加100ul（混合）抗体液，冰库过夜；</li><li>PBS洗样本三次，每次5分钟，完毕后擦净表面液体；</li><li>将二抗按稀释比溶解于Blocking buffer (+2% Donkey Serum, Abbkine, BMS0140),室温2小时；</li><li>*-20℃抗体需提前拿出解冻</li><li>*二抗一般需加入DAPI作为细胞指示剂</li><li>*将各种抗体按照编号和稀释量进行稀释后混匀，统一加入，方法同一抗方法</li></ul>
+<h4 class="protocol-minititle">封片</h4>
+<ul class="protocol-list"><li>PBS洗样本三次，每次5分钟，并将液体完全擦净</li><li>*当液体未完全擦净时，封片将产生大量气泡</li><li>擦干载玻片，将Fluoromount-G*(Southern Biotech, 0100-01)加在盖玻片上，迅速将盖玻片翻转，缓慢盖片，避免产生气泡，使Fluoromount-G完全覆盖样本。</li><li>将样本放入4度冰箱，至少24小时。待Fluoromount-G凝固后，可以用于共聚焦成像。</li><li>*由该方法制得的样本可在4℃下保存一个月以上</li></ul>
+<h3 class="protocol-subtitle" id="适用于脑组织的组化方案">适用于脑组织的组化方案</h3>
+<h4 class="protocol-minititle">常规染色</h4>
+<p class="protocol-text">本方案在另一文件中进行了详细介绍。</p>
+<h3 class="protocol-subtitle" id="组织切片的保存">组织切片的保存</h3>
+<h4 class="protocol-minititle">冰冻切片的保存</h4>
+<p class="protocol-text">切好的冰冻切片烘干后置于-20℃长期保存，使用前置于37℃烘干表面冷凝的水分。</p>
+<h4 class="protocol-minititle">震动切片的保存</h4>
+<p class="protocol-text">脑片放置于脑片冻存液中，于-20℃长期保存。</p>
+<h3 class="protocol-subtitle" id="普通漂染">普通漂染</h3>
+<p class="protocol-text">对于震动切片的组织，由于切片较厚，建议使用漂染，整体效果优于贴片染色。</p>
+<h4 class="protocol-minititle">透化与封闭</h4>
+<ul class="protocol-list"><li>将待漂染的脑片放入细胞培养用六孔板中，若脑片从防冻液中拿出，应使用PBST清洗3遍。清洗时使用六孔板或12孔板清洗，使用挑片针挑入PBST溶液中，置于常温摇床上晃动5min。</li><li>挑取数量合适的脑片进行染色，每个染色组最多放置2~3张脑片，并且做好区分。</li><li>向点滴板上每个孔中加入200ul的5% BSA-0.5% Triton-PBS溶液，使用挑片针将脑片挑入点滴板的孔中，将点滴板放入组化湿盒中，室温置于摇床上摇晃1h，以同时进行脑片的透化和封闭。</li><li>*若使用PBST清洗，可不进行透化步骤；</li><li>*可使用驴血清或山羊血清（10%）进行封闭，方法同上（0.1% Tween或0.5%Triton配制）</li></ul>
+<h4 class="protocol-minititle">一抗孵育</h4>
+<ul class="protocol-list"><li>使用预冷的1% BSA-0.1% Triton-PBS溶液（或上一步对应的血清溶液）配制抗体，涡旋混匀后置于冰上待用。</li><li>*每组染色使用200ul一抗，最少使用150ul一抗</li><li>待封闭结束后，使用挑片针将脑片直接挑入点滴板上的一抗溶液中，此时可分组染色。使用封口膜覆盖点滴板表面避免水分蒸发，随后将点滴板放入组化湿盒中，置于4℃摇床上缓慢摇动过夜。</li></ul>
+<h4 class="protocol-minititle">二抗孵育</h4>
+<ul class="protocol-list"><li>使用挑片针将脑片从一抗溶液中挑出，放回六孔板中，使用PBST清洗三次，每次清洗过程中将脑片移入新的PBST溶液中。</li><li>使用预冷的1% BSA-0.1% Triton-PBS溶液配制抗体和DAPI，涡旋混匀后置于冰上待用。</li><li>使用挑片针将脑片挑入点滴板上的二抗溶液中，此时可分组染色。使用封口膜覆盖点滴板表面避免水分蒸发，随后将点滴板放入组化湿盒中，置于常温摇床上缓慢摇动1h。</li></ul>
+<h4 class="protocol-minititle">封片</h4>
+<ul class="protocol-list"><li>使用挑片针将脑片从二抗溶液中挑出，放回六孔板中，使用PBST清洗三次，每次清洗过程中将脑片移入新的PBST溶液中。</li><li>准备经75%乙醇清洗的载玻片和盖玻片，预先写清相关信息。</li><li>准备一皿盖，在其中倒入少量的PBST溶液，将载玻片倾斜没入PBST溶液中，使用挑片针将待封片的脑片缓慢移到载玻片上方，并拖拽至合适位置。</li><li>避光放置，待脑片表面水分大部分晾干后，向每一个脑片表面滴加~50ul封片剂，使用洁净的盖玻片进行封片，最后使用指甲油固定盖玻片。</li></ul>
+<h3 class="protocol-subtitle" id="tsa漂染染色">TSA漂染染色</h3>
+<h4 class="protocol-minititle">透化与封闭</h4>
+<ul class="protocol-list"><li>将待漂染的脑片放入细胞培养用六孔板中，若脑片从防冻液中拿出，复温后，应使用PBST清洗3遍。</li><li>将脑片放入1ml柠檬酸钠抗原修复液中，放置于95℃金属浴上加热10min，等待自然冷却。</li><li>向点滴板上每个孔中加入200ul的5% BSA-0.5% Triton-PBS溶液，使用挑片针将脑片挑入点滴板的孔中，将点滴板放入组化湿盒中，室温置于摇床上摇晃1h，以同时进行脑片的透化和封闭。</li><li>*若使用PBST清洗，可不进行透化步骤；</li><li>*可使用驴血清或山羊血清（10%）进行封闭，方法同上（0.1% Tween或0.5%Triton配制）</li></ul>
+<h4 class="protocol-minititle">一抗孵育</h4>
+<ul class="protocol-list"><li>使用预冷的1% BSA-0.1% Triton-PBS溶液（或上一步对应的血清溶液）配制抗体，涡旋混匀后置于冰上待用。</li><li>*每组染色使用200ul一抗，最少使用150ul一抗</li><li>待封闭结束后，使用挑片针将脑片直接挑入点滴板上的一抗溶液中，使用封口膜覆盖点滴板表面避免水分蒸发，随后将点滴板放入组化湿盒中，置于4℃摇床上缓慢摇动过夜。</li></ul>
+<h4 class="protocol-minititle">二抗孵育</h4>
+<ul class="protocol-list"><li>使用挑片针将脑片从一抗溶液中挑出，放回六孔板中，使用PBST清洗三次，每次清洗过程中将脑片移入新的PBST溶液中。</li><li>向点滴板中滴加200ul 3% H2O2溶液，将脑片转移至点滴板，常温摇床摇动1h，以进行封闭。</li><li>使用TSA二抗溶液配制二抗，向其中添加普通荧光素偶联抗体和DAPI，涡旋混匀后置于冰上待用。</li><li>使用挑片针将脑片挑入点滴板上的二抗溶液中，使用封口膜覆盖点滴板表面避免水分蒸发，随后将点滴板放入组化湿盒中，置于常温摇床上缓慢摇动1h。</li></ul>
+<h4 class="protocol-minititle">三抗孵育（TSA反应）</h4>
+<ul class="protocol-list"><li>冰上配制以下TSA反应液：</li></ul>
+<div class="protocol-table-wrap"><table class="protocol-table">
+<thead><tr><th>组分</th><th>含量（可等倍缩小/放大）</th></tr></thead>
+<tbody>
+<tr><td>Tryamide抗体（荧光素：488或594）</td><td>1ul</td></tr>
+<tr><td>3% H2O2</td><td>1ul</td></tr>
+<tr><td>20×反应缓冲液</td><td>5ul</td></tr>
+<tr><td>1× PBST</td><td>193ul</td></tr>
+</tbody>
+</table></div>
+<ul class="protocol-list"><li>将上述溶液滴加至点滴板中，室温孵育脑片10min。</li><li>*该时间影响TSA通道最终效果（背景和信号的亮度），需要严格计时10min。</li></ul>
+<h4 class="protocol-minititle">封片</h4>
+<ul class="protocol-list"><li>使用挑片针将脑片从TSA反应液中挑出，放回六孔板中，使用PBST清洗三次，每次清洗过程中将脑片移入新的PBST溶液中。</li><li>准备经75%乙醇清洗的载玻片和盖玻片，预先写清相关信息。</li><li>准备一皿盖，在其中倒入少量的PBST溶液，将载玻片倾斜没入PBST溶液中，使用挑片针将待封片的脑片缓慢移到载玻片上方，并拖拽至合适位置。</li><li>避光放置，待脑片表面水分大部分晾干后，向每一个脑片表面滴加~50ul封片剂，使用洁净的盖玻片进行封片，最后使用指甲油固定盖玻片。</li></ul>
           </div>
         </div>
-    </div>
-
-    <div class="general-content" id="tab6">
-        <h2>仪器分析</h2>
-        <hr>
-        <p>仪器分析流程用于整理预约、开机、校准、进样、数据导出和关机记录。</p>
-
         <div class="expand-menu">
-          <div class="expand-menu-header">HPLC / LC-MS<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-header">细菌培养与载体构建相关操作<span class="expand-arrow">▼</span></div>
           <div class="expand-menu-body">
-            <p>上机前确认流动相、柱子、方法文件和样品瓶位置。运行结束后导出原始数据和处理结果，并按照平台要求清洗系统。</p>
-            <span class="grades-title">记录内容</span>
-            <ul class="grades">
-              <li>仪器编号和方法文件</li>
-              <li>流动相、柱温、流速和梯度</li>
-              <li>样品编号、进样量和批次顺序</li>
-              <li>异常峰、压力波动和维护情况</li>
-            </ul>
+            <p class="protocol-text">细菌培养超净台使用前应当开启紫外30min，使用后也应该开启紫外。使用过程中注意酒精灯需点燃。注意超净台内的枪头必须与超净台外的枪头严格区分。</p>
+<h3 class="protocol-subtitle" id="lb培养基配制">LB培养基配制</h3>
+<ul class="protocol-list"><li>参照试剂配制参照表进行。</li><li>LB配制后在锥形瓶瓶口贴上一次性灭菌封口膜或使用预制的瓶塞加盖，张贴灭菌指示条（指示条应同时可以起到封条作用，用于指示盖子是否拧紧），随后送灭菌室，具体参照灭菌操作。</li><li>液体LB直接用于培养即可，注意换用砂芯塞。若需要分入试管中，需要在超净台进行。</li><li>固体LB需要使用微波炉加热同时摇瓶，使液体均质化，待冷却到40~50℃可以加入抗生素，随后进行倒板。</li><li>*Amp 浓度100mg/ml，1:1000加入；Kana 浓度50mg/ml，1:1000加入</li><li>倒板需在超净台中进行，液体高度约3~5mm，注意旋转培养皿使得溶液平缓铺满底部。</li><li>在超净台中开盖放置一段时间，待基本冷却后加盖并倒放，可以立即使用，也可以经封口膜封口后放入4℃环境中保存（倒放保存）。</li><li>*注意标明培养基配制时间、所加抗生素类型和基质类型</li><li>*未养菌的培养皿若丢弃，可贴上封口膜后直接丢入普通垃圾桶</li></ul>
+<h3 class="protocol-subtitle" id="鉴定阳性菌落">鉴定阳性菌落</h3>
+<h4 class="protocol-minititle">酶切鉴定</h4>
+<p class="protocol-text">酶切鉴定较为准确，但所耗费时间较长。</p>
+<p class="protocol-text">挑取单克隆后，于5ml LB中过夜培养，随后小提质粒，保留1ml菌液以用于后续的培养。</p>
+<p class="protocol-text">小提质粒后进行酶切鉴定，酶切1ug即可。随后进行琼脂糖凝胶电泳以检测阳性菌落。</p>
+<h4 class="protocol-minititle">菌液/菌落PCR</h4>
+<p class="protocol-text">可直接进行PCR或先培养，随后进行PCR。前者耗时短，而后者需要挑单克隆后培养至菌液浑浊后再PCR。</p>
+<ul class="protocol-list"><li>超净台中挑取单克隆：使用灭菌的10ul枪头挑取后将其直接打入1.5ml带有对应工作浓度抗生素的LB培养基中，置于37摄氏度摇床培养至浑浊。</li><li>*若使用接种针，使用火焰灭菌后冷却，随后挑取单克隆；</li><li>*若易戳破培养基，可使用酒精灯融化枪头使顶端变圆滑后冷却再挑取菌落；</li><li>*若出现卫星菌落，表明培养时间过长，应注意避免挑取非单克隆的菌落。</li><li>菌液浑浊后直接作为PCR模板，混合进入以下PCR体系：</li></ul>
+<div class="protocol-table-wrap"><table class="protocol-table">
+<thead><tr><th>组分</th><th>浓度</th><th>单个体系加入量</th></tr></thead>
+<tbody>
+<tr><td>2×Taq  Mix</td><td></td><td>10ul</td></tr>
+<tr><td>菌液</td><td></td><td>2ul</td></tr>
+<tr><td>Primer F</td><td>10uM</td><td>0.5ul</td></tr>
+<tr><td>Primer R</td><td>10uM</td><td>0.5ul</td></tr>
+<tr><td>RNase-free water</td><td></td><td>To 20ul</td></tr>
+</tbody>
+</table></div>
+<ul class="protocol-list"><li>若挑取菌落直接进行PCR，则配制以下体系：</li></ul>
+<div class="protocol-table-wrap"><table class="protocol-table">
+<thead><tr><th>组分</th><th>浓度</th><th>单个体系加入量</th></tr></thead>
+<tbody>
+<tr><td>2×Taq  Mix</td><td></td><td>10ul</td></tr>
+<tr><td>Primer F</td><td>10uM</td><td>0.5ul</td></tr>
+<tr><td>Primer R</td><td>10uM</td><td>0.5ul</td></tr>
+<tr><td>RNase-free water</td><td></td><td>9ul</td></tr>
+</tbody>
+</table></div>
+<ul class="protocol-list"><li>挑菌培养时先将其浸入PCR体系中，再将其放入LB培养基中培养。</li><li>使用对应的质粒作为对照同步进行PCR，置于以下标准PCR程序（35个循环）中。</li><li>现配置1%的琼脂糖凝胶进行验证，若在对应位置有条带，说明此菌落为阳性。</li></ul>
+<h3 class="protocol-subtitle" id="酶切与连接">酶切与连接</h3>
+<p class="protocol-text">注意！不同品牌的限制酶不能在同一体系混用，在实际的混用中已观察到限制酶识别位点不特异或活性低的情况。</p>
+<h4 class="protocol-minititle">双酶切</h4>
+<ul class="protocol-list"><li>以赛默飞的普通慢切酶为例，使用前首先查表或使用在线网站确定使用的buffer，一个例子如下：</li></ul>
+<div class="protocol-table-wrap"><table class="protocol-table">
+<thead><tr><th>Buffer</th><th>B</th><th>G</th><th>O</th><th>R</th><th>Tango 1x</th><th>Tango 2x</th></tr></thead>
+<tbody>
+<tr><td>BamH1</td><td>20-50*</td><td>100</td><td>20-50</td><td>50-100</td><td>100*</td><td>50-100</td></tr>
+<tr><td>Xba1</td><td>50-100</td><td>50-100</td><td>20-50</td><td>0-20</td><td>100</td><td>50-100</td></tr>
+</tbody>
+</table></div>
+<ul class="protocol-list"><li>可以使用的buffer有：</li><li>Tango 1x、G buffer</li><li>但使用G buffer时，需要使用双倍量的Xba1.</li><li>*使用块切酶时一般不需要考虑buffer的选择，但仍需使用同一品牌的酶。</li><li>从-20℃取出限制酶和限制酶工作液，依据限制酶使用浓度和工作液浓度添加样品。</li><li>*以下为常用的双酶切体系：</li></ul>
+<div class="protocol-table-wrap"><table class="protocol-table">
+<thead><tr><th>组分</th><th>单一体系加入量</th></tr></thead>
+<tbody>
+<tr><td>待酶切DNA</td><td>3ug</td></tr>
+<tr><td>限制酶1</td><td>5ul</td></tr>
+<tr><td>限制酶2</td><td>5ul</td></tr>
+<tr><td>10×Buffer</td><td>5ul</td></tr>
+<tr><td>RNase-free water</td><td>To 50ul</td></tr>
+</tbody>
+</table></div>
+<ul class="protocol-list"><li>可适当改变DNA加入量和限制酶加入量</li><li>提前准备37℃水浴锅，对于快切酶，于37℃水浴2~3h；对于慢切酶，于37摄氏度水浴过夜。</li><li>*部分限制酶具有不同的反应温度，此时应当进行以下操作：</li><li>依照温度从低到高进行反应，先加入反应温度最低的限制酶，放置在对应温度水浴后补加温度较高的限制酶。</li><li>酶切后需要进行胶回收或产物回收之后才能进行下一步骤。</li></ul>
+<h4 class="protocol-minititle">连接</h4>
+<p class="protocol-text">若载体和目的片段均已经酶切，可使用T4 DNA ligase进行连接，方案如下：</p>
+<p class="protocol-text">以Thermo Fisher的T4连接酶为例：</p>
+<ul class="protocol-list"><li>冰上准备T4连接酶及其Buffer、待连接的两个片段的纯化产物、RNase-free water。</li><li>于PCR小管中，每个连接反应按照如下体系混合：</li></ul>
+<div class="protocol-table-wrap"><table class="protocol-table">
+<thead><tr><th>组分</th><th>体系</th><th>单一体系加入量</th></tr></thead>
+<tbody>
+<tr><td>目的DNA片段</td><td>~0.1pmol</td><td>(0.1×0.65×片段长度) /浓度</td></tr>
+<tr><td>载体DNA</td><td>~0.01pmol</td><td>(0.01×0.65×片段长度) /浓度</td></tr>
+<tr><td>10×T4 DNA ligase buffer</td><td>1ul</td><td>1ul</td></tr>
+<tr><td>T4 DNA ligase</td><td>0.5-1ul</td><td>1ul</td></tr>
+<tr><td>RNase-free water</td><td>To 10ul</td><td>To 10ul</td></tr>
+</tbody>
+</table></div>
+<ul class="protocol-list"><li>其中，所需的质量经过如下公式换算：</li><li>*T4 DNA ligase会与DNA有结合，在随后进行的电泳中会影响DNA条带泳动，查阅说明书可见解决方案；</li><li>*10×T4 DNA ligase buffer为悬浊液，使用前需短暂离心；</li><li>*应当在最后加入T4 DNA ligase。</li><li>置于PCR仪中于22℃孵育1h，长片段之间的连接可孵育更长时间。</li><li>*对于平末端、自身环化的连接反应需要更长的时间，一般来说，片段与载体的连接反应1h足够。</li><li>连接产物可直接用于热激法转化，但使用电穿孔法转化时需要检查溶液成分（详见说明）。</li></ul>
+<h4 class="protocol-minititle">同源重组</h4>
+<p class="protocol-text">若载体已经酶切，而目的片段具有同源臂，可使用同源重组，方案如下：</p>
+<ul class="protocol-list"><li>冰上准备2×Mix、待连接的两个片段的纯化产物、RNase-free water。</li><li>于PCR小管中依照如下体系混合：</li></ul>
+<div class="protocol-table-wrap"><table class="protocol-table">
+<thead><tr><th>组分</th><th>单一体系加入量</th></tr></thead>
+<tbody>
+<tr><td>目的DNA片段</td><td>(0.04×片段长度) /浓度</td></tr>
+<tr><td>载体DNA</td><td>(0.02×片段长度) /浓度</td></tr>
+<tr><td>2×Mix</td><td>5ul</td></tr>
+<tr><td>RNase-free water</td><td>To 10ul</td></tr>
+</tbody>
+</table></div>
+<ul class="protocol-list"><li>置于PCR仪中，50℃ 5-15min孵育，4℃冷却。</li><li>产物可直接用于转化。</li></ul>
+<h4 class="protocol-minititle">酶失活</h4>
+<p class="protocol-text">考虑到连接体系中含有的组分可能对于后续的转化有一定的影响，可在PCR仪中进行高温失活，方法为：</p>
+<p class="protocol-text">将样品放入PCR仪中，设置程序为65℃、10min，随后置于4℃贮存。</p>
+<h3 class="protocol-subtitle" id="转化">转化</h3>
+<p class="protocol-text">以E.Coli (DH5-alpha)感受态细胞的热激法转化为例。</p>
+<p class="protocol-note">*注意：DH5-alpha仅适用于一般质粒的转化，不适用于如慢病毒包装等的质粒的转化，具体的质粒需查阅相应的技术文档。</p>
+<ul class="protocol-list"><li>从超低温冰箱（-80℃）中取出E.Coli (DH5-alpha)感受态细胞，并将其放置于冰上进行融化；</li><li>*刚融化的感受态细胞具有最高的转化效率；</li><li>*感受态细胞在转化前很敏感，不能进行涡旋等剧烈操作。</li><li>取出预制的LB培养基，预先放入37℃烘箱中倒置烘烤以使表面残留水分蒸发，并恢复培养基温度；</li><li>*注意培养基是否预先加入了抗生素以及抗生素种类是否符合</li><li>取出放置于-20℃的质粒，在冰上融化；</li><li>在超净台内向50ul感受态细胞中加入5ul质粒，用手轻弹，混合后再冰上孵育30min；</li><li>*实际加入量不能超过感受态细胞体积的10%</li><li>*此步的目的在于使DNA吸附于菌体表面，在快速转化步骤中，此步可缩短至5min，但转化效率将是原先的1/10。</li><li>热激法于42℃水浴处理45s，随后立刻放入冰上并计时5min；</li><li>*不同实验室对于热激的参数有所差别，注意使用温度计反复测量水浴锅的温度。</li><li>向菌液EP管中加入700~1000ul 无抗性LB培养基或SOC培养基，放置于摇床上在37℃下培养30min-1h；</li><li>*若质粒浓度过低，可在此时减小LB培养基的加入量；</li><li>*SOC培养基相比较于LB培养基更适用于转化后的活化。</li><li>*对于氨苄抗生素而言，此步非必需（但仍推荐做），因为氨苄抗生素不抑制抗性基因的表达；对于卡那抗生素，此步是必需的，因为卡那霉素抑制核糖体翻译，细菌在使用卡那霉素处理前必须已经表达足够多的抗性产物。</li><li>对活化产物离心，弃去绝大多数菌液后重悬，随后涂板。</li><li>对于固体培养基，可选用一下两种方式之一：①可使用~150ul培养液进行涂板至基本干燥，最后放置于37℃烘箱中培养；②【推荐】将接种针伸入培养基中，划线培养。</li><li>接种环或枪头挑取单菌落，先放入~5ml 培养基中摇菌，约1d后应可见菌液浑浊。</li><li>*注意预先加入抗生素</li><li>使用扩大培养体系的1%体积的初级培养菌液进行扩大培养。</li><li>*注意预先加入抗生素</li></ul>
           </div>
         </div>
-
         <div class="expand-menu">
-          <div class="expand-menu-header">显微成像<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-header">动物行为学实验<span class="expand-arrow">▼</span></div>
           <div class="expand-menu-body">
-            <p>拍摄前设置倍率、曝光、通道和保存路径。不同样品之间尽量保持一致参数，便于后续比较。</p>
+            <h3 class="protocol-subtitle" id="待整理-cfc">【待整理】CFC</h3>
+<p class="protocol-note">*本实验用于对动物形成瞬时的强记忆，进行CFC的动物在数小时后脑中相应的脑区将表达c-fos等即早基因，相应的神经元将激活。可用于研究体内神经元激活的情况，或根据实验过程中设置的阈值测算的动物Freezing水平研究小鼠长期/短期记忆受损的情况。</p>
+<h4 class="protocol-minititle">程序与硬件设置</h4>
+<h3 class="protocol-subtitle" id="水迷宫">水迷宫</h3>
+<h3 class="protocol-subtitle" id="t-y形迷宫">T/Y形迷宫</h3>
+<p class="protocol-text">用于研究小鼠空间记忆和短期记忆。小鼠在迷宫内具有探索行为，当小鼠短期记忆较好时，小鼠应当依次、不重复地走三条臂。在一个周期内小鼠不重复地完成对迷宫三条臂的探索即为有效，记录有效周期占所有探索行为的比例（即为自发交替率）可对小鼠的空间记忆和短期记忆进行评估。</p>
+<p class="protocol-text">当仅研究小鼠短期记忆时，应当对迷宫的三臂进行标记帮助小鼠区分三条臂，以排除小鼠空间记忆的影响。</p>
+<ul class="protocol-list"><li>连接摄像头，开启软件（详细操作见“Smart I/O Protocol”），准备T形迷宫并将其放在高架上。</li><li>*放在高架上可避免小鼠逃脱</li><li>调整摄像头（尽量水平）和高架位置，以使得T形迷宫在摄像头视野中完全展现，并且各臂无遮挡，同时保证各臂无阴影。</li><li>在软件内调整参数，圈画各臂的范围，扣除背景等。</li><li>放入一试验小鼠观察小鼠在各臂内是否都能被很好地检测。</li><li>*不能使用待实验的小鼠，行为学实验一旦做过一次该小鼠便不能再进行同种行为学实验。</li><li>每次一只小鼠实验完毕后，应当对迷宫整体进行擦拭、酒精消毒和风干操作。</li><li>使用实验鼠进行正式试验。</li></ul>
           </div>
         </div>
-    </div>
-
-    <div class="general-content" id="tab7">
-        <h2>数据记录</h2>
-        <hr>
-        <p>数据记录用于保证实验可追溯。原始数据、处理过程和结论应分开保存，不要只留下最终图表。</p>
-
         <div class="expand-menu">
-          <div class="expand-menu-header">实验记录本<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-header">分析测试操作<span class="expand-arrow">▼</span></div>
           <div class="expand-menu-body">
-            <p>记录日期、实验人、目的、材料批号、步骤调整、结果和异常情况。临时改动要写清原因，避免复现实验时信息断裂。</p>
+            <h3 class="protocol-subtitle" id="鼠尾genotyping">鼠尾genotyping</h3>
+<ul class="protocol-list"><li>抓取小鼠，检查小鼠编号和性别，或者依次编号。</li><li>取一1.5ml EP管，手术剪剪下小鼠尾部约数毫米，放于EP管中。管壁上写清鼠笼号和小鼠编号。</li><li>*也可使用小鼠打耳标或剪脚趾的组织</li><li>加入300ul 50mM NaOH溶液，于95摄氏度金属浴上放置2h，以裂解组织。</li><li>冷却至室温，加入25ul tris-HCl 缓冲液（pH~7.4）以中和溶液。</li><li>*如需保存，此时可放置于4摄氏度保存一周以内</li><li>*以上为粗提取DNA的方法，如后续结果不佳，可使用精提DNA的方法</li><li>使用nanodrop测试粗提取的DNA含量，正常情况下获得的DNA含量～200ng/ul，建议稀释至50ng/ul 后再进行PCR。</li><li>配制PCR体系：2*Mix 7.5ul，引物各加1ul，DNA加0.5~1ul，剩下用水补齐。</li><li>*引物浓度应当为10uM，即依照冻干粉上的体积加入水溶解后，还应当再稀释十倍后使用</li><li>*建议在超净台上加</li><li>*此外，还需要水、阴性对照和阳性对照，阴性对照即为WT小鼠鼠尾裂解液，阳性对照为该品系预先保存的杂合小鼠，水对照即使用水代替DNA配制PCR体系。</li><li>选用Jackon lab的标准PCR流程进行扩增。</li><li>*标准循环数为25个，如PCR条带过暗，可以调至28~30个循环</li><li>使用1.5% 琼脂糖凝胶，选用小孔梳齿，110V 40min进行电泳。</li><li>*左侧台的电泳槽较干净</li></ul>
+<h3 class="protocol-subtitle" id="细菌质粒提取">细菌质粒提取</h3>
+<h4 class="protocol-minititle">质粒小抽</h4>
+<p class="protocol-text">质粒小抽的方法较为简单，见质粒小抽试剂盒。</p>
+<p class="protocol-text">最后一般不使用EB洗脱DNA，而用ddH2O进行洗脱。</p>
+<p class="protocol-text">质粒的长期保存放置于-20℃环境中。</p>
+<p class="protocol-text">使用本方法无法获得转染级质粒，所获质粒260/280约为1.0左右。</p>
+<h4 class="protocol-minititle">质粒中抽、质粒大抽</h4>
+<p class="protocol-text">适用于MACHEREY-NAGEL的质粒中抽、质粒大抽试剂盒。</p>
+<p class="protocol-text">使用前需检查buffer RES（贮存于4℃）中是否已加入RNA酶，检查LYS是否已加入SDS。</p>
+<p class="protocol-text">注意：不同于小抽，乙醇是不用加到wash buffer中的。</p>
+<p class="protocol-text">使用本方法可以获得转染级质粒，所获质粒260/280约为1.6左右。</p>
+<p class="protocol-text">关于英文介绍，见Instruction-NucleoBond-Xtra.pdf</p>
+<ul class="protocol-list"><li>准备约100ml（大抽：300ml）培养液（单克隆形成），大约为400OD（大抽：1200OD），于4500-6000 G、4℃下离心10min，以获得菌体；</li><li>*注意使用仪器中心离心机专用的离心瓶</li><li>准备NucleoBond® Xtra Column，将其通过塑料环形支架垂直放置于锥形瓶上，使用12ml（大抽：25ml）buffer EQU，沿图示方向旋转加入，以润湿滤膜；</li><li>完全弃尽上清液，将菌体重悬于8ml buffer RES（大抽：12ml）中，吹打至无颗粒状物，转移悬浊液至黄盖离心管中；</li><li>*注意检查buffer RES中是否加入RNase</li><li>*如菌液量过大，可加大buffer RES使用量</li><li>*注意使用前后buffer RES应贮存于4℃</li><li>向菌体悬浊液中加入8ml buffer LYS（大抽：12ml），温和倒置混匀数次，应可见大量菌体沉淀，室温孵育5min；</li><li>*注意检查buffer LYS中是否加入SDS</li><li>*若使用前buffer LYS产生沉淀，需在&lt;40℃下融化</li><li>*注意不得使用涡旋震荡</li><li>*若裂解效果不佳，可加大buffer LYS使用量</li><li>向溶液中加入8ml buffer NEU（大抽：12ml），立刻翻转混匀，直到蓝色完全消失；</li><li>*不能使用涡旋震荡</li><li>将溶液颠倒混匀直至均一化，立刻倒入柱中；</li><li>*注意必须将其均一化后再倒入柱中，否则将会堵塞柱子</li><li>待柱内水分基本排尽，使用5ml buffer EQU（大抽：15ml）进行洗涤，仍按照上图所示方法加入；</li><li>待柱内水分基本排尽，将柱上的滤网去除；</li><li>使用8ml buffer WASH（大抽：25ml）进行洗涤，注意沿侧壁加入，避免冲击滤膜；</li><li>将柱子放入新管之上，加入约5ml ddH2O（大抽：15ml）进行洗脱。</li><li>*注意使用ddH2O以获得转染级质粒</li></ul>
+<h3 class="protocol-subtitle" id="pcr产物-酶切产物及其他反应产物纯化">PCR产物、酶切产物及其他反应产物纯化</h3>
+<p class="protocol-text">使用Vazyme DC301的FastPure Gel DNA Extraction Mini Kit进行。</p>
+<p class="protocol-text">该试剂盒室温保存。详细说明见说明书。以下仅列出需要注意的点：</p>
+<ul class="protocol-list"><li>注意Buffer GDP所用体积：PCR产物等需要补齐至100ul后再进行纯化，此步骤影响提取效率。</li><li>注意加入含有乙醇的Wash Buffer后上下颠倒柱子以充分洗涤柱子上的盐分。</li><li>注意Wash Buffer洗涤后在室温下晾干柱子后再洗脱。</li><li>注意加入Elution Buffer后等待一段时间再离心洗脱，此方案能够极大增加回收效率。</li></ul>
+<h3 class="protocol-subtitle" id="琼脂糖凝胶电泳胶回收">琼脂糖凝胶电泳胶回收</h3>
+<ul class="protocol-list"><li>使用新制的凝胶跑胶以进行胶回收，同时更换电泳槽中的TAE溶液，洗净胶板和梳子。</li><li>一般先进行小体积的跑胶，确定合适的浓度、电压和时间后再进行正式跑胶。</li><li>切胶前，擦净切胶台、软镊和切胶刀，并使用酒精消毒，提前称量好2ml EP管质量。</li></ul>
+<p class="protocol-text">使用Vazyme DC301的FastPure Gel DNA Extraction Mini Kit进行。</p>
+<p class="protocol-text">该试剂盒室温保存。详细说明见说明书。以下仅列出需要注意的点：</p>
+<ul class="protocol-list"><li>注意Buffer GDP所用体积：使用1~3倍的凝胶体积不影响DNA回收效率；注意方便配平；建议切胶时各组凝胶体积近似。</li><li>注意加入含有乙醇的Wash Buffer后上下颠倒柱子以充分洗涤柱子上的盐分。</li><li>注意Wash Buffer洗涤后在室温下晾干柱子后再洗脱。</li><li>注意加入Elution Buffer后等待一段时间再离心洗脱，此方案能够极大增加回收效率。</li></ul>
+<h3 class="protocol-subtitle" id="细胞核与细胞质蛋白的提取">细胞核与细胞质蛋白的提取</h3>
+<p class="protocol-text">为了分别检测细胞质和细胞核中的蛋白质，我们需要在提取细胞蛋白时分离细胞质蛋白与细胞核蛋白，从而检测蛋白在细胞质或细胞核中的表达。核质分离的实验原理是首先用温和的方法破碎细胞质膜而不损伤细胞核，如渗透压冲击、玻璃匀浆器匀浆等方法；随后将细胞核沉淀下来，用更强的裂解液裂解细胞核，如SDS、高盐溶液等，达到分离胞浆胞核蛋白的目的。本方案采用渗透压冲击法，利用高浓度蔗糖溶液使细胞质膜破裂，进而分离细胞质，离心沉淀后再使用高盐溶液裂解细胞核。</p>
+<h4 class="protocol-minititle">溶液配制</h4>
+<p class="protocol-text">注：配置工作液前请先配置母液：20%SDS；0.5M pH8.0 EDTA；1M pH7.9 HEPES；10% TritonX-100；5M NaCl；1M KCl；0.5M DTT；100X蛋白酶抑制剂溶液</p>
+<div class="protocol-table-wrap"><table class="protocol-table">
+<thead><tr><th>Harvest Buffer（Buffer H）用于裂解细胞膜的弱裂解液，主要使用蔗糖进行裂解</th><th></th></tr></thead>
+<tbody>
+<tr><td>HEPES pH7.9</td><td>10mM</td></tr>
+<tr><td>NaCl</td><td>50mM</td></tr>
+<tr><td>Sucrose</td><td>0.5M</td></tr>
+<tr><td>EDTA pH8.0</td><td>0.1mM</td></tr>
+<tr><td>TritonX-100</td><td>0.5%</td></tr>
+<tr><td>DTT</td><td>1mM 现用现加</td></tr>
+<tr><td>蛋白酶抑制剂（PI）</td><td>1x 现用现加</td></tr>
+<tr><td>磷酸酶抑制剂</td><td>1x 现用现加</td></tr>
+</tbody>
+</table></div>
+<div class="protocol-table-wrap"><table class="protocol-table">
+<thead><tr><th>Buffer A 用于洗涤</th><th></th></tr></thead>
+<tbody>
+<tr><td>HEPES pH7.9</td><td>10mM</td></tr>
+<tr><td>KCl</td><td>10mM</td></tr>
+<tr><td>EDTA</td><td>0.1mM</td></tr>
+<tr><td>EGTA</td><td>0.1mM</td></tr>
+<tr><td>DTT</td><td>1mM 现用现加</td></tr>
+<tr><td>蛋白酶抑制剂（PI）</td><td>1x 现用现加</td></tr>
+<tr><td>磷酸酶抑制剂</td><td>1x 现用现加</td></tr>
+</tbody>
+</table></div>
+<div class="protocol-table-wrap"><table class="protocol-table">
+<thead><tr><th>Buffer C 用于破裂核膜，使用高盐溶液的强破膜方法，使用RIPA（强）更适宜</th><th></th></tr></thead>
+<tbody>
+<tr><td>HEPES pH7.9</td><td>10mM</td></tr>
+<tr><td>NaCl</td><td>500mM</td></tr>
+<tr><td>EDTA pH8.0</td><td>0.1mM</td></tr>
+<tr><td>EGTA pH8.0</td><td>0.1mM</td></tr>
+<tr><td>IGEPAL(NP40)</td><td>0.1%</td></tr>
+<tr><td>DTT</td><td>1mM 现用现加</td></tr>
+<tr><td>蛋白酶抑制剂（PI）</td><td>1x 现用现加</td></tr>
+<tr><td>磷酸酶抑制剂</td><td>1x 现用现加</td></tr>
+</tbody>
+</table></div>
+<p class="protocol-note">*Harvest Buffer为细胞质裂解液，Buffer A为沉淀洗涤液，Buffer C为细胞核裂解液，其中建议使用RIPA（强）裂解液代替Buffer C。</p>
+<p class="protocol-note">*除了以上现用现加的物质，其他溶液可配好后放置在瓶中4℃长期保存。取用时先转移需要量至离心管，再加入DTT、PI和磷酸酶抑制剂，加入后放置于冰上。</p>
+<p class="protocol-note">*DTT：二硫基苏糖醇，还原剂，维持蛋白质还原态；HEPES为两性离子，可起到缓冲作用，缓冲范围6.8~8.2；</p>
+<p class="protocol-note">*100X蛋白酶抑制剂的配制方法：两片蛋白酶抑制剂冻干粉颗粒溶解于1ml无菌水中，使用涡旋和超声使其充分溶解，随后置于冰上，长期保存置于-20℃。</p>
+<p class="protocol-note">*仅当待检测蛋白要求磷酸化不被破坏时使用磷酸酶抑制剂。</p>
+<h4 class="protocol-minititle">实验步骤</h4>
+<p class="protocol-text">准备冰盒和冰砖，准备50ml 1×PBS预冷。</p>
+<p class="protocol-text">准备10cm皿培养的细胞，开始实验时将细胞置于冰上，吸走培养基，用预冷的1xPBS清洗两次。</p>
+<p class="protocol-note">*注意：区别于RNA提取，需要使用PBS进行清洗！</p>
+<p class="protocol-text">吸走PBS，加入1ml Harvest Buffer（已加入DTT和抑制剂），使用蓝枪头尾部或细胞刮刮下细胞，再吹打数次，液体收集到1.5ml EP管中，涡旋混匀。</p>
+<p class="protocol-note">*使用6cm皿时或收取六孔板的两个孔时，可加入500μl buffer H，不建议收取更少量的细胞，可能会使得蛋白提取量低；</p>
+<p class="protocol-note">*由于细胞大小和状态不同，不同种类的细胞所收获的蛋白量不同。</p>
+<p class="protocol-text">冰上裂解15min，此处可以用Dounce匀浆器裂解细胞，使裂解更加充分，防止胞质蛋白污染细胞核蛋白，使用匀浆器裂解时功率调至最大，裂解数分钟即可。</p>
+<p class="protocol-text">4℃ 300-500g离心10min。</p>
+<p class="protocol-text">收集的上清即为胞浆蛋白，沉淀为细胞核。吸取时可以留少部分液体在EP管底部，以免吸到沉淀。</p>
+<p class="protocol-note">*若需要提取细胞质蛋白，则收集上清液，随后可直接制样，或暂时存放于-80℃。</p>
+<p class="protocol-text">吸走上清后，4°C 14000rpm离心15min，此时可见沉淀与液体完全分开，将上清转移到胞浆蛋白中（如需要）。</p>
+<p class="protocol-note">*第一次低速离心的目的是防止其它细胞器碎片沉淀下来，第二次高速离心的目的是将剩余胞浆上清与胞核沉淀完全分开。</p>
+<p class="protocol-text">用500-1000ul Buffer A清洗沉淀，清洗时颠倒混匀即可。</p>
+<p class="protocol-note">*此时细胞核沉淀容易聚集，枪头不易吹散，使用柜子中的涡旋混匀+瞬时离心可将沉淀分散。</p>
+<p class="protocol-text">4℃ 6000rpm离心5min。</p>
+<p class="protocol-text">弃去上清，向沉淀中加入100ul Buffer C（根据实验需求，也可以使用RIPA等强效裂解液），重悬沉淀。</p>
+<p class="protocol-text">将样品置于-80°C冰箱冰冻，冻上后即可拿出融化。</p>
+<p class="protocol-note">*约5min，可选，当裂解情况不好时可选择</p>
+<p class="protocol-note">*冻融的功能是使得细胞核破裂，释放蛋白</p>
+<p class="protocol-text">融化后置于4°C震荡混匀器中震荡，每1min震荡15s，持续15min（根据具体实验可以适当延长裂解时间），实际操作时裂解15min，期间多次震荡即可。</p>
+<p class="protocol-text">4℃ 14000rpm离心10min，离心后取上清液即为细胞核蛋白。</p>
+<p class="protocol-text">测定蛋白浓度后，将胞浆胞核蛋白加入适量的4xLoading Buffer，使用金属浴100°C煮样10min（注意开启EP管盖），蛋白制样的详细方法单独列出。</p>
+<p class="protocol-text">将制好的样品置于-20°C冰箱保存。</p>
+<p class="protocol-note">*对于10cm 293细胞，使用该方案内的1ml细胞质裂解液，约能提出2.5ug/ul的蛋白，用100ul细胞核裂解液约能提出2ug/ul的核蛋白。1ml TNE裂解液约能提出3-4ug/ul的蛋白，1ml RIPA裂解液约能提出4-5ug/ul蛋白。</p>
+<p class="protocol-note">*对于磷酸化蛋白的提取应当尽快。</p>
+<p class="protocol-note">*以上步骤全程在冰上进行！</p>
+<p class="protocol-note">*当裂解情况不好时，可选用RIPA强效裂解液，使用方法与buffer C相同。</p>
+<h4 class="protocol-minititle">实验结果示例</h4>
+<p class="protocol-text">以10cm皿培养至90%的293细胞进行核质分离实验，胞浆胞核蛋白各跑30ug，以α-Tubulin作为胞浆内参，以LaminB作为胞核内参。结果可见胞浆蛋白中含有α-Tubulin，几乎没有LaminB；而胞核蛋白含有LaminB，几乎没有α-Tubulin。可见该分离方法可以将胞浆胞核蛋白高效地分开。</p>
+<p class="protocol-text">注：胞浆胞核内参有多种选择，根据实验目的选择不同类型的内参。胞浆内参常用α-Tubulin和GAPDH（与代谢相关实验需慎重考虑使用GAPDH）。胞核内参可以用核纤层蛋白LaminA/C、LaminB（细胞凋亡时Lamin家族受Caspase剪切，因此研究凋亡时不可用），增殖细胞核抗原PCNA（一般只存在于增殖细胞，影响细胞增殖的实验不建议使用PCNA），不均一核糖核蛋白hnRNP等。由于H3在线粒体中同样存在，因此不建议使用H3作为细胞核内参。</p>
+<h3 class="protocol-subtitle" id="组织总蛋白的提取">组织总蛋白的提取</h3>
+<p class="protocol-note">*本法用于从软组织中提取总蛋白</p>
+<h4 class="protocol-minititle">细胞裂解</h4>
+<ul class="protocol-list"><li>使用RIPA收取组织样本，将组织样本收集到约500ul的裂解液中，全程置于冰上操作。</li><li>将EP管转移至4℃的混匀仪中剧烈震荡约30min，随后将样品旋转混匀约30min进行裂解。</li></ul>
+<h4 class="protocol-minititle">收蛋白</h4>
+<ul class="protocol-list"><li>4℃ 14000rpm离心30min，取上清液移入新管中，测蛋白浓度并制样。</li></ul>
+<h3 class="protocol-subtitle" id="细胞总蛋白的提取">细胞总蛋白的提取</h3>
+<p class="protocol-note">*本法适用于提取细胞总蛋白，包括细胞核蛋白，继而检测蛋白的表达量。</p>
+<h4 class="protocol-minititle">收取细胞</h4>
+<ul class="protocol-list"><li>使用预冷的PBS洗涤细胞1~2遍。</li><li>吸干PBS后加入RIPA（强）溶液，对于六孔板，每孔加100-150ul；对于6cm皿，加入200-300ul。随后使用细胞刮或枪头刮下细胞。</li><li>*若来不及进行之后的步骤，可将样品置于-80℃保存。</li><li>*RIPA溶液中需加入蛋白酶抑制剂（PI），使用方法为2片溶解至1ml水中，为100X的蛋白酶抑制剂溶液；检测磷酸化等时还需加入对应抑制剂。</li></ul>
+<h4 class="protocol-minititle">接触超声</h4>
+<ul class="protocol-list"><li>调节接触超声功率（根据功率百分比和仪器的额定功率计算，约30W），超声时间约2s/样。</li><li>使用ddH2O（置于15ml管中）清洗超声探头，清洗时同样需开启超声，并连续使用五管ddH2O进行清洗。</li><li>将样品置于冰上，将超声探头伸入样品溶液中，避免接触容器内壁，随后开始超声2s。</li><li>*将样品中放入珠子可使得超声更加完全。</li><li>超声后立即将样品放置于冰上。</li><li>两个样品超声间隔需使用5管ddH2O清洗超声探头，清洗时同样需开启超声。</li><li>待所有样品超声完毕后清洗探头并关闭超声破碎仪。</li></ul>
+<h4 class="protocol-minititle">裂解</h4>
+<ul class="protocol-list"><li>将样品置于4℃混匀仪中&gt;1h，随后置于4℃ 14000rpm离心30min取上清测浓度、制样即可。</li></ul>
+<h3 class="protocol-subtitle" id="蛋白制样">蛋白制样</h3>
+<p class="protocol-note">*本制样方法将引发多聚体蛋白解聚，样品不能用于非变性电泳或交联电泳等操作。</p>
+<h4 class="protocol-minititle">使用4×Loading的蛋白煮样方法</h4>
+<p class="protocol-text">4×Loading的配方如下。置于4℃保存。</p>
+<div class="protocol-table-wrap"><table class="protocol-table">
+<thead><tr><th>4×Loading Buffer</th><th>9ml</th></tr></thead>
+<tbody>
+<tr><td>β-巯基乙醇</td><td>1ml</td></tr>
+</tbody>
+</table></div>
+<ul class="protocol-list"><li>使用BCA法测量蛋白质的浓度，随后根据蛋白质的浓度在计算机上列出下表：</li></ul>
+<div class="protocol-table-wrap"><table class="protocol-table">
+<thead><tr><th></th><th>浓度(ng/ul)</th><th>制样量(500ug)(ul)</th><th>PBS量(ul)</th><th>4×Loading(ul)</th></tr></thead>
+<tbody>
+<tr><td>Sample 1</td><td>x</td><td>500/x</td><td>150-500/x</td><td>50</td></tr>
+<tr><td>Sample 2</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Sample 3</td><td></td><td></td><td></td><td></td></tr>
+</tbody>
+</table></div>
+<ul class="protocol-list"><li>*注意预先检查样品共有多少量，对于量较少的样品可降低制样量，当蛋白样品足够多时，建议制得更高浓度的蛋白样，以充分利用样品。</li><li>随后打印该表，按照该表添加样品，将含有样品的EP管放置于100℃沸水或热块上，煮样10min。</li><li>*注意防止盖子崩开，可预先戳孔或在盖子上压上重物。</li><li>制得的蛋白样可直接用于WB等，长期保存置于-20℃，但在每次使用前均需要在100℃下煮样5min左右。</li></ul>
+<h3 class="protocol-subtitle" id="细胞-组织总rna的提取">细胞/组织总RNA的提取</h3>
+<p class="protocol-text">本方法适用于化学法进行培养细胞或组织样品RNA的提取，随后需要进行逆转录。以下提取过程需要注意：</p>
+<ul class="protocol-list"><li>全程使用RNase-free的枪头和EP管；</li><li>全程戴好口罩，避免环境污染；</li><li>以下操作不需要将样品置于冰上！</li></ul>
+<h4 class="protocol-minititle">收取细胞或组织样品</h4>
+<ul class="protocol-list"><li>收取组织样品</li><li>在表面冷冻的台子上对组织进行解剖，取下的组织立刻放入500ul的Trizol溶液中。随后置于4℃的涡旋混匀仪上混匀（约3min）。</li><li>* Trizol溶液中含有苯酚，有强烈气味和毒性，预先在EP管中加入Trizol后再放入样品，并尽量在生物安全柜或超净台中进行。</li><li>收取培养细胞样品</li><li>六孔板培养的细胞完全弃去培养基，随后立刻加入500ul/孔的Trizol溶液。</li><li>*Trizol溶液中含有苯酚，有强烈气味和毒性，此步应在生物安全柜中进行；</li><li>*使用六孔板的一个孔提取RNA所获产物已足量用于逆转录。</li><li>*若来不及进行以下操作，可将样品暂存于-80℃并尽快继续实验。</li></ul>
+<h4 class="protocol-minititle">RNA的萃取</h4>
+<ul class="protocol-list"><li>将样品置于15~30℃条件下孵育5min。</li><li>每1ml Trizol溶液加入200ul的氯仿（三氯甲烷），用手摇晃试管~15s，以使得有机相和水相充分混匀为悬浊液，室温静置1min。</li></ul>
+<h4 class="protocol-minititle">异丙醇沉淀RNA</h4>
+<ul class="protocol-list"><li>4℃，12000g离心15min，转移上层水相进入新的EP管中（约500ul/1ml Trizol）。</li><li>*当样品量较大时两层之间会出现膜样物质，避免吸入；</li><li>*避免吸取下层有机相，否则后面难以去除。</li><li>向EP管中加入等体积异丙醇溶液，用力摇晃2~3次，室温静置1min。</li><li>*建议放入-20℃ 1~2h以使得RNA充分析出（低温降低溶解度）；</li><li>*此步使用异丙醇降低RNA溶解度。</li><li>4℃，12000g离心15min，注意离心管方向应一致。离心后应可见极少量半透明状沉淀，弃上清（不需要完全）。</li><li>*注意离心过程中保持溶液处于低温，以使得RNA能够最多地析出；</li><li>*若看不到沉淀，应注意离心管方向，直接吸取上清液，避免产物丢失；</li><li>*可吸去大部分溶液之后，将容器倒扣在厨房用纸上，等待水分自然流下，依次避免吸去沉淀的问题。</li></ul>
+<h4 class="protocol-minititle">洗涤与溶解RNA</h4>
+<ul class="protocol-list"><li>使用预冷的75% 乙醇-DEPC水洗涤沉淀一次，并完全弃去上清，中间需进行离心。</li><li>将离心管开盖置于超净工作台上干燥，乙醇完全挥发后沉淀应由白色变为透明而不易观察。</li><li>使用~50ul DEPC水（或RNase-free水）溶解沉淀，置于热块上55~60℃加热10min促溶，随后测浓度。</li><li>*制得的RNA可临时置于-80℃保存，但推荐立刻进行逆转录以保持稳定性。</li></ul>
+<h3 class="protocol-subtitle" id="逆转录">逆转录</h3>
+<ul class="protocol-list"><li>对待逆转录的样品使用nanodrop测量RNA浓度，在电脑上列出样品的浓度表格，并根据后续所需浓度计算下表：</li></ul>
+<div class="protocol-table-wrap"><table class="protocol-table">
+<thead><tr><th></th><th>浓度(ng/ul)</th><th>1ug(或2ug)</th><th>RNase-free water</th><th>total</th></tr></thead>
+<tbody>
+<tr><td>Sample 1</td><td>x</td><td>1000/x</td><td>16-1000/x</td><td>16</td></tr>
+<tr><td>Sample 2</td><td></td><td></td><td></td><td></td></tr>
+<tr><td>Sample 3</td><td></td><td></td><td></td><td></td></tr>
+</tbody>
+</table></div>
+<ul class="protocol-list"><li>*根据后面需进行的qPCR的方法，选择合适的模板用量和体系大小，探针法使用2ug模板，SYBR-Green使用1ug模板；</li><li>*由于RNA逆转录用量对后续的qPCR的结果影响很大，因此所有样品应保证逆转录模板量一致；</li><li>*对于每一个样品，建议同时进行多组逆转录，因RNA不能长期存放，应尽量多地进行逆转录以长期存放。</li><li>使用两步法进行逆转录，预先设计好PCR程序，第一轮反应去除体系中含有的gDNA，以避免对后续qPCR假阳性的影响；第二轮进行逆转录。</li><li>使用RNase-free的八联管，先加入第一轮体系的反应物，进行gDNA去除后再加入第二轮体系的混合物，再进行逆转录。</li><li>*使用RNase-free的水或DEPC处理的水进行稀释</li><li>反应产物使用自封袋包裹、写清楚以下信息：样品名称与来源、逆转录体系（包括模板用量）等，并将上述的表格打印置于自封袋中。</li><li>产物长期存放于-20℃，暂时存放可置于4℃。</li><li>按照经验规则，反应产物稀释10倍后可用于qPCR，使用DEPC处理的水进行稀释，具体可参照以下规则：</li><li>若模板加入1ug，也可认为浓度为1ug/20ul，即50ng/ul，qPCR时加入约4ul即可。</li></ul>
+<h3 class="protocol-subtitle" id="qpcr">qPCR</h3>
+<h4 class="protocol-minititle">qPCR引物设计方法</h4>
+<p class="protocol-text">qPCR引物特征</p>
+<ul class="protocol-list"><li>引物长度约20bp，具有相似的Tm值，约为60℃；</li><li>目标产物长度50~200bp，建议80~150bp；</li><li>*重要*不能用于扩增DNA的内含子片段，由于该片段在cDNA中不存在，会导致无法检测；</li><li>必须与模板链完全配对，预先使用blast对引物序列进行模拟对接；</li><li>对于外源污染（人源和其他常用种属）不敏感，即最好识别物种特异性的非保守片段；</li><li>最好使用已经过验证的引物。</li></ul>
+<p class="protocol-text">qPCR引物选取优先级</p>
+<p class="protocol-text">依照以下方案优先级进行选取引物：</p>
+<ul class="protocol-list"><li>使用文献中已经验证的引物，可使用primerbank网站查找已经被验证的引物（仅限于human和mouse），选择好合适的引物后使用primer-blast工具检查种属特异性；</li><li>专业人员人工设计的引物，如使用生工®的引物设计工具，该工具将序列提交给人工进行设计，仅需要选取使用的方法等即可；</li><li>使用专业设计网站辅助设计，常用NCBI的primer-blast工具，可以在设计时同时进行blast，选取合适的引物返回结果；</li><li>自行设计。</li></ul>
+<h4 class="protocol-minititle">实验过程</h4>
+<p class="protocol-text">使用SYBERGREEN进行qPCR，因为dNTP带有荧光基团，以下全过程应注意避光。</p>
+<ul class="protocol-list"><li>依照体系混合共同反应液，注意引物的添加和引物的浓度。</li><li>*注意对照的选取，除了待测物以外，还应选取可靠的内参作为对照和后续计算依据，一般选取β-actin作为内参</li><li>向顶盖透光的八联管中加入混合好的体系混合液，随后加入模板DNA。</li><li>*注意模板的浓度和用量（参见说明书，如模板用量不超过 100ng时，建议使用50ng的模板）；</li><li>*注意加样过程中顶盖内侧不能碰触到其他物体的表面，防止假阳性发生；</li><li>*注意不能在顶盖透光处标注信息；</li><li>*每一个样品进行qPCR时应当进行技术重复三次，并在数据处理时进行平均化处理；</li><li>*注意样品的顺序，使用合适的加样顺序和仪器中的摆放循序可便于数据处理。</li><li>八联管混匀后离心，随后置于qPCR中，设置程序并进行PCR。</li><li>*程序设计中一般不需要进行修改，注意荧光探测波长应该与dNTP荧光波长相同。</li><li>待PCR结束后，导出qPCR的结果表格，该表格应含有每一孔的孔编号和循环数（即产生最大吸收的一半时的循环数，不一定为整数，由计算得出）。随后进行数据处理。</li></ul>
+<h4 class="protocol-minititle">数据分析</h4>
+<p class="protocol-text">依照下列方法进行计算：</p>
+<p class="protocol-text">在计算机中列出上表，其中，黄色部分为待补充部分。</p>
+<p class="protocol-text">actin平均：每一样品三个副孔actin的Ct值平均；</p>
+<p class="protocol-text">待测平均：每一样品三个副孔待测物质的Ct值平均；</p>
+<p class="protocol-text">ΔCt：每一样品的待测平均-actin平均；</p>
+<p class="protocol-text">wt-ave：对照组的ΔCt的平均值；</p>
+<p class="protocol-text">ΔΔCt：每一样品的ΔCt-（wt-ave）；</p>
+<p class="protocol-text">POWER(2, -ΔΔCt)：每一样品中，2-ΔΔCt值，直接反映mRNA的相对含量。</p>
+<h3 class="protocol-subtitle" id="免疫共沉淀-ip">免疫共沉淀（IP）</h3>
+<p class="protocol-text">Protein A/G与磁珠结合后，该磁珠可与任意的抗体结合，实现免疫沉淀。</p>
+<h4 class="protocol-minititle">免疫磁珠法拉下目标蛋白</h4>
+<ul class="protocol-list"><li>将细胞培养皿置于冰盒上，使用冰冷的1×PBS洗涤细胞2~3次，注意沿侧壁加入。</li><li>*如需获得质谱级蛋白，需要在超净台中进行。</li><li>吸出 PBS，加入预冷的含有蛋白酶抑制剂的裂解液。</li><li>*每 5×107 细胞，融合度80-100%/10cm 培养皿加入 1 ml；每2×107 细胞，融合度80-100%/6cm 培养皿加入0.5 ml；6孔板每孔加入100-150μl。</li><li>*若检测磷酸化蛋白，则裂解液中还应含有磷酸酶抑制剂。</li><li>*裂解液和去污剂的选择：</li><li>使用1ml枪头背侧刮下细胞并使其悬浮于裂解液中。并将裂解液转移至2ml EP管中，将EP管置于冰上。裂解40~60min。</li><li>*如获取质谱级，需要使用新的枪头，并在超净台中进行。</li><li>在4℃预冷的离心机中14,000 rpm离心20 min。</li><li>从离心机中取出离心管，置于冰上。将上清液转移至预冷的新离心管中，弃去沉淀。</li><li>按比例在上清液中加入一抗，4℃下孵育4h或过夜。</li><li>加入20μl 预处理的protein A/G beads 4℃孵育过夜。</li><li>将EP管置于磁铁上，应见磁珠吸附在侧壁上，使用细胞裂解液清洗三遍。</li><li>*清洗过程中需要重悬磁珠！</li><li>向EP管中加入1X Loading Buffer（使用细胞裂解液稀释4X）40~60μl。</li><li>于100℃ 10min水浴或金属浴。</li><li>*注意开盖</li></ul>
+<h3 class="protocol-subtitle" id="western-blot">Western blot</h3>
+<p class="protocol-text">Western blot is a method that separates different proteins by their molecular weight, when transfer though the pores in PAGE, the bigger protein moves slower because of its bigger size. When the proteins are denatured by SDS, the proteins will carry corresponding amount of negative ion, which will facilitate the movement of proteins in electronic field. So the total distance of the protein moved in the gel is lined with the molecular weight.</p>
+<p class="protocol-text">The components required for PAGE gel preparation are polyacrylamide, N,N’-methylenebisacrylamide, TEMED, ammonium persulfate, Tris-HCl buffer and sodium dodecyl sulfate (SDS). Polyacrylamide and N,N’-methylenebisacrylamide are the main components of PAGE gel and are used to form the gel. N,N’-methylenebisacrylamide is a crosslinking agent that is used to crosslink the gel. TEMED and ammonium persulfate are initiators that are used to initiate polymerization. Tris-HCl buffer is used to adjust the pH of the gel. SDS is a detergent that is used to denature proteins and give them a negative charge so that they can be separated by size using electrophoresis.</p>
+<p class="protocol-text">用于WB的二抗基本上均使用HRP进行偶联，因此若检测蛋白质磷酸化等修饰时，需要跑两块胶，一块胶检测蛋白质本身，另一块检测修饰。</p>
+<h4 class="protocol-minititle">配制SDS-PAGE胶</h4>
+<ul class="protocol-list"><li>根据目标蛋白的大小，选取合适的胶浓度和蛋白marker，并记录好使用的参数。</li><li>*分离更小的蛋白（2-30kDa），建议使用Tricine胶。</li><li>清洗制胶玻璃板，检查没有明显的豁口或破损，使用双蒸水清洗干净并晾干。清洗夹子和制胶台等，安装好制胶板，将其放在制胶台上的橡胶条上并夹紧。</li><li>*橡胶条必须保持水平，否则易出现漏液！</li><li>（可选）使用水验漏，验漏后烘干制胶板或使用裁剪的滤纸擦干净。</li><li>依照试剂配制好分离胶，加入顺序：ddH2O→丙烯酰胺→pH 8.8 Tris-HCl缓冲液→SDS→APS（过硫酸铵）→TEMED（四甲基乙二胺）。</li><li>*在加入APS后震摇使其混合均匀后再加入TEMED，最后混合时缓慢震摇，避免SDS产生气泡，若产生气泡，灌胶板时需当心；</li><li>*TEMED加入前溶液不会凝固；凝胶与空气直接接触时由于产生的活性氧自由基被空气淬灭，将不会凝固。</li><li>*注意使用pH8.8的Tris-HCl缓冲液，使用正确的pH值可使得蛋白质在浓缩胶被浓缩，而在分离胶中根据分子量线性分离。</li><li>*APS和丙烯酰胺放置于4℃；TEMED需避光保存（建议倒出一些备用）；</li><li>*1.5mm厚的胶，每块需消耗7.5ml的分离胶与4ml的浓缩胶。</li><li>使用异丙醇/无水乙醇液封，待下层胶凝固后配制上层胶。</li><li>*若使用水液封，需注意缓慢加入，避免混溶。</li><li>按照类似配方配制浓缩胶，注意使用pH 6.8的Tris-HCl缓冲液。</li><li>*在清洗好梳子、下层胶凝固后再配制浓缩胶，并在滤纸吸尽分离胶表面液体前加入TEMED。</li><li>待分离胶凝固后，倒出无水乙醇/异丙醇/水，使用滤纸吸尽凝胶表面水分。</li><li>加入浓缩胶至刚好与玻璃板顶端平齐。</li><li>*若不平齐，插入梳子时会产生气泡，继而导致局部的胶无法凝固呈现缺口。</li><li>加入梳子，注意梳子有正反和厚度区分，带字一面为正面，待凝固拔除梳子即可。</li><li>*注意先赶走浓缩胶表面的气泡，再插入梳子；</li><li>*灌浓缩胶时也要使胶沿玻璃板流下以免胶中有气泡产生。插梳子时要使梳子略微倾斜以便于气泡溢出。梳子拔出时不要破坏加样孔，如有加样孔上的凝胶歪斜可用枪头插入加样孔中纠正。</li><li>*注意避免液体溅出，以上所有液体溅到皮肤表面后应立即使用流水清洗。</li></ul>
+<h4 class="protocol-minititle">样本预处理</h4>
+<ul class="protocol-list"><li>普通蛋白样品加入4× Loading Buffer（由购买的4×Loading加入10%β-巯基乙醇制得）后于100℃水浴/金属浴10min，具体见蛋白制样。</li><li>*当使用IP获得的蛋白时，使用40-60μl的1×Loading Buffer。</li><li>*Loading buffer较为粘稠，建议剪开枪头顶端进行吸取。</li></ul>
+<h4 class="protocol-minititle">SDS-PAGE</h4>
+<ul class="protocol-list"><li>于37℃预热蛋白样品，并注意涡旋混匀后离心，吸取上清液。</li><li>*最好预先煮沸样品后离心。</li><li>在两块胶板的中间加满电泳液（1× Running buffer, RB）后开始准备上样。枪头插至加样孔中缓慢加入样品，防止吹起样品。随后蛋白放回-20℃存放。</li><li>*注意预先使用注射器或移液枪将胶孔中未凝固的胶吹出，防止上样时样品加不进去；</li><li>*样品的上样体积根据样品的蛋白浓度确定，最终上样蛋白量应达到30-100ug；防止气泡使样品溢出；加样时注意控制加样速度，防止加样太快使样品冲出加样孔；</li><li>*当上样体积较大时，建议使用上样专用的加长枪头，上样量小时请勿使用加长枪头；</li><li>*上样样品为免疫磁珠分离的蛋白时，需要在磁铁上上样；</li><li>*为了避免加样顺序的混淆，可在两侧分别上样1μl和5μl的Marker以加以区分。</li><li>*对于15孔的1.5mm的胶，每孔上样量&lt;30ul。</li><li>安装好电泳装置，使用60-80V 电泳0.5h后，待marker与电泳前沿指示线分离，将电压转换为 110V，溴酚蓝刚跑出胶的边缘后再过一段时间即可停止电泳。</li><li>*恒电流时，32mA/块胶，电泳1.5h，中间不需要转换电流大小；</li><li>*为了避免胶数量的不同引发的计算问题，尽量使用恒压跑胶。</li></ul>
+<h4 class="protocol-minititle">电转膜</h4>
+<ul class="protocol-list"><li>预冷转膜液1× Trans Buffer。</li><li>切割PVDF膜，大小为6cm*8cm。</li><li>*连同两张蓝色保护膜一同裁剪。</li><li>* PVDF膜的孔径根据目的蛋白大小选择</li><li>目的蛋白条带＞20kDa，选择孔径为0.45um的膜</li><li>目的蛋白条带＜20kDa，选择孔径为0.22um的膜</li><li>将少量甲醇倒入洁净的塑料盒内，并将膜揭开保护层后放入，以激活PVDF膜，浸泡30s以上，随后放入1×Trans buffer中。</li><li>*甲醇活化PVDF膜为化学反应，活化带有正电的基团，使得带有负电的蛋白质能够与之结合。活化后的PVDF膜呈现半透明状</li><li>在转膜夹上按顺序在负极（黑色夹子）铺上2层海绵-3层滤纸-胶-PVDF膜-3层滤纸-3层滤纸，层与层之间不能有气泡，可用滚轮去除气泡。</li><li>封紧后放入电转槽，注意膜在正极一侧（夹子黑色对黑色，透明对红色），加入1×Trans buffer至没过PVDF膜的高度，将电泳槽置于冰上中。恒流300mA，或恒压110V，根据不同蛋白分子量的大小调节转膜时间。</li><li>*转膜时间与蛋白条带大小的关系：</li><li>使用0.22um的PVDF膜、检测较小蛋白质时，使用300mA，转60min即可；</li><li>使用0.4um的PVDF膜、检测较大蛋白质时，使用300mA，转60-90min。</li><li>*避免长时间转膜，可能导致蛋白降解，转膜完毕后尽快拿出。</li><li>*转膜过程中电流大，避免溶液温度过热导致的蛋白降解。</li><li>根据目标条带位置对电转膜进行切割，将自封袋进行裁剪，使用自封袋双面包裹膜后裁剪，可使膜不容易被裁坏。</li><li>*注意区分膜的正反面，转膜时靠近胶的一侧为正面，建议在膜的右上角剪口以进行标记，注意同时区分加样顺序！</li></ul>
+<h4 class="protocol-minititle">封闭</h4>
+<ul class="protocol-list"><li>使用5%脱脂奶粉-TBST溶液封闭膜，将50ml上述溶液倒入装有膜的塑料盒中，在常温摇床上摇1h。</li><li>*TBST为1× TBS-0.1% Tween溶液。</li><li>*因为奶粉中的酪蛋白对于磷酸化修饰的检测有干扰，因此WB检测磷酸化时应使用BSA代替脱脂奶粉，但BSA蛋白的封闭效果弱于脱脂奶粉。</li><li>*若非特异性结合过多，可提高封闭用脱脂奶粉的浓度，或延长封闭时间。</li><li>*封闭液只能保存3~4天，配制时注意写明日期。</li><li>*封闭时溶液应合盖放置，避免溶液蒸发，避免膜表面干掉，否则显色时背景将会很高。</li><li>孵育结束后直接使用一抗孵育，期间不能洗膜。</li></ul>
+<h4 class="protocol-minititle">一抗孵育</h4>
+<ul class="protocol-list"><li>根据抗体的使用浓度，使用2×的抗体稀释液对其进行稀释并加水补充体积，因WB体积较大，混合液需置于15ml离心管中混匀，并置于冰面上。随后放回抗体。</li><li>*因抗体稀释液含有蛋白成分，需要进行冰浴；</li><li>*部分抗体推荐使用牛奶或奶粉进行稀释。</li><li>将电转后的醋酸纤维素膜横切，使得每一个目的条带均单独切下。</li><li>*使用圆珠笔或者剪口标记膜的正反面。</li><li>洗净用于抗体孵育的塑料盒，在每一个小隔间中加入对应抗体，将对应的醋酸纤维素膜使用塑料镊子放置于塑料盒中，同时保证含有蛋白的一面朝上（即字样朝下），作好记录。</li><li>*若在一个塑料盒中孵育两个膜时，蛋白面应当背向放置</li><li>4℃冰柜中脱色摇床慢速摇动过夜。</li><li>封闭结束后，回收一抗抗体溶液并置于4℃。</li><li>使用TBST洗涤4次，每次10min，在摇床上常温进行。</li></ul>
+<h4 class="protocol-minititle">二抗孵育</h4>
+<ul class="protocol-list"><li>使用对应的封闭液（BSA或奶粉-TBST）配制二抗抗体。</li><li>*二抗抗体均以HRP法显色，因此只需要注意抗体的抗原种属即可；</li><li>*一般情况下，二抗的抗体浓度为1:10000-1:5000，在检测磷酸化蛋白时建议为1:1000，具体应查询后使用；</li><li>*配制的封闭液最多能存放3~4天，配制后过长时间的封闭液将会产生浑浊，不能用于抗体配制。</li><li>将膜放入对应的二抗溶液中，室温摇床上孵育1h。</li><li>*注意事项与一抗孵育相同。</li><li>倒掉二抗溶液，使用TBST洗涤3次，每次5min，在摇床上常温进行。</li><li>*二抗溶液无需回收。</li></ul>
+<h4 class="protocol-minititle">显色</h4>
+<ul class="protocol-list"><li>将HRP底物ECL溶液A液和B液按照1:1混合，暂放于15ml管中。</li><li>*此步操作注意更换枪头！</li><li>取一张塑料膜，大小大于膜的大小，在其上等距离滴加HRP底物混合液。</li><li>将膜取出后放置于滤纸上，正反面均吸干水分，再将膜的蛋白面放置于HRP底物混合液的水珠上，保证其完全浸润。</li><li>*洗涤液必须完全擦拭干净。</li><li>*仅适用于快反应的HRP底物。</li><li>立刻将其蛋白面正放，置于化学发光成像仪minichemi仪器中，使用SAGECREATION软件拍摄图像。</li><li>图像一旦拍摄完毕，应立即将膜放回TBST溶液中，长时间孵育将会使膜烧掉。</li></ul>
+<h3 class="protocol-subtitle" id="染色质免疫共沉淀chip-seq">染色质免疫共沉淀CHIP-seq</h3>
+<p class="protocol-text">用于分析与特定蛋白质相互作用的DNA片段。</p>
+<p class="protocol-text">待研究的蛋白质需要有其抗体，若无抗体，可将该蛋白质与标签蛋白结合，使用标签蛋白的抗体。</p>
+<p class="protocol-text">获得序列后，将会进行高通量测序。</p>
+<p class="protocol-text">ChIP的基本原理是在活细胞的状态下，一些蛋白质可以与DNA相互作用，利用超声或核酸酶将蛋白质-DNA复合体随机切断为一定长度范围内的小片段，再通过抗体特异性富集所要研究的目的蛋白与DNA的复合体，最后通过对DNA片段的纯化与检测，从而获得DNA与蛋白质相互作用的信息。</p>
+<p class="protocol-text">ChIP可以分为自然ChIP（N-ChIP）和交联ChIP（X-ChIP）两种。在N-ChIP实验中，不使用甲醛等固定剂来使蛋白和DNA交联，而是用核酸酶来消化染色质。N-ChIP实验中蛋白质的抗原表位不受影响，但DNA与蛋白质结合较弱，因此一般用来研究组蛋白这种与DNA结合较强的蛋白。在X-ChIP中，使用甲醛等化学固定剂来使目的蛋白和DNA交联，并通过超声碎裂染色质。X-ChIP的优势在于它最大程度减少蛋白丢失的机会，适用于组蛋白和非组蛋白，并且通常需要的细胞起始材料少于N-ChIP。</p>
+<h4 class="protocol-minititle">溶液配制</h4>
+<p class="protocol-text">注：配置工作液前请先配置母液：20%SDS；0.5M pH8.0 EDTA；1M pH7.8 Tris-Cl；10% TritonX100；5M NaCl</p>
+<div class="protocol-table-wrap"><table class="protocol-table">
+<thead><tr><th>Lysis Buffer</th><th></th></tr></thead>
+<tbody>
+<tr><td>SDS</td><td>1%</td></tr>
+<tr><td>EDTA pH8.0</td><td>10mM</td></tr>
+<tr><td>Tris-Cl pH7.8</td><td>50mM</td></tr>
+<tr><td>蛋白酶抑制剂</td><td>现用现加1x</td></tr>
+</tbody>
+</table></div>
+<div class="protocol-table-wrap"><table class="protocol-table">
+<thead><tr><th>Dilution Buffer</th><th></th></tr></thead>
+<tbody>
+<tr><td>TritonX100</td><td>1%</td></tr>
+<tr><td>EDTA pH8.0</td><td>2mM</td></tr>
+<tr><td>NaCl</td><td>150mM</td></tr>
+<tr><td>Tris-Cl pH7.8</td><td>20mM</td></tr>
+<tr><td>蛋白酶抑制剂</td><td>现用现加1x</td></tr>
+</tbody>
+</table></div>
+<div class="protocol-table-wrap"><table class="protocol-table">
+<thead><tr><th></th><th>TSE1</th><th>TSE2</th></tr></thead>
+<tbody>
+<tr><td>SDS</td><td>0.1%</td><td>0.1%</td></tr>
+<tr><td>TritonX100</td><td>1%</td><td>1%</td></tr>
+<tr><td>EDTA pH8.0</td><td>2mM</td><td>2mM</td></tr>
+<tr><td>NaCl</td><td>150mM</td><td>400mM</td></tr>
+<tr><td>Tris-Cl pH7.8</td><td>20mM</td><td>20mM</td></tr>
+<tr><td>蛋白酶抑制剂</td><td>现用现加1x</td><td>现用现加1x</td></tr>
+</tbody>
+</table></div>
+<p class="protocol-text">其它溶液：</p>
+<p class="protocol-text">0.25M甘氨酸（20x）：0.187g加10ml ddw。</p>
+<p class="protocol-text">注：Lysis Buffer为细胞裂解液，Dilution Buffer为超声后的稀释液，TSE1、TSE2为IP后的磁珠清洗液。</p>
+<h4 class="protocol-minititle">收集细胞（以星形胶质细胞为例）</h4>
+<ul class="protocol-list"><li>准备10cm皿培养的细胞，待细胞长至80%-90%时进行实验。</li><li>使用预热的PBS溶液清洗培养皿一次。</li><li>*对于星形胶质细胞等贴壁能力较强的细胞，使用PBS清洗后再消化可以更好地将细胞消化下来。</li><li>对于10cm 皿，加入2ml胰蛋白酶（6cm皿：1ml），于37℃消化，并每2~3分钟在显微镜下镜检一次。</li><li>待多数细胞形状变圆时，使用细胞对应的培养基终止消化。</li><li>枪头吹打细胞以使细胞完全游离，收集细胞入15ml离心管。</li><li>于1000rpm，3min离心，离心后重悬于2ml PBS溶液中。将细胞转移至普通环境实验室继续操作。</li></ul>
+<h4 class="protocol-minititle">交联、细胞裂解与DNA断裂</h4>
+<ul class="protocol-list"><li>使用37%饱和甲醛水溶液，加入到2mlPBS溶液中，以使得终浓度为0.75~1%，摇床上交联10min。</li><li>*在进行正式试验之前建议进行预实验，预实验将2ml悬液分入2个EP管，并分别使用0.75%和1%的甲醛进行固定。</li><li>*甲醛固定可以使得DNA与蛋白质紧密结合，结合情况即甲醛用量是否合适需送交公司进行检测。</li><li>计算并加入10X 甘氨酸溶液终止交联，室温放置5min。1000rpm 5min离心，去除上清液。</li><li>每半皿细胞加入1ml裂解液FA Lysis，重悬细胞。冰上放置30min，期间每5min颠倒混匀一次。</li><li>*裂解后可将细胞暂放于-80℃保存。</li><li>*裂解时细胞释放内容物，DNA与蛋白质交联物释放。</li><li>在30%功率、4min下进行超声（4.5s超声-9s暂停）。</li><li>*具体超声参数还需要进一步确定。</li><li>*超声结束后，溶液应当清亮透明，这是衡量超声好坏的标准。</li><li>*避免超声波头碰触离心管壁，会产生大量泡沫。</li><li>*超声全程应在冰浴上进行。</li><li>于15000rpm，10min左右离心，离心后的样品取上清。可暂放于-80℃保存。</li><li>*此为层析柜中小型离心机的最大转速。</li><li>*离心后若可见黑色沉淀最佳。</li></ul>
+<h4 class="protocol-minititle">超声效果检测（可选）</h4>
+<ul class="protocol-list"><li>取上清液30~50μl，加入2μl 10mg/ml RNAase A在37℃反应1h。</li><li>加入2.5μl 20mg/ml的蛋白酶K，55℃反应2h。</li><li>提取DNA，加入等体积的苯酚:氯仿:异戊醇（25:24:1）的溶液，涡旋混匀，离心5min。</li><li>（用于替代12~14步）使用5M 氯化钠溶液（终浓度）打断DNA与蛋白质的连接，随后直接进行电泳。</li><li>取上层水相进行DNA电泳（胶浓度2%），若片段大小集中于200~1000bp，则超声参数合适。</li></ul>
+<h3 class="protocol-subtitle" id="试剂保存">试剂保存</h3>
+<h4 class="protocol-minititle">引物</h4>
+<ul class="protocol-list"><li>新拿到的引物为冻干粉状，每种引物量不一；</li><li>将粉末进行短暂离心以使挂壁的粉末离心下；</li><li>根据瓶身标识将引物溶解于合适体积的双蒸水中，此步无需在超净台中进行；</li><li>*溶解后浓度为100mg/ml，一般使用的浓度为20mg/ml，建议单独拿出一个EP管进行稀释，注意标号</li><li>*注意溶解后涡旋震荡（尽量轻柔），再短暂离心</li><li>将引物放置于引物专用的储存盒中，放置于-20℃下保存。</li></ul>
+<h4 class="protocol-minititle">质粒</h4>
+<p class="protocol-text">质粒放置于-20℃下保存，放置于专用盒中。</p>
+<p class="protocol-text">取用溶解时无需在冰上融化。</p>
           </div>
         </div>
-
         <div class="expand-menu">
-          <div class="expand-menu-header">文件命名<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-header">电生理学<span class="expand-arrow">▼</span></div>
           <div class="expand-menu-body">
-            <p>建议文件名包含日期、项目、样本、实验类型和版本号。原始数据不要覆盖，处理后的数据另存为新文件。</p>
-            <span class="grades-title">示例</span>
-            <ul class="grades">
-              <li>2026-05-22_projectA_sample01_HPLC_raw</li>
-              <li>2026-05-22_projectA_sample01_HPLC_processed_v1</li>
-              <li>2026-05-22_projectA_figure1_analysis_v2</li>
-            </ul>
+            <h3 class="protocol-subtitle" id="微电极的制备">微电极的制备</h3>
+<h4 class="protocol-minititle">微电极控制仪的使用方法及电极的镜下检查</h4>
+<p class="protocol-text">用于拉制微电极的玻璃管共有两种规格：</p>
+<p class="protocol-text">内径0.75mm/0.69mm，目前经测试0.69mm内径的较为合适；</p>
+<p class="protocol-text">电极尽量现制现用，使用长时间放置的电极不易形成高阻封接。</p>
+<ul class="protocol-list"><li>开启微电极控制仪的电源，开启显微镜的电源并调整好亮度；</li><li>输入程序编号，将进入预先设置好的程序。每次使用前需要进行微调；</li><li>拿出一根玻璃管，若玻璃管长度过长，建议截成等长的两段玻璃管使用；</li><li>将玻璃管放在洁净平整的白底桌面上，两段进行标记；</li><li>找到玻璃管的中点，在此处使用锉刀来回打磨数次；</li><li>小心地从中间掰断玻璃管，由于玻璃管出厂时两段已经打磨平整，因此新产生的两段需要在酒精灯上烧制数秒，以防止在插入银丝微电极时造成损伤，</li><li>简单冷却后放入塑料盒中备用。</li><li>略旋松拉制仪右侧旋钮，不要触碰玻璃管中部，小心地将玻璃管从右侧推入旋钮下的铁片中，并在左侧略微露出；</li><li>将右侧铁片按下以解锁右侧拉制杆，将右侧拉制杆左推以使得玻璃管尖端进入加热室中，同时解锁左侧拉制杆，右推以触碰到加热室外壁；</li><li>将玻璃管从右往左推入，穿过加热室的铂片，从左侧旋钮下的铁片处伸出，保证两侧等长；</li><li>旋紧两侧旋钮以固定玻璃管；</li><li>设置好或者找到需要的程序后，点击START以进行拉制；</li><li>拉制结束后使用尖端套有塑料保护套的镊子将其中一侧的微电极取下，并将其放置于体式显微镜的夹持器上，紧固调节旋钮以固定微电极；</li><li>在低倍物镜下找到电极尖端后，在高倍物镜下对电极尖端进行放大，观察尖端是否平整，以及尖端的直径以确定电极是否合适；</li><li>将电极舍弃到锐器盒或者保留在橡皮泥支座上，避免尖端碰触任何物品。</li></ul>
+<h4 class="protocol-minititle">用于patch-clamp的电极要求</h4>
+<p class="protocol-text">对于细胞或脑片的电生理学膜片钳记录所使用的电极尖端应在体视镜最高倍数下刚好为一小格，较小或较大均不易形成高阻封接。此外，电极尖端不需要进行打磨。</p>
+<h3 class="protocol-subtitle" id="细胞patch-clamp电生理">细胞patch-clamp电生理</h3>
+<h4 class="protocol-minititle">准备工作</h4>
+<p class="protocol-text">细胞应接种于已经铺有PDL/PLL的爬片上，且密度较低，可见较多单细胞时才可进行细胞电生理记录，以下以293T细胞为例：</p>
+<ul class="protocol-list"><li>在小培养皿中放入数个爬片，使用PDL或PLL进行包被，包被后清洗、晾干；</li><li>使用小三角瓶培养的293T细胞重悬于2ml培养基中，取80ul，稀释至1.5ml，接种于小培养皿中；</li><li>*此步所需要的细胞量应进行摸索，达到在生长后数天内有较多单细胞即可</li><li>待细胞形态呈现贴壁状，细胞数量较多，可见较多单细胞时取出进行实验，此时应当已经培养2天以内。</li></ul>
+<p class="protocol-text">细胞电生理需要准备缓冲液（细胞外液）和电极内液，详见试剂配制。随后进行以下准备工作：</p>
+<ul class="protocol-list"><li>电极内液保存于-20℃，需要提前拿出融化；缓冲液分装于50ml离心管后需要于37℃预热；</li><li>使用ddH2O清洗显微镜的细胞浴槽，清洗三遍，使用吸头吸尽残留的水，加入浴槽缓冲液；</li><li>开启电极记录仪、数模转换器、微操台控制器、显微镜光源，开启计算机，并打开对应的两个软件，检查通讯是否正常；</li><li>对一个尖镊进行消毒，使用该尖镊从培养皿中将细胞爬片夹起，放入缓冲液中，将细胞培养皿放置于非细胞培养室的培养箱中，以防污染；</li><li>开启软件界面的membrane test，选择Bath，以及电压钳制界面。</li></ul>
+<p class="protocol-text">待所有准备工作完成后，准备好拉制的电极、电极内液（装在EP管中）、电极灌注用的注射器、一次性1ml疫苗针（用于吸气），继续进行以下操作：</p>
+<h4 class="protocol-minititle">形成电极-细胞接触（破膜前）</h4>
+<ul class="protocol-list"><li>先在低倍镜下找到细胞，再换成高倍镜，选择合适的视野，并将一个可用于记录的单细胞放置于视野中间；</li><li>*用于记录的细胞应当不与其他细胞有接触（丝状连接除外），细胞状态尚可，注意避免将多个细胞形成的团块看成一个细胞</li><li>小心地拿取一根玻璃电极，将其尖端浸入电极内液中，以使得尖端被润湿，防止灌注时气泡产生，随后使用灌注用的注射器向其内部打入约1/3总长度的电极内液，随后轻弹玻璃管侧壁以使得管内气泡上升至液面；</li><li>*建议加注电极内液时一边拔出灌注针一边加注</li><li>*注意轻弹玻璃管是必需操作，在尖端可能存在肉眼看不到的细胞导致电极堵塞或污染</li><li>将记录探头前部的银丝小心地插入玻璃电极中，再穿过橡胶塞，使得电极伸到最底部，随后旋紧橡胶塞；</li><li>*注意小心插入，避免将银丝弯曲</li><li>*注意橡胶塞需旋紧，防止漏气</li><li>将电极推入浴槽上方，旋紧探头的紧固螺丝，打开吹气口的阀门；</li><li>*注意避免电极在移动时碰触台面</li><li>使用Mode: 0模式将电极移动至浴槽上方&lt;1cm处，随后向吹气口吹气，同时关闭阀门，使得电极内部保持正压；</li><li>*保持正压可防止浴液中的杂质进入电极中，因此该步必须在电极接触浴液前进行</li><li>使用微操继续将电极尖端浸入浴液中，使得电极尖端的弯曲部分全部进入液体中，观察浴池电阻，其合适范围为2.5-4.0 MΩ，随后尝试在显微镜下找到电极；</li><li>适当移动电极，电极由于为玻璃材质，可以折射光线，电极处细胞会更亮。找到电极后将视野移动至电极尖端（即亮斑的末端），随后稍微上升物镜（倒置显微镜），缓慢下降电极以使得电极尖端变清晰；</li><li>*注意稍微上升物镜，此时找到电极尖端不易碰坏电极</li><li>*若电极尖端有脏污，将吹气口处的注射器换为带有活塞的大注射器，以较小压力向管内吹气，此时脏污应被吹出；若脏污未被吹出，则更换电极</li><li>调节微操控制器将速度改为慢速或Mode: 5，随后将电极尖端移至细胞正上方；</li><li>小心地降下电极，使得电极尖端碰触细胞，并有一定压力；</li><li>*当电极碰触细胞时应能看到细胞产生一小窝，或细胞整体发生形变；当施加的压力过大时，可以看到小窝逐渐变大，此时应稍微后退，同时应看到浴池电阻有些许上升；</li><li>以较小的吸力吸引吹气口，随后松口，保持气阀开启，应观察到浴池电阻逐渐上升，此时给予电压钳制-60~-70mV，应能观察到阻值继续上升，待上升至1GΩ后，进行破膜；</li><li>*电压钳制在静息电位可使细胞膜表面带有正电，从而更有利于与玻璃电极的贴附</li><li>*若浴池电阻不上升，可能由于以下几个原因：①电极尖端不干净；②电极未碰触细胞；③电极施加的压力过大导致细胞膜破裂；④吸力过大，导致细胞死亡或直接发生破膜；⑤吸力过小</li><li>*若在上升的过程中数值稳定，不再上升，此时数值若为数百MΩ，则继续缓慢施加吸力，阻值应继续上升；若数值仅为几十MΩ，则停止记录该细胞（细胞状态等原因不易形成高阻封接）</li><li>*避免使用较大吸力吸引细胞膜，将有可能直接导致细胞破膜</li><li>*保持气阀开启，否则浴池电阻不易上升</li><li>短促以较大吸力吸气，同时点击软件界面的ZAP键（时间设置为25us），细胞应破膜成功，表现在浴池电阻下降、membrane test界面上产生两个峰值；</li><li>*若电破膜未成功，检查浴池电阻，若电阻保持在1GΩ以上，则继续尝试破膜，并增大吸力</li><li>*避免使用过小或过大的吸力进行破膜，不同的细胞类型进行破膜时吸力有所不同</li></ul>
+<h4 class="protocol-minititle">形成全细胞记录（破膜后）</h4>
+<ul class="protocol-list"><li>在破膜后，应能看到membrane test界面显示出两个尖峰，其两个尖峰之间的区域电流越小，表示漏电流越小；尖峰峰值越大，表示Ra值越小；通过调整界面上的Bath至Cell选项，可以看到Ra值和漏电流值（即Hold）的大小，对于细胞电生理而言，应满足以下条件：</li><li>Ra &lt; 10 MΩ</li><li>Ileak &lt; 50 pA</li><li>*形成全细胞记录模式后，由于体外培养的细胞不具有自发放电，因此在钳制的同时直接记录电流应记录不到任何信号；</li><li>在完成实验和记录后，将微操调至Mode: 0，将电极完全提起，旋松探头的紧固螺丝，旋松电极的固定旋钮，随后取下电极扔至锐器盒中，同时在显微镜下寻找到下一目标细胞；</li></ul>
+<h4 class="protocol-minititle">仪器用后的整理</h4>
+<ul class="protocol-list"><li>取出细胞爬片，将浴槽中的缓冲液吸去，使用ddH2O清洗细胞浴槽，清洗三遍，使用吸头吸尽残留的水；</li><li>关闭所有仪器，将显微镜切换至低倍镜，微操控制台抬升至最高。</li></ul>
+<h3 class="protocol-subtitle" id="脑片patch-clamp电生理">脑片patch-clamp电生理</h3>
+<p class="protocol-text">离体脑片为活组织切片，一半厚度为100~500um，可离体存活较长时间；其具有以下优势：</p>
+<ul class="protocol-list"><li>体外十几个小时内活性很好且不易改变性质，48h内仍有神经元具有活性；</li><li>可以根据解剖定位+镜下观察确定离体脑片上的神经元类型，而培养和急性分散的神经元类型很难确定；</li><li>可以使用成年动物进行实验，而离体培养的神经元只能是新生或胚胎动物的；</li><li>未经蛋白酶消化，避免受到影响；</li><li>具有完整的突触联系。</li></ul>
+<p class="protocol-text">其中，离体海马标本具有很有序的神经元排列，适用于进行电生理学实验，另外海马是脑组织中对氧气最敏感的脑区之一，利于进行离体低氧损伤诱导。</p>
+<h4 class="protocol-minititle">试剂准备与鼠脑解剖</h4>
+<ul class="protocol-list"><li>配制1×Slicing Buffer 200ml（装在200ml烧杯中）和1×Recording Buffer 500ml（装在500ml烧杯中），倒出~150ml的1×Recording Buffer至一洁净烧杯中备用，将脑片的捞网放入1×Recording Buffer的大烧杯中，液面应不没过捞网的顶端；</li><li>配制好后将1×Slicing Buffer放置于冰盒上，1×Recording Buffer放置于34℃水浴锅中，使用末端带有气泡石的二氧化碳管道对溶液充入二氧化碳，在1×Recording Buffer烧杯中放置一张滤纸片以隔开气泡石和脑片的捞网；</li><li>*气瓶的打开方式：完全关闭气瓶外侧的小阀门，打开气瓶主阀门（稍微旋松即可），应可见压力表些许上升；打开气泡石处的阀门和流量调节器，缓慢旋转气瓶外侧的小阀门，至气流大小合适</li><li>*注意尽量使得气泡石远离捞网，脑片极易被二氧化碳气泡吹起，液面较低的原因是防止吹起的脑片漂到溶液中</li><li>准备小鼠解剖器具：大剪刀1个、小剪刀1个、尖镊1个，酒精喷壶和尸体袋；准备预切割鼠脑的用具：大称量勺、小称量勺和弯称量勺各一把，放置于1×Slicing Buffer中预冷，准备刀片一个（中间掰断），预冷；准备表面画有标尺的细菌培养皿一个（如右图，表面标明45°线），准备圆形滤纸一片和数片碎滤纸；准备大注射器一个（至少15ml）；</li><li>将震动切片机的载物台取出，表面粘贴一纸胶带，在胶带的中间部位涂抹502胶水，选取一表面光滑且垂直的3 %琼脂糖凝胶块，粘贴于纸胶带表面，以达到切片时固定的作用；</li><li>*3 %琼脂糖凝胶需要使用水配制，配制好后加热融化，倒入细菌培养皿中冷却，随后使用刀片切割成小块，存放于4℃冰箱中</li><li>取注射器，吸入15ml Slicing Buffer，备用；</li><li>取1m的小鼠一只，使用约1ml的异氟烷进行麻醉。将小鼠放置于密闭的盒子中，快速滴入异氟烷即可，待小鼠呼吸频率降至数秒一次后，快速进行解剖；</li><li>*幼年动物除了方便解剖外，其耐缺氧能力以及脑细胞膜韧性较高，易于形成高阻封接</li><li>如右图使用解剖剪对小鼠表皮和腹膜进行切割，随后使用解剖镊抬起胸骨，应可见心脏，使用小解剖剪在心脏上端的心耳处形成切口，随后使用注射器向心脏下部的尖端注入&gt;10ml的Slicing Buffer，以置换血液，应可见血液从心耳处流出，同时可见肝脏变白；</li><li>*若肝脏未变白，应调整位置重试</li><li>*若液体从小鼠鼻子流出，应减少针头插入深度，防止插入肺循环中</li><li>使用解剖剪镊取出小鼠脑组织，先从两侧剥离皮肤，暴露头骨，断颈后使用解剖剪从中线剪开头骨，随后向两侧剪一小段以开窗，使用尖镊开窗，取下脑组织；将其置于已经预冷并充入二氧化碳的Slicing Buffer中冷却2min，以使得脑组织变硬，方便进行预切割；</li><li>*取脑时间应在1min以内，此步骤对脑片制备的影响较大</li><li>将圆形滤纸放置于有标记的培养皿上，使用Slicing Buffer进行润湿，并排除气泡；</li><li>使用称量勺捞起脑组织，放置于滤纸上，使得中线与任意一条线平行；</li><li>依照下述方法对小鼠脑组织进行预切割，刀片垂直于脑组织切割，依照下图顺序依次切割（以右半脑为例）：①分割左右半脑；②以45°切下嗅球并平整大脑边缘；③以45°切削小脑并平整大脑边缘；④以-45°在1/3处切割大脑；⑤以-45°稍微简单平整后部。</li><li>*因使用45°进行切割时不易伤害到海马组织的神经纤维，所以采用上述方案以45°的平面暴露海马组织</li><li>随后以第五刀的切口为底面，将大脑皮层朝向外放置，第六刀平整背面（即上图的纸平面），随后以第六刀贴紧琼脂糖凝胶、皮层朝外、第五刀朝下并使用502胶水固定的方法固定脑组织于震动切片机的样品托盘上；</li></ul>
+<h4 class="protocol-minititle">鼠脑切片与孵育</h4>
+<ul class="protocol-list"><li>使用震动切片机对鼠脑的海马组织进行切片，使用Slicing Buffer作为切片时的缓冲液，期间不断通入二氧化碳，切片机参数如下：</li><li>切片厚度：100um；震动幅度：1mm；切片速度：目标脑区0.04mm/s，其他部位&lt;0.08mm/s；待使用脑片的前后一片均需要低于该速度；</li><li>出点要切入琼脂块，这样可完全切下脑组织</li><li>切下的脑片使用剪口的胶头滴管立即放入预热的Recording Buffer的脑片捞网中，切割数片后进行整理；</li><li>脑片需要在34℃、持续通气的Recording Buffer中孵育&gt;40min，随后将烧杯取出水浴锅，保持通气，放置&gt;1h以冷却至室温；</li><li>取下刀片后，切片机需要使用ddH2O清洗，清洗切片头、样品槽、样品托等，最后使用滤纸擦净，将样品台下降至最下部，刀片退回最后；</li><li>*使用滤纸插入刀头的夹持器中以清理其中的水分，防止关键部位生锈</li></ul>
+<h4 class="protocol-minititle">电生理装置的准备</h4>
+<p class="protocol-text">实验开始前约半小时，准备电生理装置，在此前需要拉制电极。</p>
+<ul class="protocol-list"><li>在高于显微镜载物台扩展台面至少0.5m的位置放置此前预留的~150ml Recording Buffer，将二氧化碳通气管的气泡石浸入，适当开启二氧化碳气阀进行通气；</li><li>通气至少2min后，使用滴注软管向显微镜载物台的脑片浴池滴加Recording Buffer，流速~1滴/s，同时开启回流的蠕动泵以吸去过多的液体；</li><li>*形成滴注的方法：先关闭流量调节阀，顶端没入烧杯的液体中，挤压观察室以使得液体流入，随后全开流量调节阀，至流出液体后减慢速度</li><li>*正常运行后观察蠕动泵回流是否可以吸入气泡，如不能，减缓液体滴入速度或增加蠕动泵速度</li><li>开启电生理学记录的仪器和相关软件，具体参见细胞电生理章节；</li><li>转移一脑片进入显微镜的脑片浴池中，待记录脑区尽量移动至中间位置，以电极的平行角度放入压网以固定脑片，待记录脑区尽量放置于压网中间；</li></ul>
+<h4 class="protocol-minititle">脑片电生理记录</h4>
+<p class="protocol-text">本章节与细胞电生理章节有所重复，部分不再赘述。</p>
+<ul class="protocol-list"><li>在显微镜下找到目标脑区，高倍镜下找到待记录细胞，在显示器表面标记该细胞的位置；</li><li>*待记录细胞应处于脑片的深处，不应位于表面（表面均为死细胞），但位置不易过深，否则在此处对焦不清楚，不易看清电极尖端</li><li>*待记录细胞应接近圆形，表面光滑平整且比较明亮（表面凹凸不平的多为死细胞）</li><li>*细胞不宜过大（死细胞体积增大）或过小（不宜找到并戳中细胞）</li><li>（正置显微镜）抬起物镜镜头（水镜），切换为低倍镜，在探头上安装一个玻璃电极；</li><li>使用低倍镜先找到电极尖端，随后降下电极，接触水面以前吹入一口气形成正压，随后入水一定距离；</li><li>降下低倍镜以寻找水中的电极，找到后跟随电极，调节微操，继续下降电极至靠近脑片表面；</li><li>切换至高倍镜，微操切换为Mode: 5，高倍镜下找到电极后继续下降至快要碰触到脑片表面；</li><li>从细胞的侧面一定距离处下降电极，使得电极尖端到达与细胞的同一层面，随后给予较大正压以吹去细胞周围组织，以便形成封接；</li><li>稍微抬起电极，移动至待记录细胞正上方，缓慢下降，最终在细胞表面压出以凹陷，随后进行与细胞patch-clamp相同的破膜步骤；</li><li>*以下为一些在脑片上实践出来的特征：</li><li>开始封接时，给予负压，浴池电阻应能在数秒内上升至90MΩ，若不能，则有较大概率不能形成合适的封接；</li><li>一旦浴池电阻上升至90MΩ，再打开电压钳制，钳制至-70mV；</li><li>若浴池电阻在一个较高的水平处停滞不再上升，则再轻微吸引，可关闭气阀持续一段时间的负压，待阻值上升后再撤去负压；</li><li>达到1.2GΩ左右后，以短促且较大的吸力进行吸引，同时破膜；</li><li>破膜后立刻切换至cell模式，若Ra值过大，继续吸引以降低Ra值。Ra值过大还反映在membrane test时形成的图像不尖；</li><li>对于较长时间的记录，Hold电流可能在记录后有很大改变，但是需要尽可能保证Ra值始终小于20MΩ；</li><li>破膜后记录电流应可见自发产生的小突触电流和动作电位电流，随后可进行实验与记录；</li><li>*要求的Ra与Hold值：</li><li>电压钳：要求Ra&lt;20，Hold&lt;100；</li><li>电流钳：要求Ra不过大，Hold接近0.</li><li>*记录时关闭aCSF液体流动和蠕动泵，可以减少基线波动</li><li>若在记录期间需要添加抑制剂，关闭液流后，直接向浴池中加入抑制剂，浴池总体积近似1ml；</li><li>记录完成该细胞后，建议移动载物台，在该细胞的周围寻找下一待记录的细胞，并将其放置于显示器的标记处；</li><li>若在电极内液中加入了诸如生物素等染料时，为保证后续染色过程中细胞的完整性，需要小心撤下电极：Mode: 05向后同时向上以极慢的速度撤下电极，同时关闭电压钳制，使用membrane test检测电极是否撤下；</li><li>撤下电极后，若收集脑片进行染色，现在24孔板中加入1ml 4%PFA，随后使用剪口的胶头滴管将脑片滴入到孔板中，并记录脑片朝向。</li><li>*不要将胶头滴管碰触PFA液体，将可能导致后续记录的细胞死亡</li></ul>
+<h4 class="protocol-minititle">仪器用后的整理</h4>
+<ul class="protocol-list"><li>关闭所有仪器和软件，关闭计算机；</li><li>取出脑片和压网，使用清水洗涤压网，将二氧化碳气泡石放入清水中通气约2min以清洗；</li><li>使用清水替代Recording Buffer形成回路数分钟后撤去，以对整个灌注系统进行清洗，挤压灌注管以排出其内含有的剩余水份，使用擦镜纸擦拭脑片浴池；</li><li>清洗浸泡在溶液中的管壁侧面；</li><li>使用洗瓶对显微镜高倍镜（如为水镜）进行清洗，使用擦镜纸擦净；</li><li>使用酒精喷壶清洁解剖台面。</li></ul>
+<h3 class="protocol-subtitle" id="电生理的记录方案">电生理的记录方案</h3>
+<h4 class="protocol-minititle">mEPSC</h4>
+<p class="protocol-text">单个囊泡释放引发的突触后膜电位变化。</p>
+<p class="protocol-text">电极内液：含有K+的电极内液，不含其它抑制剂；</p>
+<p class="protocol-text">aCSF：常规的aCSF，添加GABA受体阻断剂（100uM Picrotoxin）、Na+通道阻断剂（1uM TTX）</p>
+<p class="protocol-text">对神经元形成全细胞记录模式后，电压钳制在-70mV，使用gap-free protocol记录至少10min</p>
+<p class="protocol-text">数据处理时对后5min产生的~-15pA的电流进行幅度和频率的统计</p>
+<h4 class="protocol-minititle">sEPSC</h4>
+<p class="protocol-text">通常由多个突触同时释放神经递质而产生，因此具有较大的幅度。</p>
+<p class="protocol-text">电极内液：含有K+的电极内液，不含其它抑制剂；</p>
+<p class="protocol-text">aCSF：常规的aCSF，添加GABA受体阻断剂（100uM Picrotoxin）</p>
+<p class="protocol-text">对神经元形成全细胞记录模式后，电压钳制在-70mV，使用gap-free protocol记录至少10min</p>
+<p class="protocol-text">数据处理时对后5min产生的~-15pA的电流进行幅度和频率的统计</p>
+<h4 class="protocol-minititle">I-frequency</h4>
+<p class="protocol-text">对细胞给予不同大小的电流钳制，观察在不同大小的电流下细胞产生动作电位的频率。</p>
+<p class="protocol-text">电极内液：含有K+的电极内液，不含其它抑制剂；</p>
+<p class="protocol-text">aCSF：常规的aCSF，添加GABA受体阻断剂（100uM Picrotoxin）</p>
+<p class="protocol-text">对神经元形成全细胞记录模式后，关闭电压钳制，改为电流钳制，</p>
+<h3 class="protocol-subtitle" id="电生理常用仪器设备维护">电生理常用仪器设备维护</h3>
+<h4 class="protocol-minititle">电生理常用的细胞外液成分说明</h4>
+<p class="protocol-text">人工脑脊液aCSF的成分</p>
+<p class="protocol-text">用于切片、孵育和记录过程，成分有所不同：</p>
+<p class="protocol-text">常规的aCSF：NaCl, KCl, NaHCO3, MgCl2, CaCl2, 葡萄糖；</p>
+<p class="protocol-text">在进行切片的时候神经元会发生氧化应激，氧化应激时大量的Na+和Cl-会进入细胞导致神经元水肿，使用蔗糖/甘油/氯化胆碱替代NaCl可以防止水肿；</p>
+<p class="protocol-text">HEPES抑制酸中毒，可以减轻神经元水肿；</p>
+<p class="protocol-text">降低Ca2+浓度可以降低神经元代谢，减少切片过程中神经元的损伤；</p>
+<p class="protocol-text">硫脲、Vc等抗氧化剂。</p>
+<p class="protocol-text">合适的pH为7.3~7.4，渗透压为300~310mOsm（使用蔗糖或NaCl调节）。</p>
+<p class="protocol-text">对于脑片记录时的aCSF成分，除了NaCl, KCl, NaHCO3, MgCl2, CaCl2, 葡萄糖均需要加入以外，可以加入抑制剂以阻断某一类通道的电流：</p>
+<p class="protocol-text">电极内液的成分</p>
+<p class="protocol-text">在全细胞记录模式下，电极内液可以与细胞记录的电极内液相同，但是在记录某种通道的电流时，要对其他通道进行阻断，如下表：</p>
+<h4 class="protocol-minititle">探头相关故障</h4>
+<p class="protocol-text">探头具有以下几部分组成：①探头尖端用于固定玻璃电极的紧固螺丝和橡胶垫圈（有备件），②探头本身及其连接的气体管路（无备件），③探头尾部紧固螺丝（无备件），④探头尾部金属接触触点和塑料环（无备件），⑤探头尾部用于穿过银丝的橡胶环（有备件）。</p>
+<p class="protocol-text">安装探头时，需要将银丝从前端的①穿过，插入⑤中，并在尾部弯折一小段以便于银丝与金属触点的导电性，同时固定银丝，随后旋紧金属触点并使用塑料环将其安装到传感器上，最后略旋紧①以进行固定。</p>
+<ul class="protocol-list"><li>探头银丝弯曲</li><li>小心地取下银丝，避免刮除表面AgCl，使用手和镊子将其拉直后重新安装。</li><li>使用新的银丝</li><li>使用一1.5ml EP管，倒入~1.5ml 漂白剂NaClO溶液，将银丝一半插入溶液中，在避光条件下bleaching 40min后，可见银丝表面产生黑色AgCl表层，随后进行安装。</li><li>探头气体管路漏气</li><li>使用热熔胶枪对漏气的地方进行封口。</li></ul>
+          </div>
+        </div>
+        <div class="expand-menu">
+          <div class="expand-menu-header">试剂配制方法<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-body">
+            <h3 class="protocol-subtitle" id="使用液">使用液</h3>
+<h4 class="protocol-minititle">脑片防冻液（250ml）</h4>
+<div class="protocol-table-wrap"><table class="protocol-table">
+<thead><tr><th>Sucrose</th><th>国药化学 10021463</th><th>75 g</th></tr></thead>
+<tbody>
+<tr><td>乙二醇</td><td></td><td>85 ml</td></tr>
+<tr><td>PBS（20×）</td><td></td><td>~12.5 ml</td></tr>
+</tbody>
+</table></div>
+<p class="protocol-text">定容至250ml，暂存于-20℃。</p>
+<h4 class="protocol-minititle">4% PFA-PBS溶液（200ml）</h4>
+<div class="protocol-table-wrap"><table class="protocol-table">
+<thead><tr><th>PFA</th><th>大茂化学 30525-89-4</th><th>8 g</th></tr></thead>
+<tbody>
+<tr><td>PBS（20×）</td><td></td><td>~10 ml</td></tr>
+</tbody>
+</table></div>
+<p class="protocol-text">并向液体中加入几滴NaOH, 使溶液变澄清。调节pH=7.2~7.4，定容至200 ml。滤纸粗滤。</p>
+<h4 class="protocol-minititle">20% 蔗糖- PBS溶液（50 ml）</h4>
+<div class="protocol-table-wrap"><table class="protocol-table">
+<thead><tr><th>Sucrose</th><th>国药化学 10021463</th><th>10 g</th></tr></thead>
+<tbody>
+<tr><td>PBS（20×）</td><td></td><td>2.5 ml</td></tr>
+<tr><td>ddH2O</td><td></td><td>定容至50 ml</td></tr>
+</tbody>
+</table></div>
+<ul class="protocol-list"><li>加入少量ddH2O溶解蔗糖，随后使用ddH2O定容至50 ml，溶液置于4℃保存。</li></ul>
+<h4 class="protocol-minititle">25% 蔗糖- PBS溶液（50 ml）</h4>
+<div class="protocol-table-wrap"><table class="protocol-table">
+<thead><tr><th>Sucrose</th><th>国药化学 10021463</th><th>12.5 g</th></tr></thead>
+<tbody>
+<tr><td>PBS（20×）</td><td></td><td>2.5 ml</td></tr>
+<tr><td>ddH2O</td><td></td><td>定容至50 ml</td></tr>
+</tbody>
+</table></div>
+<ul class="protocol-list"><li>加入少量ddH2O溶解蔗糖，随后使用ddH2O定容至50 ml，溶液置于4℃保存。</li></ul>
+<h4 class="protocol-minititle">30% 蔗糖- PBS溶液（50 ml）</h4>
+<div class="protocol-table-wrap"><table class="protocol-table">
+<thead><tr><th>Sucrose</th><th>国药化学 10021463</th><th>15 g</th></tr></thead>
+<tbody>
+<tr><td>PBS（20×）</td><td></td><td>2.5 ml</td></tr>
+<tr><td>ddH2O</td><td></td><td>定容至50 ml</td></tr>
+</tbody>
+</table></div>
+<ul class="protocol-list"><li>加入少量ddH2O溶解蔗糖，随后使用ddH2O定容至50 ml，溶液置于4℃保存。</li></ul>
+<h4 class="protocol-minititle">4×Loading Buffer</h4>
+<div class="protocol-table-wrap"><table class="protocol-table">
+<thead><tr><th>商品化4×Loading Buffer</th><th></th><th>9 ml</th></tr></thead>
+<tbody>
+<tr><td>β-巯基乙醇</td><td></td><td>1 ml</td></tr>
+</tbody>
+</table></div>
+<h4 class="protocol-minititle">10×Running Buffer</h4>
+<h4 class="protocol-minititle">10×Trans Buffer</h4>
+<h4 class="protocol-minititle">0.5%Triton-PBS溶液</h4>
+<ul class="protocol-list"><li>使用1×PBS溶液对20% Triton- PBS母液稀释即可。溶液常温保存。</li></ul>
+<h4 class="protocol-minititle">1% BSA-0.1% Triton- PBS溶液</h4>
+<ul class="protocol-list"><li>使用1×PBS溶液对5% BSA-0.5% Triton- PBS溶液稀释即可。溶液置于4℃保存。</li></ul>
+<h4 class="protocol-minititle">0.1% Tween20-PBS溶液（10ml）</h4>
+<div class="protocol-table-wrap"><table class="protocol-table">
+<thead><tr><th>20%Tween20-PBS母液</th><th></th><th>50 ml</th></tr></thead>
+<tbody>
+<tr><td>ddH2O</td><td></td><td>定容至10 ml</td></tr>
+</tbody>
+</table></div>
+<ul class="protocol-list"><li>*20%Tween20-PBS液体粘稠，需提前将枪头前端剪口方便吸取</li></ul>
+<h4 class="protocol-minititle">1×Brain Slice Slicing Buffer （200ml）</h4>
+<div class="protocol-table-wrap"><table class="protocol-table">
+<thead><tr><th>10×Slicing Buffer</th><th></th><th>20ml</th></tr></thead>
+<tbody>
+<tr><td>NaHCO3</td><td>25mM</td><td>0.44g</td></tr>
+<tr><td>Glucose</td><td>20mM</td><td>0.72g</td></tr>
+<tr><td>ddH2O</td><td></td><td>定容至 200ml</td></tr>
+</tbody>
+</table></div>
+<ul class="protocol-list"><li>在烧杯中称量上述试剂，使用移液管（回收利用）转移20ml的10×Slicing Buffer进入量筒，加入水至200ml，随后倒入烧杯中，使用金属棒搅拌至完全溶解。</li><li>注意：现用现配！</li><li>注意：使用前需要充入二氧化碳：以较低流速向装有1×Slicing Buffer的烧杯中充入二氧化碳，至少充入二氧化碳两分钟后才能使用，使用过程中保持二氧化碳的充入！</li></ul>
+<h4 class="protocol-minititle">1×Brain Slice Recording Buffer （500ml）</h4>
+<div class="protocol-table-wrap"><table class="protocol-table">
+<thead><tr><th>10×Recording Buffer</th><th></th><th>50ml</th></tr></thead>
+<tbody>
+<tr><td>NaHCO3</td><td>26mM</td><td>g</td></tr>
+<tr><td>Glucose</td><td>10mM</td><td>g</td></tr>
+<tr><td>ddH2O</td><td></td><td>定容至 500ml</td></tr>
+</tbody>
+</table></div>
+<ul class="protocol-list"><li>在烧杯中称量上述试剂，使用移液管（回收利用）转移50ml的10×Recording Buffer进入量筒，加入水至500ml，随后倒入烧杯中，使用金属棒搅拌至完全溶解。</li><li>注意：现用现配！</li><li>注意：使用前需要预热至34℃并充入二氧化碳：以较低流速向装有1×Slicing Buffer的烧杯中充入二氧化碳，使用过程中保持二氧化碳的充入！</li><li>注意：虽然实际的使用量很少，但是由于在孵育脑片时出气口离脑片较近的时候容易将脑片吹起，因此建议配制较多的1×Recording Buffer以备使用更大的容器。</li></ul>
+<h4 class="protocol-minititle">1×VRAC Extracellular Isotonic Buffer, O.S.M.=310（200ml）</h4>
+<div class="protocol-table-wrap"><table class="protocol-table">
+<thead><tr><th>NaCl</th><th>100mM</th><th>2M stock, 10ml</th></tr></thead>
+<tbody>
+<tr><td>KCl</td><td>2mM</td><td>1M stock, 400ul</td></tr>
+<tr><td>MgCl2</td><td>1mM</td><td>1M stock, 200ul</td></tr>
+<tr><td>Hepes</td><td>10mM</td><td>476mg</td></tr>
+<tr><td>Mannitol</td><td>100mM</td><td>3.6g</td></tr>
+</tbody>
+</table></div>
+<ul class="protocol-list"><li>使用烧杯配制，配制后使用NaOH溶液调节pH至7.3~7.4。放置于常温。使用100mM Mannitol将会带来100的OSM升高，若需要其他渗透压的溶液，优先减少Mannitol的用量，配制后测量渗透压。</li></ul>
+<h4 class="protocol-minititle">1×VRAC Extracellular Hypotonic Buffer, O.S.M.=210（200ml）</h4>
+<div class="protocol-table-wrap"><table class="protocol-table">
+<thead><tr><th>NaCl</th><th>100mM</th><th>2M stock, 10ml</th></tr></thead>
+<tbody>
+<tr><td>KCl</td><td>2mM</td><td>1M stock, 400ul</td></tr>
+<tr><td>MgCl2</td><td>1mM</td><td>1M stock, 200ul</td></tr>
+<tr><td>Hepes</td><td>10mM</td><td>476mg</td></tr>
+</tbody>
+</table></div>
+<ul class="protocol-list"><li>使用烧杯配制，配制后使用NaOH溶液调节pH至7.3~7.4。放置于常温。使用100mM Mannitol将会带来100的OSM升高，若需要其他渗透压的溶液，优先增加Mannitol的用量，配制后测量渗透压。</li></ul>
+<h4 class="protocol-minititle">1×VRAC Intercellular Solution, O.S.M.=280-290（200ml）</h4>
+<div class="protocol-table-wrap"><table class="protocol-table">
+<thead><tr><th>CsCl</th><th>130mM</th><th>483mg</th></tr></thead>
+<tbody>
+<tr><td>EGTA</td><td>5mM</td><td>0.0380g</td></tr>
+<tr><td>CaCl2</td><td>2mM</td><td>40ul</td></tr>
+<tr><td>MgCl2</td><td>1mM</td><td></td></tr>
+<tr><td>Hepes</td><td>10mM</td><td>0.0476g</td></tr>
+<tr><td>Mg-ATP</td><td>4mM</td><td>0.04057g</td></tr>
+<tr><td>Na-GTP</td><td>0.5mM</td><td>0.00524g</td></tr>
+</tbody>
+</table></div>
+<ul class="protocol-list"><li>全程置于冰上，可在适当的范围内增加CsCl浓度至140mM以提高渗透压。使用CsOH溶液调节pH至7.3~7.4。使用0.25uM滤膜过滤，随后分装于200ul小管中，置于-20℃，使用时置于冰上。</li></ul>
+<h3 class="protocol-subtitle" id="母液">母液</h3>
+<h4 class="protocol-minititle">10×PBS（1L）</h4>
+<div class="protocol-table-wrap"><table class="protocol-table">
+<thead><tr><th>NaCl</th><th>国药化学 10019318</th><th>80 g</th></tr></thead>
+<tbody>
+<tr><td>KCl</td><td>Sigma P9541-500G</td><td>2 g</td></tr>
+<tr><td>Na2HPO4·7H2O</td><td>国药化学 10020318</td><td>11.5 g</td></tr>
+<tr><td>KH2PO4</td><td>国药化学 10017618</td><td>2 g</td></tr>
+<tr><td>ddH2O</td><td></td><td>~1 L</td></tr>
+</tbody>
+</table></div>
+<ul class="protocol-list"><li>加入ddH2O并使用NaOH溶液/固体和盐酸调节pH≈7.3，定容至1 L。</li><li>1×PBS洗涤液由10×PBS母液使用ddH2O稀释制得。</li></ul>
+<h4 class="protocol-minititle">20%Triton-PBS母液（50 ml）</h4>
+<div class="protocol-table-wrap"><table class="protocol-table">
+<thead><tr><th>Triton-X100</th><th>Sigma 102510460</th><th>10 ml</th></tr></thead>
+<tbody>
+<tr><td>PBS（20×）</td><td></td><td>2.5 ml</td></tr>
+<tr><td>ddH2O</td><td></td><td>定容至50 ml</td></tr>
+</tbody>
+</table></div>
+<ul class="protocol-list"><li>颠倒混匀，待20×PBS与Triton混合均匀后，使用ddH2O定容至50 ml。</li><li>*Triton-X100液体粘稠，需提前将枪头前端剪口方便吸取</li></ul>
+<h4 class="protocol-minititle">5% BSA-0.5% Triton- PBS溶液（10 ml）</h4>
+<div class="protocol-table-wrap"><table class="protocol-table">
+<thead><tr><th>BSA</th><th>ExCell 100222</th><th>0.5 g</th></tr></thead>
+<tbody>
+<tr><td>0.5%Triton-PBS</td><td></td><td>~10 ml</td></tr>
+</tbody>
+</table></div>
+<ul class="protocol-list"><li>加入BSA粉末后，加入少量0.5% Triton- PBS溶液，涡旋震荡以使BSA完全溶解，最后使用0.5% Triton- PBS溶液定容至10 ml。溶液置于4℃保存，可稳定保存约1周。</li></ul>
+<h4 class="protocol-minititle">20%Tween20-PBS母液（50ml）</h4>
+<div class="protocol-table-wrap"><table class="protocol-table">
+<thead><tr><th>Tween-20</th><th>Sigma P1379-1L</th><th>10 ml</th></tr></thead>
+<tbody>
+<tr><td>PBS（20×）</td><td></td><td>2.5 ml</td></tr>
+<tr><td>ddH2O</td><td></td><td>定容至50 ml</td></tr>
+</tbody>
+</table></div>
+<ul class="protocol-list"><li>颠倒混匀，待20×PBS与Tween-20混合均匀后，使用ddH2O定容至50 ml。</li><li>* Tween-20液体粘稠，需提前将枪头前端剪口方便吸取</li></ul>
+<h4 class="protocol-minititle">1×Trans Buffer（1L）</h4>
+<div class="protocol-table-wrap"><table class="protocol-table">
+<thead><tr><th>10×Trans Buffer</th><th>10%</th><th>100 ml</th></tr></thead>
+<tbody>
+<tr><td>无水甲醇</td><td>20%</td><td>200 ml</td></tr>
+<tr><td>ddH2O</td><td></td><td>定容至 1L</td></tr>
+</tbody>
+</table></div>
+<ul class="protocol-list"><li>颠倒混匀，室温保存。</li></ul>
+<h4 class="protocol-minititle">1×Running Buffer（1L）</h4>
+<div class="protocol-table-wrap"><table class="protocol-table">
+<thead><tr><th>10×Running Buffer</th><th>10%</th><th>100 ml</th></tr></thead>
+<tbody>
+<tr><td>ddH2O</td><td></td><td>定容至 1L</td></tr>
+</tbody>
+</table></div>
+<ul class="protocol-list"><li>颠倒混匀，室温保存。</li></ul>
+<h4 class="protocol-minititle">1000×氨苄青霉素</h4>
+<div class="protocol-table-wrap"><table class="protocol-table">
+<thead><tr><th>Amp</th><th></th><th>1.0g</th></tr></thead>
+<tbody>
+<tr><td>dddH2O</td><td></td><td>10 ml</td></tr>
+</tbody>
+</table></div>
+<ul class="protocol-list"><li>配制浓度为100mg/ml，完全溶解混匀后，将溶液置于生物安全柜中，使用细菌滤网和注射器进行过滤，分装进入1.5ml EP管中，置于-20℃长期保存。</li></ul>
+<h4 class="protocol-minititle">10×Slicing Buffer （500ml）</h4>
+<div class="protocol-table-wrap"><table class="protocol-table">
+<thead><tr><th>Choline chloride</th><th>110mM×10</th><th>76.8g</th></tr></thead>
+<tbody>
+<tr><td>KCl</td><td>2.5mM×10</td><td>0.932g</td></tr>
+<tr><td>CaCl2·2H2O</td><td>0.5mM×10</td><td>0.3675g</td></tr>
+<tr><td>NaH2PO4·H2O</td><td>1.3mM×10</td><td>0.8965g</td></tr>
+<tr><td>MgCl2·6H2O</td><td>7.0mM×10</td><td>7.115g</td></tr>
+<tr><td>ddH2O</td><td></td><td>定容至 500ml</td></tr>
+</tbody>
+</table></div>
+<ul class="protocol-list"><li>在烧杯中加入适量水以溶解上述物质，完全溶解后将其转移至量筒中，定容到500ml，随后使用滤纸过滤，置于4℃长期保存。</li><li>注意：使用前需要加入NaHCO3和葡萄糖！</li></ul>
+<h4 class="protocol-minititle">10×Recording Buffer （1L）</h4>
+<div class="protocol-table-wrap"><table class="protocol-table">
+<thead><tr><th>NaCl</th><th>125mM×10</th><th>73.5g</th></tr></thead>
+<tbody>
+<tr><td>KCl</td><td>2.5mM×10</td><td>1.864g</td></tr>
+<tr><td>CaCl2·2H2O</td><td>2.5mM×10</td><td>3.675g</td></tr>
+<tr><td>NaH2PO4·H2O</td><td>1.3mM×10</td><td>1.793g</td></tr>
+<tr><td>MgCl2·6H2O</td><td>1.3mM×10</td><td>2.643g</td></tr>
+<tr><td>ddH2O</td><td></td><td>定容至 1L</td></tr>
+</tbody>
+</table></div>
+<ul class="protocol-list"><li>在烧杯中加入适量水以溶解上述物质，完全溶解后将其转移至量筒中，定容到1L，随后使用滤纸过滤，置于4℃长期保存。</li><li>注意：使用前需要加入NaHCO3和葡萄糖！</li></ul>
+          </div>
+        </div>
+        <div class="expand-menu">
+          <div class="expand-menu-header">细胞培养操作<span class="expand-arrow">▼</span></div>
+          <div class="expand-menu-body">
+            <h3 class="protocol-subtitle" id="试剂一览表-初始">试剂一览表（初始）</h3>
+<h4 class="protocol-minititle">DMSO</h4>
+<p class="protocol-text">二甲基亚砜，棕色瓶常温保存，有毒，无色</p>
+<ul class="protocol-list"><li>良好的溶剂，可用于难以溶解的物质的溶解（分出细胞房外）；</li><li>细胞冻存时加入，放置细胞在冻存时破裂；</li><li>用于药物的佐剂。</li></ul>
+<h4 class="protocol-minititle">FBS</h4>
+<p class="protocol-text">胎牛血清，浅红色澄清，分装后置于-20℃保存，使用前放置于4℃融化，尽量避免在常温融化，禁止在37℃水浴锅中融化。</p>
+<ul class="protocol-list"><li>10%比例加入细胞培养液（DMEM）中，以补充细胞生长的额外因子。</li><li>当使用更高比例的FBS时，细胞营养更为充分，贴壁更快；长期使用或能引发细胞形态改变，如观察到15% FBS培养的星胶倾向于长得更胖。</li><li>不加血清的培养基可用于饥饿。</li><li>品牌与批次影响较大。</li></ul>
+<h4 class="protocol-minititle">HS</h4>
+<p class="protocol-text">马血清，黄色澄清，分装后置于-20℃保存，使用前放置于4℃融化，尽量避免在常温融化，禁止在37℃水浴锅中融化。</p>
+<ul class="protocol-list"><li>在一些培养特定细胞的培养液中加入。</li><li>品牌与批次影响较大。</li></ul>
+<h4 class="protocol-minititle">100×P/S（双抗）</h4>
+<p class="protocol-text">青霉素、链霉素混合液，无色透明，分装前置于-20℃保存，启用后可置于4℃。</p>
+<ul class="protocol-list"><li>1/100比例加入细胞培养液中。少数情况下会干扰细胞生长，应避免加入。</li></ul>
+<h4 class="protocol-minititle">2.5% Trypsin</h4>
+<p class="protocol-text">胰蛋白酶溶液，用于组织消化为单细胞或细胞传代时进行消化。须使用HBSS溶液稀释至0.25%使用。实际使用时仍可继续稀释。在配制的胰酶不好用的时候可以直接购买0.25%的胰酶，消化能力一般较配制的胰酶更强。</p>
+<p class="protocol-text">使用血清或含血清的培养基可中和胰酶的消化。</p>
+<h4 class="protocol-minititle">DMEM</h4>
+<p class="protocol-text">红色清亮，分装后置于-20℃保存</p>
+<p class="protocol-text">即细胞培养基，注意使用前需要确定所养的细胞适用于低糖还是高糖的DMEM，以及其他一些是否需要提前加入DMEM中的物质等。</p>
+<p class="protocol-text">一般需要加入10%的FBS和P/S后使用。</p>
+<h4 class="protocol-minititle">HBSS</h4>
+<p class="protocol-text">即Hanks’ Balanced Salt Solution，置于4℃保存，酚红的添加可选，不含有血清，相较于PBS溶液更利于洗涤细胞，具有与生理条件下相似的pH和渗透压。</p>
+<ul class="protocol-list"><li>用于分离原代细胞时的洗涤操作，包括对胎鼠、对组织样品的洗涤和使用胰酶消化时的稀释液等。</li></ul>
+<h4 class="protocol-minititle">DMEM/F12</h4>
+<p class="protocol-text">含有F12蛋白补充因子的合成培养基DMEM，适用于星形胶质细胞等胶质细胞、成纤维细胞、内皮细胞的培养，由Ham’s F12 nutrient mixture与DMEM 1:1混合。F-12基于Ham的F-10培养基，增加了胆碱、肌醇、腐胺和氨基酸的浓度，添加了丙酮酸钠。用于培养原代星形胶质细胞。</p>
+<h4 class="protocol-minititle">Neurobasal</h4>
+<p class="protocol-text">商品化的神经元基础培养基，可用于神经元的生长与长期维持，使用时不含血清。</p>
+<ul class="protocol-list"><li>在使用Gibco B27补充剂时，可直接用于培养神经元，B27可替代星形胶质细胞饲养层；</li><li>可直接用于神经元和星形胶质细胞的共培养。</li></ul>
+<h4 class="protocol-minititle">Opti-MEM</h4>
+<p class="protocol-text">为改进的最小必需培养基，常与阳离子脂质体转染试剂共同使用。</p>
+<h4 class="protocol-minititle">100×Glutamine</h4>
+<p class="protocol-text">谷氨酰胺，用于培养基中补充额外的氮源和碳源，按照1:100的比例加入，降低使用浓度可使细胞处于饥饿状态。谷氨酰胺在细胞培养基中的稳定性较差，容易分解成氨和吡二酰谷氨酸，从而影响细胞培养的效果，需要使用前现加入。</p>
+<h4 class="protocol-minititle">Lipofectamine试剂</h4>
+<p class="protocol-text">用于细胞的脂质体转染，包括lipo2000与lipo3000，两者的转染效率不同，使用方法也存在差异。可用于DNA、RNA、siRNA的转入。Lipo3000的转染效率更高。具体使用方法参见说明书。</p>
+<h4 class="protocol-minititle">1×PDL</h4>
+<p class="protocol-text">可自行配制或购买，用于对培养皿或爬片表面处理，以使得细胞更易于贴附其上，在免疫组化等操作中不易悬浮。</p>
+<p class="protocol-text">PDL对于细胞有毒性，铺板后须使用ddH2O进行清洗。</p>
+<h4 class="protocol-minititle">B27 supplement</h4>
+<p class="protocol-text">用于原代神经元培养时培养基的补充添加，可替代与星胶的共培养。</p>
+<h4 class="protocol-minititle">NGF</h4>
+<ul class="protocol-list"><li>用于刺激615或PC12细胞系细胞分化、长出树突/轴突；</li><li>用于维持原代神经细胞的正常存活。</li></ul>
+<h3 class="protocol-subtitle" id="试剂一览表-配制">试剂一览表（配制）</h3>
+<h4 class="protocol-minititle">DMEM+/+  10%FBS</h4>
+<p class="protocol-text">贮存于-4℃。</p>
+<p class="protocol-text">已加入双抗和FBS的细胞培养基。</p>
+<ul class="protocol-list"><li>直接用于培养293、293T细胞。</li></ul>
+<h4 class="protocol-minititle">星形胶质细胞培养基</h4>
+<p class="protocol-text">10% FBS、1% 双抗、1%谷氨酰胺，并使用DMEM/F-12进行补足。置于4℃保存。最开始培养原代细胞时可使用20% FBS，以达到较快的贴壁速度。</p>
+<ul class="protocol-list"><li>用于培养星形胶质细胞，使用时不需要换液，传代后可连续培养10天以上；</li><li>用于分离原代神经元时短暂使用，消化后的细胞置于该培养基中，4小时后换液，可使得神经元存活而胶质细胞不能存活。</li></ul>
+<h4 class="protocol-minititle">神经元培养基</h4>
+<p class="protocol-text">Neurobasal培养基（Gibco），添加了B-27混合生长因子，添加双抗，无血清。B-27混合生长因子母液存放于走廊-20℃冰箱。</p>
+<p class="protocol-text">50ml Neurobasal+500ul P/S+125ul Glutamine+1ml Gibco B27。</p>
+<ul class="protocol-list"><li>用于神经元的培养和维持，要求每3天半换液。</li></ul>
+<h4 class="protocol-minititle">盐酸-酒精洗涤液</h4>
+<p class="protocol-text">用于洗涤细胞爬片，当爬片较为脏污时，即使已经使用PDL包被，较难黏附的细胞仍不会生长于爬片上。</p>
+<p class="protocol-text">使用95%乙醇（水配）:浓盐酸=98:2的混合溶液洗涤玻片，需上下颠倒混匀1d。</p>
+<h4 class="protocol-minititle">细胞冻存液</h4>
+<p class="protocol-text">90% FBS+10% DMSO，配制好的细胞冻存液应放置于-20℃及以下保存，在使用前需要水浴加热至37℃后再重悬细胞。具体见细胞冻存操作。</p>
+<p class="protocol-text">若使用商品化的细胞冻存液：①提前预热；②不需要放入梯度降温盒中，可直接移入-80℃/液氮；③可使用较高的细胞密度进行冻存。</p>
+<h4 class="protocol-minititle">615/PC12细胞系培养基</h4>
+<p class="protocol-text">DMEM+10% HS+5% FBS+1% P/S+1% Glutamine。</p>
+<p class="protocol-text">用于615细胞系或PC12神经元细胞系的培养。</p>
+<h4 class="protocol-minititle">神经元KCl激活溶液</h4>
+<div class="protocol-table-wrap"><table class="protocol-table">
+<thead><tr><th>HEPES</th><th>10mM pH=7.4</th><th></th></tr></thead>
+<tbody>
+<tr><td>NaCl</td><td>140mM</td><td></td></tr>
+<tr><td>MgCl2</td><td>1mM</td><td></td></tr>
+<tr><td>CaCl2</td><td>2mM</td><td></td></tr>
+<tr><td>KCl</td><td>55mM</td><td></td></tr>
+</tbody>
+</table></div>
+<h4 class="protocol-minititle">电转Solution1（10ml）</h4>
+<div class="protocol-table-wrap"><table class="protocol-table">
+<thead><tr><th>ATP-disodium salt</th><th>Sigma A6419-5G</th><th>2 g</th></tr></thead>
+<tbody>
+<tr><td>MgCl2·6H2O</td><td>Amersco 0288-100G</td><td>1.2 g</td></tr>
+<tr><td>灭菌ddH2O</td><td></td><td>~10 ml</td></tr>
+</tbody>
+</table></div>
+<ul class="protocol-list"><li>使用0.22mm灭菌滤膜过滤并在超净台中分装，置于-20℃贮存。</li></ul>
+<h4 class="protocol-minititle">电转Solution2（300 ml）</h4>
+<div class="protocol-table-wrap"><table class="protocol-table">
+<thead><tr><th>KH2PO4</th><th>国药化学 10017618</th><th>6 g</th></tr></thead>
+<tbody>
+<tr><td>NaHCO3</td><td>博迪化工 144-55-8</td><td>0.6 g</td></tr>
+<tr><td>Glucose</td><td>广成化学</td><td>0.2 g</td></tr>
+<tr><td>灭菌ddH2O</td><td></td><td>~300 ml</td></tr>
+</tbody>
+</table></div>
+<ul class="protocol-list"><li>用NaOH调节pH至7.4，使用DDW定容至500ml。0.22um无菌滤膜过滤并在超净台中分装， -20℃贮存。</li></ul>
+<h4 class="protocol-minititle">电转Buffer（4ml）</h4>
+<div class="protocol-table-wrap"><table class="protocol-table">
+<thead><tr><th>电转Solution1</th><th></th><th>80 ml</th></tr></thead>
+<tbody>
+<tr><td>电转Solution2</td><td></td><td>4 ml</td></tr>
+</tbody>
+</table></div>
+<ul class="protocol-list"><li>在超净台内充分混合后，贮存于4℃，有效期一个月。</li></ul>
+<h3 class="protocol-subtitle" id="待整理-原代神经元分离与培养">【待整理】原代神经元分离与培养</h3>
+<p class="protocol-text">以下为原代神经元的培养方法以及从小鼠~E19胎鼠中分离皮层神经元的方法。</p>
+<h3 class="protocol-subtitle" id="原代星形胶质细胞分离与培养">原代星形胶质细胞分离与培养</h3>
+<p class="protocol-text">以下为原代星形胶质细胞的培养方法以及从大鼠P1期幼崽中分离星形胶质细胞的方法。</p>
+<p class="protocol-text">注意：若使用小鼠进行星胶的分离，对于星形胶质细胞来源的小鼠的限制日龄较为宽泛，选用刚出生至开始变黑的小鼠均可，但推荐使用出生后两天以内的小鼠。</p>
+<p class="protocol-text">从大鼠脑中分离出的星形胶质细胞含有以下细胞产生污染：</p>
+<div class="protocol-table-wrap"><table class="protocol-table">
+<thead><tr><th>细胞类型</th><th>体内分布</th><th>特征</th><th>去除方式</th></tr></thead>
+<tbody>
+<tr><td>纤维细胞</td><td>属上皮细胞，是主要的污染</td><td>贴壁能力最强，静置30min后即可贴壁</td><td>使用普通三角瓶培养30min，取上清</td></tr>
+<tr><td>神经元</td><td>很少，是胶质细胞支持的细胞</td><td>很容易死亡，需要特殊的培养液培养</td><td>在首次传代时，胰蛋白酶消化即死亡</td></tr>
+<tr><td>小/少突胶质细胞</td><td>很少，与星形胶质细胞具有分层</td><td>在培养液中可贴附在星形胶质细胞上，贴壁能力弱</td><td>待星胶贴壁后震摇即可去除</td></tr>
+</tbody>
+</table></div>
+<p class="protocol-text">星形胶质细胞在最初培养时贴壁能力较弱，培养数代后增强，为了使细胞贴壁，在培养2~3代以内的星胶时应加倍DMEM/F-12培养基中FBS的含量为20%，同时使用铺有多聚赖氨酸的三角瓶进行培养。</p>
+<h4 class="protocol-minititle">原代星形胶质细胞分离培养所用到的试剂与耗材</h4>
+<ul class="protocol-list"><li>胰蛋白酶（trypsin）（+EDTA）：用于消化小块脑组织；用于传代时消化细胞。买来时浓度为2.5%，须使用HBSS缓冲液稀释至0.25%后使用。</li><li>HBSS（Hank’s balanced salt solution）：缓冲液的一种，类似于细胞培养时的PBS，用于在培养基外短期维持细胞。主要用于暴露于大气环境中的培养基，不适用于CO2培养，后者使用HBSS培养基将超过HBSS的缓冲能力并导致细胞死亡。可用于细胞培养、稀释试剂时的缓冲液以及清洁条件下解剖组织的缓冲液。</li><li>DMEM：DMEM为常规使用的无血清培养基，是一种合成培养基，其内含有葡萄糖、6种盐、13种必需氨基酸和8种维生素。</li><li>DMEM/F-12：为DMEM与营养因子F-12的1:1混合物，可以培养MDCK、神经胶质细胞、成纤维细胞等。F-12基于Ham的F-10培养基，增加了胆碱、肌醇、腐胺和氨基酸的浓度，添加了丙酮酸钠。用于培养原代星形胶质细胞。</li><li>双抗。</li><li>FBS。</li><li>谷氨酰胺。作为细胞所必需的生长因子。</li><li>原代星形胶质细胞培养基配方：10% FBS、1% 双抗、1%谷氨酰胺，并使用DMEM/F-12进行补足。置于4℃保存。最开始培养原代细胞时应使用20% FBS，以达到较快的贴壁速度。</li><li>耗材除常规细胞培养耗材外，还需准备适当数量（根据幼鼠数量确定）的已经包埋多聚赖氨酸的三角瓶。</li></ul>
+<h4 class="protocol-minititle">大鼠P1幼崽分离星形胶质细胞</h4>
+<ul class="protocol-list"><li>准备超净台，摆放体视显微镜及照明设备，使用棉球擦拭表面后，取细胞培养皿数个，倒入少量HBSS缓冲液。取冰盒，将培养皿置于冰盒上降温。</li><li>取高压灭菌的镊子、剪刀、弯镊用于取下大脑；取高压灭菌的高级镊子用于剥离脑组织表面脑膜。</li><li>取大鼠P1期幼崽，每一幼崽约获得1千万个星形胶质细胞，铺满1/2~2/3个三角瓶。将幼鼠直接浸泡于75% 乙醇溶液中，待基本死亡后转移至含HBSS缓冲液的培养皿中。</li><li>*小鼠不能长时间浸泡于乙醇中，可能对细胞活力有影响；</li><li>*乙醇起到杀菌作用，但容器外壁仍需喷洒酒精后才能进入超净台；</li><li>*注意更换手套后再进入超净台。</li><li>取一只幼鼠，现在洁净的HBSS缓冲液中清洗，再转移至一空白培养皿中（可预先放一张滤纸）。</li><li>将该小鼠的头部分离，使用镊子剥离顶面皮肤组织。</li><li>顶面朝上，用镊子固定头部嗅球位置，并使用镊子在后侧插入并撕扯，以使得头骨破碎，用镊子缓慢钳碎头骨，以暴露整个脑。</li><li>用弯镊自后侧探入并托出脑组织，并将其转移至HBSS缓冲液中。</li><li>待全部幼鼠脑组织取完，取一装HBSS的新培养皿，置于体视显微镜下。为获得星胶细胞，需要分离脑组织表面的脑膜、髓质和海马体。</li><li>换用高级镊子，先使用剪刀分离左右脑，再在体视显微镜下逐步剥离脑膜（建议从一侧向另一侧剥开）。随后去除旁侧附属结构，可见月牙形海马体。去除海马体。</li><li>显微镜下可见出血点，将所有出血点及周边组织去除，最终保留的组织应完全为乳白色。星形胶质细胞主要位于大脑皮层上，可将髓质部分尽可能去除。</li><li>将处理完毕的脑组织放入新的HBSS缓冲液中。</li><li>待所有幼鼠脑组织处理完毕，先尽可能吸去培养皿中的HBSS溶液，再将脑组织用镊子钳碎为较小的碎块。</li></ul>
+<h4 class="protocol-minititle">原代星形胶质细胞的培养</h4>
+<ul class="protocol-list"><li>加入5ml 0.25% 胰蛋白酶溶液（注意提前预热），于37℃消化15min，每5min震摇一次。</li><li>*注意此步尽量少留HBSS溶液，以防止温度和培养液组分对酶活性的影响。</li><li>将消化产物转移至15ml离心管中，并使用DMEM/F-12冲洗培养皿，转移洗液于离心管中以终止消化。</li><li>*必须加入DMEM/F-12以终止消化；</li><li>*消化后产物应呈现粘稠状，原因在于部分细胞裂解导致的DNA释放，无法通过离心去除，如必要，可加入DNA酶以降低溶液粘度。</li><li>将细胞通过100μm细胞滤网转移至50ml 离心管中。先将上清部分通过滤网，再过滤粘稠部分。</li><li>*不能直接倾倒，否则将会发生阻塞情况；</li><li>*细胞量较少时可适当加入培养基以彻底清洗原管。</li><li>细胞滤过液于1200rpm，10min离心，使用真空泵去除上清液。</li><li>*不同于传代时的离心，上层液体不应清亮，因为含有组织碎片；</li><li>*需尽量完全去除上清，可倾斜离心管以去除；</li><li>*若出血点未完全清理干净，应可见沉淀中含有红色物。</li><li>使用DMEM/F-12培养基重悬细胞，约至体积20~30ml，若细胞数量过多可加倍。</li><li>*注意吹匀细胞后再进行下一步，吹匀细胞时枪头应在管中转圈吹匀。</li><li>将细胞悬液全部转移至未包被多聚赖氨酸的三角瓶中，CO2培养箱培养30min，以去除纤维细胞。</li><li>*注意实验室有两种规格的三角瓶，使用瓶塞未有透气孔的三角瓶培养时，需要稍旋开瓶盖。</li><li>镜检三角瓶，应可见部分细胞贴壁，部分细胞仍悬浮。将三角瓶翻转180°，使用10ml移液管将培养液吸入洁净的50ml管中。再次镜检移出培养液后的三角瓶，也可见贴壁细胞。</li><li>重复一次步骤18、19，当细胞量较多时可再重复一次，待贴壁细胞数量较少时，可进行下一步。</li><li>取多聚赖氨酸包被的、去除包被液和PBS洗涤液、在紫外线下照射30min的三角瓶数个（依据样品量确定数量），每个培养瓶终体积为20ml，计算所需液体总量并使用DMEM/F-12培养基对细胞悬液进行稀释。</li><li>注意完全吹匀细胞悬液，随后迅速向培养瓶中转移培养液，每瓶转移20ml。放入CO2培养箱中培养。</li><li>*使用瓶塞未有透气孔的三角瓶培养时，需要稍旋开瓶盖。</li><li>星形胶质细胞代谢较慢，约5天更换一次培养液。</li></ul>
+<h4 class="protocol-minititle">从原代星胶中分离或去除小胶质细胞</h4>
+<p class="protocol-note">*需在原代分离培养的第一代或第二代细胞中操作。</p>
+<ul class="protocol-list"><li>待细胞平板基本铺满，镜下观察，可见扁平的星胶细胞上层存在聚成团生长的小胶质细胞。</li><li>将培养皿装入封口膜中，封口，并将其置于摇床上。</li><li>快速摇动，&gt;100rpm，2h~4h。</li><li>*若小胶质细胞仍无法去除，可延长摇动时间，若有37℃恒温摇床为佳。</li><li>显微镜再次镜检，小胶质细胞是否已经游离。</li><li>收集培养液，培养液中即含有小胶质细胞。</li><li>使用PBS洗涤一次。</li><li>更换培养液（DMEM/F-12）。</li><li>再次镜检，观察小胶质细胞去除效果。</li></ul>
+<h4 class="protocol-minititle">星形胶质细胞（AS）培养的注意事项</h4>
+<ul class="protocol-list"><li>一个三角瓶长满AS细胞后可以传代5个平板左右，每个平板约传代500万个细胞。</li><li>原代培养的星形胶质细胞需要在第一代或第二代时去除小胶质细胞，方法见从原代星胶中分离或去除小胶质细胞。</li><li>内皮细胞未完全去除对小胶质细胞的去除有影响。</li></ul>
+<h3 class="protocol-subtitle" id="转染">转染</h3>
+<h4 class="protocol-minititle">使用电转仪进行转染</h4>
+<p class="protocol-text">详见单独的文件“细胞转染”。</p>
+<h4 class="protocol-minititle">使用PEI进行转染</h4>
+<h4 class="protocol-minititle">使用lipo2000脂质体进行转染</h4>
+<p class="protocol-text">使用lipo2000对难以转染的细胞进行转染常常能够达到较高的转染效率。lipo2000为脂质体，脂质体能够对质粒进行包装，随后与细胞膜融合以达到转染质粒的目的。细胞密度约70%时进行转染，转染后48h后可进行转染效率的统计或后续实验。</p>
+<ul class="protocol-list"><li>贴壁生长的细胞密度达到~70%时，更换细胞培养基，可适当减少培养基用量以增大转染时lipo2000的有效浓度。</li><li>*注意：理论上使用optimum代替培养基可获得更大的转染效率，但实际操作上并未获得</li><li>计算质粒和lipo2000的使用量，下表以一个孔为单位计算：</li></ul>
+<div class="protocol-table-wrap"><table class="protocol-table">
+<thead><tr><th>培养皿大小</th><th>质粒用量</th><th>Lipo2000用量</th><th>Optimum用量（×2）</th></tr></thead>
+<tbody>
+<tr><td>六孔板（每孔）</td><td>~2ug</td><td>6ul</td><td>125ul</td></tr>
+<tr><td>12孔板（每孔）</td><td>~1ug</td><td>3~6ul</td><td>60ul</td></tr>
+</tbody>
+</table></div>
+<ul class="protocol-list"><li>lipo2000的用量可在2倍~4倍之间摸索，即1ug质粒对应2ul lipo2000用量为1:2，一般而言，lipo2000用量越大，转染效率越高。</li><li>将待转染质粒、lipo2000和optimum转染buffer转移至生物安全柜中。按照所需的量分装好optimum转染buffer。</li><li>*以在4个六孔板孔里转染2个质粒为例，需要分装3个EP管（2个250ul，用于稀释质粒；1个500ul用于稀释lipo2000）</li><li>向optimum中加入质粒或lipo2000，混匀好后等待5min；</li><li>将稀释有lipo2000的optimum按照等体积分入稀释有质粒的optimum，混匀后等待15~30min；</li><li>按照用量将混匀好的optimum-质粒-lipo2000溶液滴加进入细胞培养基中，晃动混匀，随后置于培养箱中培养4~6h或过夜；</li><li>更换培养基为正常的细胞培养基，继续培养。</li></ul>
+<h4 class="protocol-minititle">使用lipo3000脂质体进行转染</h4>
+<h4 class="protocol-minititle">使用慢病毒进行转染</h4>
+<h3 class="protocol-subtitle" id="常规操作">常规操作</h3>
+<h4 class="protocol-minititle">神经细胞的半换液</h4>
+<p class="protocol-text">神经细胞生长过程中会分泌生长因子，若全部换液，会导致死亡，因此，仅需更换一半培养基即可。</p>
+<p class="protocol-text">使用神经细胞培养基。</p>
+<h4 class="protocol-minititle">多聚赖氨酸铺板</h4>
+<p class="protocol-text">神经细胞、神经胶质细胞（尤其是原代细胞）贴壁能力弱，使用多聚赖氨酸交联的平板培养可以促进其贴壁。普通细胞进行免疫染色时也需要使用PDL包被培养皿，同时还需要加入细胞爬片。</p>
+<ul class="protocol-list"><li>（当细胞用于染色时）向培养皿中加入细胞爬片，爬片预先过火处理。</li><li>*若细胞爬片脏污而不易黏附细胞，可使用盐酸酒精溶液进行清洗，详见此处。</li><li>配制1× 多聚赖氨酸（PDL）溶液，按照培养用具使用培养液的容积放入等量的1×PDL溶液。</li><li>*注意一般的易于贴壁的细胞类型可以使用回收多次的PDL溶液，但对于原代神经元等不易贴壁的细胞类型需要使用回收2次及以下的1×PDL溶液；</li><li>*1×PDL即0.1mg/ml的PDL溶液。</li><li>将培养皿放置于超净台中约2h。</li><li>*对于已经多次使用的PDL溶液用于铺板，可延长铺板时间至过夜。</li><li>在生物安全柜中将培养皿皿盖打开，铺展放置，同时关闭安全柜通风，开启紫外以进行杀菌。待PDL液体完全干透后进行清洗。</li><li>回收PDL溶液，使用灭菌的ddH2O清洗培养皿三次。</li><li>*需使用H2O进行清洗，使用PBS清洗会导致盐晶体残留；</li><li>*需要清洗至少三遍，PDL残留会引起细胞死亡。</li><li>清洗后同步骤3再次晾干，晾干后可用于培养细胞。</li><li>*短时间内不使用的已经铺好PDL的培养皿需要使用封口膜包裹，再放入袋子中，于4℃保存。</li></ul>
+<h4 class="protocol-minititle">细胞复苏</h4>
+<ul class="protocol-list"><li>将细胞从低温环境中拿出，迅速放于37℃水浴锅中，摇晃以加热，使得样品完全融化，待恢复至室温后，向1ml的细胞冻存液中加入1ml的对应培养基，随后于1000rpm, 3min离心。</li><li>*该过程必须迅速进行，防止细胞在复苏过程中的损伤。</li><li>弃上清，将细胞重悬于培养基中，随后可直接用于传代。</li><li>*注意标明细胞的代数、计算细胞数量等。</li></ul>
+<h4 class="protocol-minititle">细胞传代</h4>
+<ul class="protocol-list"><li>37℃预热培养基（根据细胞类型选择）和胰蛋白酶（如有需要）。</li><li>*进行传代因所需培养基体积大，无需使用经过分装的培养基，现用现分装即可。</li><li>开启超净台，使用酒精棉球擦拭超净台表面，再点燃酒精灯。</li><li>观察细胞状态，细胞应铺满培养皿底部的90%左右，且能够观察到细胞形态，细胞不至于长得过密，细胞应没有污染等。</li><li>将预热的培养基和胰蛋白酶转移至超净台，同时转移一50ml管。</li><li>*在喷淋酒精时谨防酒精喷入超净台中</li><li>取一2ml离心管备用。</li><li>将一皿细胞转移至超净台。</li><li>根据所需培养基的量转移培养基至50ml管中。</li><li>*10cm 皿需要10ml培养基；6cm皿需要7~8ml培养基；细胞铺满时可以传同体积皿3盘，此外还需要5ml培养基用于重悬细胞</li><li>使用真空泵去除皿内的细胞培养基。</li><li>沿着侧壁加入1ml 胰蛋白酶溶液，轻轻摇晃培养皿以消化细胞，待有部分细胞脱落时使用真空泵去除胰蛋白酶溶液。</li><li>*若消化不完全时，需要用力吹打细胞，可能导致细胞损伤</li><li>加入2ml 培养基终止消化，并使用培养基吹打细胞以至细胞完全悬浮于培养基中。</li><li>将溶液转移至2ml离心管，并于1000rpm，3min离心。离心期间可转移培养皿待用。</li><li>*培养皿应写明细胞类型、接种时间、姓名以及细胞的其他信息（如病毒转染、质粒、转基因品系等）</li><li>使用真空泵去除离心后的上清液。</li><li>使用2ml培养基重悬细胞，然后将细胞转移至余下的培养基中。</li><li>*提前计算好体积</li><li>颠倒混匀培养基，然后将培养基加入培养皿中。并使得培养皿底部完全浸润。</li><li>径向、横向、斜向水平摇动培养皿，以使得细胞均匀分散在培养皿中。</li><li>*不能旋转摇匀培养皿，此法会导致细胞集聚在中央</li><li>将培养皿放入细胞培养箱。</li><li>培养基和胰蛋白酶使用封口膜封闭，放回原处。整理超净台。</li><li>使用酒精棉球再次对超净台表面进行擦拭，关闭超净台并使用紫外线照射一段时间。</li></ul>
+<h4 class="protocol-minititle">血清加热灭活</h4>
+<p class="protocol-text">血清中含有的补体等成分可能会刺激细胞发生类似炎症等现象，可能对于相关的实验有影响。常用加热至56摄氏度处理30min灭活血清中的补体等成分。需要注意：目前很多商品化血清已经基本去除了血清中的补体，此步骤在很多实验室仍作为使用血清前的标准步骤。同时血清灭活会导致一些营养成分失活（表现在细胞状态差）。</p>
+<ul class="protocol-list"><li>血清置于4摄氏度完全融化后，将其完全密封并排掉封口内的空气，以便加热时直接接触水浴。</li><li>水浴锅加热至56摄氏度，将血清放入水浴锅中灭活30min，随后再放入4摄氏度冷却后配制细胞培养基。</li><li>*若水浴锅不干净，建议水浴锅中放入装有水的烧杯后加热至56摄氏度。</li></ul>
+<h4 class="protocol-minititle">细胞冻存</h4>
+<p class="protocol-text">本方案适用于自制的细胞冻存液冻存细胞的情况，若使用商品化的细胞冻存液可能步骤有所不同，需注意细胞的合适量和降温的步骤等。</p>
+<p class="protocol-text">注意：提前准备已经恢复至常温的细胞冻存盒，检查异丙醇是否足够。</p>
+<ul class="protocol-list"><li>37℃预热培养基、胰蛋白酶（如有需要）和细胞冻存液。</li><li>*进行传代因所需培养基体积大，无需使用经过分装的培养基，现用现分装即可。</li><li>开启超净台，使用酒精棉球擦拭超净台表面，再点燃酒精灯。</li><li>观察细胞状态，细胞应铺满培养皿底部的90%左右，且能够观察到细胞形态，细胞不至于长得过密，细胞应没有污染等。</li><li>将预热的培养基和胰蛋白酶转移至超净台，同时转移一50ml管。</li><li>*在喷淋酒精时谨防酒精喷入超净台中</li><li>取一2ml离心管备用。</li><li>将一皿细胞转移至超净台。</li><li>根据所需培养基的量转移培养基至50ml管中。</li><li>*准备约5ml培养基，因取用量少，可单独分装后反复使用</li><li>使用真空泵去除皿内的细胞培养基。</li><li>沿着侧壁加入1ml 胰蛋白酶溶液，轻轻摇晃培养皿以消化细胞，待有部分细胞脱落时使用真空泵去除胰蛋白酶溶液。</li><li>*若消化不完全时，需要用力吹打细胞，可能导致细胞损伤</li><li>加入2ml 培养基终止消化，并使用培养基吹打细胞以至细胞完全悬浮于培养基中。</li><li>将溶液转移至2ml离心管，并于1000rpm，3min离心。离心期间准备细胞冻存管并写明相关信息。</li><li>*一盘10cm皿细胞应准备3~4个冻存管。</li><li>*相关信息包括：细胞代数、细胞类型、每一个冻存管中细胞大致数量、冻存时间、冻存人等。</li><li>使用真空泵去除离心后的上清液。</li><li>使用1ml 细胞冻存液重悬细胞，充分混匀，将细胞转移至细胞冻存管，并加入细胞冻存液至1ml。</li><li>使用封口膜封闭细胞冻存管。</li><li>将细胞冻存管转移至梯度降温盒中，并放入-80℃冰箱进行缓慢降温。</li><li>*注意检查梯度降温盒中的异丙醇是否足够。</li><li>培养基和胰蛋白酶使用封口膜封闭，放回原处。整理超净台。</li><li>使用酒精棉球再次对超净台表面进行擦拭，关闭超净台并使用紫外线照射一段时间。</li></ul>
+<h3 class="protocol-subtitle" id="trouble-shotting">Trouble-shotting</h3>
+<ul class="protocol-list"><li>所养的细胞增殖缓慢，长时间无法铺满平板</li><li>检查培养液是否正确以及是否应该更换；</li><li>当细胞密度过低时，细胞之间释放的细胞因子含量减小，细胞不容易生长，考虑重新传代。</li><li>显微镜下观察到培养皿中有黑色物质游动（培养基静置的情况下）</li><li>考虑细菌/真菌污染，应丢弃细胞</li></ul>
           </div>
         </div>
     </div>
