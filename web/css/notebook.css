@@ -86,7 +86,7 @@
     margin-left: 320px;
     margin-right: 0;
     margin-top: 80px;
-    padding: 64px 78px 68px;
+    padding: 64px 90px 68px;
     background: var(--background-color) !important;
     border: 1px solid rgba(35, 35, 45, 0.075);
     border-radius: 12px;
@@ -170,6 +170,12 @@
     padding-right: 0;
 }
 
+.general-content > p,
+.general-content .expand-menu-body > p,
+.general-content .protocol-text {
+    padding-left: 24px;
+}
+
 .general-content .expand-menu {
     position: static;
     width: 100%;
@@ -201,13 +207,13 @@
     width: 126px !important;
     min-width: 0 !important;
     max-width: none !important;
-    min-height: 40px;
-    padding: 0 13px !important;
+    min-height: 42px;
+    padding: 0 15px !important;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     border: 1px solid rgba(35, 35, 45, 0.10) !important;
-    border-radius: 0 6px 6px 0 !important;
+    border-radius: 9px !important;
     background: rgba(255, 255, 255, 0.86) !important;
     color: var(--text-color) !important;
     box-shadow: 0 9px 20px rgba(35, 35, 45, 0.05) !important;
@@ -236,13 +242,13 @@
 }
 
 .general-content .bookmark-index-0 .expand-menu-header { top: 56px !important; }
-.general-content .bookmark-index-1 .expand-menu-header { top: 126px !important; }
-.general-content .bookmark-index-2 .expand-menu-header { top: 196px !important; }
-.general-content .bookmark-index-3 .expand-menu-header { top: 266px !important; }
-.general-content .bookmark-index-4 .expand-menu-header { top: 336px !important; }
-.general-content .bookmark-index-5 .expand-menu-header { top: 406px !important; }
-.general-content .bookmark-index-6 .expand-menu-header { top: 476px !important; }
-.general-content .bookmark-index-7 .expand-menu-header { top: 546px !important; }
+.general-content .bookmark-index-1 .expand-menu-header { top: 136px !important; }
+.general-content .bookmark-index-2 .expand-menu-header { top: 216px !important; }
+.general-content .bookmark-index-3 .expand-menu-header { top: 296px !important; }
+.general-content .bookmark-index-4 .expand-menu-header { top: 376px !important; }
+.general-content .bookmark-index-5 .expand-menu-header { top: 456px !important; }
+.general-content .bookmark-index-6 .expand-menu-header { top: 536px !important; }
+.general-content .bookmark-index-7 .expand-menu-header { top: 616px !important; }
 
 .general-content .expand-arrow {
     margin-left: auto;
@@ -295,7 +301,7 @@
         width: auto;
         max-width: none;
         margin-left: 0;
-        padding: 42px 28px 46px;
+        padding: 42px 32px 46px;
     }
 
     .general-content .expand-menu .expand-menu-header,
