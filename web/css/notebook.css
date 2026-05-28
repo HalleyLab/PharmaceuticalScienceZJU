@@ -1,4 +1,21 @@
 /* Shared notebook treatment for content pages. */
+body {
+    background:
+        linear-gradient(rgba(35, 35, 45, 0.018) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(35, 35, 45, 0.014) 1px, transparent 1px),
+        var(--background-color);
+    background-size: 28px 28px, 28px 28px, auto;
+}
+
+.dark-theme body,
+body.dark-theme {
+    background:
+        linear-gradient(rgba(255, 255, 255, 0.018) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.014) 1px, transparent 1px),
+        var(--background-color);
+    background-size: 28px 28px, 28px 28px, auto;
+}
+
 .subnav-bar {
     width: 20%;
     left: 0;
