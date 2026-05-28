@@ -87,7 +87,11 @@
     margin-right: 0;
     margin-top: 80px;
     padding: 64px 90px 68px;
-    background: var(--background-color) !important;
+    background:
+        linear-gradient(rgba(116, 116, 207, 0.050) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(116, 116, 207, 0.045) 1px, transparent 1px),
+        var(--background-color) !important;
+    background-size: 30px 30px, 30px 30px, auto;
     border: 1px solid rgba(35, 35, 45, 0.075);
     border-radius: 12px;
     box-shadow:
@@ -99,6 +103,11 @@
 }
 
 .dark-theme .general-content {
+    background:
+        linear-gradient(rgba(255, 255, 255, 0.055) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+        var(--background-color) !important;
+    background-size: 30px 30px, 30px 30px, auto;
     border-color: rgba(255, 255, 255, 0.075);
     box-shadow:
         0 22px 58px rgba(0, 0, 0, 0.24),
@@ -203,21 +212,21 @@
 .general-content .bookmark-index-7 .expand-menu-header {
     position: absolute !important;
     left: auto !important;
-    right: -118px !important;
-    width: 126px !important;
+    right: -132px !important;
+    width: 142px !important;
     min-width: 0 !important;
     max-width: none !important;
-    min-height: 42px;
-    padding: 0 15px !important;
+    min-height: 48px;
+    padding: 0 17px !important;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     border: 1px solid rgba(35, 35, 45, 0.10) !important;
-    border-radius: 9px !important;
-    background: rgba(255, 255, 255, 0.86) !important;
+    border-radius: 12px !important;
+    background: rgba(255, 255, 255, 0.90) !important;
     color: var(--text-color) !important;
     box-shadow: 0 9px 20px rgba(35, 35, 45, 0.05) !important;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 800;
     line-height: 1.28;
     text-align: left;
@@ -242,13 +251,13 @@
 }
 
 .general-content .bookmark-index-0 .expand-menu-header { top: 56px !important; }
-.general-content .bookmark-index-1 .expand-menu-header { top: 136px !important; }
-.general-content .bookmark-index-2 .expand-menu-header { top: 216px !important; }
-.general-content .bookmark-index-3 .expand-menu-header { top: 296px !important; }
-.general-content .bookmark-index-4 .expand-menu-header { top: 376px !important; }
-.general-content .bookmark-index-5 .expand-menu-header { top: 456px !important; }
-.general-content .bookmark-index-6 .expand-menu-header { top: 536px !important; }
-.general-content .bookmark-index-7 .expand-menu-header { top: 616px !important; }
+.general-content .bookmark-index-1 .expand-menu-header { top: 144px !important; }
+.general-content .bookmark-index-2 .expand-menu-header { top: 232px !important; }
+.general-content .bookmark-index-3 .expand-menu-header { top: 320px !important; }
+.general-content .bookmark-index-4 .expand-menu-header { top: 408px !important; }
+.general-content .bookmark-index-5 .expand-menu-header { top: 496px !important; }
+.general-content .bookmark-index-6 .expand-menu-header { top: 584px !important; }
+.general-content .bookmark-index-7 .expand-menu-header { top: 672px !important; }
 
 .general-content .expand-arrow {
     margin-left: auto;
