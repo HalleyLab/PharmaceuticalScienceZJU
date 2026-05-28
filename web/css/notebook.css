@@ -1,0 +1,308 @@
+/* Shared notebook treatment for content pages. */
+.subnav-bar {
+    width: 20%;
+    left: 0;
+    top: 10%;
+    display: flex;
+    position: fixed;
+    border-radius: 0;
+    z-index: 0;
+}
+
+.subnav-bar ul {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding-left: 18px;
+}
+
+.subnav-bar ul::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 24px;
+    width: 1px;
+    background: rgba(35, 35, 45, 0.14);
+}
+
+.dark-theme .subnav-bar ul::before {
+    background: rgba(255, 255, 255, 0.14);
+}
+
+.subnav-bar li {
+    margin: 8px 30px;
+}
+
+.subnav-bar a {
+    position: relative;
+    display: block;
+    padding: 11px 18px 11px 30px;
+    font-size: 19px;
+    font-weight: 800;
+    border-radius: 0;
+    color: var(--text-color);
+    background: transparent !important;
+    box-shadow: none !important;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color .22s ease, opacity .22s ease;
+}
+
+.subnav-bar a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 10px;
+    height: 10px;
+    border: 1px solid rgba(35, 35, 45, 0.28);
+    border-radius: 50%;
+    background: var(--background-color);
+    transform: translateY(-50%);
+}
+
+.subnav-bar a:hover,
+.subnav-bar a.active {
+    color: var(--text-color);
+}
+
+.subnav-bar a:hover::before,
+.subnav-bar a.active::before {
+    border-color: var(--text-color);
+    background: var(--text-color);
+}
+
+.dark-theme .subnav-bar a::before {
+    border-color: rgba(255, 255, 255, 0.30);
+}
+
+.general-content {
+    box-sizing: border-box;
+    width: calc(85vw - 320px);
+    max-width: 1160px;
+    min-height: 760px;
+    margin-left: 320px;
+    margin-right: 0;
+    margin-top: 80px;
+    padding: 64px 78px 68px;
+    background: var(--background-color) !important;
+    border: 1px solid rgba(35, 35, 45, 0.075);
+    border-radius: 12px;
+    box-shadow:
+        0 22px 58px rgba(35, 35, 45, 0.08),
+        inset 18px 0 0 rgba(35, 35, 45, 0.018);
+    isolation: isolate;
+    z-index: 1;
+    overflow: visible;
+}
+
+.dark-theme .general-content {
+    border-color: rgba(255, 255, 255, 0.075);
+    box-shadow:
+        0 22px 58px rgba(0, 0, 0, 0.24),
+        inset 18px 0 0 rgba(255, 255, 255, 0.018);
+}
+
+.general-content::before {
+    content: "";
+    position: absolute;
+    top: 26px;
+    bottom: 26px;
+    left: 42px;
+    width: 1px;
+    background: rgba(35, 35, 45, 0.08);
+    z-index: 1;
+}
+
+.general-content::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    pointer-events: none;
+    z-index: 1;
+    background:
+        linear-gradient(90deg, transparent calc(100% - 18px), rgba(120, 111, 88, 0.045) 100%) !important;
+}
+
+.dark-theme .general-content::before {
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.dark-theme .general-content::after {
+    background:
+        linear-gradient(90deg, transparent calc(100% - 18px), rgba(255, 255, 255, 0.035) 100%) !important;
+}
+
+.general-content > * {
+    position: relative;
+    z-index: 2;
+}
+
+.general-content h2 {
+    margin: 0 0 22px;
+    font-size: 32px;
+    line-height: 1.25;
+    letter-spacing: 0;
+    color: var(--text-color);
+}
+
+.general-content hr {
+    margin: 0 0 34px;
+    border: 0;
+    border-top: 1px solid rgba(116, 116, 207, 0.26);
+}
+
+.dark-theme .general-content hr {
+    border-top-color: rgba(255, 255, 255, 0.16);
+}
+
+.general-content p,
+.general-content li {
+    color: var(--text-color);
+    line-height: 1.9;
+}
+
+.general-content p {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.general-content .expand-menu {
+    position: static;
+    width: 100%;
+    margin: 0;
+    border-radius: 0;
+}
+
+.general-content .expand-menu .expand-menu-header,
+.general-content .overview-menu .expand-menu-header,
+.general-content .expand-menu:nth-of-type(1) .expand-menu-header,
+.general-content .expand-menu:nth-of-type(2) .expand-menu-header,
+.general-content .expand-menu:nth-of-type(3) .expand-menu-header,
+.general-content .expand-menu:nth-of-type(4) .expand-menu-header,
+.general-content .expand-menu:nth-of-type(5) .expand-menu-header,
+.general-content .expand-menu:nth-of-type(6) .expand-menu-header,
+.general-content .expand-menu:nth-of-type(7) .expand-menu-header,
+.general-content .expand-menu:nth-of-type(8) .expand-menu-header,
+.general-content .bookmark-index-0 .expand-menu-header,
+.general-content .bookmark-index-1 .expand-menu-header,
+.general-content .bookmark-index-2 .expand-menu-header,
+.general-content .bookmark-index-3 .expand-menu-header,
+.general-content .bookmark-index-4 .expand-menu-header,
+.general-content .bookmark-index-5 .expand-menu-header,
+.general-content .bookmark-index-6 .expand-menu-header,
+.general-content .bookmark-index-7 .expand-menu-header {
+    position: absolute !important;
+    left: auto !important;
+    right: -118px !important;
+    width: 126px !important;
+    min-width: 0 !important;
+    max-width: none !important;
+    min-height: 40px;
+    padding: 0 13px !important;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border: 1px solid rgba(35, 35, 45, 0.10) !important;
+    border-radius: 0 6px 6px 0 !important;
+    background: rgba(255, 255, 255, 0.86) !important;
+    color: var(--text-color) !important;
+    box-shadow: 0 9px 20px rgba(35, 35, 45, 0.05) !important;
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 1.28;
+    text-align: left;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+    transform: none !important;
+}
+
+.general-content .expand-menu .expand-menu-header:hover,
+.general-content .expand-menu.open .expand-menu-header {
+    background: rgba(245, 245, 245, 0.98) !important;
+    color: var(--text-color) !important;
+}
+
+.dark-theme .general-content .expand-menu .expand-menu-header,
+.dark-theme .general-content .overview-menu .expand-menu-header,
+.dark-theme .general-content .expand-menu .expand-menu-header:hover,
+.dark-theme .general-content .expand-menu.open .expand-menu-header {
+    background: rgba(31, 31, 31, 0.96) !important;
+    border-color: rgba(255, 255, 255, 0.10) !important;
+    color: var(--text-color) !important;
+}
+
+.general-content .bookmark-index-0 .expand-menu-header { top: 56px !important; }
+.general-content .bookmark-index-1 .expand-menu-header { top: 126px !important; }
+.general-content .bookmark-index-2 .expand-menu-header { top: 196px !important; }
+.general-content .bookmark-index-3 .expand-menu-header { top: 266px !important; }
+.general-content .bookmark-index-4 .expand-menu-header { top: 336px !important; }
+.general-content .bookmark-index-5 .expand-menu-header { top: 406px !important; }
+.general-content .bookmark-index-6 .expand-menu-header { top: 476px !important; }
+.general-content .bookmark-index-7 .expand-menu-header { top: 546px !important; }
+
+.general-content .expand-arrow {
+    margin-left: auto;
+    font-size: 12px;
+    opacity: 0.55;
+}
+
+.general-content .expand-menu-body,
+.general-content .expand-menu.open .expand-menu-body {
+    position: relative;
+    overflow: hidden;
+    max-height: 0;
+    padding: 0 20px;
+    background: transparent !important;
+    border: 0 !important;
+    box-shadow: none !important;
+}
+
+.general-content .expand-menu.open .expand-menu-body {
+    max-height: none;
+    padding: 0;
+}
+
+.general-content .expand-menu.open .expand-menu-body::before {
+    content: none !important;
+}
+
+.bookmark-page-title,
+.protocol-subtitle {
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.download-link,
+.grades,
+.course-table,
+.protocol-table-wrap {
+    box-shadow: 0 10px 24px rgba(35, 35, 45, 0.045);
+}
+
+.dark-theme .download-link,
+.dark-theme .grades,
+.dark-theme .course-table,
+.dark-theme .protocol-table-wrap {
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.16);
+}
+
+@media (max-width: 980px) {
+    .general-content {
+        width: auto;
+        max-width: none;
+        margin-left: 0;
+        padding: 42px 28px 46px;
+    }
+
+    .general-content .expand-menu .expand-menu-header,
+    .general-content .overview-menu .expand-menu-header {
+        position: static !important;
+        width: auto !important;
+        margin: 12px 0 !important;
+        border-radius: 6px !important;
+    }
+}
