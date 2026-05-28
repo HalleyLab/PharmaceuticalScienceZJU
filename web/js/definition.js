@@ -578,16 +578,87 @@
   }); 
 })(jQuery);
 
-function change_img(site) {
-	var image = document.getElementById('home_img');
-	if (site == 'wechat') {
-		image.src = './img/wechat.jpg'
-	}	else if (site == 'qq') {
-		image.src = './img/qq.jpg'
-	}	else if (site == 'outlook') {
-		image.src = './img/outlook.png'
-	}	else if (site == 'home') {
-		image.src = './img/texas_blank.png'
-	}
+const homeAvatarImages = [
+  './photos/德克萨斯（三丽鸥）.JPG',
+  './photos/德克萨斯（电瓶）.jpg',
+  './photos/德克萨斯（生无可恋）.JPG',
+  './photos/桃金娘（投降）.jpg'
+];
+
+let homeAvatarIndex = 0;
+let homeAvatarTimer = null;
+let homeAvatarResumeTimer = null;
+
+function setHomeAvatar(src) {
+  const image = document.getElementById('home_img');
+  if (!image) {
+    return;
+  }
+
+  image.classList.add('is-changing');
+  window.setTimeout(function() {
+    image.src = src;
+    image.classList.remove('is-changing');
+  }, 220);
 }
+
+function showNextHomeAvatar() {
+  homeAvatarIndex = (homeAvatarIndex + 1) % homeAvatarImages.length;
+  setHomeAvatar(homeAvatarImages[homeAvatarIndex]);
+}
+
+function startHomeAvatarCarousel() {
+  if (homeAvatarTimer) {
+    window.clearInterval(homeAvatarTimer);
+  }
+  homeAvatarTimer = window.setInterval(showNextHomeAvatar, 4200);
+}
+
+function pauseHomeAvatarCarousel() {
+  if (homeAvatarTimer) {
+    window.clearInterval(homeAvatarTimer);
+    homeAvatarTimer = null;
+  }
+  if (homeAvatarResumeTimer) {
+    window.clearTimeout(homeAvatarResumeTimer);
+    homeAvatarResumeTimer = null;
+  }
+}
+
+function resumeHomeAvatarCarousel(delay) {
+  pauseHomeAvatarCarousel();
+  homeAvatarResumeTimer = window.setTimeout(function() {
+    setHomeAvatar(homeAvatarImages[homeAvatarIndex]);
+    startHomeAvatarCarousel();
+  }, delay);
+}
+
+function change_img(site) {
+  if (site == 'wechat') {
+    pauseHomeAvatarCarousel();
+    setHomeAvatar('./img/wechat.jpg');
+    resumeHomeAvatarCarousel(7000);
+  } else if (site == 'qq') {
+    pauseHomeAvatarCarousel();
+    setHomeAvatar('./img/qq.jpg');
+    resumeHomeAvatarCarousel(7000);
+  } else if (site == 'outlook') {
+    pauseHomeAvatarCarousel();
+    setHomeAvatar('./img/outlook.png');
+    resumeHomeAvatarCarousel(7000);
+  } else if (site == 'home') {
+    pauseHomeAvatarCarousel();
+    setHomeAvatar(homeAvatarImages[homeAvatarIndex]);
+    startHomeAvatarCarousel();
+  }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  const image = document.getElementById('home_img');
+  if (!image || !homeAvatarImages.length) {
+    return;
+  }
+  image.src = homeAvatarImages[homeAvatarIndex];
+  startHomeAvatarCarousel();
+});
 
