@@ -1,4 +1,4 @@
-import GUI
+from quiz_app import run
 
 if __name__ == '__main__':
-    GUI.play()
+    run()
