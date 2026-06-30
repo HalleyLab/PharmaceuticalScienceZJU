@@ -352,3 +352,40 @@ body.dark-theme {
         border-radius: 6px !important;
     }
 }
+
+/* Final guards for course note cards and right-side bookmarks. */
+.general-content > p,
+.general-content .expand-menu-body > p {
+    box-sizing: border-box !important;
+    width: 100% !important;
+    min-height: 76px !important;
+    margin: 18px 0 28px !important;
+    padding: 20px 28px !important;
+    border-left: 4px solid rgba(116, 116, 207, 0.22) !important;
+    border-radius: 8px !important;
+    background: rgba(255, 255, 255, 0.46) !important;
+    line-height: 1.85 !important;
+}
+
+.dark-theme .general-content > p,
+.dark-theme .general-content .expand-menu-body > p {
+    border-left-color: rgba(255, 255, 255, 0.22) !important;
+    background: rgba(255, 255, 255, 0.045) !important;
+}
+
+.general-content .expand-menu .expand-menu-header,
+.general-content .overview-menu .expand-menu-header,
+.general-content .bookmark-index-0 .expand-menu-header,
+.general-content .bookmark-index-1 .expand-menu-header,
+.general-content .bookmark-index-2 .expand-menu-header,
+.general-content .bookmark-index-3 .expand-menu-header,
+.general-content .bookmark-index-4 .expand-menu-header,
+.general-content .bookmark-index-5 .expand-menu-header,
+.general-content .bookmark-index-6 .expand-menu-header,
+.general-content .bookmark-index-7 .expand-menu-header {
+    right: -158px !important;
+    width: 168px !important;
+    min-height: 52px !important;
+    padding: 0 20px !important;
+    font-size: 15.5px !important;
+}
