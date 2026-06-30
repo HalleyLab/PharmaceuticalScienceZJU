@@ -225,11 +225,6 @@ nav a.act{font-family:'Gotham-Bold', sans-serif}
     box-shadow: 0 0 20px #b7b2a9;
     opacity: 1;
     animation: appear 2s ease-in-out forwards,floatImage 3s ease-in-out infinite;
-    transition: opacity 0.28s ease;
-}
-
-.home_img img.is-changing {
-    opacity: 0;
 }
 
 .social-media a {
