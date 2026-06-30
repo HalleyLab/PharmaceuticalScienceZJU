@@ -198,6 +198,23 @@ body.dark-theme {
     padding-left: 24px;
 }
 
+.general-content > p {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 72px;
+    margin: 18px 0 28px;
+    padding: 20px 28px !important;
+    border-left: 4px solid rgba(116, 116, 207, 0.22);
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.46);
+    line-height: 1.85;
+}
+
+.dark-theme .general-content > p {
+    border-left-color: rgba(255, 255, 255, 0.22);
+    background: rgba(255, 255, 255, 0.045);
+}
+
 .general-content .expand-menu {
     position: static;
     width: 100%;
@@ -225,12 +242,13 @@ body.dark-theme {
 .general-content .bookmark-index-7 .expand-menu-header {
     position: absolute !important;
     left: auto !important;
-    right: -132px !important;
-    width: 142px !important;
+    right: -146px !important;
+    width: 156px !important;
     min-width: 0 !important;
     max-width: none !important;
+    box-sizing: border-box;
     min-height: 48px;
-    padding: 0 17px !important;
+    padding: 0 18px !important;
     display: flex;
     align-items: center;
     justify-content: flex-start;
