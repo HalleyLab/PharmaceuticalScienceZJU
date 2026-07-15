@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="360" height="360" viewBox="0 0 360 360">
+  <defs>
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="currentColor" stroke-width="1" opacity=".12"/>
+    </pattern>
+    <pattern id="hatch" width="20" height="20" patternUnits="userSpaceOnUse" patternTransform="rotate(135)">
+      <rect width="3" height="20" fill="currentColor" opacity=".10"/>
+    </pattern>
+  </defs>
+  <rect width="360" height="360" fill="none"/>
+  <rect width="360" height="360" fill="url(#grid)"/>
+  <path d="M246 0H360V360H318L318 74H246Z" fill="url(#hatch)" opacity=".7"/>
+  <path d="M0 300H120M36 336H192M284 28H344M256 56H320" fill="none" stroke="currentColor" stroke-width="2" opacity=".16"/>
+  <path d="M16 16H86V20H16ZM16 28H56V31H16ZM256 310H342V314H256ZM294 322H342V325H294Z" fill="currentColor" opacity=".16"/>
+</svg>

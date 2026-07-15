@@ -1911,6 +1911,8 @@ nav.botonera {
 .general-content .bookmark-index-5 .expand-menu-header { top: 406px !important; }
 .general-content .bookmark-index-6 .expand-menu-header { top: 476px !important; }
 .general-content .bookmark-index-7 .expand-menu-header { top: 546px !important; }
+.general-content .bookmark-index-8 .expand-menu-header { top: 616px !important; }
+.general-content .bookmark-index-9 .expand-menu-header { top: 686px !important; }
 
 /* Final navigation click and monochrome color guard. */
 header {
@@ -1973,4 +1975,578 @@ nav ul li.nav-group .nav-submenu:focus-within a {
 nav ul li.nav-group .nav-submenu:hover a:hover,
 nav ul li.nav-group .nav-submenu:focus-within a:focus {
     opacity: 1;
+}
+
+/* Protocol document layout */
+.protocol-overview-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+    margin: 26px 20px 8px;
+}
+
+.protocol-overview-grid section {
+    border: 1px solid rgba(35, 35, 45, 0.09);
+    border-radius: 8px;
+    padding: 18px 20px;
+    background: rgba(255, 255, 255, 0.36);
+}
+
+.protocol-overview-grid h3 {
+    margin: 0 0 8px;
+    font-size: 20px;
+    font-weight: 800;
+    color: var(--text-color);
+}
+
+.protocol-overview-grid p,
+.general-content .protocol-text,
+.general-content .protocol-note {
+    color: var(--text-color);
+}
+
+.protocol-subtitle {
+    margin: 26px 20px 12px;
+    padding-left: 14px;
+    border-left: 3px solid rgba(116, 116, 207, 0.34);
+    font-size: 22px;
+    line-height: 1.45;
+    color: var(--text-color);
+}
+
+.protocol-minititle {
+    margin: 20px 20px 8px;
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--text-color);
+}
+
+.general-content .protocol-note {
+    margin: 12px 20px;
+    padding: 12px 16px;
+    border-left: 3px solid rgba(116, 116, 207, 0.28);
+    border-radius: 8px;
+    background: rgba(116, 116, 207, 0.07);
+    font-size: 16px;
+}
+
+.protocol-list {
+    margin: 12px 20px 20px;
+    padding: 14px 20px 14px 34px;
+    border-radius: 8px;
+    background: rgba(35, 35, 45, 0.035);
+    color: var(--text-color);
+    line-height: 1.85;
+}
+
+.protocol-list li {
+    margin: 6px 0;
+}
+
+.protocol-table-wrap {
+    margin: 16px 20px 24px;
+    overflow-x: auto;
+    border: 1px solid rgba(35, 35, 45, 0.08);
+    border-radius: 8px;
+}
+
+.protocol-table {
+    width: 100%;
+    min-width: 520px;
+    border-collapse: collapse;
+    color: var(--text-color);
+    font-size: 15px;
+}
+
+.protocol-table th,
+.protocol-table td {
+    padding: 10px 12px;
+    border-bottom: 1px solid rgba(35, 35, 45, 0.08);
+    text-align: left;
+    vertical-align: top;
+}
+
+.protocol-table th {
+    font-weight: 800;
+    background: rgba(116, 116, 207, 0.08);
+}
+
+.protocol-table tr:last-child td {
+    border-bottom: 0;
+}
+
+.dark-theme .protocol-overview-grid section,
+.dark-theme .protocol-table-wrap {
+    border-color: rgba(255, 255, 255, 0.08);
+    background: rgba(255, 255, 255, 0.035);
+}
+
+.dark-theme .protocol-subtitle {
+    border-left-color: rgba(143, 179, 255, 0.36);
+}
+
+.dark-theme .general-content .protocol-note {
+    border-left-color: rgba(143, 179, 255, 0.30);
+    background: rgba(143, 179, 255, 0.08);
+}
+
+.dark-theme .protocol-list {
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.dark-theme .protocol-table th {
+    background: rgba(143, 179, 255, 0.10);
+}
+
+.dark-theme .protocol-table th,
+.dark-theme .protocol-table td {
+    border-bottom-color: rgba(255, 255, 255, 0.08);
+}
+
+@media (max-width: 820px) {
+    .protocol-overview-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Protocol page polish: lab notebook style */
+body {
+    background:
+        linear-gradient(rgba(35, 35, 45, 0.018) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(35, 35, 45, 0.014) 1px, transparent 1px),
+        var(--background-color);
+    background-size: 28px 28px, 28px 28px, auto;
+}
+
+.dark-theme {
+    --box-shadow: rgba(0, 0, 0, 0.24);
+}
+
+.dark-theme body,
+body.dark-theme {
+    background:
+        linear-gradient(rgba(255, 255, 255, 0.018) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.014) 1px, transparent 1px),
+        var(--background-color);
+    background-size: 28px 28px, 28px 28px, auto;
+}
+
+.subnav-bar {
+    top: 12%;
+}
+
+.subnav-bar ul {
+    position: relative;
+    padding-left: 18px;
+}
+
+.subnav-bar ul::before {
+    content: "";
+    position: absolute;
+    top: 10px;
+    bottom: 10px;
+    left: 24px;
+    width: 1px;
+    background: rgba(35, 35, 45, 0.14);
+}
+
+.dark-theme .subnav-bar ul::before {
+    background: rgba(255, 255, 255, 0.14);
+}
+
+.subnav-bar li {
+    margin: 8px 30px;
+}
+
+.subnav-bar a {
+    position: relative;
+    padding: 11px 18px 11px 30px;
+    font-size: 19px;
+    border-radius: 0;
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+.subnav-bar a::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 10px;
+    height: 10px;
+    border: 1px solid rgba(35, 35, 45, 0.28);
+    border-radius: 50%;
+    background: var(--background-color);
+    transform: translateY(-50%);
+}
+
+.subnav-bar a:hover,
+.subnav-bar a.active {
+    color: var(--text-color);
+}
+
+.subnav-bar a:hover::before,
+.subnav-bar a.active::before {
+    border-color: var(--text-color);
+    background: var(--text-color);
+}
+
+.dark-theme .subnav-bar a::before {
+    border-color: rgba(255, 255, 255, 0.30);
+}
+
+.dark-theme .subnav-bar a:hover,
+.dark-theme .subnav-bar a.active {
+    color: #ffffff !important;
+}
+
+.dark-theme .subnav-bar a:hover::before,
+.dark-theme .subnav-bar a.active::before {
+    border-color: #ffffff !important;
+    background: #ffffff !important;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.08) !important;
+}
+
+.general-content {
+    border: 1px solid rgba(35, 35, 45, 0.075);
+    box-shadow:
+        0 22px 58px rgba(35, 35, 45, 0.08),
+        inset 18px 0 0 rgba(35, 35, 45, 0.018);
+}
+
+.dark-theme .general-content {
+    border-color: rgba(255, 255, 255, 0.075);
+    box-shadow:
+        0 22px 58px rgba(0, 0, 0, 0.24),
+        inset 18px 0 0 rgba(255, 255, 255, 0.018);
+}
+
+.general-content h2 {
+    letter-spacing: 0;
+}
+
+.protocol-overview-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.protocol-overview-grid section {
+    padding: 16px 16px 15px;
+    background: rgba(255, 255, 255, 0.18);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.34);
+}
+
+.protocol-overview-grid h3 {
+    font-size: 18px;
+}
+
+.protocol-overview-grid p {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.65;
+}
+
+.general-content .expand-menu-header {
+    right: -118px;
+    width: 126px;
+    min-height: 40px;
+    padding: 0 13px;
+    font-size: 14px;
+    line-height: 1.28;
+    word-break: keep-all;
+    overflow-wrap: anywhere;
+    background: rgba(255, 255, 255, 0.86);
+    border-color: rgba(35, 35, 45, 0.10);
+}
+
+.general-content .expand-menu-header:hover,
+.general-content .expand-menu.open .expand-menu-header {
+    background: rgba(245, 245, 245, 0.98);
+    color: var(--text-color);
+}
+
+.dark-theme .general-content .expand-menu-header,
+.dark-theme .general-content .expand-menu-header:hover,
+.dark-theme .general-content .expand-menu.open .expand-menu-header {
+    background: rgba(31, 31, 31, 0.96);
+    border-color: rgba(255, 255, 255, 0.10);
+    color: var(--text-color);
+}
+
+.expand-menu.open .expand-menu-body,
+.dark-theme .expand-menu.open .expand-menu-body {
+    counter-reset: protocol-step;
+}
+
+.protocol-subtitle {
+    counter-increment: protocol-step;
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+    border-left: 0;
+    padding-left: 0;
+}
+
+.protocol-subtitle::before {
+    content: counter(protocol-step, decimal-leading-zero);
+    flex: 0 0 auto;
+    min-width: 36px;
+    font-size: 13px;
+    font-weight: 800;
+    color: rgba(35, 35, 45, 0.58);
+    letter-spacing: 0.04em;
+}
+
+.dark-theme .protocol-subtitle::before {
+    color: rgba(255, 255, 255, 0.56);
+}
+
+.protocol-minititle {
+    margin-top: 18px;
+    padding-left: 48px;
+}
+
+.general-content .protocol-text {
+    max-width: 980px;
+}
+
+.general-content .protocol-note {
+    border-left-color: rgba(35, 35, 45, 0.26);
+    background: rgba(35, 35, 45, 0.045);
+}
+
+.protocol-list {
+    background: transparent;
+    border-left: 1px solid rgba(35, 35, 45, 0.12);
+    border-radius: 0;
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+
+.protocol-table-wrap {
+    box-shadow: 0 10px 24px rgba(35, 35, 45, 0.045);
+}
+
+.protocol-table th {
+    background: rgba(35, 35, 45, 0.055);
+}
+
+.protocol-table tbody tr:hover {
+    background: rgba(35, 35, 45, 0.035);
+}
+
+.protocol-table td:first-child,
+.protocol-table th:first-child {
+    font-weight: 800;
+}
+
+.dark-theme .protocol-overview-grid section,
+.dark-theme .protocol-list,
+.dark-theme .protocol-table-wrap {
+    background: rgba(255, 255, 255, 0.025);
+}
+
+.dark-theme .general-content .protocol-note {
+    border-left-color: rgba(255, 255, 255, 0.24);
+    background: rgba(255, 255, 255, 0.045);
+}
+
+.dark-theme .protocol-list {
+    border-left-color: rgba(255, 255, 255, 0.12);
+}
+
+.dark-theme .protocol-table th {
+    background: rgba(255, 255, 255, 0.055);
+}
+
+.dark-theme .protocol-table tbody tr:hover {
+    background: rgba(255, 255, 255, 0.035);
+}
+
+@media (max-width: 1180px) {
+    .protocol-overview-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Industrial interface layer: keep protocols aligned with the non-notebook pages. */
+body {
+    --hg-bg: #eceff0;
+    --hg-panel: rgba(246, 247, 247, 0.78);
+    --hg-panel-strong: rgba(252, 252, 252, 0.90);
+    --hg-line: rgba(24, 27, 31, 0.12);
+    --hg-line-strong: rgba(24, 27, 31, 0.30);
+    --hg-accent: rgba(24, 27, 31, 0.94);
+    --hg-scan: rgba(24, 27, 31, 0.045);
+    --hg-warning: rgba(24, 27, 31, 0.06);
+    background:
+        linear-gradient(118deg, rgba(24, 27, 31, 0.055) 0 1px, transparent 1px 100%),
+        linear-gradient(90deg, rgba(24, 27, 31, 0.070) 0 1px, transparent 1px 100%),
+        radial-gradient(circle at 9% 22%, rgba(24, 27, 31, 0.075), transparent 12%),
+        linear-gradient(135deg, transparent 0 38%, rgba(24, 27, 31, 0.040) 38% 42%, transparent 42% 100%),
+        linear-gradient(90deg, rgba(236, 239, 240, 0.95) 0 22%, transparent 42%),
+        linear-gradient(135deg, transparent 0 48%, var(--hg-warning) 48% 52%, transparent 52% 100%),
+        url("../images/hg-industrial-pattern.svg"),
+        radial-gradient(circle at 82% 12%, rgba(24, 27, 31, 0.09), transparent 28%),
+        var(--hg-bg) !important;
+    background-size: 180px 180px, 96px 96px, auto, 72px 72px, auto, 42px 42px, 360px 360px, auto, auto !important;
+    background-position: left top, left top, left top, left top, left top, left top, center top, center, center !important;
+    background-attachment: fixed !important;
+}
+
+body.dark-theme,
+.dark-theme {
+    --hg-bg: #0f1113;
+    --hg-panel: rgba(19, 21, 24, 0.82);
+    --hg-panel-strong: rgba(29, 31, 35, 0.92);
+    --hg-line: rgba(229, 236, 240, 0.12);
+    --hg-line-strong: rgba(229, 236, 240, 0.30);
+    --hg-accent: rgba(238, 243, 246, 0.94);
+    --hg-scan: rgba(229, 236, 240, 0.040);
+    --hg-warning: rgba(229, 236, 240, 0.045);
+    background:
+        linear-gradient(118deg, rgba(229, 236, 240, 0.050) 0 1px, transparent 1px 100%),
+        linear-gradient(90deg, rgba(229, 236, 240, 0.060) 0 1px, transparent 1px 100%),
+        radial-gradient(circle at 9% 22%, rgba(229, 236, 240, 0.070), transparent 12%),
+        linear-gradient(135deg, transparent 0 38%, rgba(229, 236, 240, 0.034) 38% 42%, transparent 42% 100%),
+        linear-gradient(90deg, rgba(15, 17, 19, 0.96) 0 22%, transparent 42%),
+        linear-gradient(135deg, transparent 0 48%, var(--hg-warning) 48% 52%, transparent 52% 100%),
+        url("../images/hg-industrial-pattern.svg"),
+        radial-gradient(circle at 82% 12%, rgba(229, 236, 240, 0.09), transparent 28%),
+        var(--hg-bg) !important;
+    background-size: 180px 180px, 96px 96px, auto, 72px 72px, auto, 42px 42px, 360px 360px, auto, auto !important;
+    background-position: left top, left top, left top, left top, left top, left top, center top, center, center !important;
+    background-attachment: fixed !important;
+}
+
+.general-content {
+    min-height: 720px !important;
+    padding: 58px 78px 64px !important;
+    border: 1px solid var(--hg-line) !important;
+    border-radius: 4px !important;
+    background:
+        linear-gradient(90deg, rgba(255, 255, 255, 0.09), transparent 28%),
+        var(--hg-panel) !important;
+    background-size: auto, auto !important;
+    box-shadow:
+        0 18px 46px rgba(0, 0, 0, 0.12),
+        inset 0 1px 0 rgba(255, 255, 255, 0.20),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.04) !important;
+    backdrop-filter: blur(14px);
+}
+
+.dark-theme .general-content {
+    box-shadow:
+        0 22px 52px rgba(0, 0, 0, 0.38),
+        inset 0 1px 0 rgba(255, 255, 255, 0.08),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.24) !important;
+}
+
+.general-content::before {
+    content: "" !important;
+    position: absolute !important;
+    top: 28px !important;
+    left: 28px !important;
+    right: 28px !important;
+    bottom: auto !important;
+    width: auto !important;
+    height: 1px !important;
+    background: linear-gradient(90deg, var(--hg-line-strong), transparent 62%) !important;
+    z-index: 1 !important;
+}
+
+.general-content::after {
+    content: "" !important;
+    position: absolute !important;
+    top: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    left: auto !important;
+    width: 42px !important;
+    border-radius: 0 !important;
+    background:
+        repeating-linear-gradient(
+            135deg,
+            transparent 0 8px,
+            var(--hg-scan) 8px 10px
+        ) !important;
+    pointer-events: none !important;
+    z-index: 1 !important;
+}
+
+.general-content h2 {
+    padding-bottom: 18px !important;
+    border-bottom: 1px solid var(--hg-line-strong) !important;
+    font-size: 34px !important;
+    font-weight: 900 !important;
+}
+
+.general-content h2::before {
+    content: "//";
+    display: inline-block;
+    margin-right: 12px;
+    color: var(--hg-line-strong);
+    font-weight: 900;
+}
+
+.general-content hr {
+    display: none !important;
+}
+
+.general-content > p,
+.general-content .expand-menu-body > p,
+.general-content .protocol-text,
+.general-content .protocol-note {
+    border: 0 !important;
+    border-left: 3px solid var(--hg-line-strong) !important;
+    border-radius: 3px !important;
+    background: rgba(255, 255, 255, 0.12) !important;
+    box-shadow: none !important;
+}
+
+.dark-theme .general-content > p,
+.dark-theme .general-content .expand-menu-body > p,
+.dark-theme .general-content .protocol-text,
+.dark-theme .general-content .protocol-note {
+    background: rgba(255, 255, 255, 0.035) !important;
+}
+
+.general-content .expand-menu-header {
+    border-radius: 3px !important;
+    border-color: var(--hg-line) !important;
+    background: var(--hg-panel-strong) !important;
+    box-shadow: 8px 8px 0 rgba(20, 22, 25, 0.045) !important;
+    width: 238px !important;
+    min-width: 238px !important;
+    max-width: 238px !important;
+    min-height: 60px !important;
+}
+
+.general-content .expand-menu-header:hover,
+.general-content .expand-menu.open .expand-menu-header {
+    border-color: var(--hg-line-strong) !important;
+    background: var(--hg-accent) !important;
+    color: var(--background-color) !important;
+}
+
+.dark-theme .general-content .expand-menu-header:hover,
+.dark-theme .general-content .expand-menu.open .expand-menu-header {
+    border-color: rgba(255, 255, 255, 0.72) !important;
+    background: #f2f2f2 !important;
+    color: #111214 !important;
+    box-shadow: 8px 8px 0 rgba(255, 255, 255, 0.06) !important;
+}
+
+.protocol-table-wrap,
+.protocol-overview-grid section,
+.protocol-list {
+    border-radius: 3px !important;
+    border-color: var(--hg-line) !important;
+    background: rgba(255, 255, 255, 0.12) !important;
+    box-shadow: none !important;
+}
+
+.dark-theme .protocol-table-wrap,
+.dark-theme .protocol-overview-grid section,
+.dark-theme .protocol-list {
+    background: rgba(255, 255, 255, 0.035) !important;
 }

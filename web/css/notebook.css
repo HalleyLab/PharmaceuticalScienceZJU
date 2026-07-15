@@ -95,6 +95,18 @@ body.dark-theme {
     border-color: rgba(255, 255, 255, 0.30);
 }
 
+.dark-theme .subnav-bar a:hover,
+.dark-theme .subnav-bar a.active {
+    color: #ffffff !important;
+}
+
+.dark-theme .subnav-bar a:hover::before,
+.dark-theme .subnav-bar a.active::before {
+    border-color: #ffffff !important;
+    background: #ffffff !important;
+    box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.08) !important;
+}
+
 .general-content {
     box-sizing: border-box;
     width: calc(85vw - 320px);
@@ -325,7 +337,7 @@ body {
     --nb-sheet-border: rgba(35, 35, 45, 0.07);
     --nb-sheet-shadow: rgba(35, 35, 45, 0.055);
     --nb-spine-shadow: rgba(35, 35, 45, 0.014);
-    --nb-card-bg: rgba(255, 255, 255, 0.46);
+    --nb-card-bg: transparent;
     --nb-card-border: rgba(116, 116, 207, 0.22);
     --nb-bookmark-bg: rgba(255, 255, 255, 0.90);
     --nb-bookmark-hover: rgba(245, 245, 245, 0.98);
@@ -346,7 +358,7 @@ body.dark-theme,
     --nb-sheet-border: rgba(255, 255, 255, 0.07);
     --nb-sheet-shadow: rgba(0, 0, 0, 0.20);
     --nb-spine-shadow: rgba(255, 255, 255, 0.014);
-    --nb-card-bg: rgba(255, 255, 255, 0.045);
+    --nb-card-bg: transparent;
     --nb-card-border: rgba(255, 255, 255, 0.22);
     --nb-bookmark-bg: rgba(31, 31, 31, 0.96);
     --nb-bookmark-hover: rgba(41, 41, 41, 0.98);
@@ -416,6 +428,7 @@ body.dark-theme,
     border-left: 4px solid var(--nb-card-border) !important;
     border-radius: 8px !important;
     background: var(--nb-card-bg) !important;
+    box-shadow: none !important;
     font-size: 18px !important;
     font-weight: 400 !important;
     line-height: 1.85 !important;
@@ -432,9 +445,20 @@ body.dark-theme,
     border-left: 4px solid var(--nb-card-border) !important;
     border-radius: 8px !important;
     background: var(--nb-card-bg) !important;
+    box-shadow: none !important;
     font-size: 18px !important;
     font-weight: 400 !important;
     line-height: 1.9 !important;
+}
+
+.general-content .expand-menu-body .grades,
+.general-content .expand-menu-body .download-link,
+.general-content .expand-menu-body .protocol-list {
+    box-shadow: none !important;
+}
+
+.general-content .expand-menu-body .grades {
+    background: transparent !important;
 }
 
 .course-table {
@@ -473,9 +497,9 @@ body.dark-theme,
     position: absolute !important;
     left: calc(100% + 10px) !important;
     right: auto !important;
-    width: 176px !important;
-    min-width: 176px !important;
-    max-width: 176px !important;
+    width: 238px !important;
+    min-width: 238px !important;
+    max-width: 238px !important;
     min-height: 62px !important;
     padding: 0 18px !important;
     display: flex !important;
@@ -509,4 +533,245 @@ body.dark-theme,
         margin-left: 0 !important;
         padding: 42px 32px 46px !important;
     }
+}
+
+/* Industrial interface layer: remove the notebook sheet and move toward a Hypergryph-like UI mood. */
+body {
+    --hg-bg: #eceff0;
+    --hg-panel: rgba(246, 247, 247, 0.78);
+    --hg-panel-strong: rgba(252, 252, 252, 0.90);
+    --hg-line: rgba(24, 27, 31, 0.12);
+    --hg-line-strong: rgba(24, 27, 31, 0.30);
+    --hg-accent: rgba(24, 27, 31, 0.94);
+    --hg-scan: rgba(24, 27, 31, 0.045);
+    --hg-warning: rgba(24, 27, 31, 0.06);
+    background:
+        linear-gradient(118deg, rgba(24, 27, 31, 0.055) 0 1px, transparent 1px 100%),
+        linear-gradient(90deg, rgba(24, 27, 31, 0.070) 0 1px, transparent 1px 100%),
+        radial-gradient(circle at 9% 22%, rgba(24, 27, 31, 0.075), transparent 12%),
+        linear-gradient(135deg, transparent 0 38%, rgba(24, 27, 31, 0.040) 38% 42%, transparent 42% 100%),
+        linear-gradient(90deg, rgba(236, 239, 240, 0.95) 0 22%, transparent 42%),
+        linear-gradient(135deg, transparent 0 48%, var(--hg-warning) 48% 52%, transparent 52% 100%),
+        url("../images/hg-industrial-pattern.svg"),
+        radial-gradient(circle at 82% 12%, rgba(24, 27, 31, 0.09), transparent 28%),
+        var(--hg-bg) !important;
+    background-size: 180px 180px, 96px 96px, auto, 72px 72px, auto, 42px 42px, 360px 360px, auto, auto !important;
+    background-position: left top, left top, left top, left top, left top, left top, center top, center, center !important;
+    background-attachment: fixed !important;
+}
+
+body.dark-theme,
+.dark-theme {
+    --hg-bg: #0f1113;
+    --hg-panel: rgba(19, 21, 24, 0.82);
+    --hg-panel-strong: rgba(29, 31, 35, 0.92);
+    --hg-line: rgba(229, 236, 240, 0.12);
+    --hg-line-strong: rgba(229, 236, 240, 0.30);
+    --hg-accent: rgba(238, 243, 246, 0.94);
+    --hg-scan: rgba(229, 236, 240, 0.040);
+    --hg-warning: rgba(229, 236, 240, 0.045);
+    background:
+        linear-gradient(118deg, rgba(229, 236, 240, 0.050) 0 1px, transparent 1px 100%),
+        linear-gradient(90deg, rgba(229, 236, 240, 0.060) 0 1px, transparent 1px 100%),
+        radial-gradient(circle at 9% 22%, rgba(229, 236, 240, 0.070), transparent 12%),
+        linear-gradient(135deg, transparent 0 38%, rgba(229, 236, 240, 0.034) 38% 42%, transparent 42% 100%),
+        linear-gradient(90deg, rgba(15, 17, 19, 0.96) 0 22%, transparent 42%),
+        linear-gradient(135deg, transparent 0 48%, var(--hg-warning) 48% 52%, transparent 52% 100%),
+        url("../images/hg-industrial-pattern.svg"),
+        radial-gradient(circle at 82% 12%, rgba(229, 236, 240, 0.09), transparent 28%),
+        var(--hg-bg) !important;
+    background-size: 180px 180px, 96px 96px, auto, 72px 72px, auto, 42px 42px, 360px 360px, auto, auto !important;
+    background-position: left top, left top, left top, left top, left top, left top, center top, center, center !important;
+    background-attachment: fixed !important;
+}
+
+.general-content {
+    width: calc(85vw - 320px) !important;
+    max-width: 1160px !important;
+    min-height: 720px !important;
+    margin: 80px 0 0 320px !important;
+    padding: 58px 78px 64px !important;
+    border: 1px solid var(--hg-line) !important;
+    border-radius: 4px !important;
+    background:
+        linear-gradient(90deg, rgba(255, 255, 255, 0.09), transparent 28%),
+        var(--hg-panel) !important;
+    background-size: auto, auto !important;
+    box-shadow:
+        0 18px 46px rgba(0, 0, 0, 0.12),
+        inset 0 1px 0 rgba(255, 255, 255, 0.20),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.04) !important;
+    backdrop-filter: blur(14px);
+    overflow: visible !important;
+}
+
+.dark-theme .general-content {
+    box-shadow:
+        0 22px 52px rgba(0, 0, 0, 0.38),
+        inset 0 1px 0 rgba(255, 255, 255, 0.08),
+        inset 0 -1px 0 rgba(0, 0, 0, 0.24) !important;
+}
+
+.general-content::before {
+    content: "" !important;
+    position: absolute !important;
+    top: 28px !important;
+    left: 28px !important;
+    right: 28px !important;
+    bottom: auto !important;
+    width: auto !important;
+    height: 1px !important;
+    background: linear-gradient(90deg, var(--hg-line-strong), transparent 62%) !important;
+    z-index: 1 !important;
+}
+
+.general-content::after {
+    content: "" !important;
+    position: absolute !important;
+    top: 0 !important;
+    right: 0 !important;
+    bottom: 0 !important;
+    left: auto !important;
+    width: 42px !important;
+    border-radius: 0 !important;
+    background:
+        repeating-linear-gradient(
+            135deg,
+            transparent 0 8px,
+            var(--hg-scan) 8px 10px
+        ) !important;
+    pointer-events: none !important;
+    z-index: 1 !important;
+}
+
+.general-content h2 {
+    margin: 0 0 24px !important;
+    padding: 0 0 18px !important;
+    border-bottom: 1px solid var(--hg-line-strong) !important;
+    font-size: 34px !important;
+    font-weight: 900 !important;
+    line-height: 1.18 !important;
+    letter-spacing: 0 !important;
+}
+
+.general-content h2::before {
+    content: "//";
+    display: inline-block;
+    margin-right: 12px;
+    color: var(--hg-line-strong);
+    font-weight: 900;
+}
+
+.general-content hr {
+    display: none !important;
+}
+
+.general-content > p,
+.general-content .expand-menu-body > p,
+.general-content .protocol-text,
+.general-content .protocol-note {
+    border: 0 !important;
+    border-left: 3px solid var(--hg-line-strong) !important;
+    border-radius: 3px !important;
+    background: rgba(255, 255, 255, 0.12) !important;
+    box-shadow: none !important;
+}
+
+.dark-theme .general-content > p,
+.dark-theme .general-content .expand-menu-body > p,
+.dark-theme .general-content .protocol-text,
+.dark-theme .general-content .protocol-note {
+    background: rgba(255, 255, 255, 0.035) !important;
+}
+
+.general-content .expand-menu .expand-menu-header,
+.general-content .overview-menu .expand-menu-header,
+.general-content .bookmark-index-0 .expand-menu-header,
+.general-content .bookmark-index-1 .expand-menu-header,
+.general-content .bookmark-index-2 .expand-menu-header,
+.general-content .bookmark-index-3 .expand-menu-header,
+.general-content .bookmark-index-4 .expand-menu-header,
+.general-content .bookmark-index-5 .expand-menu-header,
+.general-content .bookmark-index-6 .expand-menu-header,
+.general-content .bookmark-index-7 .expand-menu-header,
+.general-content .bookmark-index-8 .expand-menu-header,
+.general-content .bookmark-index-9 .expand-menu-header {
+    border-radius: 3px !important;
+    border-color: var(--hg-line) !important;
+    background: var(--hg-panel-strong) !important;
+    box-shadow: 8px 8px 0 rgba(20, 22, 25, 0.045) !important;
+    text-transform: none !important;
+    width: 238px !important;
+    min-width: 238px !important;
+    max-width: 238px !important;
+    min-height: 60px !important;
+}
+
+.general-content .expand-menu .expand-menu-header:hover,
+.general-content .expand-menu.open .expand-menu-header {
+    border-color: var(--hg-line-strong) !important;
+    background: var(--hg-accent) !important;
+    color: var(--background-color) !important;
+}
+
+.dark-theme .general-content .expand-menu .expand-menu-header:hover,
+.dark-theme .general-content .expand-menu.open .expand-menu-header {
+    border-color: rgba(255, 255, 255, 0.72) !important;
+    background: #f2f2f2 !important;
+    color: #111214 !important;
+    box-shadow: 8px 8px 0 rgba(255, 255, 255, 0.06) !important;
+}
+
+.course-table,
+.protocol-table-wrap,
+.protocol-overview-grid section,
+.year-overview-grid section,
+#tab0 .general-list ul li {
+    border-radius: 3px !important;
+    border-color: var(--hg-line) !important;
+    background: rgba(255, 255, 255, 0.12) !important;
+    box-shadow: none !important;
+}
+
+.dark-theme .course-table,
+.dark-theme .protocol-table-wrap,
+.dark-theme .protocol-overview-grid section,
+.dark-theme .year-overview-grid section,
+.dark-theme #tab0 .general-list ul li {
+    background: rgba(255, 255, 255, 0.035) !important;
+}
+
+#tab0 > p:nth-of-type(2) {
+    position: relative !important;
+    min-height: 132px !important;
+    margin: 22px 0 28px !important;
+    padding: 26px 30px 26px 172px !important;
+    border: 0 !important;
+    border-left: 3px solid var(--hg-line-strong) !important;
+    border-radius: 3px !important;
+    background: rgba(255, 255, 255, 0.12) !important;
+    line-height: 1.85 !important;
+}
+
+#tab0 > p:nth-of-type(2)::before {
+    content: "通识总览" !important;
+    position: absolute !important;
+    left: 28px !important;
+    top: 28px !important;
+    font-size: 17px !important;
+    line-height: 1.2 !important;
+    font-weight: 900 !important;
+    color: var(--text-color) !important;
+}
+
+#tab0 > p:nth-of-type(2)::after {
+    content: "65+7.5" !important;
+    position: absolute !important;
+    left: 28px !important;
+    top: 62px !important;
+    font-size: 30px !important;
+    line-height: 1 !important;
+    font-weight: 900 !important;
+    letter-spacing: 0 !important;
+    color: var(--text-color) !important;
 }
