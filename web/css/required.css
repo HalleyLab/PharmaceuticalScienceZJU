@@ -1066,6 +1066,176 @@ nav ul li.nav-group .nav-submenu a:focus {
     }
 }
 
+/* Outside ribbon bookmarks for the main page */
+.general-content {
+    overflow: visible;
+}
+
+.general-content .expand-menu {
+    position: static;
+    min-height: 0;
+    margin: 0;
+    padding-left: 0;
+}
+
+.general-content .expand-menu-header {
+    position: absolute;
+    left: -208px;
+    width: 188px;
+    min-width: 0;
+    max-width: none;
+    min-height: 42px;
+    padding: 0 34px 0 18px;
+    border-radius: 7px 0 0 7px;
+    clip-path: polygon(0 0, 100% 0, 86% 50%, 100% 100%, 0 100%);
+    color: #ffffff;
+    background: linear-gradient(90deg, #6f7df5, #95a2ff);
+    box-shadow: -7px 8px 14px rgba(35, 35, 45, 0.14);
+    font-size: 17px;
+    line-height: 1.15;
+    z-index: 4;
+    transform: none;
+}
+
+.general-content .expand-menu:nth-of-type(1) .expand-menu-header { top: 132px; background: linear-gradient(90deg, #6f7df5, #9aa6ff); }
+.general-content .expand-menu:nth-of-type(2) .expand-menu-header { top: 186px; background: linear-gradient(90deg, #4fb5df, #83d6f2); }
+.general-content .expand-menu:nth-of-type(3) .expand-menu-header { top: 240px; background: linear-gradient(90deg, #4fcf9f, #83edc8); }
+.general-content .expand-menu:nth-of-type(4) .expand-menu-header { top: 294px; background: linear-gradient(90deg, #f2b84d, #ffd876); }
+.general-content .expand-menu:nth-of-type(5) .expand-menu-header { top: 348px; background: linear-gradient(90deg, #ef6aa4, #ff9ac9); }
+.general-content .expand-menu:nth-of-type(6) .expand-menu-header { top: 402px; background: linear-gradient(90deg, #8e72f1, #b69dff); }
+.general-content .expand-menu:nth-of-type(7) .expand-menu-header { top: 456px; background: linear-gradient(90deg, #6d879a, #aebdc9); }
+
+.general-content .expand-menu-header:hover {
+    color: #ffffff;
+    transform: translateX(-8px);
+    filter: brightness(1.04);
+}
+
+.general-content .expand-menu.open .expand-menu-header {
+    color: #ffffff;
+    transform: translateX(-12px);
+    filter: brightness(1.08);
+    box-shadow: -10px 10px 18px rgba(35, 35, 45, 0.18);
+}
+
+.dark-theme .general-content .expand-menu-header,
+.dark-theme .general-content .expand-menu-header:hover,
+.dark-theme .general-content .expand-menu.open .expand-menu-header {
+    color: #ffffff;
+}
+
+.general-content .expand-arrow {
+    display: none;
+}
+
+.general-content .expand-menu-body,
+.general-content .expand-menu.open .expand-menu-body,
+.dark-theme .general-content .expand-menu.open .expand-menu-body {
+    background: transparent;
+    border: 0;
+    box-shadow: none;
+}
+
+.general-content .expand-menu.open .expand-menu-body,
+.dark-theme .general-content .expand-menu.open .expand-menu-body {
+    padding: 22px 34px 34px 28px;
+}
+
+.general-content .expand-menu.open.page-opening .expand-menu-body {
+    animation: none;
+}
+
+@media (max-width: 1180px) {
+    .general-content .expand-menu-header {
+        left: -164px;
+        width: 148px;
+        font-size: 15px;
+        padding-left: 14px;
+    }
+}
+
+@media (max-width: 980px) {
+    .general-content .expand-menu-header {
+        position: relative;
+        left: auto;
+        top: auto;
+        width: fit-content;
+        clip-path: none;
+        border-radius: 12px;
+        margin: 12px 0;
+    }
+}
+
+/* Right-side narrow ribbon bookmarks */
+.general-content .expand-menu-header {
+    left: auto;
+    right: -104px;
+    width: 112px;
+    min-height: 36px;
+    padding: 0 14px;
+    border-radius: 0 7px 7px 0;
+    clip-path: none;
+    background: rgba(255, 255, 255, 0.78);
+    border: 1px solid rgba(132, 124, 103, 0.12);
+    border-left: 0;
+    font-size: 15px;
+    justify-content: flex-start;
+    box-shadow: 5px 6px 12px rgba(35, 35, 45, 0.08);
+}
+
+.general-content .expand-menu-header:hover {
+    background: rgba(248, 249, 252, 0.94);
+    color: var(--subnav-active-color);
+    transform: translateX(5px);
+}
+
+.general-content .expand-menu.open .expand-menu-header {
+    background: rgba(248, 249, 252, 1);
+    color: var(--subnav-active-color);
+    transform: translateX(8px);
+    box-shadow: 6px 8px 14px rgba(35, 35, 45, 0.10);
+}
+
+.general-content .overview-menu .expand-menu-header {
+    top: 78px;
+}
+
+.dark-theme .general-content .expand-menu-header,
+.dark-theme .general-content .expand-menu-header:hover,
+.dark-theme .general-content .expand-menu.open .expand-menu-header {
+    background: rgba(31, 33, 39, 0.92);
+    border-color: rgba(255, 255, 255, 0.08);
+}
+
+.dark-theme .general-content .expand-menu-header:hover,
+.dark-theme .general-content .expand-menu.open .expand-menu-header {
+    color: var(--subnav-active-color);
+}
+
+.general-content .bookmark-index-0 .expand-menu-header { top: 78px; }
+.general-content .bookmark-index-1 .expand-menu-header { top: 132px; }
+.general-content .bookmark-index-2 .expand-menu-header { top: 186px; }
+.general-content .bookmark-index-3 .expand-menu-header { top: 240px; }
+.general-content .bookmark-index-4 .expand-menu-header { top: 294px; }
+.general-content .bookmark-index-5 .expand-menu-header { top: 348px; }
+.general-content .bookmark-index-6 .expand-menu-header { top: 402px; }
+.general-content .bookmark-index-7 .expand-menu-header { top: 456px; }
+.general-content .bookmark-index-8 .expand-menu-header { top: 510px; }
+.general-content .bookmark-index-9 .expand-menu-header { top: 564px; }
+
+.general-content .expand-menu:nth-of-type(1) .expand-menu-header { top: 132px; }
+.general-content .expand-menu:nth-of-type(2) .expand-menu-header { top: 186px; }
+.general-content .expand-menu:nth-of-type(3) .expand-menu-header { top: 240px; }
+.general-content .expand-menu:nth-of-type(4) .expand-menu-header { top: 294px; }
+.general-content .expand-menu:nth-of-type(5) .expand-menu-header { top: 348px; }
+.general-content .expand-menu:nth-of-type(6) .expand-menu-header { top: 402px; }
+.general-content .expand-menu:nth-of-type(7) .expand-menu-header { top: 456px; }
+.general-content .expand-menu:nth-of-type(8) .expand-menu-header { top: 510px; }
+
+.general-content .expand-menu.open.page-opening .expand-menu-body {
+    animation: none;
+}
+
 .bookmark-page-title {
     margin: 0 0 40px;
     font-size: 30px;
