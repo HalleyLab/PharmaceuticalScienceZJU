@@ -939,12 +939,14 @@ nav ul li.nav-group .nav-submenu:focus-within a:focus {
 body {
     position: relative;
     background:
-        radial-gradient(circle at 14% 24%, rgba(24, 27, 31, 0.055), transparent 11%),
-        radial-gradient(circle at 42% 78%, rgba(24, 27, 31, 0.040), transparent 12%),
+        linear-gradient(118deg, rgba(231, 235, 236, 0.86) 0 18%, rgba(216, 221, 223, 0.50) 36%, transparent 66%),
+        radial-gradient(circle at 15% 27%, rgba(24, 27, 31, 0.095), transparent 14%),
+        radial-gradient(circle at 43% 76%, rgba(24, 27, 31, 0.050), transparent 16%),
+        repeating-linear-gradient(135deg, transparent 0 34px, rgba(24, 27, 31, 0.030) 34px 36px, transparent 36px 68px),
         url("../images/home-originium-motes.svg"),
         var(--background-color);
-    background-size: auto, auto, 520px 360px, auto;
-    background-position: left top, left bottom, 6% 10%, center;
+    background-size: auto, auto, auto, 360px 360px, 520px 360px, auto;
+    background-position: left top, left top, left bottom, left top, 6% 10%, center;
 }
 
 body::before,
@@ -963,9 +965,11 @@ body::before {
     border: 0;
     background:
         linear-gradient(128deg, transparent 0 35%, rgba(24, 27, 31, 0.12) 35% 36%, transparent 36% 100%),
-        linear-gradient(58deg, transparent 0 45%, rgba(24, 27, 31, 0.10) 45% 46%, transparent 46% 100%);
+        linear-gradient(58deg, transparent 0 45%, rgba(24, 27, 31, 0.10) 45% 46%, transparent 46% 100%),
+        repeating-linear-gradient(135deg, transparent 0 17px, rgba(24, 27, 31, 0.060) 17px 19px, transparent 19px 36px),
+        linear-gradient(160deg, rgba(24, 27, 31, 0.050), transparent 70%);
     clip-path: polygon(48% 0, 76% 22%, 66% 78%, 34% 100%, 12% 48%);
-    opacity: 0.34;
+    opacity: 0.38;
 }
 
 body::after {
@@ -976,9 +980,11 @@ body::after {
     border: 0;
     background:
         linear-gradient(145deg, transparent 0 36%, rgba(24, 27, 31, 0.11) 36% 37%, transparent 37% 100%),
-        linear-gradient(35deg, transparent 0 52%, rgba(24, 27, 31, 0.09) 52% 53%, transparent 53% 100%);
+        linear-gradient(35deg, transparent 0 52%, rgba(24, 27, 31, 0.09) 52% 53%, transparent 53% 100%),
+        repeating-linear-gradient(45deg, transparent 0 15px, rgba(24, 27, 31, 0.050) 15px 17px, transparent 17px 32px),
+        linear-gradient(210deg, rgba(24, 27, 31, 0.045), transparent 64%);
     clip-path: polygon(52% 4%, 90% 34%, 74% 76%, 38% 94%, 8% 58%, 22% 18%);
-    opacity: 0.28;
+    opacity: 0.31;
 }
 
 .home,
@@ -1003,8 +1009,10 @@ body::after {
 
 .dark-theme {
     background:
-        radial-gradient(circle at 14% 24%, rgba(229, 236, 240, 0.055), transparent 11%),
-        radial-gradient(circle at 42% 78%, rgba(229, 236, 240, 0.040), transparent 12%),
+        linear-gradient(118deg, rgba(14, 16, 18, 0.92) 0 18%, rgba(34, 38, 42, 0.54) 36%, transparent 66%),
+        radial-gradient(circle at 15% 27%, rgba(229, 236, 240, 0.070), transparent 14%),
+        radial-gradient(circle at 43% 76%, rgba(229, 236, 240, 0.045), transparent 16%),
+        repeating-linear-gradient(135deg, transparent 0 34px, rgba(229, 236, 240, 0.035) 34px 36px, transparent 36px 68px),
         url("../images/home-originium-motes.svg"),
         var(--background-color);
 }
@@ -1012,11 +1020,15 @@ body::after {
 .dark-theme::before {
     background:
         linear-gradient(128deg, transparent 0 35%, rgba(229, 236, 240, 0.12) 35% 36%, transparent 36% 100%),
-        linear-gradient(58deg, transparent 0 45%, rgba(229, 236, 240, 0.10) 45% 46%, transparent 46% 100%);
+        linear-gradient(58deg, transparent 0 45%, rgba(229, 236, 240, 0.10) 45% 46%, transparent 46% 100%),
+        repeating-linear-gradient(135deg, transparent 0 17px, rgba(229, 236, 240, 0.060) 17px 19px, transparent 19px 36px),
+        linear-gradient(160deg, rgba(229, 236, 240, 0.040), transparent 70%);
 }
 
 .dark-theme::after {
     background:
         linear-gradient(145deg, transparent 0 36%, rgba(229, 236, 240, 0.11) 36% 37%, transparent 37% 100%),
-        linear-gradient(35deg, transparent 0 52%, rgba(229, 236, 240, 0.09) 52% 53%, transparent 53% 100%);
+        linear-gradient(35deg, transparent 0 52%, rgba(229, 236, 240, 0.09) 52% 53%, transparent 53% 100%),
+        repeating-linear-gradient(45deg, transparent 0 15px, rgba(229, 236, 240, 0.050) 15px 17px, transparent 17px 32px),
+        linear-gradient(210deg, rgba(229, 236, 240, 0.035), transparent 64%);
 }
