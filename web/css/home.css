@@ -994,19 +994,6 @@ body::after {
     z-index: 1;
 }
 
-.home_img::before {
-    content: "";
-    position: fixed;
-    right: calc(15% - 42px);
-    top: calc(25% - 36px);
-    width: 456px;
-    height: 456px;
-    border-radius: 18%;
-    background: var(--background-color);
-    pointer-events: none;
-    z-index: 1;
-}
-
 .dark-theme {
     background:
         linear-gradient(118deg, rgba(14, 16, 18, 0.92) 0 18%, rgba(34, 38, 42, 0.54) 36%, transparent 66%),
