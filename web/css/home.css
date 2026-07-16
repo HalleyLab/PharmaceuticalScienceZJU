@@ -224,6 +224,7 @@ nav a.act{font-family:'Gotham-Bold', sans-serif}
     margin-right: -20px;
     box-shadow: 0 0 20px #b7b2a9;
     opacity: 1;
+    z-index: 2;
     animation: appear 2s ease-in-out forwards,floatImage 3s ease-in-out infinite;
 }
 
@@ -968,10 +969,10 @@ body::before {
 }
 
 body::after {
-    right: 8%;
-    top: 18%;
-    width: 300px;
-    height: 300px;
+    left: 52%;
+    top: 12%;
+    width: 240px;
+    height: 240px;
     border: 1px solid rgba(24, 27, 31, 0.060);
     background:
         linear-gradient(90deg, transparent 0 47%, rgba(24, 27, 31, 0.050) 47% 48%, transparent 48% 100%),
@@ -984,6 +985,19 @@ body::after {
 .home-content,
 .home_img {
     position: relative;
+    z-index: 1;
+}
+
+.home_img::before {
+    content: "";
+    position: fixed;
+    right: calc(15% - 42px);
+    top: calc(25% - 36px);
+    width: 456px;
+    height: 456px;
+    border-radius: 18%;
+    background: var(--background-color);
+    pointer-events: none;
     z-index: 1;
 }
 
