@@ -863,7 +863,7 @@ nav {
 }
 
 nav.botonera {
-    top: 0 !important;
+    top: 0;
 }
 
 .group,
@@ -873,20 +873,20 @@ nav.botonera {
 
 /* Final navigation click and monochrome color guard. */
 header {
-    z-index: 2100 !important;
+    z-index: 2100;
     pointer-events: none;
 }
 
 header .btnMenu,
 header .btnMenu.open,
 header .btnMenu * {
-    z-index: 2101 !important;
+    z-index: 2101;
     pointer-events: auto;
-    cursor: pointer !important;
+    cursor: pointer;
 }
 
 nav {
-    z-index: 2000 !important;
+    z-index: 2000;
     pointer-events: auto;
 }
 
@@ -898,13 +898,13 @@ nav a:hover,
 nav a.act,
 nav ul li.nav-group .nav-submenu a:hover,
 nav ul li.nav-group .nav-submenu a:focus {
-    color: #222222 !important;
+    color: #222222;
 }
 
 header .btnMenu i,
 header .btnMenu:hover i,
 header .btnMenu.open:hover i {
-    background: #222222 !important;
+    background: #222222;
 }
 
 .dark-theme nav ul li a,
@@ -915,13 +915,13 @@ header .btnMenu.open:hover i {
 .dark-theme nav a.act,
 .dark-theme nav ul li.nav-group .nav-submenu a:hover,
 .dark-theme nav ul li.nav-group .nav-submenu a:focus {
-    color: #f2f2f2 !important;
+    color: #f2f2f2;
 }
 
 .dark-theme header .btnMenu i,
 .dark-theme header .btnMenu:hover i,
 .dark-theme header .btnMenu.open:hover i {
-    background: #f2f2f2 !important;
+    background: #f2f2f2;
 }
 
 nav ul li.nav-group .nav-submenu:hover a,
