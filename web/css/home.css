@@ -938,13 +938,15 @@ nav ul li.nav-group .nav-submenu:focus-within a:focus {
 body {
     position: relative;
     background:
-        linear-gradient(118deg, rgba(24, 27, 31, 0.026) 0 1px, transparent 1px 100%),
-        linear-gradient(90deg, rgba(24, 27, 31, 0.020) 0 1px, transparent 1px 100%),
+        linear-gradient(118deg, rgba(24, 27, 31, 0.040) 0 1px, transparent 1px 100%),
+        linear-gradient(90deg, rgba(24, 27, 31, 0.030) 0 1px, transparent 1px 100%),
+        radial-gradient(circle at 10% 78%, rgba(24, 27, 31, 0.050), transparent 16%),
         var(--background-color);
-    background-size: 180px 180px, 92px 92px, auto;
-    background-position: left top, left top, center;
+    background-size: 180px 180px, 92px 92px, auto, auto;
+    background-position: left top, left top, left bottom, center;
 }
 
+body::before,
 body::after {
     content: "";
     position: fixed;
@@ -952,16 +954,30 @@ body::after {
     z-index: 0;
 }
 
+body::before {
+    left: 46px;
+    bottom: 62px;
+    width: 260px;
+    height: 150px;
+    border: 1px solid rgba(24, 27, 31, 0.052);
+    background:
+        linear-gradient(90deg, rgba(24, 27, 31, 0.040) 0 1px, transparent 1px 100%),
+        linear-gradient(0deg, rgba(24, 27, 31, 0.030) 0 1px, transparent 1px 100%);
+    background-size: 40px 40px;
+    opacity: 0.45;
+}
+
 body::after {
     right: 8%;
     top: 18%;
     width: 300px;
     height: 300px;
-    border: 1px solid rgba(24, 27, 31, 0.045);
+    border: 1px solid rgba(24, 27, 31, 0.060);
     background:
-        linear-gradient(90deg, transparent 0 47%, rgba(24, 27, 31, 0.038) 47% 48%, transparent 48% 100%),
-        linear-gradient(0deg, transparent 0 47%, rgba(24, 27, 31, 0.038) 47% 48%, transparent 48% 100%);
-    opacity: 0.42;
+        linear-gradient(90deg, transparent 0 47%, rgba(24, 27, 31, 0.050) 47% 48%, transparent 48% 100%),
+        linear-gradient(0deg, transparent 0 47%, rgba(24, 27, 31, 0.050) 47% 48%, transparent 48% 100%),
+        repeating-linear-gradient(135deg, transparent 0 22px, rgba(24, 27, 31, 0.030) 22px 24px);
+    opacity: 0.50;
 }
 
 .home,
@@ -973,14 +989,23 @@ body::after {
 
 .dark-theme {
     background:
-        linear-gradient(118deg, rgba(229, 236, 240, 0.030) 0 1px, transparent 1px 100%),
-        linear-gradient(90deg, rgba(229, 236, 240, 0.022) 0 1px, transparent 1px 100%),
+        linear-gradient(118deg, rgba(229, 236, 240, 0.046) 0 1px, transparent 1px 100%),
+        linear-gradient(90deg, rgba(229, 236, 240, 0.032) 0 1px, transparent 1px 100%),
+        radial-gradient(circle at 10% 78%, rgba(229, 236, 240, 0.045), transparent 16%),
         var(--background-color);
 }
 
-.dark-theme::after {
-    border-color: rgba(229, 236, 240, 0.050);
+.dark-theme::before {
+    border-color: rgba(229, 236, 240, 0.060);
     background:
-        linear-gradient(90deg, transparent 0 47%, rgba(229, 236, 240, 0.045) 47% 48%, transparent 48% 100%),
-        linear-gradient(0deg, transparent 0 47%, rgba(229, 236, 240, 0.045) 47% 48%, transparent 48% 100%);
+        linear-gradient(90deg, rgba(229, 236, 240, 0.046) 0 1px, transparent 1px 100%),
+        linear-gradient(0deg, rgba(229, 236, 240, 0.034) 0 1px, transparent 1px 100%);
+}
+
+.dark-theme::after {
+    border-color: rgba(229, 236, 240, 0.064);
+    background:
+        linear-gradient(90deg, transparent 0 47%, rgba(229, 236, 240, 0.055) 47% 48%, transparent 48% 100%),
+        linear-gradient(0deg, transparent 0 47%, rgba(229, 236, 240, 0.055) 47% 48%, transparent 48% 100%),
+        repeating-linear-gradient(135deg, transparent 0 22px, rgba(229, 236, 240, 0.036) 22px 24px);
 }
