@@ -934,21 +934,17 @@ nav ul li.nav-group .nav-submenu:focus-within a:focus {
     opacity: 1;
 }
 
-/* Light industrial background for the home page. */
+/* Subtle linework background for the home page. */
 body {
     position: relative;
     background:
-        linear-gradient(118deg, rgba(24, 27, 31, 0.035) 0 1px, transparent 1px 100%),
-        linear-gradient(90deg, rgba(24, 27, 31, 0.035) 0 1px, transparent 1px 100%),
-        radial-gradient(circle at 12% 20%, rgba(24, 27, 31, 0.060), transparent 14%),
-        linear-gradient(135deg, transparent 0 48%, rgba(24, 27, 31, 0.028) 48% 52%, transparent 52% 100%),
-        url("../images/hg-industrial-pattern.svg"),
+        linear-gradient(118deg, rgba(24, 27, 31, 0.026) 0 1px, transparent 1px 100%),
+        linear-gradient(90deg, rgba(24, 27, 31, 0.020) 0 1px, transparent 1px 100%),
         var(--background-color);
-    background-size: 180px 180px, 92px 92px, auto, 48px 48px, 420px 420px, auto;
-    background-position: left top, left top, left top, left top, 78% 12%, center;
+    background-size: 180px 180px, 92px 92px, auto;
+    background-position: left top, left top, center;
 }
 
-body::before,
 body::after {
     content: "";
     position: fixed;
@@ -956,33 +952,16 @@ body::after {
     z-index: 0;
 }
 
-body::before {
-    left: 42px;
-    top: 112px;
-    width: 210px;
-    height: 68%;
-    border-left: 1px solid rgba(24, 27, 31, 0.10);
-    background:
-        repeating-linear-gradient(
-            135deg,
-            transparent 0 34px,
-            rgba(24, 27, 31, 0.045) 34px 36px,
-            transparent 36px 68px
-        );
-    opacity: 0.78;
-}
-
 body::after {
     right: 8%;
-    top: 16%;
-    width: 360px;
-    height: 360px;
-    border: 1px solid rgba(24, 27, 31, 0.055);
+    top: 18%;
+    width: 300px;
+    height: 300px;
+    border: 1px solid rgba(24, 27, 31, 0.045);
     background:
-        linear-gradient(90deg, transparent 0 47%, rgba(24, 27, 31, 0.050) 47% 48%, transparent 48% 100%),
-        linear-gradient(0deg, transparent 0 47%, rgba(24, 27, 31, 0.050) 47% 48%, transparent 48% 100%),
-        repeating-linear-gradient(135deg, transparent 0 18px, rgba(24, 27, 31, 0.040) 18px 20px);
-    opacity: 0.52;
+        linear-gradient(90deg, transparent 0 47%, rgba(24, 27, 31, 0.038) 47% 48%, transparent 48% 100%),
+        linear-gradient(0deg, transparent 0 47%, rgba(24, 27, 31, 0.038) 47% 48%, transparent 48% 100%);
+    opacity: 0.42;
 }
 
 .home,
@@ -994,29 +973,14 @@ body::after {
 
 .dark-theme {
     background:
-        linear-gradient(118deg, rgba(229, 236, 240, 0.038) 0 1px, transparent 1px 100%),
-        linear-gradient(90deg, rgba(229, 236, 240, 0.034) 0 1px, transparent 1px 100%),
-        radial-gradient(circle at 12% 20%, rgba(229, 236, 240, 0.055), transparent 14%),
-        linear-gradient(135deg, transparent 0 48%, rgba(229, 236, 240, 0.030) 48% 52%, transparent 52% 100%),
-        url("../images/hg-industrial-pattern.svg"),
+        linear-gradient(118deg, rgba(229, 236, 240, 0.030) 0 1px, transparent 1px 100%),
+        linear-gradient(90deg, rgba(229, 236, 240, 0.022) 0 1px, transparent 1px 100%),
         var(--background-color);
 }
 
-.dark-theme::before {
-    border-left-color: rgba(229, 236, 240, 0.12);
-    background:
-        repeating-linear-gradient(
-            135deg,
-            transparent 0 34px,
-            rgba(229, 236, 240, 0.050) 34px 36px,
-            transparent 36px 68px
-        );
-}
-
 .dark-theme::after {
-    border-color: rgba(229, 236, 240, 0.060);
+    border-color: rgba(229, 236, 240, 0.050);
     background:
-        linear-gradient(90deg, transparent 0 47%, rgba(229, 236, 240, 0.055) 47% 48%, transparent 48% 100%),
-        linear-gradient(0deg, transparent 0 47%, rgba(229, 236, 240, 0.055) 47% 48%, transparent 48% 100%),
-        repeating-linear-gradient(135deg, transparent 0 18px, rgba(229, 236, 240, 0.045) 18px 20px);
+        linear-gradient(90deg, transparent 0 47%, rgba(229, 236, 240, 0.045) 47% 48%, transparent 48% 100%),
+        linear-gradient(0deg, transparent 0 47%, rgba(229, 236, 240, 0.045) 47% 48%, transparent 48% 100%);
 }
