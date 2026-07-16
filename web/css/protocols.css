@@ -2550,3 +2550,24 @@ body.dark-theme,
 .dark-theme .protocol-list {
     background: rgba(255, 255, 255, 0.035) !important;
 }
+
+/* Sitewide final bookmark sync: keep course tabs consistent across pages. */
+.general-content .expand-menu .expand-menu-header,
+.general-content .overview-menu .expand-menu-header,
+.general-content [class*="bookmark-index-"] .expand-menu-header {
+    left: calc(100% + 10px) !important;
+    right: auto !important;
+    width: 238px !important;
+    min-width: 238px !important;
+    max-width: 238px !important;
+    min-height: 60px !important;
+    padding: 0 18px !important;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    box-sizing: border-box !important;
+    white-space: normal !important;
+    overflow-wrap: anywhere !important;
+    word-break: keep-all !important;
+    line-height: 1.22 !important;
+}
