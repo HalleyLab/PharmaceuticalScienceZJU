@@ -1158,7 +1158,7 @@ nav ul li.nav-group .nav-submenu a:focus {
     .general-content .expand-menu-header {
         position: relative;
         left: auto;
-        top: auto;
+        top: auto !important;
         width: fit-content;
         clip-path: none;
         border-radius: 12px;
@@ -1197,7 +1197,7 @@ nav ul li.nav-group .nav-submenu a:focus {
 }
 
 .general-content .overview-menu .expand-menu-header {
-    top: 78px;
+    top: 78px !important;
 }
 
 .dark-theme .general-content .expand-menu-header,
@@ -1212,14 +1212,14 @@ nav ul li.nav-group .nav-submenu a:focus {
     color: var(--subnav-active-color);
 }
 
-.general-content .bookmark-index-0 .expand-menu-header { top: 78px; }
-.general-content .bookmark-index-1 .expand-menu-header { top: 132px; }
-.general-content .bookmark-index-2 .expand-menu-header { top: 186px; }
-.general-content .bookmark-index-3 .expand-menu-header { top: 240px; }
-.general-content .bookmark-index-4 .expand-menu-header { top: 294px; }
-.general-content .bookmark-index-5 .expand-menu-header { top: 348px; }
-.general-content .bookmark-index-6 .expand-menu-header { top: 402px; }
-.general-content .bookmark-index-7 .expand-menu-header { top: 456px; }
+.general-content .bookmark-index-0 .expand-menu-header { top: 78px !important; }
+.general-content .bookmark-index-1 .expand-menu-header { top: 132px !important; }
+.general-content .bookmark-index-2 .expand-menu-header { top: 186px !important; }
+.general-content .bookmark-index-3 .expand-menu-header { top: 240px !important; }
+.general-content .bookmark-index-4 .expand-menu-header { top: 294px !important; }
+.general-content .bookmark-index-5 .expand-menu-header { top: 348px !important; }
+.general-content .bookmark-index-6 .expand-menu-header { top: 402px !important; }
+.general-content .bookmark-index-7 .expand-menu-header { top: 456px !important; }
 
 .general-content .expand-menu:nth-of-type(1) .expand-menu-header { top: 132px; }
 .general-content .expand-menu:nth-of-type(2) .expand-menu-header { top: 186px; }
@@ -1285,7 +1285,7 @@ nav ul li.nav-group .nav-submenu a:focus {
     .general-content .overview-menu .expand-menu-header {
         left: auto;
         right: auto;
-        top: auto;
+        top: auto !important;
         width: fit-content;
         padding: 0 18px;
         clip-path: none;
@@ -1359,15 +1359,15 @@ nav ul li.nav-group .nav-submenu a:focus {
 .general-content .bookmark-index-5 .expand-menu-header,
 .general-content .bookmark-index-6 .expand-menu-header,
 .general-content .bookmark-index-7 .expand-menu-header {
-    background: rgba(255, 255, 255, 0.96);
-    color: #333333;
-    border-color: rgba(220, 220, 220, 0.55);
+    background: rgba(255, 255, 255, 0.96) !important;
+    color: #333333 !important;
+    border-color: rgba(220, 220, 220, 0.55) !important;
 }
 
 .general-content .expand-menu .expand-menu-header:hover,
 .general-content .expand-menu.open .expand-menu-header {
-    background: rgba(250, 250, 250, 0.98);
-    color: #111111;
+    background: rgba(250, 250, 250, 0.98) !important;
+    color: #111111 !important;
 }
 
 .dark-theme .general-content .expand-menu .expand-menu-header,
@@ -1388,15 +1388,15 @@ nav ul li.nav-group .nav-submenu a:focus {
 .dark-theme .general-content .bookmark-index-5 .expand-menu-header,
 .dark-theme .general-content .bookmark-index-6 .expand-menu-header,
 .dark-theme .general-content .bookmark-index-7 .expand-menu-header {
-    background: #232323;
-    color: #eeeeee;
-    border-color: #333333;
+    background: #232323 !important;
+    color: #eeeeee !important;
+    border-color: #333333 !important;
 }
 
 .dark-theme .general-content .expand-menu .expand-menu-header:hover,
 .dark-theme .general-content .expand-menu.open .expand-menu-header {
-    background: #292929;
-    color: #ffffff;
+    background: #292929 !important;
+    color: #ffffff !important;
 }
 
 /* Final bookmark spacing and outside alignment */
@@ -1423,17 +1423,17 @@ nav ul li.nav-group .nav-submenu a:focus {
 
 .general-content .expand-menu-body,
 .general-content .expand-menu.open .expand-menu-body {
-    overflow: hidden;
+    overflow: hidden !important;
 }
 
-.general-content .bookmark-index-0 .expand-menu-header { top: 56px; }
-.general-content .bookmark-index-1 .expand-menu-header { top: 142px; }
-.general-content .bookmark-index-2 .expand-menu-header { top: 228px; }
-.general-content .bookmark-index-3 .expand-menu-header { top: 314px; }
-.general-content .bookmark-index-4 .expand-menu-header { top: 400px; }
-.general-content .bookmark-index-5 .expand-menu-header { top: 486px; }
-.general-content .bookmark-index-6 .expand-menu-header { top: 572px; }
-.general-content .bookmark-index-7 .expand-menu-header { top: 658px; }
+.general-content .bookmark-index-0 .expand-menu-header { top: 56px !important; }
+.general-content .bookmark-index-1 .expand-menu-header { top: 142px !important; }
+.general-content .bookmark-index-2 .expand-menu-header { top: 228px !important; }
+.general-content .bookmark-index-3 .expand-menu-header { top: 314px !important; }
+.general-content .bookmark-index-4 .expand-menu-header { top: 400px !important; }
+.general-content .bookmark-index-5 .expand-menu-header { top: 486px !important; }
+.general-content .bookmark-index-6 .expand-menu-header { top: 572px !important; }
+.general-content .bookmark-index-7 .expand-menu-header { top: 658px !important; }
 
 /* Course page sections inside each bookmark */
 .expand-menu-body > p {
@@ -1522,12 +1522,12 @@ nav ul li.nav-group .nav-submenu a:focus {
 .dark-theme .general-content {
     background:
         linear-gradient(90deg, rgba(255, 255, 255, 0.035) 0, rgba(255, 255, 255, 0.018) 24px, transparent 25px),
-        linear-gradient(180deg, rgba(26, 26, 26, 0.98), rgba(20, 20, 20, 0.98));
+        linear-gradient(180deg, rgba(26, 26, 26, 0.98), rgba(20, 20, 20, 0.98)) !important;
     box-shadow:
         0 18px 42px rgba(0, 0, 0, 0.28),
         inset 4px 0 10px rgba(255, 255, 255, 0.035),
-        inset 0 1px 0 rgba(255, 255, 255, 0.055);
-    border-color: rgba(255, 255, 255, 0.10);
+        inset 0 1px 0 rgba(255, 255, 255, 0.055) !important;
+    border-color: rgba(255, 255, 255, 0.10) !important;
 }
 
 .dark-theme .general-content::before,
@@ -1536,11 +1536,11 @@ nav ul li.nav-group .nav-submenu a:focus {
 }
 
 .dark-theme .general-content::before {
-    background: rgba(255, 255, 255, 0.10);
+    background: rgba(255, 255, 255, 0.10) !important;
 }
 
 .dark-theme .general-content::after {
-    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.035));
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.035)) !important;
 }
 
 nav ul li.nav-group {
@@ -1879,7 +1879,7 @@ nav {
 }
 
 nav.botonera {
-    top: 0;
+    top: 0 !important;
 }
 
 .group,
@@ -1893,12 +1893,12 @@ nav.botonera {
 }
 
 .general-content::after {
-    left: 0;
-    right: 0;
-    width: auto;
+    left: 0 !important;
+    right: 0 !important;
+    width: auto !important;
     z-index: 1;
     background:
-        linear-gradient(90deg, transparent calc(100% - 18px), rgba(120, 111, 88, 0.045) 100%);
+        linear-gradient(90deg, transparent calc(100% - 18px), rgba(120, 111, 88, 0.045) 100%) !important;
     transition: background 0.28s ease;
 }
 
@@ -1908,31 +1908,31 @@ nav.botonera {
 }
 
 /* Keep right-side bookmarks fixed near the page top without passing the sheet bottom. */
-.general-content .bookmark-index-0 .expand-menu-header { top: 56px; }
-.general-content .bookmark-index-1 .expand-menu-header { top: 126px; }
-.general-content .bookmark-index-2 .expand-menu-header { top: 196px; }
-.general-content .bookmark-index-3 .expand-menu-header { top: 266px; }
-.general-content .bookmark-index-4 .expand-menu-header { top: 336px; }
-.general-content .bookmark-index-5 .expand-menu-header { top: 406px; }
-.general-content .bookmark-index-6 .expand-menu-header { top: 476px; }
-.general-content .bookmark-index-7 .expand-menu-header { top: 546px; }
+.general-content .bookmark-index-0 .expand-menu-header { top: 56px !important; }
+.general-content .bookmark-index-1 .expand-menu-header { top: 126px !important; }
+.general-content .bookmark-index-2 .expand-menu-header { top: 196px !important; }
+.general-content .bookmark-index-3 .expand-menu-header { top: 266px !important; }
+.general-content .bookmark-index-4 .expand-menu-header { top: 336px !important; }
+.general-content .bookmark-index-5 .expand-menu-header { top: 406px !important; }
+.general-content .bookmark-index-6 .expand-menu-header { top: 476px !important; }
+.general-content .bookmark-index-7 .expand-menu-header { top: 546px !important; }
 
 /* Final navigation click and monochrome color guard. */
 header {
-    z-index: 2100;
+    z-index: 2100 !important;
     pointer-events: none;
 }
 
 header .btnMenu,
 header .btnMenu.open,
 header .btnMenu * {
-    z-index: 2101;
+    z-index: 2101 !important;
     pointer-events: auto;
-    cursor: pointer;
+    cursor: pointer !important;
 }
 
 nav {
-    z-index: 2000;
+    z-index: 2000 !important;
     pointer-events: auto;
 }
 
@@ -1944,13 +1944,13 @@ nav a:hover,
 nav a.act,
 nav ul li.nav-group .nav-submenu a:hover,
 nav ul li.nav-group .nav-submenu a:focus {
-    color: #222222;
+    color: #222222 !important;
 }
 
 header .btnMenu i,
 header .btnMenu:hover i,
 header .btnMenu.open:hover i {
-    background: #222222;
+    background: #222222 !important;
 }
 
 .dark-theme nav ul li a,
@@ -1961,13 +1961,13 @@ header .btnMenu.open:hover i {
 .dark-theme nav a.act,
 .dark-theme nav ul li.nav-group .nav-submenu a:hover,
 .dark-theme nav ul li.nav-group .nav-submenu a:focus {
-    color: #f2f2f2;
+    color: #f2f2f2 !important;
 }
 
 .dark-theme header .btnMenu i,
 .dark-theme header .btnMenu:hover i,
 .dark-theme header .btnMenu.open:hover i {
-    background: #f2f2f2;
+    background: #f2f2f2 !important;
 }
 
 nav ul li.nav-group .nav-submenu:hover a,
