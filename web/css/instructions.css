@@ -1143,3 +1143,90 @@ nav ul li.nav-group .nav-submenu:focus-within a:focus {
     opacity: 1;
 }
 
+/* Light industrial background for the instructions page. */
+body {
+    position: relative;
+    background:
+        linear-gradient(118deg, rgba(24, 27, 31, 0.030) 0 1px, transparent 1px 100%),
+        linear-gradient(0deg, rgba(24, 27, 31, 0.030) 0 1px, transparent 1px 100%),
+        radial-gradient(circle at 78% 16%, rgba(24, 27, 31, 0.060), transparent 18%),
+        linear-gradient(135deg, transparent 0 46%, rgba(24, 27, 31, 0.030) 46% 50%, transparent 50% 100%),
+        url("../images/hg-industrial-pattern.svg"),
+        var(--background-color);
+    background-size: 220px 220px, 86px 86px, auto, 54px 54px, 460px 460px, auto;
+    background-position: left top, left top, right top, left top, 16% 20%, center;
+}
+
+body::before,
+body::after {
+    content: "";
+    position: fixed;
+    pointer-events: none;
+    z-index: 0;
+}
+
+body::before {
+    left: 5%;
+    bottom: 7%;
+    width: 330px;
+    height: 190px;
+    border: 1px solid rgba(24, 27, 31, 0.060);
+    background:
+        linear-gradient(90deg, rgba(24, 27, 31, 0.055) 0 1px, transparent 1px 100%),
+        linear-gradient(0deg, rgba(24, 27, 31, 0.040) 0 1px, transparent 1px 100%);
+    background-size: 44px 44px;
+    opacity: 0.48;
+}
+
+body::after {
+    right: 6%;
+    top: 18%;
+    width: 250px;
+    height: 70%;
+    background:
+        repeating-linear-gradient(
+            135deg,
+            transparent 0 30px,
+            rgba(24, 27, 31, 0.046) 30px 32px,
+            transparent 32px 64px
+        );
+    border-right: 1px solid rgba(24, 27, 31, 0.10);
+    opacity: 0.68;
+}
+
+.home,
+.home-content,
+.wheel-and-hamster {
+    position: relative;
+    z-index: 1;
+}
+
+.dark-theme {
+    background:
+        linear-gradient(118deg, rgba(229, 236, 240, 0.036) 0 1px, transparent 1px 100%),
+        linear-gradient(0deg, rgba(229, 236, 240, 0.030) 0 1px, transparent 1px 100%),
+        radial-gradient(circle at 78% 16%, rgba(229, 236, 240, 0.055), transparent 18%),
+        linear-gradient(135deg, transparent 0 46%, rgba(229, 236, 240, 0.032) 46% 50%, transparent 50% 100%),
+        url("../images/hg-industrial-pattern.svg"),
+        var(--background-color);
+}
+
+.dark-theme::before {
+    border-color: rgba(229, 236, 240, 0.070);
+    background:
+        linear-gradient(90deg, rgba(229, 236, 240, 0.050) 0 1px, transparent 1px 100%),
+        linear-gradient(0deg, rgba(229, 236, 240, 0.040) 0 1px, transparent 1px 100%);
+    background-size: 44px 44px;
+}
+
+.dark-theme::after {
+    border-right-color: rgba(229, 236, 240, 0.12);
+    background:
+        repeating-linear-gradient(
+            135deg,
+            transparent 0 30px,
+            rgba(229, 236, 240, 0.048) 30px 32px,
+            transparent 32px 64px
+        );
+}
+
