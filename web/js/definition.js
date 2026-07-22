@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function() {
         '\u5B66\u4E60\u7B14\u8BB0': 'Study Notes',
         '\u7559\u5B66\u7BC7': 'Study Abroad',
         '\u7533\u8BF7': 'Application',
-        '\u5B9E\u9A8C\u6D41\u7A0B': 'Protocols',
+        '\u5B9E\u9A8C\u624B\u518C': 'Lab Manual',
         '\u4F7F\u7528\u8BF4\u660E': 'Instructions',
         '\u641C\u7D22\u5185\u5BB9': 'Search',
         '\u641C\u7D22\u529F\u80FD\u4E3A\u6587\u672C\u5339\u914D\uFF0C\u5B58\u5728\u8BE5\u5185\u5BB9\u5219\u81EA\u52A8\u8DF3\u8F6C\uFF0C\u5EFA\u8BAE\u8F93\u5165\u5355\u4E2A\u77ED\u5173\u952E\u8BCD': 'Search matches page text and jumps to matching content. A short keyword works best.',
