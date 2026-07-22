@@ -2515,6 +2515,24 @@ body.dark-theme,
     background: rgba(255, 255, 255, 0.035) !important;
 }
 
+/* Keep paragraph text clear of the industrial accent rule. */
+.general-content.active > p,
+.general-content.active .expand-menu-body > p,
+.general-content.active .protocol-text,
+.general-content.active .protocol-note {
+    box-sizing: border-box;
+    padding-inline: 22px 18px;
+}
+
+@media (max-width: 720px) {
+    .general-content.active > p,
+    .general-content.active .expand-menu-body > p,
+    .general-content.active .protocol-text,
+    .general-content.active .protocol-note {
+        padding-inline: 18px 14px;
+    }
+}
+
 .general-content .expand-menu-header {
     border-radius: 3px !important;
     border-color: var(--hg-line) !important;

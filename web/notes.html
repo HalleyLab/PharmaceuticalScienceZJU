@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人分享</title>
+    <link rel="stylesheet" href="css/notes.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header class="site-header">
+        <button class="menu-toggle" type="button" aria-label="展开导航栏" aria-expanded="false">
+            <span></span><span></span><span></span>
+        </button>
+        <nav class="main-nav" aria-label="主导航">
+            <button class="menu-close" type="button" aria-label="关闭导航栏">×</button>
+            <ul>
+                <li><a href="home.html">首页</a></li>
+                <li class="nav-group">
+                    <a class="nav-group-title" href="general_course.html">浙江大学</a>
+                    <ul class="nav-submenu">
+                        <li><a href="general_course.html">通识课程</a></li>
+                        <li><a href="required.html">专业必修</a></li>
+                        <li><a href="selective.html">专业选修</a></li>
+                        <li><a href="others.html">其他课程</a></li>
+                        <li><a href="mixed.html">二三四课堂</a></li>
+                    </ul>
+                </li>
+                <li class="nav-group">
+                    <a class="nav-group-title" href="apply.html">留学篇</a>
+                    <ul class="nav-submenu">
+                        <li><a href="apply.html">申请</a></li>
+                        <li><a href="jhubmb.html">JHU BMB</a></li>
+                    </ul>
+                </li>
+                <li><a href="protocols.html">实验流程</a></li>
+                <li><a href="instructions.html">使用说明</a></li>
+            </ul>
+        </nav>
+        <div class="nav-shade" aria-hidden="true"></div>
+
+        <label class="global-search">
+            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+            <input id="noteSearch" type="search" placeholder="搜索课程或知识点" autocomplete="off">
+        </label>
+        <button class="theme-switcher" id="themeToggle" type="button">🌙 夜间模式</button>
+    </header>
+
+    <main class="notes-workspace">
+        <aside class="category-rail" aria-label="课程类别">
+            <p class="rail-label">INDEX / 课程类别</p>
+            <div id="categoryFilters" class="category-filters"></div>
+        </aside>
+
+        <aside class="course-rail" aria-label="课程列表">
+            <div class="course-rail-heading">
+                <span id="courseCount">0 门课程</span>
+                <span>COURSE FILES</span>
+            </div>
+            <div id="courseList" class="course-list"></div>
+            <p id="emptyState" class="empty-state" hidden>没有找到匹配的课程或知识点。</p>
+        </aside>
+
+        <article class="note-board" id="noteBoard">
+            <header class="note-heading">
+                <div>
+                    <p id="noteCategory" class="note-kicker"></p>
+                    <h1 id="noteTitle"></h1>
+                </div>
+                <button class="print-note" id="printNote" type="button" title="打印当前笔记" aria-label="打印当前笔记">
+                    <i class="fa-solid fa-print" aria-hidden="true"></i>
+                </button>
+            </header>
+
+            <section class="note-intro">
+                <div>
+                    <h2>课程概括</h2>
+                    <p id="noteOverview"></p>
+                </div>
+                <div class="tip-strip">
+                    <h2>学习心得与技巧</h2>
+                    <p id="noteTips"></p>
+                </div>
+            </section>
+
+            <div class="note-columns">
+                <section class="note-section outline-section">
+                    <h2><span>01</span>知识大纲</h2>
+                    <ol id="noteOutline"></ol>
+                </section>
+                <section class="note-section concept-section">
+                    <h2><span>02</span>重点概念</h2>
+                    <ul id="noteConcepts"></ul>
+                </section>
+                <section class="note-section pitfall-section">
+                    <h2><span>03</span>易错点</h2>
+                    <ul id="notePitfalls"></ul>
+                </section>
+                <section class="note-section checklist-section">
+                    <h2><span>04</span>复习清单</h2>
+                    <ul id="noteChecklist"></ul>
+                </section>
+            </div>
+        </article>
+    </main>
+
+    <script src="js/definition.js"></script>
+    <script src="js/course-notes.js"></script>
+</body>
+</html>

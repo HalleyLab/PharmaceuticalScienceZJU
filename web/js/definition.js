@@ -75,6 +75,7 @@ document.addEventListener('DOMContentLoaded', function() {
         '\u4E13\u4E1A\u9009\u4FEE': 'Selective Courses',
         '\u5176\u4ED6\u8BFE\u7A0B': 'Other Courses',
         '\u4E8C\u4E09\u56DB\u8BFE\u5802': 'Second/Third/Fourth Classroom',
+        '\u5B66\u4E60\u7B14\u8BB0': 'Study Notes',
         '\u7559\u5B66\u7BC7': 'Study Abroad',
         '\u7533\u8BF7': 'Application',
         '\u5B9E\u9A8C\u6D41\u7A0B': 'Protocols',
@@ -137,6 +138,16 @@ document.addEventListener('DOMContentLoaded', function() {
         '\u5EFA\u8BAE\u5B66\u5E74\u5B66\u671F': 'Suggested Term',
         '\u8003\u6838\u65B9\u5F0F': 'Assessment',
         '\u8BFE\u7A0B\u6750\u6599': 'Course Materials',
+        '\u5168\u90E8\u8BFE\u7A0B': 'All Courses',
+        '\u8BFE\u7A0B\u7C7B\u522B': 'Course Categories',
+        '\u641C\u7D22\u8BFE\u7A0B\u6216\u77E5\u8BC6\u70B9': 'Search courses or topics',
+        '\u8BFE\u7A0B\u6982\u62EC': 'Course Overview',
+        '\u5B66\u4E60\u5FC3\u5F97\u4E0E\u6280\u5DE7': 'Study Experience and Tips',
+        '\u77E5\u8BC6\u5927\u7EB2': 'Knowledge Outline',
+        '\u91CD\u70B9\u6982\u5FF5': 'Key Concepts',
+        '\u6613\u9519\u70B9': 'Common Pitfalls',
+        '\u590D\u4E60\u6E05\u5355': 'Review Checklist',
+        '\u6253\u5370\u5F53\u524D\u7B14\u8BB0': 'Print current note',
         '\u6559\u6750': 'Textbook',
         '\u4F53\u9A8C\u62A5\u544A': 'Experience Report',
         '\u5E73\u65F6\u8BBA\u6587': 'Term Essay',
@@ -591,6 +602,8 @@ document.addEventListener('DOMContentLoaded', function() {
         style.textContent = [
             '.group.site-search{z-index:1400}',
             '.group.site-search .search-tip{display:none}',
+            '.group.site-search .input:focus,.group.site-search .input:hover{border-color:rgba(32,35,38,.34);background:#fff;box-shadow:0 0 0 3px rgba(32,35,38,.075)}',
+            '.dark-theme .group.site-search .input:focus,.dark-theme .group.site-search .input:hover{border-color:rgba(255,255,255,.28);background:#202224;box-shadow:0 0 0 3px rgba(255,255,255,.06)}',
             '.site-search-results{position:absolute;top:calc(100% + 10px);right:0;width:min(440px,calc(100vw - 32px));max-height:min(520px,68vh);overflow-y:auto;padding:8px;background:rgba(248,249,249,.98);border:1px solid rgba(22,25,27,.18);border-radius:6px;box-shadow:0 18px 42px rgba(14,17,19,.18);color:#24272a;text-align:left;overscroll-behavior:contain}',
             '.site-search-results[hidden]{display:none}',
             '.site-search-status{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:8px 10px 10px;color:#666b70;font:600 12px/1.4 "Microsoft YaHei","PingFang SC",Arial,sans-serif}',
@@ -901,6 +914,9 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 (function($) {
+  if (!$) {
+    return;
+  }
   function init() {
     $('.btnMenu').on('click', toggleMenu);
     $('.botonera > ul > li').hover(handleHoverIn, handleHoverOut);
@@ -1438,7 +1454,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   }); 
-})(jQuery);
+})(window.jQuery);
 
 function setHomeAvatar(src) {
   const image = document.getElementById('home_img');
