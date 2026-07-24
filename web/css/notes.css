@@ -45,12 +45,22 @@ body::before {
     z-index: -1;
 }
 
-button {
+.notes-workspace button {
     font: inherit;
 }
 
+body > header,
+body > header *,
+.group {
+    box-sizing: content-box;
+}
+
+body > header {
+    font-family: "Noto Sans SC";
+}
+
 .group .input {
-    font-family: Arial, sans-serif;
+    font-family: Arial;
 }
 
 button,
