@@ -264,10 +264,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const style = document.createElement('style');
         style.textContent = [
-            '.language-switcher{position:fixed;top:20px;right:142px;z-index:1300;min-width:74px;height:40px;border:0;border-radius:22px;padding:0 16px;cursor:pointer;background:rgba(31,33,36,.92);color:#fff;font:700 14px/1 "Microsoft YaHei","PingFang SC",Arial,sans-serif;box-shadow:0 10px 24px rgba(0,0,0,.16);transition:transform .2s ease,opacity .2s ease,background .2s ease}',
+            '.language-switcher{position:fixed;top:20px;right:142px;z-index:1300;min-width:74px;height:40px;border:0;border-radius:22px;padding:0 16px;cursor:pointer;background:rgba(31,33,36,.92);color:#fff;font:700 14px/1 "Microsoft YaHei","PingFang SC",Arial,sans-serif;box-shadow:0 10px 24px rgba(0,0,0,.16);transition:transform .2s ease,opacity .2s ease,background .2s ease;animation:slideBottom 1s ease forwards}',
             '.language-switcher:hover{transform:translateY(-1px);background:rgba(10,12,14,.96)}',
             '.dark-theme .language-switcher{background:rgba(245,246,248,.92);color:#181a1d}',
             '.dark-theme .language-switcher:hover{background:#fff}',
+            '@media (prefers-reduced-motion:reduce){.theme-switcher,.language-switcher{animation:none}}',
             '@media (max-width:720px){.language-switcher{top:74px;right:16px}}'
         ].join('');
         document.head.appendChild(style);
@@ -497,6 +498,13 @@ document.addEventListener('DOMContentLoaded', function() {
         return;
     }
 
+    injectSearchStyles();
+    searchGroup.classList.add('site-search');
+
+    if (input.id === 'noteSearch') {
+        return;
+    }
+
     const resultId = 'siteSearchResults';
     let entries = [];
     let indexedLanguage = '';
@@ -505,8 +513,6 @@ document.addEventListener('DOMContentLoaded', function() {
     let highlightTimer = null;
     let inputTimer = null;
 
-    injectSearchStyles();
-    searchGroup.classList.add('site-search');
     input.type = 'search';
     input.autocomplete = 'off';
     input.spellcheck = false;

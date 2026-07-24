@@ -4,47 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>个人分享</title>
+    <link rel="stylesheet" href="css/general_course.css">
     <link rel="stylesheet" href="css/notes.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/definition.js"></script>
+    <script src="js/function.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
-    <header class="site-header">
-        <button class="menu-toggle" type="button" aria-label="展开导航栏" aria-expanded="false">
-            <span></span><span></span><span></span>
-        </button>
-        <nav class="main-nav" aria-label="主导航">
-            <button class="menu-close" type="button" aria-label="关闭导航栏">×</button>
-            <ul>
-                <li><a href="home.html">首页</a></li>
-                <li class="nav-group">
-                    <a class="nav-group-title" href="general_course.html">浙江大学</a>
-                    <ul class="nav-submenu">
-                        <li><a href="general_course.html">通识课程</a></li>
-                        <li><a href="required.html">专业必修</a></li>
-                        <li><a href="selective.html">专业选修</a></li>
-                        <li><a href="others.html">其他课程</a></li>
-                        <li><a href="mixed.html">二三四课堂</a></li>
-                    </ul>
-                </li>
-                <li class="nav-group">
-                    <a class="nav-group-title" href="apply.html">留学篇</a>
-                    <ul class="nav-submenu">
-                        <li><a href="apply.html">申请</a></li>
-                        <li><a href="jhubmb.html">JHU BMB</a></li>
-                    </ul>
-                </li>
-                <li><a href="protocols.html">实验手册</a></li>
-                <li><a href="instructions.html">使用说明</a></li>
-            </ul>
+    <header>
+        <div class="btnMenu"><i></i><i></i><i></i></div>
+        <nav>
+            <div class="botonera">
+                <ul>
+                    <li><a href="home.html">首页</a></li>
+                    <li class="nav-group">
+                        <a class="nav-group-title" href="general_course.html">浙江大学</a>
+                        <ul class="nav-submenu">
+                            <li><a href="general_course.html">通识课程</a></li>
+                            <li><a href="required.html">专业必修</a></li>
+                            <li><a href="selective.html">专业选修</a></li>
+                            <li><a href="others.html">其他课程</a></li>
+                            <li><a href="mixed.html">二三四课堂</a></li>
+                            <li><a href="notes.html">学习笔记</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-group">
+                        <a class="nav-group-title" href="apply.html">留学篇</a>
+                        <ul class="nav-submenu">
+                            <li><a href="apply.html">申请</a></li>
+                            <li><a href="jhubmb.html">JHU BMB</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="protocols.html">实验手册</a></li>
+                    <li><a href="instructions.html">使用说明</a></li>
+                </ul>
+            </div>
         </nav>
-        <div class="nav-shade" aria-hidden="true"></div>
-
-        <label class="global-search">
-            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
-            <input id="noteSearch" type="search" placeholder="搜索课程或知识点" autocomplete="off">
-        </label>
-        <button class="theme-switcher" id="themeToggle" type="button">🌙 夜间模式</button>
     </header>
+
+    <div class="group">
+        <svg class="icon" aria-hidden="true" viewBox="0 0 24 24"><g><path d="M21.53 20.47l-3.66-3.66C19.195 15.24 20 13.214 20 11c0-4.97-4.03-9-9-9s-9 4.03-9 9 4.03 9 9 9c2.215 0 4.24-.804 5.808-2.13l3.66 3.66c.147.146.34.22.53.22s.385-.073.53-.22c.295-.293.295-.767.002-1.06zM3.5 11c0-4.135 3.365-7.5 7.5-7.5s7.5 3.365 7.5 7.5-3.365 7.5-7.5 7.5-7.5-3.365-7.5-7.5z"></path></g></svg>
+        <input id="noteSearch" type="search" class="input" placeholder="搜索课程或知识点" autocomplete="off">
+        <span class="search-tip">输入课程名称或知识点筛选笔记</span>
+    </div>
+    <button class="theme-switcher" id="themeToggle" type="button">🌙 夜间模式</button>
 
     <main class="notes-workspace">
         <aside class="category-rail" aria-label="课程类别">
@@ -104,7 +108,6 @@
         </article>
     </main>
 
-    <script src="js/definition.js"></script>
     <script src="js/course-notes.js"></script>
 </body>
 </html>

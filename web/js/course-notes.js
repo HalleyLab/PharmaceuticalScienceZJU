@@ -414,24 +414,6 @@
     }
 
     function bindNavigation() {
-        const menuToggle = document.querySelector('.menu-toggle');
-        const menuClose = document.querySelector('.menu-close');
-        const navShade = document.querySelector('.nav-shade');
-
-        function setNavigation(open) {
-            document.body.classList.toggle('nav-open', open);
-            menuToggle.setAttribute('aria-expanded', String(open));
-        }
-
-        menuToggle.addEventListener('click', function() { setNavigation(true); });
-        menuClose.addEventListener('click', function() { setNavigation(false); });
-        navShade.addEventListener('click', function() { setNavigation(false); });
-        document.addEventListener('keydown', function(event) {
-            if (event.key === 'Escape') {
-                setNavigation(false);
-            }
-        });
-
         searchInput.addEventListener('input', function() {
             searchTerm = searchInput.value;
             renderCourseList();
