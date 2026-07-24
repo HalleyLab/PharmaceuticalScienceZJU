@@ -66,6 +66,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const originalDocumentTitle = document.title;
     const translationScriptUrl = new URL('js/translations-en.js', window.location.href).href;
     let translationLoadPromise = null;
+    let languageChangeId = 0;
     const exactTranslations = {
         '\u4E2A\u4EBA\u5206\u4EAB': 'Personal Sharing',
         '\u9996\u9875': 'Home',
@@ -256,6 +257,17 @@ document.addEventListener('DOMContentLoaded', function() {
     injectLanguageButton();
     setLanguage(localStorage.getItem(languageKey) === 'en' ? 'en' : 'zh');
     observeDynamicText();
+    window.addEventListener('pageshow', synchronizeLanguageUi);
+    window.addEventListener('storage', function(event) {
+        if (event.key === languageKey) {
+            synchronizeLanguageUi();
+        }
+    });
+    document.addEventListener('visibilitychange', function() {
+        if (!document.hidden) {
+            synchronizeLanguageUi();
+        }
+    });
 
     function injectLanguageButton() {
         if (document.querySelector('.language-switcher')) {
@@ -264,7 +276,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const style = document.createElement('style');
         style.textContent = [
-            '.language-switcher{position:fixed;top:20px;right:142px;z-index:1300;min-width:74px;height:40px;border:0;border-radius:22px;padding:0 16px;cursor:pointer;background:rgba(31,33,36,.92);color:#fff;font:700 14px/1 "Microsoft YaHei","PingFang SC",Arial,sans-serif;box-shadow:0 10px 24px rgba(0,0,0,.16);transition:transform .2s ease,opacity .2s ease,background .2s ease;animation:slideBottom 1s ease forwards}',
+            '.language-switcher{position:fixed;top:20px;right:154px;z-index:1300;min-width:74px;height:40px;border:0;border-radius:22px;padding:0 16px;cursor:pointer;background:rgba(31,33,36,.92);color:#fff;font:700 14px/1 "Microsoft YaHei","PingFang SC",Arial,sans-serif;box-shadow:0 10px 24px rgba(0,0,0,.16);transition:transform .2s ease,opacity .2s ease,background .2s ease;animation:slideBottom 1s ease forwards}',
+            '.theme-switcher{box-sizing:border-box;width:120px;min-width:120px;height:40px;padding:0 15px;display:inline-flex;align-items:center;justify-content:center;white-space:nowrap}',
             '.language-switcher:hover{transform:translateY(-1px);background:rgba(10,12,14,.96)}',
             '.dark-theme .language-switcher{background:rgba(245,246,248,.92);color:#181a1d}',
             '.dark-theme .language-switcher:hover{background:#fff}',
@@ -277,14 +290,24 @@ document.addEventListener('DOMContentLoaded', function() {
         button.type = 'button';
         button.className = 'language-switcher';
         button.addEventListener('click', function() {
-            const nextLanguage = document.body.dataset.siteLanguage === 'en' ? 'zh' : 'en';
+            const nextLanguage = getStoredLanguage() === 'en' ? 'zh' : 'en';
             setLanguage(nextLanguage);
         });
         document.body.appendChild(button);
+
+        const buttonObserver = new MutationObserver(function() {
+            updateLanguageButton(getStoredLanguage() === 'en', false);
+        });
+        buttonObserver.observe(button, {
+            childList: true,
+            characterData: true,
+            subtree: true
+        });
     }
 
     function setLanguage(language) {
         const isEnglish = language === 'en';
+        const currentChangeId = ++languageChangeId;
         document.body.dataset.siteLanguage = language;
         document.documentElement.lang = isEnglish ? 'en' : 'zh-CN';
         localStorage.setItem(languageKey, language);
@@ -296,13 +319,23 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         ensureEnglishTranslations().then(function() {
-            if (document.body.dataset.siteLanguage === 'en') {
+            if (currentChangeId === languageChangeId && getStoredLanguage() === 'en') {
                 applyLanguage('en');
             }
         }).catch(function(error) {
             console.warn('English translation dictionary could not be loaded.', error);
-            updateLanguageButton(true, false);
+            if (currentChangeId === languageChangeId && getStoredLanguage() === 'en') {
+                updateLanguageButton(true, false);
+            }
         });
+    }
+
+    function synchronizeLanguageUi() {
+        setLanguage(getStoredLanguage());
+    }
+
+    function getStoredLanguage() {
+        return localStorage.getItem(languageKey) === 'en' ? 'en' : 'zh';
     }
 
     function ensureEnglishTranslations() {
@@ -358,7 +391,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         nodes.forEach(function(node) {
             if (!textMemory.has(node)) {
-                textMemory.set(node, node.nodeValue);
+                textMemory.set(node, restoreChineseText(node.nodeValue));
             }
             const original = textMemory.get(node);
             node.nodeValue = isEnglish ? translateText(original) : original;
@@ -379,7 +412,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     return;
                 }
                 if (!stored[attr]) {
-                    stored[attr] = el.getAttribute(attr);
+                    stored[attr] = restoreChineseText(el.getAttribute(attr));
                 }
                 el.setAttribute(attr, isEnglish ? translateText(stored[attr]) : stored[attr]);
             });
@@ -395,9 +428,18 @@ document.addEventListener('DOMContentLoaded', function() {
         if (!button) {
             return;
         }
-        button.textContent = isLoading ? '...' : (isEnglish ? '\u4E2D\u6587' : 'EN');
-        button.title = isEnglish ? '\u5207\u6362\u5230\u4E2D\u6587' : 'Switch to English';
-        button.setAttribute('aria-label', button.title);
+        const text = isLoading ? '...' : (isEnglish ? '\u4E2D\u6587' : 'EN');
+        const title = isEnglish ? '\u5207\u6362\u5230\u4E2D\u6587' : 'Switch to English';
+        if (button.textContent !== text) {
+            button.textContent = text;
+        }
+        if (button.title !== title) {
+            button.title = title;
+        }
+        if (button.getAttribute('aria-label') !== title) {
+            button.setAttribute('aria-label', title);
+        }
+        button.dataset.language = isEnglish ? 'en' : 'zh';
     }
 
     function updateTypedText(isEnglish) {
@@ -439,6 +481,49 @@ document.addEventListener('DOMContentLoaded', function() {
             return text;
         }
         return leading + translateByTerms(core) + trailing;
+    }
+
+    function restoreChineseText(text) {
+        if (!text || /[\u3400-\u9fff]/.test(text)) {
+            return text;
+        }
+
+        const leading = text.match(/^\s*/)[0];
+        const trailing = text.match(/\s*$/)[0];
+        const core = text.trim().replace(/\s+/g, ' ');
+        const completeTranslations = window.siteEnglishTranslations || {};
+        const translationEntries = Object.keys(exactTranslations)
+            .concat(Object.keys(completeTranslations))
+            .map(function(chinese) {
+                return [exactTranslations[chinese] || completeTranslations[chinese], chinese];
+            })
+            .filter(function(entry) {
+                return entry[0];
+            })
+            .sort(function(a, b) {
+                return b[0].length - a[0].length;
+            });
+
+        const exactMatch = translationEntries.find(function(entry) {
+            return entry[0] === core;
+        });
+        if (exactMatch) {
+            return leading + exactMatch[1] + trailing;
+        }
+
+        let restored = core;
+        translationEntries
+            .concat(Object.keys(phraseTranslations).map(function(chinese) {
+                return [phraseTranslations[chinese], chinese];
+            }))
+            .sort(function(a, b) {
+                return b[0].length - a[0].length;
+            })
+            .forEach(function(entry) {
+                restored = restored.split(entry[0]).join(entry[1]);
+            });
+
+        return leading + restored + trailing;
     }
 
     function translateByTerms(text) {
